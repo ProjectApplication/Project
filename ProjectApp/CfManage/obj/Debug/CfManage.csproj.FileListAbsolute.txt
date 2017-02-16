@@ -1,0 +1,9 @@
+D:\năm 2\HKII\App\project\ProjectApp\CfManage\bin\Debug\CfManage.exe.config
+D:\năm 2\HKII\App\project\ProjectApp\CfManage\bin\Debug\CfManage.exe
+D:\năm 2\HKII\App\project\ProjectApp\CfManage\bin\Debug\CfManage.pdb
+D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.csprojResolveAssemblyReference.cache
+D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.Login.resources
+D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.Properties.Resources.resources
+D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.csproj.GenerateResource.Cache
+D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.exe
+D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.pdb
