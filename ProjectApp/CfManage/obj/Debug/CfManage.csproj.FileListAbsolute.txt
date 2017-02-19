@@ -9,3 +9,6 @@ D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.exe
 D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.pdb
 D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.MainForm.resources
 D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.finfoAccount.resources
+C:\Users\blhl1\Documents\GitHub\Project\ProjectApp\CfManage\bin\Debug\CfManage.exe.config
+C:\Users\blhl1\Documents\GitHub\Project\ProjectApp\CfManage\obj\Debug\CfManage.exe
+C:\Users\blhl1\Documents\GitHub\Project\ProjectApp\CfManage\obj\Debug\CfManage.pdb
