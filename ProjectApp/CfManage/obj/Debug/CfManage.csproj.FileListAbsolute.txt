@@ -7,3 +7,4 @@ D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.Properties.Res
 D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.csproj.GenerateResource.Cache
 D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.exe
 D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.pdb
+D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.MainForm.resources
