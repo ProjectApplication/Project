@@ -55,6 +55,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(476, 199);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(93, 54);
@@ -128,8 +129,10 @@
             // 
             // Login
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(599, 292);
             this.Controls.Add(this.panel1);
             this.Name = "Login";

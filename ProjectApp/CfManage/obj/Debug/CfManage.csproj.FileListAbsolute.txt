@@ -8,3 +8,4 @@ D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.csproj.Generat
 D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.exe
 D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.pdb
 D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.MainForm.resources
+D:\năm 2\HKII\App\project\ProjectApp\CfManage\obj\Debug\CfManage.finfoAccount.resources
