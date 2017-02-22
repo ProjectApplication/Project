@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CfManage
+namespace RoverCafeManage
 {
-    public partial class finfoAccount : Form
+    public partial class fAdmin : Form
     {
-        public finfoAccount()
+        public fAdmin()
         {
             InitializeComponent();
         }
