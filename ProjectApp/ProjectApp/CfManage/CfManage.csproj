@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAdmin.Designer.cs">
+      <DependentUpon>fAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="finfoAccount.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="finfoAccount.Designer.cs">
       <DependentUpon>finfoAccount.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CafeManager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CafeManager.Designer.cs">
-      <DependentUpon>CafeManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -72,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAdmin.resx">
+      <DependentUpon>fAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="finfoAccount.resx">
       <DependentUpon>finfoAccount.cs</DependentUpon>
     </EmbeddedResource>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CfManage
 {
-    public partial class CafeManager : Form
+    public partial class fAdmin : Form
     {
-        public CafeManager()
+        public fAdmin()
         {
             InitializeComponent();
         }
