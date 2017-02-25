@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbUserName = new System.Windows.Forms.ComboBox();
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.tbPassWord = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -48,7 +48,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Controls.Add(this.cbUserName);
-            this.panel1.Controls.Add(this.materialSingleLineTextField1);
+            this.panel1.Controls.Add(this.tbPassWord);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(12, 58);
@@ -69,24 +69,24 @@
             this.cbUserName.TabIndex = 3;
             this.cbUserName.Text = "UserName";
             // 
-            // materialSingleLineTextField1
+            // tbPassWord
             // 
-            this.materialSingleLineTextField1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.Font = new System.Drawing.Font("UTM Penumbra", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialSingleLineTextField1.Hint = "Password";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(258, 215);
-            this.materialSingleLineTextField1.MaxLength = 32767;
-            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.PasswordChar = '*';
-            this.materialSingleLineTextField1.SelectedText = "";
-            this.materialSingleLineTextField1.SelectionLength = 0;
-            this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(506, 23);
-            this.materialSingleLineTextField1.TabIndex = 2;
-            this.materialSingleLineTextField1.TabStop = false;
-            this.materialSingleLineTextField1.UseSystemPasswordChar = true;
+            this.tbPassWord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tbPassWord.Depth = 0;
+            this.tbPassWord.Font = new System.Drawing.Font("UTM Penumbra", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassWord.Hint = "Password";
+            this.tbPassWord.Location = new System.Drawing.Point(258, 215);
+            this.tbPassWord.MaxLength = 32767;
+            this.tbPassWord.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tbPassWord.Name = "tbPassWord";
+            this.tbPassWord.PasswordChar = '*';
+            this.tbPassWord.SelectedText = "";
+            this.tbPassWord.SelectionLength = 0;
+            this.tbPassWord.SelectionStart = 0;
+            this.tbPassWord.Size = new System.Drawing.Size(506, 23);
+            this.tbPassWord.TabIndex = 2;
+            this.tbPassWord.TabStop = false;
+            this.tbPassWord.UseSystemPasswordChar = true;
             // 
             // pictureBox2
             // 
@@ -185,7 +185,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField tbPassWord;
         private System.Windows.Forms.ComboBox cbUserName;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Panel panel2;
