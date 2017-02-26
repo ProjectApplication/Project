@@ -45,7 +45,7 @@ namespace CustomForm
             OpacityTrackbar.Maximum = 100;
             OpacityTrackbar.Size = new System.Drawing.Size(106, 45);
             OpacityTrackbar.Location = new Point(MiniBox.Left - OpacityTrackbar.Width - 5, 2);
-            OpacityTrackbar.Value = 90;
+            OpacityTrackbar.Value = 100;
             
             OpacityTrackbar.TickStyle = System.Windows.Forms.TickStyle.None;
             _frm.Opacity = OpacityTrackbar.Value / 100D;

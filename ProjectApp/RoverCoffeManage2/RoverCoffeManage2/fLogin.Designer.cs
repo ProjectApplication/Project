@@ -1,4 +1,6 @@
-﻿namespace RoverCoffeManage2
+﻿using System.Data;
+
+namespace RoverCoffeManage2
 {
     partial class fLogin
     {
@@ -33,8 +35,8 @@
             this.tbPassWord = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnLogin = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -66,7 +68,7 @@
             this.cbUserName.Location = new System.Drawing.Point(258, 56);
             this.cbUserName.Name = "cbUserName";
             this.cbUserName.Size = new System.Drawing.Size(506, 41);
-            this.cbUserName.TabIndex = 3;
+            this.cbUserName.TabIndex = 1;
             this.cbUserName.Text = "UserName";
             // 
             // tbPassWord
@@ -75,7 +77,7 @@
             this.tbPassWord.Depth = 0;
             this.tbPassWord.Font = new System.Drawing.Font("UTM Penumbra", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPassWord.Hint = "Password";
-            this.tbPassWord.Location = new System.Drawing.Point(258, 215);
+            this.tbPassWord.Location = new System.Drawing.Point(258, 189);
             this.tbPassWord.MaxLength = 32767;
             this.tbPassWord.MouseState = MaterialSkin.MouseState.HOVER;
             this.tbPassWord.Name = "tbPassWord";
@@ -83,8 +85,8 @@
             this.tbPassWord.SelectedText = "";
             this.tbPassWord.SelectionLength = 0;
             this.tbPassWord.SelectionStart = 0;
-            this.tbPassWord.Size = new System.Drawing.Size(506, 23);
-            this.tbPassWord.TabIndex = 2;
+            this.tbPassWord.Size = new System.Drawing.Size(506, 39);
+            this.tbPassWord.TabIndex = 1;
             this.tbPassWord.TabStop = false;
             this.tbPassWord.UseSystemPasswordChar = true;
             // 
@@ -107,24 +109,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnLogin
-            // 
-            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("UTM Penumbra", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.Snow;
-            this.btnLogin.Location = new System.Drawing.Point(315, 18);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(258, 44);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Đăng Nhập";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnLogin);
@@ -132,6 +116,27 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(855, 82);
             this.panel2.TabIndex = 3;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLogin.BackColor = System.Drawing.Color.White;
+            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("UTM Penumbra", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnLogin.Image = global::RoverCoffeManage2.Properties.Resources.next;
+            this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLogin.Location = new System.Drawing.Point(258, 3);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(310, 59);
+            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Text = "Đăng Nhập";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // panel3
             // 
