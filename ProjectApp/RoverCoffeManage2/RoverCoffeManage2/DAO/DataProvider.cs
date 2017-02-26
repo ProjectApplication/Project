@@ -11,7 +11,7 @@ namespace RoverCoffeManage2.DAO
     class DataProvider
     {
         // Tạo kết nối với sql
-        private String connectionSTR = @"Data Source=DESKTOP-A1GD3SD\SQLEXPRESS;Initial Catalog=RoverCafe;Integrated Security=True";
+        private String connectionSTR = @"Data Source=.\SQLEXPRESS;Initial Catalog=RoverCafe;Integrated Security=True";
 
         // Hạn chế việc tạo AccountDao nhiều lần phát sinh các connection để chỉ tạo duy nhất 1 lần
         private static DataProvider instance;

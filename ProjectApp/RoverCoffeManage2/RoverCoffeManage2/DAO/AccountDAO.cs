@@ -20,14 +20,17 @@ namespace RoverCoffeManage2.DAO
 
         private AccountDAO() { }
 
+
         //Kiểm tra tài khoản và mật khẩu có nằm trong database hay không 
         public bool Login(string userName, string passWord)
         {
+            
             // truy vấn các username và password trong database để kiểm tra
-            string query = "SELECT * FROM dbo.Account WHERE UserName = N'" + userName + "' AND PassWord = N'" + passWord + "' ";
+            string query = "USP_Login @userName , @passWord";
+
 
             //Lấy ra bảng dữ liệu account
-            DataTable result = DataProvider.Instance.ExecuteQuery(query);
+            DataTable result = DataProvider.Instance.ExecuteQuery(query,new object[] {userName,passWord});
 
             //Trả về số dòng đã tìm được 
             return result.Rows.Count > 0;
