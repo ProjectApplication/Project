@@ -58,5 +58,10 @@ namespace RoverCoffeManage2
                 cbUserName.Items.Add((string)row["UserName"]);
             //
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
