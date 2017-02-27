@@ -109,10 +109,10 @@
             this.tableLayoutPanel1.ColumnCount = 6;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 207F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 428F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 242F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 251F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 208F));
             this.tableLayoutPanel1.Controls.Add(this.btnTable24, 5, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnTable23, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnTable22, 3, 3);
@@ -143,7 +143,7 @@
             this.tableLayoutPanel1.Controls.Add(this.btnTable3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnTable1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnTable11, 4, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(59, 44);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(115, 44);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.64539F));
@@ -152,7 +152,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 139F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 136F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1491, 691);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1435, 691);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // btnTable24
@@ -165,7 +165,7 @@
             this.btnTable24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable24.Image = global::RoverCoffeManage2.Properties.Resources._24;
-            this.btnTable24.Location = new System.Drawing.Point(1066, 418);
+            this.btnTable24.Location = new System.Drawing.Point(1229, 418);
             this.btnTable24.Name = "btnTable24";
             this.btnTable24.Size = new System.Drawing.Size(105, 105);
             this.btnTable24.TabIndex = 10;
@@ -182,7 +182,7 @@
             this.btnTable23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable23.Image = global::RoverCoffeManage2.Properties.Resources._231;
-            this.btnTable23.Location = new System.Drawing.Point(859, 418);
+            this.btnTable23.Location = new System.Drawing.Point(986, 418);
             this.btnTable23.Name = "btnTable23";
             this.btnTable23.Size = new System.Drawing.Size(105, 105);
             this.btnTable23.TabIndex = 10;
@@ -199,7 +199,7 @@
             this.btnTable22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable22.Image = global::RoverCoffeManage2.Properties.Resources._22;
-            this.btnTable22.Location = new System.Drawing.Point(646, 418);
+            this.btnTable22.Location = new System.Drawing.Point(735, 418);
             this.btnTable22.Name = "btnTable22";
             this.btnTable22.Size = new System.Drawing.Size(105, 105);
             this.btnTable22.TabIndex = 10;
@@ -216,7 +216,7 @@
             this.btnTable21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable21.Image = global::RoverCoffeManage2.Properties.Resources._21;
-            this.btnTable21.Location = new System.Drawing.Point(433, 418);
+            this.btnTable21.Location = new System.Drawing.Point(493, 418);
             this.btnTable21.Name = "btnTable21";
             this.btnTable21.Size = new System.Drawing.Size(105, 105);
             this.btnTable21.TabIndex = 10;
@@ -233,7 +233,7 @@
             this.btnTable20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable20.Image = global::RoverCoffeManage2.Properties.Resources._20;
-            this.btnTable20.Location = new System.Drawing.Point(218, 418);
+            this.btnTable20.Location = new System.Drawing.Point(248, 418);
             this.btnTable20.Name = "btnTable20";
             this.btnTable20.Size = new System.Drawing.Size(105, 105);
             this.btnTable20.TabIndex = 10;
@@ -267,7 +267,7 @@
             this.btnTable18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable18.Image = global::RoverCoffeManage2.Properties.Resources._18;
-            this.btnTable18.Location = new System.Drawing.Point(1066, 280);
+            this.btnTable18.Location = new System.Drawing.Point(1229, 280);
             this.btnTable18.Name = "btnTable18";
             this.btnTable18.Size = new System.Drawing.Size(105, 105);
             this.btnTable18.TabIndex = 10;
@@ -284,7 +284,7 @@
             this.btnTable17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable17.Image = global::RoverCoffeManage2.Properties.Resources._17;
-            this.btnTable17.Location = new System.Drawing.Point(859, 280);
+            this.btnTable17.Location = new System.Drawing.Point(986, 280);
             this.btnTable17.Name = "btnTable17";
             this.btnTable17.Size = new System.Drawing.Size(105, 105);
             this.btnTable17.TabIndex = 10;
@@ -301,7 +301,7 @@
             this.btnTable16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable16.Image = global::RoverCoffeManage2.Properties.Resources._16;
-            this.btnTable16.Location = new System.Drawing.Point(646, 280);
+            this.btnTable16.Location = new System.Drawing.Point(735, 280);
             this.btnTable16.Name = "btnTable16";
             this.btnTable16.Size = new System.Drawing.Size(105, 105);
             this.btnTable16.TabIndex = 10;
@@ -318,7 +318,7 @@
             this.btnTable15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable15.Image = global::RoverCoffeManage2.Properties.Resources._15;
-            this.btnTable15.Location = new System.Drawing.Point(433, 280);
+            this.btnTable15.Location = new System.Drawing.Point(493, 280);
             this.btnTable15.Name = "btnTable15";
             this.btnTable15.Size = new System.Drawing.Size(105, 105);
             this.btnTable15.TabIndex = 10;
@@ -335,7 +335,7 @@
             this.btnTable14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable14.Image = global::RoverCoffeManage2.Properties.Resources._14;
-            this.btnTable14.Location = new System.Drawing.Point(218, 280);
+            this.btnTable14.Location = new System.Drawing.Point(248, 280);
             this.btnTable14.Name = "btnTable14";
             this.btnTable14.Size = new System.Drawing.Size(105, 105);
             this.btnTable14.TabIndex = 10;
@@ -369,7 +369,7 @@
             this.btnTable12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable12.Image = global::RoverCoffeManage2.Properties.Resources._12;
-            this.btnTable12.Location = new System.Drawing.Point(1066, 141);
+            this.btnTable12.Location = new System.Drawing.Point(1229, 141);
             this.btnTable12.Name = "btnTable12";
             this.btnTable12.Size = new System.Drawing.Size(105, 105);
             this.btnTable12.TabIndex = 10;
@@ -386,7 +386,7 @@
             this.btnTable10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable10.Image = global::RoverCoffeManage2.Properties.Resources._10;
-            this.btnTable10.Location = new System.Drawing.Point(646, 141);
+            this.btnTable10.Location = new System.Drawing.Point(735, 141);
             this.btnTable10.Name = "btnTable10";
             this.btnTable10.Size = new System.Drawing.Size(105, 105);
             this.btnTable10.TabIndex = 10;
@@ -403,7 +403,7 @@
             this.btnTable26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable26.Image = global::RoverCoffeManage2.Properties.Resources._26;
-            this.btnTable26.Location = new System.Drawing.Point(218, 557);
+            this.btnTable26.Location = new System.Drawing.Point(248, 557);
             this.btnTable26.Name = "btnTable26";
             this.btnTable26.Size = new System.Drawing.Size(105, 105);
             this.btnTable26.TabIndex = 15;
@@ -437,7 +437,7 @@
             this.btnTable27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable27.Image = global::RoverCoffeManage2.Properties.Resources._27;
-            this.btnTable27.Location = new System.Drawing.Point(433, 557);
+            this.btnTable27.Location = new System.Drawing.Point(493, 557);
             this.btnTable27.Name = "btnTable27";
             this.btnTable27.Size = new System.Drawing.Size(105, 105);
             this.btnTable27.TabIndex = 13;
@@ -454,7 +454,7 @@
             this.btnTable30.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable30.Image = global::RoverCoffeManage2.Properties.Resources._30;
-            this.btnTable30.Location = new System.Drawing.Point(1066, 557);
+            this.btnTable30.Location = new System.Drawing.Point(1229, 557);
             this.btnTable30.Name = "btnTable30";
             this.btnTable30.Size = new System.Drawing.Size(105, 105);
             this.btnTable30.TabIndex = 12;
@@ -471,7 +471,7 @@
             this.btnTable29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable29.Image = global::RoverCoffeManage2.Properties.Resources._29;
-            this.btnTable29.Location = new System.Drawing.Point(859, 557);
+            this.btnTable29.Location = new System.Drawing.Point(986, 557);
             this.btnTable29.Name = "btnTable29";
             this.btnTable29.Size = new System.Drawing.Size(105, 105);
             this.btnTable29.TabIndex = 11;
@@ -488,7 +488,7 @@
             this.btnTable28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable28.Image = global::RoverCoffeManage2.Properties.Resources._28;
-            this.btnTable28.Location = new System.Drawing.Point(646, 557);
+            this.btnTable28.Location = new System.Drawing.Point(735, 557);
             this.btnTable28.Name = "btnTable28";
             this.btnTable28.Size = new System.Drawing.Size(105, 105);
             this.btnTable28.TabIndex = 10;
@@ -505,7 +505,7 @@
             this.btnTable9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable9.Image = global::RoverCoffeManage2.Properties.Resources._9;
-            this.btnTable9.Location = new System.Drawing.Point(433, 141);
+            this.btnTable9.Location = new System.Drawing.Point(493, 141);
             this.btnTable9.Name = "btnTable9";
             this.btnTable9.Size = new System.Drawing.Size(105, 105);
             this.btnTable9.TabIndex = 8;
@@ -522,7 +522,7 @@
             this.btnTable8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable8.Image = global::RoverCoffeManage2.Properties.Resources._8;
-            this.btnTable8.Location = new System.Drawing.Point(218, 141);
+            this.btnTable8.Location = new System.Drawing.Point(248, 141);
             this.btnTable8.Name = "btnTable8";
             this.btnTable8.Size = new System.Drawing.Size(105, 105);
             this.btnTable8.TabIndex = 7;
@@ -556,7 +556,7 @@
             this.btnTable6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable6.Image = global::RoverCoffeManage2.Properties.Resources._6;
-            this.btnTable6.Location = new System.Drawing.Point(1066, 3);
+            this.btnTable6.Location = new System.Drawing.Point(1229, 3);
             this.btnTable6.Name = "btnTable6";
             this.btnTable6.Size = new System.Drawing.Size(105, 105);
             this.btnTable6.TabIndex = 5;
@@ -573,7 +573,7 @@
             this.btnTable2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable2.Image = global::RoverCoffeManage2.Properties.Resources._2;
-            this.btnTable2.Location = new System.Drawing.Point(218, 3);
+            this.btnTable2.Location = new System.Drawing.Point(248, 3);
             this.btnTable2.Name = "btnTable2";
             this.btnTable2.Size = new System.Drawing.Size(105, 105);
             this.btnTable2.TabIndex = 1;
@@ -590,7 +590,7 @@
             this.btnTable5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable5.Image = global::RoverCoffeManage2.Properties.Resources._5;
-            this.btnTable5.Location = new System.Drawing.Point(859, 3);
+            this.btnTable5.Location = new System.Drawing.Point(986, 3);
             this.btnTable5.Name = "btnTable5";
             this.btnTable5.Size = new System.Drawing.Size(105, 105);
             this.btnTable5.TabIndex = 4;
@@ -607,7 +607,7 @@
             this.btnTable4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable4.Image = global::RoverCoffeManage2.Properties.Resources._4;
-            this.btnTable4.Location = new System.Drawing.Point(646, 3);
+            this.btnTable4.Location = new System.Drawing.Point(735, 3);
             this.btnTable4.Name = "btnTable4";
             this.btnTable4.Size = new System.Drawing.Size(105, 105);
             this.btnTable4.TabIndex = 3;
@@ -624,7 +624,7 @@
             this.btnTable3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable3.Image = global::RoverCoffeManage2.Properties.Resources._3;
-            this.btnTable3.Location = new System.Drawing.Point(433, 3);
+            this.btnTable3.Location = new System.Drawing.Point(493, 3);
             this.btnTable3.Name = "btnTable3";
             this.btnTable3.Size = new System.Drawing.Size(105, 105);
             this.btnTable3.TabIndex = 2;
@@ -658,7 +658,7 @@
             this.btnTable11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnTable11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTable11.Image = global::RoverCoffeManage2.Properties.Resources._11;
-            this.btnTable11.Location = new System.Drawing.Point(859, 141);
+            this.btnTable11.Location = new System.Drawing.Point(986, 141);
             this.btnTable11.Name = "btnTable11";
             this.btnTable11.Size = new System.Drawing.Size(105, 105);
             this.btnTable11.TabIndex = 9;
