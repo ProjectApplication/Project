@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace RoverCoffeManage2.DAO
 {
@@ -34,6 +35,20 @@ namespace RoverCoffeManage2.DAO
 
             //Trả về số dòng đã tìm được 
             return result.Rows.Count > 0;
+        }
+        public int getTypeOfAccount(string username)
+        {
+            // câu lệnh này dùng để get giá trị type của account
+            return(int) DataProvider.Instance.ExecuteScalar("SELECT  dbo.Account.Type FROM dbo.Account WHERE UserName = '" + username + "'");
+            
+        }
+        public void addUserName(ComboBox a)
+        {
+            // Thay đổi giá trị của combo box username tại đây
+            // hàm này lấy giá trị từng hàng của table 
+            foreach (DataRow row in DAO.DataProvider.Instance.ExecuteQuery("SELECT dbo.Account.UserName FROM dbo.Account").Rows)
+                //hàm này để add giá trị từng hàng của cột username 
+                a.Items.Add((string)row["UserName"]);
         }
     }
 }

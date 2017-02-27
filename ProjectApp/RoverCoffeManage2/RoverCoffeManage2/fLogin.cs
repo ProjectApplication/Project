@@ -27,10 +27,21 @@ namespace RoverCoffeManage2
             String password = tbPassWord.Text;
             if (Login(username, password))
             {
-                fAdmin fadmin = new fAdmin();
-                this.Hide();//ẩn form login
-                fadmin.ShowDialog();//hiện form admin
-                this.Show();
+
+                if (DAO.AccountDAO.Instance.getTypeOfAccount(username) == 1)
+                {
+                    fAdmin fadmin = new fAdmin();
+                    this.Hide();//ẩn form login
+                    fadmin.ShowDialog();//hiện form admin
+                    this.Show();
+                }
+                else
+                {
+                    fstaff fstaff = new fstaff();
+                    this.Hide();//ẩn form staff
+                    fstaff.ShowDialog();//hiện form staff
+                    this.Show();
+                }
             }
             else
 
@@ -51,12 +62,8 @@ namespace RoverCoffeManage2
 
         private void load_UserName()
         {
-            // Thay đổi giá trị của combo box username tại đây
-            // hàm này lấy giá trị từng hàng của table 
-            foreach (DataRow row in DAO.DataProvider.Instance.ExecuteQuery("SELECT dbo.Account.UserName FROM dbo.Account").Rows)
-                //hàm này để add giá trị từng hàng của cột username 
-                cbUserName.Items.Add((string)row["UserName"]);
-            //
+           
+            DAO.AccountDAO.Instance.addUserName(cbUserName);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
