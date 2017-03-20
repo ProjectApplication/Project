@@ -18,9 +18,9 @@ namespace RoverCoffeManage2
             InitializeComponent();
         }
 
-        public void genTable()
+        public void genTable(int numTable)
         {
-
+           
         }
     }
 }
