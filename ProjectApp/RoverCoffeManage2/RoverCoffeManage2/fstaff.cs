@@ -16,6 +16,7 @@ namespace RoverCoffeManage2
         public fstaff()
         {
             InitializeComponent();
+            
         }
 
         

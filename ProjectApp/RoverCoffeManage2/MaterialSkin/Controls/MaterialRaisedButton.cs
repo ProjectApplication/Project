@@ -29,8 +29,8 @@ namespace MaterialSkin.Controls
             set
             {
                 _icon = value;
-                if (AutoSize)
-                    Size = GetPreferredSize();
+                //if (AutoSize)
+                //    Size = GetPreferredSize();
                 Invalidate();
             }
         }
@@ -46,8 +46,8 @@ namespace MaterialSkin.Controls
             };
             _animationManager.OnAnimationProgress += sender => Invalidate();
 
-            AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            AutoSize = true;
+            //AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            //AutoSize = true;
         }
 
         public override string Text
@@ -56,9 +56,9 @@ namespace MaterialSkin.Controls
             set
             {
                 base.Text = value;
-                _textSize = CreateGraphics().MeasureString(value.ToUpper(), SkinManager.ROBOTO_MEDIUM_10);
-                if (AutoSize)
-                    Size = GetPreferredSize();
+                _textSize = CreateGraphics().MeasureString(value.ToUpper(), SkinManager.Utm);
+                //if (AutoSize)
+                //    Size = GetPreferredSize();
                 Invalidate();
             }
         }

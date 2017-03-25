@@ -1,10 +1,10 @@
-﻿using System;
+﻿using RoverCoffeManage2.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RoverCoffeManage2.DTO.QuanLyQuanCafe.DTO;
 
 namespace RoverCoffeManage2.DAO
 {
@@ -18,8 +18,8 @@ namespace RoverCoffeManage2.DAO
             private set { TableDAO.instance = value; }
         }
 
-        public static int TableWidth = 90;
-        public static int TableHeight = 90;
+        public static int TableWidth = 105;
+        public static int TableHeight = 105;
 
         private TableDAO() { }
 
@@ -36,6 +36,11 @@ namespace RoverCoffeManage2.DAO
             }
 
             return tableList;
+        }
+        public int updateStatus(int id)
+        {
+            int data = DataProvider.Instance.ExecuteNonQuery("UPDATE dbo.TableFood SET status = 'Có khách' WHERE id ="+id);
+            return data;
         }
     }
 }

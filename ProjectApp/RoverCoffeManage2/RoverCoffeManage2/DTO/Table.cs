@@ -1,20 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace RoverCoffeManage2.DTO
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Data;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
-    namespace QuanLyQuanCafe.DTO
-    {
+   
         public class Table
         {
             public Table(int id, string name, string status)
@@ -56,4 +49,4 @@ namespace RoverCoffeManage2.DTO
             }
         }
     }
- }
+ 

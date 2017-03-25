@@ -172,7 +172,7 @@ namespace MaterialSkin.Controls
         protected override void OnCreateControl()
         {
             base.OnCreateControl();
-            Font = SkinManager.ROBOTO_MEDIUM_10;
+            Font = SkinManager.Utm;
 
             if (DesignMode) return;
 

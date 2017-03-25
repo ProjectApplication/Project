@@ -247,7 +247,7 @@ namespace MaterialSkin
             ROBOTO_MEDIUM_11 = new Font(LoadFont(Resources.Roboto_Medium), 11f);
 
             //hàm này dùng để chỉnh font
-            Utm = new System.Drawing.Font("UTM Penumbra", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Utm = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             Utm18= new System.Drawing.Font("UTM Penumbra", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
             Theme = Themes.LIGHT;

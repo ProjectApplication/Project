@@ -98,7 +98,7 @@ namespace MaterialSkin.Controls
                 var currentTabIndex = _baseTabControl.TabPages.IndexOf(tabPage);
                 Brush textBrush = new SolidBrush(Color.FromArgb(CalculateTextAlpha(currentTabIndex, animationProgress), SkinManager.ColorScheme.TextColor));
                 // sửa chữ ở đây
-                g.DrawString(tabPage.Text.ToUpper(), SkinManager.Utm18, textBrush, _tabRects[currentTabIndex], new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
+                g.DrawString(tabPage.Text.ToUpper(), SkinManager.Utm, textBrush, _tabRects[currentTabIndex], new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center });
                 textBrush.Dispose();
             }
 

@@ -26,7 +26,7 @@ namespace RoverCoffeManage2.DAO
         //Parameter chứa các giá trị để tìm xuất ra dữ liệu
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
-            DataTable data = new DataTable(); 
+            DataTable data = new DataTable();
 
             using (SqlConnection connection = new SqlConnection(connectionSTR))
             {
@@ -48,7 +48,7 @@ namespace RoverCoffeManage2.DAO
                     }
                 }
 
-                SqlDataAdapter adapter = new SqlDataAdapter(command); 
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
 
                 adapter.Fill(data); // Chuyển từ datasource sang dataTable
 
@@ -126,6 +126,19 @@ namespace RoverCoffeManage2.DAO
             }
 
             return data;
+        }
+
+
+        public void ExecuteQuerysimple(string query)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+                connection.Open();
+
+                SqlCommand command = new SqlCommand(query, connection);
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
         }
     }
 }
