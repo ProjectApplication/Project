@@ -33,8 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>C:\Users\Dac Anh\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,6 +76,12 @@
     <Compile Include="fstaff.Designer.cs">
       <DependentUpon>fstaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="fSubform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSubform.Designer.cs">
+      <DependentUpon>fSubform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fAdmin.resx">
@@ -82,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fstaff.resx">
       <DependentUpon>fstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSubform.resx">
+      <DependentUpon>fSubform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

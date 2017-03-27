@@ -20,10 +20,10 @@ namespace RoverCoffeManage2
         {
             InitializeComponent();
             loadTable(); // gọi từ method load table
-            loadBillInfo(); // gọi từ method load food
             loadFoodCategory();// gọi từ method load foodcategory
         }
         #region Method load table
+        // hàm load dữ liệu của bàn ăn
         public void loadTable()
         {
             List<Table> tableList = TableDAO.Instance.LoadTableList();
@@ -41,7 +41,7 @@ namespace RoverCoffeManage2
                 btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White; // set màu khi rê chuột qua button
                 btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat; // set style =flat
                 btn.Size = new System.Drawing.Size(120, 120); // kích thước button
-                btn.Click += new System.EventHandler(btnTable_Click); ; // hàm này dùng để khởi tạo event cho mỗi button
+                btn.Click += new EventHandler(btnTable_Click); ; // hàm này dùng để khởi tạo event cho mỗi button
                 btn.Tag = item; // gắn đối tượng item cho mỗi btn , để dễ quản lý
 
                 //  btn.UseVisualStyleBackColor = false;
@@ -57,29 +57,33 @@ namespace RoverCoffeManage2
 
                 flpTable.Controls.Add(btn);// thêm button vào flow layout pannel (tự chia ô)
             }
-        }// hàm load dữ liệu của bàn ăn
+        }
         #endregion
         #region Method load BillInfo 
-        private void loadBillInfo()
+        // hàm load bill với note mặc định =null --discount ,bonus mặc định =0
+        private void loadBillInfo(int number, Food food, string note = null, int discount = 0, int bonus = 0)
         {
-
-            //List  data= FoodCategoryDAO.Instance.LoadFoodCategoryList();
-            //  lview_foodcategory.Items.Add(data);
-            //Define
-            var data = new[]
+            for (int i = 0; i < lview_Bill.Items.Count; i++) // chạy từ đầu đến cuối item của listview
+                if (food.Name.ToString().Equals(lview_Bill.Items[i].SubItems[0].Text) && note==null ) // nếu món muốn thêm đã có trong listview
+                {
+                    number += int.Parse(lview_Bill.Items[i].SubItems[1].Text);  // Cộng thêm số lượng
+                    lview_Bill.Items.Remove(lview_Bill.Items[i]); //xóa Item cũ 
+                }
+            //khởi tạo và truyền dữ liệu của food , number
+            if (number != 0)// nếu số lượng ==0 thì không thêm vào bill
             {
-                new []{"Lollipop", "392", "0.2", "0"},
-                new []{"KitKat", "518", "26.0", "7"},
-                new []{"Ice cream sandwich", "237", "9.0", "4.3"},
-                new []{"Jelly Bean", "375", "0.0", "0.0"},
-                new []{"Honeycomb", "408", "3.2", "6.5"}
-            };
-
-            //Add
-            foreach (string[] version in data)
-            {
-                var item = new ListViewItem(version);
-                lview_foodcategory.Items.Add(item);
+                var data = new[] {
+                food.Name.ToString(), // tên món ăn
+                number.ToString(), //số lượng
+                food.Price.ToString(), //giá
+                discount.ToString(),// giảm giá
+                bonus.ToString(), // order thêm
+                note == null ? "Không có ghi chú" : note.ToString(), //ghi chú
+                (food.Price * number+ bonus -(100*(double)discount/(food.Price * number))).ToString() };//= thành tiền + tiền bonus - giảm giá (%)
+                
+                var item = new ListViewItem(data); // truyền dữ liệu vào item của listview
+                lview_Bill.Items.Add(item);// thêm item vào listview
+                lview_Bill.Sorting = SortOrder.Ascending; // tự động sắp xếp theo alphaB
             }
         }
 
@@ -93,7 +97,7 @@ namespace RoverCoffeManage2
                 MaterialRaisedButton btn = new MaterialRaisedButton();// khởi tạo một raisedButton
                 btn.Text = item.Name;// set tên của button
                 btn.Cursor = System.Windows.Forms.Cursors.Hand; // khi chỉ vào button có hình bàn tay
-                btn.Size = new System.Drawing.Size(100, 60); // kích thước button
+                btn.Size = new System.Drawing.Size(98, 60); // kích thước button
                  btn.Click += new System.EventHandler(btnFoodCategory_Click); ; // hàm này dùng để khởi tạo event cho mỗi button
                  btn.Tag = item; // gắn đối tượng item cho mỗi btn , để dễ quản lý
                 flpCategory.Controls.Add(btn);// thêm button vào flow layout category
@@ -111,12 +115,15 @@ namespace RoverCoffeManage2
                 MaterialRaisedButton btn = new MaterialRaisedButton();//khởi tạo một reisedbutton
                 btn.Text = item.Name +Environment.NewLine+item.Price; // gán tên và giá cho button text
                 btn.Cursor = System.Windows.Forms.Cursors.Hand;// kkhi chỉ vào button có hình bàn tay
-                btn.Size = new System.Drawing.Size(100, 60); //chỉnh kích thước của button
+                btn.Size = new System.Drawing.Size(95, 60); //chỉnh kích thước của button
+                btn.Click += new EventHandler(btnFood_Click);//khởi tạo event khi nhấn chuột trái
+                btn.MouseDown += new MouseEventHandler(btnFood_MouseClick);
+                btn.Tag = item;// gắn tag cho button
                 flpFood.Controls.Add(btn);// thêm button vào flow layout category
             }
         }
         #endregion
-        #region Method process button of table , handle listview 
+        #region Method process button, handle listview 
         private void btnTable_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button; // chuyền thông tin từ button trong layout đến btn này
@@ -129,15 +136,53 @@ namespace RoverCoffeManage2
             flpTable.Controls.Clear();// xóa flow layout pannel bàn ăn
             loadTable();// load danh sách bàn ăn thông qua method load table
         }
-
+        // Sự kiện hiển thị món ăn ứng với category
         private void btnFoodCategory_Click(object sender, EventArgs e)
         {
             flpFood.Controls.Clear();// xóa layout trước khi thêm button mới
             Button btn = sender as Button;// chuyền thông tin từ button trong layout đến btn này
             FoodCategory foodCategory = btn.Tag as FoodCategory;//chuyền thông tin từ tag của button qua table mớ
             loadFood(foodCategory.Id);// load danh sách bàn ăn thông qua method load table
-
         }
+        // Sự kiện thêm món ăn vào bill khi nhắn vào button food
+        private void btnFood_Click(object sender, EventArgs e)
+        {
+            Food food = (sender as Button).Tag as Food; // gán food cho button
+            loadBillInfo(1,food);// set số lượng và object food đã lấy ở tag button truyền vào
+            double totalPrice = 0; // khởi tạo giá trị tổng số tiền
+           for (int i = 0; i < lview_Bill.Items.Count; i++)             
+              totalPrice += Double.Parse( lview_Bill.Items[i].SubItems[6].Text); // dùng vòng for tính tổng số tiền
+            label_price.Text = totalPrice.ToString();//set label giá = tổng tiền
+        }
+        //tạo context menu khi nhắn chuột phải ở khung food
+        private void btnFood_MouseClick(object sender, MouseEventArgs e)
+        {
+            MenuItem addNote = new MenuItem("Ghi Chú"); // tạo mới menu item ghi chú
+            addNote.Tag = (sender as Button).Tag as Food; // gán tag của menuItem = tag của button
+            if (e.Button == MouseButtons.Right) // nếu kick = chuột phải
+            {
+                ContextMenu m = new ContextMenu(); //tạo context Menu
+                m.MenuItems.Add(addNote); //thêm item ghi chú vào
+                m.MenuItems.Add(new MenuItem("Copy"));
+                m.MenuItems.Add(new MenuItem("Paste"));
+
+                m.Show(flpFood, new Point(e.X, e.Y)); // hiện thị context menu ở vị trí của event
+
+            }
+            addNote.Click += new EventHandler(menuItemAddNote_Click); // khởi tạo sự kiện cho menu item ghi chú
+        }
+        List<string> list = new List<string>(); // khởi tạo 1 list string để lưu info của subform
+        //hàm này dùng để nhận event khi nhắn thêm ghi chú ở menu food
+        private void menuItemAddNote_Click(object sender, EventArgs e)
+        {
+            fSubform subForm = new fSubform();//tạo mới subform
+            subForm.ShowDialog();// hiện subform
+            list = subForm.getListInfoFromSubForm();//list[0]= số lượng , list[1] = ghi chú,list[2] =giảm giá , list[3] = tăng giá
+            loadBillInfo(int.Parse(list[0]), (sender as MenuItem).Tag as Food, list[1], int.Parse(list[2]), int.Parse(list[3]));
+            list.Clear();// giải phóng list
+            
+        }
+
         private void lview_foodcategory_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -149,7 +194,7 @@ namespace RoverCoffeManage2
                     m.MenuItems.Add(new MenuItem("Cut"));
                     m.MenuItems.Add(new MenuItem("Copy"));
                     m.MenuItems.Add(new MenuItem("Paste"));
-                    m.Show(lview_foodcategory, new Point(e.X, e.Y));
+                    m.Show(lview_Bill, new Point(e.X, e.Y));
                 }
 
                 else//left or middle click
@@ -162,6 +207,7 @@ namespace RoverCoffeManage2
 
         #endregion
 
+     
     }
 }
 
