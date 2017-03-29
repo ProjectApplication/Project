@@ -51,10 +51,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\BillDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\FoodCategoryDAO.cs" />
     <Compile Include="DAO\FoodDAO.cs" />
     <Compile Include="DAO\TableDAO.cs" />
+    <Compile Include="DTO\Bill.cs" />
     <Compile Include="DTO\Food.cs" />
     <Compile Include="DTO\FoodCategory.cs" />
     <Compile Include="DTO\Table.cs" />
@@ -82,6 +84,12 @@
     <Compile Include="fSubform.Designer.cs">
       <DependentUpon>fSubform.cs</DependentUpon>
     </Compile>
+    <Compile Include="OptionTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OptionTable.Designer.cs">
+      <DependentUpon>OptionTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fAdmin.resx">
@@ -95,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fSubform.resx">
       <DependentUpon>fSubform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionTable.resx">
+      <DependentUpon>OptionTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

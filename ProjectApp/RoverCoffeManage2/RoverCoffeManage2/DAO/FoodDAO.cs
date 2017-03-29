@@ -53,6 +53,11 @@ namespace RoverCoffeManage2.DAO
             }
             return listFood;
         }
+        public DataTable tableFood()
+        {
+             DataTable data = DataProvider.Instance.ExecuteQuery("USP_showAllfood"); // show tất cả món ăn
+            return data;
+        }
     }
 
 }

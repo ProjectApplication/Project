@@ -24,9 +24,8 @@ namespace RoverCoffeManage2
         {
             List<string> listInfo = new List<string>();
             listInfo.Add(txt_Numberic.Text = txt_Numberic.Text=="" ? "0":txt_Numberic.Text);
-            listInfo.Add(txt_Note.Text=txt_Note.Text=="" ? null:txt_Note.Text);
-            listInfo.Add(txt_DissCount.Text =txt_DissCount.Text==""? "0":txt_DissCount.Text);
-            listInfo.Add(txt_Bonus.Text = txt_Bonus.Text==""?"0":txt_Bonus.Text);
+            listInfo.Add(txt_DissCount.Text = txt_DissCount.Text == "" ? "0" : txt_DissCount.Text);
+            listInfo.Add(txt_Note.Text=txt_Note.Text=="" ? "Không có ghi chú":txt_Note.Text);
             return listInfo;
         }
         private void btn_OK_Click(object sender, EventArgs e)

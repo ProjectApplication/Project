@@ -5,13 +5,8 @@ using RoverCoffeManage2.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace RoverCoffeManage2
 {
     public partial class fAdmin : MyForm
@@ -22,6 +17,7 @@ namespace RoverCoffeManage2
             loadTable(); // gọi từ method load table
             loadFoodCategory();// gọi từ method load foodcategory
         }
+        #region HomePage
         #region Method load table
         // hàm load dữ liệu của bàn ăn
         public void loadTable()
@@ -40,7 +36,7 @@ namespace RoverCoffeManage2
                 btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White; //set màu khi nhắn button
                 btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White; // set màu khi rê chuột qua button
                 btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat; // set style =flat
-                btn.Size = new System.Drawing.Size(120, 120); // kích thước button
+                btn.Size = new System.Drawing.Size(110, 110); // kích thước button
                 btn.Click += new EventHandler(btnTable_Click); ; // hàm này dùng để khởi tạo event cho mỗi button
                 btn.Tag = item; // gắn đối tượng item cho mỗi btn , để dễ quản lý
 
@@ -60,33 +56,38 @@ namespace RoverCoffeManage2
         }
         #endregion
         #region Method load BillInfo 
-        // hàm load bill với note mặc định =null --discount ,bonus mặc định =0
-        private void loadBillInfo(int number, Food food, string note = null, int discount = 0, int bonus = 0)
+        // hàm load bill 
+        private void loadBillInfo(Food food, int number,  float discount = 0,string note = "Không có ghi chú")
         {
-            for (int i = 0; i < lview_Bill.Items.Count; i++) // chạy từ đầu đến cuối item của listview
-                if (food.Name.ToString().Equals(lview_Bill.Items[i].SubItems[0].Text) && note==null ) // nếu món muốn thêm đã có trong listview
-                {
-                    number += int.Parse(lview_Bill.Items[i].SubItems[1].Text);  // Cộng thêm số lượng
-                    lview_Bill.Items.Remove(lview_Bill.Items[i]); //xóa Item cũ 
-                }
-            //khởi tạo và truyền dữ liệu của food , number
-            if (number != 0)// nếu số lượng ==0 thì không thêm vào bill
+            double totalPrice = 0;// tổng giá 
+            // load dữ liệu food lên dtgv
+            foreach (DataGridViewRow items in DTGV_bill.Rows) // cứ mỗi hàng trên datagridview
             {
-                var data = new[] {
-                food.Name.ToString(), // tên món ăn
-                number.ToString(), //số lượng
-                food.Price.ToString(), //giá
-                discount.ToString(),// giảm giá
-                bonus.ToString(), // order thêm
-                note == null ? "Không có ghi chú" : note.ToString(), //ghi chú
-                (food.Price * number+ bonus -(100*(double)discount/(food.Price * number))).ToString() };//= thành tiền + tiền bonus - giảm giá (%)
-                
-                var item = new ListViewItem(data); // truyền dữ liệu vào item của listview
-                lview_Bill.Items.Add(item);// thêm item vào listview
-                lview_Bill.Sorting = SortOrder.Ascending; // tự động sắp xếp theo alphaB
+                if (food.Name.Equals(items.Cells[0].Value) && note == "Không có ghi chú") // nếu trùng tên cột 0 == "TÊN MÓN"
+                {
+                    number += (int)(items.Cells[1].Value); // Cộng dồn số lượng
+                    DTGV_bill.Rows.Remove(items); // xóa hàng cũ
+                }
+               
             }
+            DTGV_bill.Rows.Add(food.Name, number, food.Price*number, discount, note, food.Price * number - ((food.Price * number) * (double)discount /100 ));//thêm dữ liệu vào datagridview
+                              //[tên món][số lượng]      [Giá]       [Giảm giá]                         [Thành tiền sau khi đã trừ đi % giảm giá]
+            DTGV_bill.Sort(DTGV_bill.Columns[0], ListSortDirection.Ascending);//sắp xếp theo tên món 
+            loadPrice();
         }
-
+        // hàm tính tổng tiền 
+        private void loadPrice()
+        {
+            double totalPrice = 0;
+            foreach (DataGridViewRow items in DTGV_bill.Rows) // cứ mỗi hàng trên datagridview
+            {
+                if (items.Cells[5].Value != null)
+                    totalPrice += (double)(items.Cells[5].Value); // cộng dồn giá tiền
+            }
+            lb_price.Text = totalPrice.ToString();//gán giá trị cho label price
+            txt_Pay.Text = totalPrice - (totalPrice * (float.Parse(txt_Discount.Text) / 100)) + " "; //gán giá trị cho text thanh toán
+                                                                                                     // set text cho tổng giá 
+        }
         #endregion
         #region Method load food category
         public void loadFoodCategory()
@@ -116,14 +117,15 @@ namespace RoverCoffeManage2
                 btn.Text = item.Name +Environment.NewLine+item.Price; // gán tên và giá cho button text
                 btn.Cursor = System.Windows.Forms.Cursors.Hand;// kkhi chỉ vào button có hình bàn tay
                 btn.Size = new System.Drawing.Size(95, 60); //chỉnh kích thước của button
-                btn.Click += new EventHandler(btnFood_Click);//khởi tạo event khi nhấn chuột trái
-                btn.MouseDown += new MouseEventHandler(btnFood_MouseClick);
+                 btn.Click += new EventHandler(btnFood_Click);//khởi tạo event khi nhấn chuột trái
+             btn.MouseDown += new MouseEventHandler(btnFood_MouseClick);
                 btn.Tag = item;// gắn tag cho button
                 flpFood.Controls.Add(btn);// thêm button vào flow layout category
             }
         }
         #endregion
-        #region Method process button, handle listview 
+        #region Method process button, handle datagridview
+        // hàm xử lý trên button table
         private void btnTable_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button; // chuyền thông tin từ button trong layout đến btn này
@@ -148,11 +150,7 @@ namespace RoverCoffeManage2
         private void btnFood_Click(object sender, EventArgs e)
         {
             Food food = (sender as Button).Tag as Food; // gán food cho button
-            loadBillInfo(1,food);// set số lượng và object food đã lấy ở tag button truyền vào
-            double totalPrice = 0; // khởi tạo giá trị tổng số tiền
-           for (int i = 0; i < lview_Bill.Items.Count; i++)             
-              totalPrice += Double.Parse( lview_Bill.Items[i].SubItems[6].Text); // dùng vòng for tính tổng số tiền
-            label_price.Text = totalPrice.ToString();//set label giá = tổng tiền
+            loadBillInfo(food, 1);
         }
         //tạo context menu khi nhắn chuột phải ở khung food
         private void btnFood_MouseClick(object sender, MouseEventArgs e)
@@ -177,37 +175,78 @@ namespace RoverCoffeManage2
         {
             fSubform subForm = new fSubform();//tạo mới subform
             subForm.ShowDialog();// hiện subform
-            list = subForm.getListInfoFromSubForm();//list[0]= số lượng , list[1] = ghi chú,list[2] =giảm giá , list[3] = tăng giá
-            loadBillInfo(int.Parse(list[0]), (sender as MenuItem).Tag as Food, list[1], int.Parse(list[2]), int.Parse(list[3]));
+            list = subForm.getListInfoFromSubForm();//list[0]= số lượng , list[1] = giảm giá,list[2] =Ghi chú
+            loadBillInfo((sender as MenuItem).Tag as Food, int.Parse(list[0]), float.Parse(list[1]), list[2]);//load dữ liệu lên DTGV
             list.Clear();// giải phóng list
-            
         }
-
-        private void lview_foodcategory_MouseClick(object sender, MouseEventArgs e)
+          // Thay đổi giá trị của text tiền thối cho khách
+        private void txt_MoneyOfCus_OnValueChanged(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
+            if (txt_MoneyOfCus.Text != "") // nếu bắt đầu nhập thì thay đổi giá trị của text tiền thừa
+                txt_ExcessCash.Text = long.Parse(txt_MoneyOfCus.Text) - long.Parse(txt_Pay.Text) + "";
+            else
+                txt_ExcessCash.Text = "0"; // nếu không nhập thì text tiền thừa có giá trị =0
+        }
+        //Xử lý sự kiện của datagridview
+        private void DTGV_bill_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            if (e.ColumnIndex == 6) //nếu bấm vào nút xóa
             {
-
-                if (e.Button == MouseButtons.Right)
+                if (DTGV_bill.CurrentRow.Index < DTGV_bill.RowCount - 1)   // không bị lỗi khi bấm vào dòng trống cuối cùng
                 {
-                    ContextMenu m = new ContextMenu();
-                    m.MenuItems.Add(new MenuItem("Cut"));
-                    m.MenuItems.Add(new MenuItem("Copy"));
-                    m.MenuItems.Add(new MenuItem("Paste"));
-                    m.Show(lview_Bill, new Point(e.X, e.Y));
-                }
-
-                else//left or middle click
-                {
-                    MessageBox.Show("1234");
-                    //do something here
+                    DTGV_bill.Rows.RemoveAt(DTGV_bill.CurrentRow.Index); // index 6 = button delete 
+                    loadPrice();// khi xóa xong thì load lại giá
                 }
             }
         }
+        #endregion
+
 
         #endregion
 
-     
+        #region ManagePage
+        private void bunifuImageButton1_Click_1(object sender, EventArgs e)
+        {
+            if (sideMenu.Width == 50)
+            {
+
+                sideMenu.Visible = false;
+                sideMenu.Width = 200;
+                sideA.MaxAnimationTime = 4;
+                sideA.ShowSync(sideMenu);
+                LogoA.ShowSync(logo);
+
+            }
+            else
+            {
+                LogoA.Hide(logo);
+                sideMenu.Visible = false;
+                sideMenu.Width = 50;
+                sideA.ShowSync(sideMenu);
+
+
+            }
+        }
+
+        private void btn_ClearBill_Click(object sender, EventArgs e)
+        {
+            DTGV_bill.DataSource = null;
+            DTGV_bill.Rows.Clear();
+            lb_price.Text = "0";
+            txt_Pay.Text = "0";
+        }
+
+        private void btn_table_Click(object sender, EventArgs e)
+        {
+            OptionTable optiontable = new RoverCoffeManage2.OptionTable();
+
+            optiontable.Dock = System.Windows.Forms.DockStyle.Fill;
+
+            panelMain.Controls.Add(optiontable);
+        }
+
     }
+    #endregion
 }
 
