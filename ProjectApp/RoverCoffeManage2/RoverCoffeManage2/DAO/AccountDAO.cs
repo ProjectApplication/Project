@@ -27,7 +27,7 @@ namespace RoverCoffeManage2.DAO
         {
             
             // truy vấn các username và password trong database để kiểm tra
-            string query = "USP_Login @userName , @passWord";
+            string query = "proc_Login @userName , @passWord";
 
 
             //Lấy ra bảng dữ liệu account

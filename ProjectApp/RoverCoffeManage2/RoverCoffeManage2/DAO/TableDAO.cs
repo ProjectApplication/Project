@@ -27,7 +27,7 @@ namespace RoverCoffeManage2.DAO
         {
             List<Table> tableList = new List<Table>();
 
-            DataTable data = DataProvider.Instance.ExecuteQuery("USP_GetTableList");
+            DataTable data = DataProvider.Instance.ExecuteQuery("proc_GetTableList");
 
             foreach (DataRow item in data.Rows)
             {
@@ -37,10 +37,9 @@ namespace RoverCoffeManage2.DAO
 
             return tableList;
         }
-        public int updateStatus(int id)
+        public int updateStatus(string status ,int id)
         {
-            int data = DataProvider.Instance.ExecuteNonQuery("UPDATE dbo.TableFood SET status = 'Có khách' WHERE id ="+id);
-            return data;
+            return DataProvider.Instance.ExecuteNonQuery("proc_UpdateStatus  N'" + status+"',"+id); 
         }
     }
 }

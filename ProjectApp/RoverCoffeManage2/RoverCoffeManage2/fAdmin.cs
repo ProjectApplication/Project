@@ -22,7 +22,7 @@ namespace RoverCoffeManage2
         // hàm load dữ liệu của bàn ăn
         public void loadTable()
         {
-            List<Table> tableList = TableDAO.Instance.LoadTableList();
+            List<Table> tableList = TableDAO.Instance.LoadTableList();// lấy list table
 
             foreach (Table item in tableList)
             {
@@ -39,15 +39,13 @@ namespace RoverCoffeManage2
                 btn.Size = new System.Drawing.Size(110, 110); // kích thước button
                 btn.Click += new EventHandler(btnTable_Click); ; // hàm này dùng để khởi tạo event cho mỗi button
                 btn.Tag = item; // gắn đối tượng item cho mỗi btn , để dễ quản lý
-
-                //  btn.UseVisualStyleBackColor = false;
                 switch (item.Status)
                 {
                     case "Trống": // nếu bàn nào còn trống thì chỉnh màu khác 
-                        btn.Image = global::RoverCoffeManage2.Properties.Resources.Ellipse;// màu cam
+                        btn.Image = Properties.Resources.Ellipse;// màu cam
                         break;
                     default:
-                        btn.Image = global::RoverCoffeManage2.Properties.Resources.Ellipse_2;//màu xanh
+                        btn.Image = Properties.Resources.Ellipse_2;//màu xanh
                         break;
                 }
 
@@ -85,7 +83,7 @@ namespace RoverCoffeManage2
                     totalPrice += (double)(items.Cells[5].Value); // cộng dồn giá tiền
             }
             lb_price.Text = totalPrice.ToString();//gán giá trị cho label price
-            txt_Pay.Text = totalPrice - (totalPrice * (float.Parse(txt_Discount.Text) / 100)) + " "; //gán giá trị cho text thanh toán
+            txt_Pay.Text = totalPrice - (totalPrice * (double.Parse(txt_Discount.Text) / 100)) + " "; //gán giá trị cho text thanh toán
                                                                                                      // set text cho tổng giá 
         }
         #endregion
@@ -97,9 +95,9 @@ namespace RoverCoffeManage2
             {
                 MaterialRaisedButton btn = new MaterialRaisedButton();// khởi tạo một raisedButton
                 btn.Text = item.Name;// set tên của button
-                btn.Cursor = System.Windows.Forms.Cursors.Hand; // khi chỉ vào button có hình bàn tay
-                btn.Size = new System.Drawing.Size(98, 60); // kích thước button
-                 btn.Click += new System.EventHandler(btnFoodCategory_Click); ; // hàm này dùng để khởi tạo event cho mỗi button
+                btn.Cursor = Cursors.Hand; // khi chỉ vào button có hình bàn tay
+                btn.Size = new Size(98, 60); // kích thước button
+                 btn.Click += new EventHandler(btnFoodCategory_Click); ; // hàm này dùng để khởi tạo event cho mỗi button
                  btn.Tag = item; // gắn đối tượng item cho mỗi btn , để dễ quản lý
                 flpCategory.Controls.Add(btn);// thêm button vào flow layout category
             }
@@ -128,13 +126,14 @@ namespace RoverCoffeManage2
         // hàm xử lý trên button table
         private void btnTable_Click(object sender, EventArgs e)
         {
-            Button btn = sender as Button; // chuyền thông tin từ button trong layout đến btn này
-            Table table = btn.Tag as Table;//chuyền thông tin từ tag của button qua table mớ
-            if (table.Status.Equals("trống"))
-                btn.Image = global::RoverCoffeManage2.Properties.Resources.Ellipse;// thay nền xanh thành cam (chưa có người)
+            Table table = (sender as Button).Tag as Table;//chuyền thông tin từ tag của button qua table mớ
+            if (table.Status == "Trống")
+            { 
+                TableDAO.Instance.updateStatus("Có khách",table.ID); //Cập nhật lại trạng thái của bàn ăn
+                txt_table.Text = ""+table.ID;
+            }
             else
-                btn.Image = global::RoverCoffeManage2.Properties.Resources.Ellipse_2;// thay nền cam thành xanh (đã có người)
-            TableDAO.Instance.updateStatus(table.ID); //Cập nhật lại trạng thái của bàn ăn
+                TableDAO.Instance.updateStatus("Trống", table.ID); //Cập nhật lại trạng thái của bàn ăn
             flpTable.Controls.Clear();// xóa flow layout pannel bàn ăn
             loadTable();// load danh sách bàn ăn thông qua method load table
         }
@@ -163,7 +162,6 @@ namespace RoverCoffeManage2
                 m.MenuItems.Add(addNote); //thêm item ghi chú vào
                 m.MenuItems.Add(new MenuItem("Copy"));
                 m.MenuItems.Add(new MenuItem("Paste"));
-
                 m.Show(flpFood, new Point(e.X, e.Y)); // hiện thị context menu ở vị trí của event
 
             }
@@ -182,10 +180,10 @@ namespace RoverCoffeManage2
           // Thay đổi giá trị của text tiền thối cho khách
         private void txt_MoneyOfCus_OnValueChanged(object sender, EventArgs e)
         {
-            if (txt_MoneyOfCus.Text != "") // nếu bắt đầu nhập thì thay đổi giá trị của text tiền thừa
-                txt_ExcessCash.Text = long.Parse(txt_MoneyOfCus.Text) - long.Parse(txt_Pay.Text) + "";
-            else
-                txt_ExcessCash.Text = "0"; // nếu không nhập thì text tiền thừa có giá trị =0
+                if (txt_MoneyOfCus.Text != "" && txt_Pay.Text != "") // nếu bắt đầu nhập thì thay đổi giá trị của text tiền thừa
+                    txt_ExcessCash.Text = long.Parse(txt_MoneyOfCus.Text) - long.Parse(txt_Pay.Text) + "";
+                else
+                    txt_ExcessCash.Text = "0"; // nếu không nhập thì text tiền thừa có giá trị =0 
         }
         //Xử lý sự kiện của datagridview
         private void DTGV_bill_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -200,10 +198,55 @@ namespace RoverCoffeManage2
                 }
             }
         }
+        private double singlePrice = 0; //khởi tạo giá trị đơn giá để lưu
+        private void DTGV_bill_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            if (DTGV_bill.Rows[e.RowIndex].Cells[1].Value != null && DTGV_bill.Rows[e.RowIndex].Cells[3].Value != null)//nếu cộng số lượng và giảm giá = null thì không tính
+                singlePrice = float.Parse(DTGV_bill.Rows[e.RowIndex].Cells[2].Value.ToString()) / float.Parse(DTGV_bill.Rows[e.RowIndex].Cells[1].Value.ToString());//gán giá trị của đơn giá
+        }
+        private void DTGV_bill_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            if (DTGV_bill.Rows[e.RowIndex].Cells[1].Value != null && DTGV_bill.Rows[e.RowIndex].Cells[3].Value != null)//nếu cộng số lượng và giảm giá = null thì không tính
+                if (e.ColumnIndex == 1 || e.ColumnIndex==3)//nếu thay đổi giá trị ở cột số lượng hoặc giảm giá
+            { 
+                DTGV_bill.Rows[e.RowIndex].Cells[2].Value=singlePrice* double.Parse( DTGV_bill.Rows[e.RowIndex].Cells[1].Value.ToString());//gán giá trị [thành tiền]
+                DTGV_bill.Rows[e.RowIndex].Cells[5].Value = double.Parse(DTGV_bill.Rows[e.RowIndex].Cells[2].Value.ToString()) *(1- double.Parse(DTGV_bill.Rows[e.RowIndex].Cells[3].Value.ToString())/100); // giảm giá
+                loadPrice();// sau khi thay đổi giá trị thì load lại giá
+            }
+            
+        }
+
+        #endregion
+        #region exception
+        // xử lý exception => không cho nhập chữ
+        private void KeyPress_OnlyNumber(object sender, KeyPressEventArgs e)
+        {
+            
+            if (!char.IsDigit(e.KeyChar)) // hàm này chỉ cho phép nhập số , không cho nhập chữ
+            {
+                e.Handled = true;
+            }
+            //&& (e.KeyChar != '.')
+        }
+        private void DTGV_bill_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            
+            e.Control.KeyPress += new KeyPressEventHandler(KeyPress_OnlyNumber);
+            if (DTGV_bill.CurrentCell.ColumnIndex == 1 && DTGV_bill.CurrentCell.ColumnIndex == 3) //Desired Column
+            {
+                TextBox tb = e.Control as TextBox;
+                if (tb != null)
+                {
+                    tb.KeyPress += new KeyPressEventHandler(KeyPress_OnlyNumber);
+                }
+            }
+        }
+
+       
+        #endregion
         #endregion
 
 
-        #endregion
 
         #region ManagePage
         private void bunifuImageButton1_Click_1(object sender, EventArgs e)
@@ -246,7 +289,18 @@ namespace RoverCoffeManage2
             panelMain.Controls.Add(optiontable);
         }
 
+        private void btn_printBill_Click(object sender, EventArgs e)
+        {
+            //BillDAO.Instance.insertBill(int.Parse(txt_table.Text),int.Parse(txt_Discount.Text));
+            btn_ClearBill_Click(sender, e);
+            txt_table.Text="";
+            txt_Pay.Text="";
+            txt_MoneyOfCus.Text ="";
+            txt_ExcessCash.Text="";
+        }
     }
     #endregion
+
+
 }
 

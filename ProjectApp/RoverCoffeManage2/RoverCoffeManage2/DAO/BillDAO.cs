@@ -25,22 +25,26 @@ namespace RoverCoffeManage2.DAO
                 instance = value;
             }
         }
-        public DataRow getBill(string foodName, int number, double price, float dissCount = 0, string note = "")
+        public int insertBill(int idTable, int discount)
         {
+            return DataProvider.Instance.ExecuteNonQuery("proc_InsertBill " + idTable + "," + discount);
+        }
+        //public DataRow getBill(string foodName, int number, double price, float dissCount = 0, string note = "")
+        //{
 
-            DataTable table = new DataTable();
+        //    DataTable table = new DataTable();
 
-            DataRow billInfo = table.NewRow();
-            Bill bill= new Bill(foodName, number, price, dissCount, note);
-            //billInfo[0] = bill.FoodName;
-            //billInfo[1] = bill.Number;
-            //billInfo[2] = bill.Price;
-            //billInfo[3] = bill.DissCount;
-            //billInfo[4] = bill.Note;
+        //    DataRow billInfo = table.NewRow();
+        //  //  Bill bill= new Bill(foodName, number, price, dissCount, note);
+        //    //billInfo[0] = bill.FoodName;
+        //    //billInfo[1] = bill.Number;
+        //    //billInfo[2] = bill.Price;
+        //    //billInfo[3] = bill.DissCount;
+        //    //billInfo[4] = bill.Note;
              
             
             
-            return billInfo;
-        } 
+        //    return billInfo;
+        //} 
     }
 }

@@ -27,21 +27,10 @@ namespace RoverCoffeManage2
             String password = tbPassWord.Text;
             if (Login(username, password))
             {
-
-                if (DAO.AccountDAO.Instance.getTypeOfAccount(username) == 1)
-                {
                     fAdmin fadmin = new fAdmin();
                     this.Hide();//ẩn form login
                     fadmin.ShowDialog();//hiện form admin
                     this.Show();
-                }
-                else
-                {
-                    fstaff fstaff = new fstaff();
-                    this.Hide();//ẩn form staff
-                    fstaff.ShowDialog();//hiện form staff
-                    this.Show();
-                }
             }
             else
 

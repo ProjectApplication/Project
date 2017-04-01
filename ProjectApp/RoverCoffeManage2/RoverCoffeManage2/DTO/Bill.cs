@@ -6,75 +6,81 @@ using System.Threading.Tasks;
 
 namespace RoverCoffeManage2.DTO
 {
-    public class Bill
+    public class BillInfo
     {
-        private string foodName;
+        private string id;
 
-        private int number;
+        private string idBill;
 
-        private double price;
+        private string idFood;
 
-        private float dissCount;
+        private int quantity;
+
+        private int discount;
 
         private string note;
-        public Bill(string foodName, int number, double price ,float dissCount =0,string note="")
-        {
-            this.foodName = foodName;
-            this.number = number;
-            this.price = price;
-            this.dissCount = dissCount;
-            if (note == "") this.note = "Không có ghi chú";
-        }
-
-        public string FoodName
+        public string Id
         {
             get
             {
-                return foodName;
+                return id;
             }
 
             set
             {
-                foodName = value;
+                id = value;
             }
         }
 
-        public int Number
+        public string IdBill
         {
             get
             {
-                return number;
+                return idBill;
             }
 
             set
             {
-                number = value;
+                idBill = value;
             }
         }
 
-        public double Price
+        public string IdFood
         {
             get
             {
-                return price;
+                return idFood;
             }
 
             set
             {
-                price = value;
+                idFood = value;
             }
         }
 
-        public float DissCount
+        public int Quantity
         {
             get
             {
-                return dissCount;
+                return quantity;
             }
 
             set
             {
-                dissCount = value;
+                quantity = value;
+            }
+        }
+
+        public int Discount
+        {
+            get
+            {
+                return discount;
+            }
+
+            set
+            {
+                discount = value;
             }
         }
 
@@ -90,5 +96,17 @@ namespace RoverCoffeManage2.DTO
                 note = value;
             }
         }
+
+        public BillInfo(string id,string idBill, string idFood ,int quantity =0,int discount=0,string note="Không Có Ghi Chú")
+        {
+            this.id = id;
+            this.idBill = idBill;
+            this.idFood = idFood;
+            this.quantity = quantity;
+            this.discount = discount;
+           this.note=note;
+        }
+        
+
     }
 }

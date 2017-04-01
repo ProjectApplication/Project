@@ -24,16 +24,11 @@ namespace RoverCoffeManage2.DAO
                 FoodCategoryDAO.instance = value;
             }
         }
-        //public DataTable LoadFoodCategoryList()
-        //{
-        //    DataTable data = DataProvider.Instance.ExecuteQuery("USP_getNameOfFoodCategory");// thực hiện thủ tục để lấy về thông tin danh mục thức ăn
-        //    return data;
-        //}
         public List<FoodCategory> LoadFoodCategoryList()
         {
             List<FoodCategory> tableList = new List<FoodCategory>();
 
-            DataTable data = DataProvider.Instance.ExecuteQuery("USP_getFoodCategory");
+            DataTable data = DataProvider.Instance.ExecuteQuery("proc_GetFoodCategory");
 
             foreach (DataRow item in data.Rows)
             {
