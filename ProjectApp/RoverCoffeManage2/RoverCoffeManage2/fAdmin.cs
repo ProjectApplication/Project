@@ -5,7 +5,6 @@ using RoverCoffeManage2.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 namespace RoverCoffeManage2
@@ -182,7 +181,17 @@ namespace RoverCoffeManage2
         private void txt_MoneyOfCus_OnValueChanged(object sender, EventArgs e)
         {
                 if (txt_MoneyOfCus.Text != "" && txt_Pay.Text != "") // nếu bắt đầu nhập thì thay đổi giá trị của text tiền thừa
-                    txt_ExcessCash.Text = long.Parse(txt_MoneyOfCus.Text) - long.Parse(txt_Pay.Text) + "";
+                {
+                if (int.Parse(txt_MoneyOfCus.Text) > 10000000)
+                { 
+                    MessageBox.Show("Bạn không được nhập quá 10 triệu VND");
+                    txt_MoneyOfCus.Text="";
+                    txt_ExcessCash.Text = "0";
+                }
+                else
+                txt_ExcessCash.Text = long.Parse(txt_MoneyOfCus.Text) - long.Parse(txt_Pay.Text) + "";
+                
+                }
                 else
                     txt_ExcessCash.Text = "0"; // nếu không nhập thì text tiền thừa có giá trị =0 
         }
@@ -216,18 +225,41 @@ namespace RoverCoffeManage2
             }
             
         }
+        private void btn_printBill_Click(object sender, EventArgs e)
+        {
 
+            if (txt_table.Text != "" && txt_MoneyOfCus.Text != "")
+            {
+              BillDAO.Instance.insertBill(int.Parse(txt_table.Text), int.Parse(txt_Discount.Text));
+                foreach (DataGridViewRow items in DTGV_bill.Rows)
+                {
+                    if (items.Cells[0].Value != null)
+                    {
+                        int idBill = (int)DataProvider.Instance.ExecuteScalar("proc_GetIdOfLastRowBill");
+                        string IDfood = (string)DataProvider.Instance.ExecuteScalar("proc_GetIdFood " + "N'" + items.Cells[0].Value + "'");
+                        int quantity = int.Parse(items.Cells[1].Value.ToString());
+                        int discount = int.Parse(items.Cells[3].Value.ToString());
+                    DataProvider.Instance.ExecuteNonQuery("proc_InsertBillInfo " +idBill + ",N'" + IDfood + "'," + quantity + "," + discount);
+                    }
+                } 
+                btn_ClearBill_Click(sender, e);
+                txt_table.Text = "";
+                txt_Pay.Text = "";
+                txt_MoneyOfCus.Text = "";
+                txt_ExcessCash.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Bạn phải nhập đầy đủ thông tin");
+            }
+        }
         #endregion
         #region exception
         // xử lý exception => không cho nhập chữ
         private void KeyPress_OnlyNumber(object sender, KeyPressEventArgs e)
         {
-            
-            if (!char.IsDigit(e.KeyChar)) // hàm này chỉ cho phép nhập số , không cho nhập chữ
-            {
+            if (char.IsLetter(e.KeyChar) || char.IsPunctuation(e.KeyChar) || char.IsSymbol(e.KeyChar)) // hàm này chỉ cho phép nhập số , không cho nhập chữ và dấu
                 e.Handled = true;
-            }
-            //&& (e.KeyChar != '.')
         }
         private void DTGV_bill_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
@@ -246,6 +278,9 @@ namespace RoverCoffeManage2
        
         #endregion
         #endregion
+
+
+
         #region ManagePage
         private void bunifuImageButton1_Click_1(object sender, EventArgs e)
         {
@@ -280,92 +315,27 @@ namespace RoverCoffeManage2
 
         private void btn_table_Click(object sender, EventArgs e)
         {
-            OptionTable optiontable = new RoverCoffeManage2.OptionTable();
+            OptionTable optiontable = new OptionTable();
 
-            optiontable.Dock = System.Windows.Forms.DockStyle.Fill;
+            optiontable.Dock = DockStyle.Fill;
 
             panelMain.Controls.Add(optiontable);
         }
 
-        private void btn_printBill_Click(object sender, EventArgs e)
-        {
-            //BillDAO.Instance.insertBill(int.Parse(txt_table.Text),int.Parse(txt_Discount.Text));
-            btn_ClearBill_Click(sender, e);
-            txt_table.Text="";
-            txt_Pay.Text="";
-            txt_MoneyOfCus.Text ="";
-            txt_ExcessCash.Text="";
-        }
         #endregion
-        #region Statistics
-        //Thống kê số lượng món ăn theo ngày bắt đầu và kết thúc
-        private void btnSearch_Click(object sender, EventArgs e)
+
+        private void txt_MoneyOfCus_Leave(object sender, EventArgs e)
         {
-            foreach (var value in chartQuantityStatistics.Series)
+            if(txt_Pay.Text != "")
+            if (int.Parse(txt_MoneyOfCus.Text) < int.Parse(txt_Pay.Text))
             {
-                value.Points.Clear();
+                MessageBox.Show("Bạn không được nhập số tiền ít hơn so với giá");
+                txt_MoneyOfCus.Text = "";
+                txt_ExcessCash.Text = "0";
             }
-            DataTable dtTable = StatisticsQuantityDAO.Instance.getStatistics(dtpQuantityBegin.Value, dtpQuantityEnd.Value);
-            dgvQuantityStatistics.DataSource = dtTable;
-            List<FoodQuantity> listStatisticses = StatisticsQuantityDAO.Instance.getList(dtTable);
-
-            foreach (var value in listStatisticses)
-            {
-                chartQuantityStatistics.Series[0].Points.AddXY(value.Id, value.Num);
-            }
-        }
-
-        //Thống kê bill theo ngày bắt đầu và kết thúc 
-        private void btnTotalSearch_Click(object sender, EventArgs e)
-        {
-            foreach (var value in chartTotalStatistics.Series)
-            {
-                value.Points.Clear();
-            }
-            DataTable dtTable = StatisticsBillDAO.Instance.getStatisticsBillOfDay(dtpTotalBegin.Value, dtpTotalEnd.Value);
-            dgvTotalStatistics.DataSource = dtTable;
-            List<TotalOfBill> listStatisticses = StatisticsBillDAO.Instance.getList(dtTable);
-
-            foreach (var value in listStatisticses)
-            {
-                Console.WriteLine("Hello");
-                chartTotalStatistics.Series[0].Points.AddXY(value.Id, value.Total);
-            }
-        }
-
-        //Thống kê doanh thu theo ngày trong 1 tháng
-        private void btnMonthBillSearch_Click(object sender, EventArgs e)
-        {
-            foreach (var value in chartMonth.Series)
-            {
-                value.Points.Clear();
-            }
-            DataTable dtTable = StatisticsBillDAO.Instance.getStatisticsBillOfMonth(cbMonth.Text, cbYearOfMonth.Text);
-            dgvMonth.DataSource = dtTable;
-            List<TotalOfBill> listBill = StatisticsBillDAO.Instance.getList(dtTable);
-            foreach (var value in listBill)
-            {
-                chartMonth.Series[0].Points.AddXY(value.Id, value.Total);
-            }
-        }
-
-        //Thống kê doanh thu 1 tháng trong 1 năm
-        private void btnYearSearch_Click(object sender, EventArgs e)
-        {
-            foreach (var value in chartYeah.Series)
-            {
-                value.Points.Clear();
-            }
-            DataTable dtTable = StatisticsBillDAO.Instance.getStatisticsBillOfYear(cbYear.Text);
-            dgvYear.DataSource = dtTable;
-            List<TotalOfBill> listBill = StatisticsBillDAO.Instance.getList(dtTable);
-            foreach (var value in listBill)
-            {
-                chartYeah.Series[0].Points.AddXY(value.Id, value.Total);
-            }
+         
         }
     }
-    #endregion
 
 
 

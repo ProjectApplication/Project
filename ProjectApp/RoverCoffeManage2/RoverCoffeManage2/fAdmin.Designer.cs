@@ -31,28 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAdmin));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
@@ -123,36 +105,13 @@
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.chartQuantityStatistics = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.dgvQuantityStatistics = new System.Windows.Forms.DataGridView();
-            this.btnQuantitySearch = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.dtpQuantityEnd = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.dtpQuantityBegin = new Bunifu.Framework.UI.BunifuDatepicker();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.chartTotalStatistics = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.dgvTotalStatistics = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.btnTotalSearch = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.dtpTotalEnd = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.dtpTotalBegin = new Bunifu.Framework.UI.BunifuDatepicker();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.MenuPanel = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.LogoA = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.sideA = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.cbMonth = new System.Windows.Forms.ComboBox();
-            this.btnMonthBillSearch = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.dgvMonth = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.cbYearOfMonth = new System.Windows.Forms.ComboBox();
-            this.chartMonth = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.cbYear = new System.Windows.Forms.ComboBox();
-            this.btnYearSearch = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.dgvYear = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.chartYeah = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.TabControl.SuspendLayout();
             this.tbHome.SuspendLayout();
@@ -170,18 +129,6 @@
             this.sideMenu.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartQuantityStatistics)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvQuantityStatistics)).BeginInit();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartTotalStatistics)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTotalStatistics)).BeginInit();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMonth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartMonth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvYear)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartYeah)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -735,6 +682,7 @@
             this.txt_MoneyOfCus.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_MoneyOfCus.OnValueChanged += new System.EventHandler(this.txt_MoneyOfCus_OnValueChanged);
             this.txt_MoneyOfCus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_OnlyNumber);
+            this.txt_MoneyOfCus.Leave += new System.EventHandler(this.txt_MoneyOfCus_Leave);
             // 
             // materialLabel6
             // 
@@ -1345,11 +1293,6 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.chartQuantityStatistics);
-            this.tabPage3.Controls.Add(this.dgvQuantityStatistics);
-            this.tabPage3.Controls.Add(this.btnQuantitySearch);
-            this.tabPage3.Controls.Add(this.dtpQuantityEnd);
-            this.tabPage3.Controls.Add(this.dtpQuantityBegin);
             this.sideA.SetDecoration(this.tabPage3, BunifuAnimatorNS.DecorationType.None);
             this.LogoA.SetDecoration(this.tabPage3, BunifuAnimatorNS.DecorationType.None);
             this.MenuPanel.SetDecoration(this.tabPage3, BunifuAnimatorNS.DecorationType.None);
@@ -1361,94 +1304,8 @@
             this.tabPage3.Text = "THỐNG KÊ";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // chartQuantityStatistics
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chartQuantityStatistics.ChartAreas.Add(chartArea1);
-            this.LogoA.SetDecoration(this.chartQuantityStatistics, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.chartQuantityStatistics, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.chartQuantityStatistics, BunifuAnimatorNS.DecorationType.None);
-            legend1.Name = "Legend1";
-            this.chartQuantityStatistics.Legends.Add(legend1);
-            this.chartQuantityStatistics.Location = new System.Drawing.Point(550, 163);
-            this.chartQuantityStatistics.Name = "chartQuantityStatistics";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Số lượng";
-            this.chartQuantityStatistics.Series.Add(series1);
-            this.chartQuantityStatistics.Size = new System.Drawing.Size(552, 476);
-            this.chartQuantityStatistics.TabIndex = 4;
-            this.chartQuantityStatistics.Text = "chart1";
-            // 
-            // dgvQuantityStatistics
-            // 
-            this.dgvQuantityStatistics.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.LogoA.SetDecoration(this.dgvQuantityStatistics, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.dgvQuantityStatistics, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.dgvQuantityStatistics, BunifuAnimatorNS.DecorationType.None);
-            this.dgvQuantityStatistics.Location = new System.Drawing.Point(46, 163);
-            this.dgvQuantityStatistics.Name = "dgvQuantityStatistics";
-            this.dgvQuantityStatistics.Size = new System.Drawing.Size(397, 476);
-            this.dgvQuantityStatistics.TabIndex = 3;
-            // 
-            // btnQuantitySearch
-            // 
-            this.MenuPanel.SetDecoration(this.btnQuantitySearch, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btnQuantitySearch, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.btnQuantitySearch, BunifuAnimatorNS.DecorationType.None);
-            this.btnQuantitySearch.Depth = 0;
-            this.btnQuantitySearch.Icon = null;
-            this.btnQuantitySearch.Location = new System.Drawing.Point(113, 117);
-            this.btnQuantitySearch.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnQuantitySearch.Name = "btnQuantitySearch";
-            this.btnQuantitySearch.Primary = true;
-            this.btnQuantitySearch.Size = new System.Drawing.Size(209, 23);
-            this.btnQuantitySearch.TabIndex = 2;
-            this.btnQuantitySearch.Text = "Search";
-            this.btnQuantitySearch.UseVisualStyleBackColor = true;
-            this.btnQuantitySearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // dtpQuantityEnd
-            // 
-            this.dtpQuantityEnd.BackColor = System.Drawing.Color.SeaGreen;
-            this.dtpQuantityEnd.BorderRadius = 0;
-            this.LogoA.SetDecoration(this.dtpQuantityEnd, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.dtpQuantityEnd, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.dtpQuantityEnd, BunifuAnimatorNS.DecorationType.None);
-            this.dtpQuantityEnd.ForeColor = System.Drawing.Color.White;
-            this.dtpQuantityEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpQuantityEnd.FormatCustom = null;
-            this.dtpQuantityEnd.Location = new System.Drawing.Point(82, 74);
-            this.dtpQuantityEnd.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpQuantityEnd.Name = "dtpQuantityEnd";
-            this.dtpQuantityEnd.Size = new System.Drawing.Size(303, 36);
-            this.dtpQuantityEnd.TabIndex = 1;
-            this.dtpQuantityEnd.Value = new System.DateTime(2017, 4, 2, 11, 46, 32, 256);
-            // 
-            // dtpQuantityBegin
-            // 
-            this.dtpQuantityBegin.BackColor = System.Drawing.Color.SeaGreen;
-            this.dtpQuantityBegin.BorderRadius = 0;
-            this.LogoA.SetDecoration(this.dtpQuantityBegin, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.dtpQuantityBegin, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.dtpQuantityBegin, BunifuAnimatorNS.DecorationType.None);
-            this.dtpQuantityBegin.ForeColor = System.Drawing.Color.White;
-            this.dtpQuantityBegin.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpQuantityBegin.FormatCustom = null;
-            this.dtpQuantityBegin.Location = new System.Drawing.Point(82, 30);
-            this.dtpQuantityBegin.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpQuantityBegin.Name = "dtpQuantityBegin";
-            this.dtpQuantityBegin.Size = new System.Drawing.Size(303, 36);
-            this.dtpQuantityBegin.TabIndex = 0;
-            this.dtpQuantityBegin.Value = new System.DateTime(2017, 4, 2, 11, 46, 26, 983);
-            // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.chartTotalStatistics);
-            this.tabPage4.Controls.Add(this.dgvTotalStatistics);
-            this.tabPage4.Controls.Add(this.btnTotalSearch);
-            this.tabPage4.Controls.Add(this.dtpTotalEnd);
-            this.tabPage4.Controls.Add(this.dtpTotalBegin);
             this.sideA.SetDecoration(this.tabPage4, BunifuAnimatorNS.DecorationType.None);
             this.LogoA.SetDecoration(this.tabPage4, BunifuAnimatorNS.DecorationType.None);
             this.MenuPanel.SetDecoration(this.tabPage4, BunifuAnimatorNS.DecorationType.None);
@@ -1460,115 +1317,8 @@
             this.tabPage4.Text = "XUẤT/NHẬP KHO";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // chartTotalStatistics
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.chartTotalStatistics.ChartAreas.Add(chartArea2);
-            this.LogoA.SetDecoration(this.chartTotalStatistics, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.chartTotalStatistics, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.chartTotalStatistics, BunifuAnimatorNS.DecorationType.None);
-            legend2.Name = "Legend1";
-            this.chartTotalStatistics.Legends.Add(legend2);
-            this.chartTotalStatistics.Location = new System.Drawing.Point(600, 163);
-            this.chartTotalStatistics.Name = "chartTotalStatistics";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Đồng";
-            this.chartTotalStatistics.Series.Add(series2);
-            this.chartTotalStatistics.Size = new System.Drawing.Size(498, 477);
-            this.chartTotalStatistics.TabIndex = 4;
-            this.chartTotalStatistics.Text = "chart1";
-            // 
-            // dgvTotalStatistics
-            // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvTotalStatistics.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvTotalStatistics.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvTotalStatistics.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvTotalStatistics.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaShell;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTotalStatistics.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvTotalStatistics.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTotalStatistics.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2});
-            this.sideA.SetDecoration(this.dgvTotalStatistics, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.dgvTotalStatistics, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.dgvTotalStatistics, BunifuAnimatorNS.DecorationType.None);
-            this.dgvTotalStatistics.DoubleBuffered = true;
-            this.dgvTotalStatistics.EnableHeadersVisualStyles = false;
-            this.dgvTotalStatistics.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.dgvTotalStatistics.HeaderForeColor = System.Drawing.Color.SeaShell;
-            this.dgvTotalStatistics.Location = new System.Drawing.Point(22, 163);
-            this.dgvTotalStatistics.Name = "dgvTotalStatistics";
-            this.dgvTotalStatistics.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvTotalStatistics.Size = new System.Drawing.Size(401, 477);
-            this.dgvTotalStatistics.TabIndex = 3;
-            // 
-            // btnTotalSearch
-            // 
-            this.MenuPanel.SetDecoration(this.btnTotalSearch, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btnTotalSearch, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.btnTotalSearch, BunifuAnimatorNS.DecorationType.None);
-            this.btnTotalSearch.Depth = 0;
-            this.btnTotalSearch.Icon = null;
-            this.btnTotalSearch.Location = new System.Drawing.Point(89, 94);
-            this.btnTotalSearch.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnTotalSearch.Name = "btnTotalSearch";
-            this.btnTotalSearch.Primary = true;
-            this.btnTotalSearch.Size = new System.Drawing.Size(148, 23);
-            this.btnTotalSearch.TabIndex = 2;
-            this.btnTotalSearch.Text = "Search";
-            this.btnTotalSearch.UseVisualStyleBackColor = true;
-            this.btnTotalSearch.Click += new System.EventHandler(this.btnTotalSearch_Click);
-            // 
-            // dtpTotalEnd
-            // 
-            this.dtpTotalEnd.BackColor = System.Drawing.Color.SeaGreen;
-            this.dtpTotalEnd.BorderRadius = 0;
-            this.LogoA.SetDecoration(this.dtpTotalEnd, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.dtpTotalEnd, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.dtpTotalEnd, BunifuAnimatorNS.DecorationType.None);
-            this.dtpTotalEnd.ForeColor = System.Drawing.Color.White;
-            this.dtpTotalEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpTotalEnd.FormatCustom = null;
-            this.dtpTotalEnd.Location = new System.Drawing.Point(12, 51);
-            this.dtpTotalEnd.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpTotalEnd.Name = "dtpTotalEnd";
-            this.dtpTotalEnd.Size = new System.Drawing.Size(303, 36);
-            this.dtpTotalEnd.TabIndex = 1;
-            this.dtpTotalEnd.Value = new System.DateTime(2017, 4, 2, 12, 16, 41, 360);
-            // 
-            // dtpTotalBegin
-            // 
-            this.dtpTotalBegin.BackColor = System.Drawing.Color.SeaGreen;
-            this.dtpTotalBegin.BorderRadius = 0;
-            this.LogoA.SetDecoration(this.dtpTotalBegin, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.dtpTotalBegin, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.dtpTotalBegin, BunifuAnimatorNS.DecorationType.None);
-            this.dtpTotalBegin.ForeColor = System.Drawing.Color.White;
-            this.dtpTotalBegin.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpTotalBegin.FormatCustom = null;
-            this.dtpTotalBegin.Location = new System.Drawing.Point(12, 7);
-            this.dtpTotalBegin.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpTotalBegin.Name = "dtpTotalBegin";
-            this.dtpTotalBegin.Size = new System.Drawing.Size(303, 36);
-            this.dtpTotalBegin.TabIndex = 0;
-            this.dtpTotalBegin.Value = new System.DateTime(2017, 4, 2, 12, 16, 30, 22);
-            // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.chartMonth);
-            this.tabPage5.Controls.Add(this.cbYearOfMonth);
-            this.tabPage5.Controls.Add(this.dgvMonth);
-            this.tabPage5.Controls.Add(this.btnMonthBillSearch);
-            this.tabPage5.Controls.Add(this.cbMonth);
             this.sideA.SetDecoration(this.tabPage5, BunifuAnimatorNS.DecorationType.None);
             this.LogoA.SetDecoration(this.tabPage5, BunifuAnimatorNS.DecorationType.None);
             this.MenuPanel.SetDecoration(this.tabPage5, BunifuAnimatorNS.DecorationType.None);
@@ -1582,10 +1332,6 @@
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.chartYeah);
-            this.tabPage6.Controls.Add(this.dgvYear);
-            this.tabPage6.Controls.Add(this.btnYearSearch);
-            this.tabPage6.Controls.Add(this.cbYear);
             this.sideA.SetDecoration(this.tabPage6, BunifuAnimatorNS.DecorationType.None);
             this.LogoA.SetDecoration(this.tabPage6, BunifuAnimatorNS.DecorationType.None);
             this.MenuPanel.SetDecoration(this.tabPage6, BunifuAnimatorNS.DecorationType.None);
@@ -1668,222 +1414,12 @@
             this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewImageColumn1.Width = 70;
             // 
-            // cbMonth
-            // 
-            this.LogoA.SetDecoration(this.cbMonth, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.cbMonth, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.cbMonth, BunifuAnimatorNS.DecorationType.None);
-            this.cbMonth.FormattingEnabled = true;
-            this.cbMonth.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"});
-            this.cbMonth.Location = new System.Drawing.Point(12, 31);
-            this.cbMonth.Name = "cbMonth";
-            this.cbMonth.Size = new System.Drawing.Size(121, 25);
-            this.cbMonth.TabIndex = 0;
-            // 
-            // btnMonthBillSearch
-            // 
-            this.MenuPanel.SetDecoration(this.btnMonthBillSearch, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btnMonthBillSearch, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.btnMonthBillSearch, BunifuAnimatorNS.DecorationType.None);
-            this.btnMonthBillSearch.Depth = 0;
-            this.btnMonthBillSearch.Icon = null;
-            this.btnMonthBillSearch.Location = new System.Drawing.Point(287, 31);
-            this.btnMonthBillSearch.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnMonthBillSearch.Name = "btnMonthBillSearch";
-            this.btnMonthBillSearch.Primary = true;
-            this.btnMonthBillSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnMonthBillSearch.TabIndex = 1;
-            this.btnMonthBillSearch.Text = "Search";
-            this.btnMonthBillSearch.UseVisualStyleBackColor = true;
-            this.btnMonthBillSearch.Click += new System.EventHandler(this.btnMonthBillSearch_Click);
-            // 
-            // dgvMonth
-            // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvMonth.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvMonth.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvMonth.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvMonth.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaShell;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMonth.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvMonth.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMonth.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column3,
-            this.Column4});
-            this.sideA.SetDecoration(this.dgvMonth, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.dgvMonth, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.dgvMonth, BunifuAnimatorNS.DecorationType.None);
-            this.dgvMonth.DoubleBuffered = true;
-            this.dgvMonth.EnableHeadersVisualStyles = false;
-            this.dgvMonth.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.dgvMonth.HeaderForeColor = System.Drawing.Color.SeaShell;
-            this.dgvMonth.Location = new System.Drawing.Point(12, 72);
-            this.dgvMonth.Name = "dgvMonth";
-            this.dgvMonth.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvMonth.Size = new System.Drawing.Size(367, 386);
-            this.dgvMonth.TabIndex = 2;
-            // 
-            // cbYearOfMonth
-            // 
-            this.LogoA.SetDecoration(this.cbYearOfMonth, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.cbYearOfMonth, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.cbYearOfMonth, BunifuAnimatorNS.DecorationType.None);
-            this.cbYearOfMonth.FormattingEnabled = true;
-            this.cbYearOfMonth.Items.AddRange(new object[] {
-            "2017",
-            "2018"});
-            this.cbYearOfMonth.Location = new System.Drawing.Point(148, 31);
-            this.cbYearOfMonth.Name = "cbYearOfMonth";
-            this.cbYearOfMonth.Size = new System.Drawing.Size(121, 25);
-            this.cbYearOfMonth.TabIndex = 3;
-            // 
-            // chartMonth
-            // 
-            chartArea3.Name = "ChartArea1";
-            this.chartMonth.ChartAreas.Add(chartArea3);
-            this.LogoA.SetDecoration(this.chartMonth, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.chartMonth, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.chartMonth, BunifuAnimatorNS.DecorationType.None);
-            legend3.Name = "Legend1";
-            this.chartMonth.Legends.Add(legend3);
-            this.chartMonth.Location = new System.Drawing.Point(426, 72);
-            this.chartMonth.Name = "chartMonth";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Đồng";
-            this.chartMonth.Series.Add(series3);
-            this.chartMonth.Size = new System.Drawing.Size(441, 386);
-            this.chartMonth.TabIndex = 4;
-            this.chartMonth.Text = "chart1";
-            // 
-            // cbYear
-            // 
-            this.LogoA.SetDecoration(this.cbYear, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.cbYear, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.cbYear, BunifuAnimatorNS.DecorationType.None);
-            this.cbYear.FormattingEnabled = true;
-            this.cbYear.Items.AddRange(new object[] {
-            "2016",
-            "2017",
-            "2018"});
-            this.cbYear.Location = new System.Drawing.Point(54, 24);
-            this.cbYear.Name = "cbYear";
-            this.cbYear.Size = new System.Drawing.Size(121, 25);
-            this.cbYear.TabIndex = 0;
-            // 
-            // btnYearSearch
-            // 
-            this.MenuPanel.SetDecoration(this.btnYearSearch, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btnYearSearch, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.btnYearSearch, BunifuAnimatorNS.DecorationType.None);
-            this.btnYearSearch.Depth = 0;
-            this.btnYearSearch.Icon = null;
-            this.btnYearSearch.Location = new System.Drawing.Point(210, 24);
-            this.btnYearSearch.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnYearSearch.Name = "btnYearSearch";
-            this.btnYearSearch.Primary = true;
-            this.btnYearSearch.Size = new System.Drawing.Size(125, 23);
-            this.btnYearSearch.TabIndex = 1;
-            this.btnYearSearch.Text = "Search";
-            this.btnYearSearch.UseVisualStyleBackColor = true;
-            this.btnYearSearch.Click += new System.EventHandler(this.btnYearSearch_Click);
-            // 
-            // dgvYear
-            // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvYear.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvYear.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvYear.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.SeaShell;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvYear.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvYear.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.sideA.SetDecoration(this.dgvYear, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.dgvYear, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.dgvYear, BunifuAnimatorNS.DecorationType.None);
-            this.dgvYear.DoubleBuffered = true;
-            this.dgvYear.EnableHeadersVisualStyles = false;
-            this.dgvYear.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.dgvYear.HeaderForeColor = System.Drawing.Color.SeaShell;
-            this.dgvYear.Location = new System.Drawing.Point(12, 65);
-            this.dgvYear.Name = "dgvYear";
-            this.dgvYear.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvYear.Size = new System.Drawing.Size(518, 529);
-            this.dgvYear.TabIndex = 2;
-            // 
-            // chartYeah
-            // 
-            chartArea4.Name = "ChartArea1";
-            this.chartYeah.ChartAreas.Add(chartArea4);
-            this.LogoA.SetDecoration(this.chartYeah, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.chartYeah, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.chartYeah, BunifuAnimatorNS.DecorationType.None);
-            legend4.Name = "Legend1";
-            this.chartYeah.Legends.Add(legend4);
-            this.chartYeah.Location = new System.Drawing.Point(677, 65);
-            this.chartYeah.Name = "chartYeah";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Đồng";
-            this.chartYeah.Series.Add(series4);
-            this.chartYeah.Size = new System.Drawing.Size(475, 529);
-            this.chartYeah.TabIndex = 3;
-            this.chartYeah.Text = "chart1";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.Visible = false;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Thành tiền";
-            this.Column2.Name = "Column2";
-            this.Column2.Visible = false;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Ngày";
-            this.Column3.Name = "Column3";
-            this.Column3.Visible = false;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Thành tiền";
-            this.Column4.Name = "Column4";
-            this.Column4.Visible = false;
-            // 
             // fAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1378, 780);
+            this.ClientSize = new System.Drawing.Size(1555, 900);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.TabControl);
@@ -1922,18 +1458,6 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartQuantityStatistics)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvQuantityStatistics)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartTotalStatistics)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTotalStatistics)).EndInit();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMonth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartMonth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvYear)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartYeah)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2017,28 +1541,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_Note;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_pay;
         private System.Windows.Forms.DataGridViewImageColumn cl_btnDelete;
-        private System.Windows.Forms.DataGridView dgvQuantityStatistics;
-        private MaterialSkin.Controls.MaterialRaisedButton btnQuantitySearch;
-        private Bunifu.Framework.UI.BunifuDatepicker dtpQuantityEnd;
-        private Bunifu.Framework.UI.BunifuDatepicker dtpQuantityBegin;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartQuantityStatistics;
-        private MaterialSkin.Controls.MaterialRaisedButton btnTotalSearch;
-        private Bunifu.Framework.UI.BunifuDatepicker dtpTotalEnd;
-        private Bunifu.Framework.UI.BunifuDatepicker dtpTotalBegin;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartTotalStatistics;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvTotalStatistics;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvMonth;
-        private MaterialSkin.Controls.MaterialRaisedButton btnMonthBillSearch;
-        private System.Windows.Forms.ComboBox cbMonth;
-        private System.Windows.Forms.ComboBox cbYearOfMonth;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartMonth;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartYeah;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvYear;
-        private MaterialSkin.Controls.MaterialRaisedButton btnYearSearch;
-        private System.Windows.Forms.ComboBox cbYear;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }
