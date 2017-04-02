@@ -5,6 +5,7 @@ using RoverCoffeManage2.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 namespace RoverCoffeManage2
@@ -335,9 +336,76 @@ namespace RoverCoffeManage2
             }
          
         }
+        #region Statistics
+        //Thống kê số lượng món ăn theo ngày bắt đầu và kết thúc
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            foreach (var value in chartQuantityStatistics.Series)
+            {
+                value.Points.Clear();
+            }
+            DataTable dtTable = StatisticsQuantityDAO.Instance.getStatistics(dtpQuantityBegin.Value, dtpQuantityEnd.Value);
+            dgvQuantityStatistics.DataSource = dtTable;
+            List<FoodQuantity> listStatisticses = StatisticsQuantityDAO.Instance.getList(dtTable);
+
+            foreach (var value in listStatisticses)
+            {
+                chartQuantityStatistics.Series[0].Points.AddXY(value.Id, value.Num);
+            }
+        }
+
+        //Thống kê bill theo ngày bắt đầu và kết thúc 
+        private void btnTotalSearch_Click(object sender, EventArgs e)
+        {
+            foreach (var value in chartTotalStatistics.Series)
+            {
+                value.Points.Clear();
+            }
+            DataTable dtTable = StatisticsBillDAO.Instance.getStatisticsBillOfDay(dtpTotalBegin.Value, dtpTotalEnd.Value);
+            dgvTotalStatistics.DataSource = dtTable;
+            List<TotalOfBill> listStatisticses = StatisticsBillDAO.Instance.getList(dtTable);
+
+            foreach (var value in listStatisticses)
+            {
+                Console.WriteLine("Hello");
+                chartTotalStatistics.Series[0].Points.AddXY(value.Id, value.Total);
+            }
+        }
+
+        //Thống kê doanh thu theo ngày trong 1 tháng
+        private void btnMonthBillSearch_Click(object sender, EventArgs e)
+        {
+            foreach (var value in chartMonth.Series)
+            {
+                value.Points.Clear();
+            }
+            DataTable dtTable = StatisticsBillDAO.Instance.getStatisticsBillOfMonth(cbMonth.Text, cbYearOfMonth.Text);
+            dgvMonth.DataSource = dtTable;
+            List<TotalOfBill> listBill = StatisticsBillDAO.Instance.getList(dtTable);
+            foreach (var value in listBill)
+            {
+                chartMonth.Series[0].Points.AddXY(value.Id, value.Total);
+            }
+        }
+
+        //Thống kê doanh thu 1 tháng trong 1 năm
+        private void btnYearSearch_Click(object sender, EventArgs e)
+        {
+            foreach (var value in chartYeah.Series)
+            {
+                value.Points.Clear();
+            }
+            DataTable dtTable = StatisticsBillDAO.Instance.getStatisticsBillOfYear(cbYear.Text);
+            dgvYear.DataSource = dtTable;
+            List<TotalOfBill> listBill = StatisticsBillDAO.Instance.getList(dtTable);
+            foreach (var value in listBill)
+            {
+                chartYeah.Series[0].Points.AddXY(value.Id, value.Total);
+            }
+        }
     }
-
-
-
+    #endregion
 }
+
+
 
