@@ -42,6 +42,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,11 +59,15 @@
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\FoodCategoryDAO.cs" />
     <Compile Include="DAO\FoodDAO.cs" />
+    <Compile Include="DAO\StatisticsBillDAO.cs" />
+    <Compile Include="DTO\FoodQuantity.cs" />
+    <Compile Include="DAO\StatisticsQuantityDAO.cs" />
     <Compile Include="DAO\TableDAO.cs" />
     <Compile Include="DTO\Bill.cs" />
     <Compile Include="DTO\Food.cs" />
     <Compile Include="DTO\FoodCategory.cs" />
     <Compile Include="DTO\Table.cs" />
+    <Compile Include="DTO\TotalOfBill.cs" />
     <Compile Include="fAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
