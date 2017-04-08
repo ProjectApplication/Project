@@ -33,5 +33,9 @@ namespace RoverCoffeManage2
             this.Tag=getListInfoFromSubForm();
             this.Close();
         }
+
+        private void txt_Numberic_KeyPress(object sender, KeyPressEventArgs e)
+        {
+        }
     }
 }

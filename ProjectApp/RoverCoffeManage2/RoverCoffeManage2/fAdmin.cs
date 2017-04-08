@@ -2,6 +2,7 @@
 using MaterialSkin.Controls;
 using RoverCoffeManage2.DAO;
 using RoverCoffeManage2.DTO;
+using RoverCoffeManage2.FormOption;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,13 +16,13 @@ namespace RoverCoffeManage2
         public fAdmin()
         {
             InitializeComponent();
-            loadTable(); // gọi từ method load table
-            loadFoodCategory();// gọi từ method load foodcategory
+            loadTable(flpTable); // gọi từ method load table
+            loadFoodCategory(flpCategory);// gọi từ method load foodcategory
         }
         #region HomePage
         #region Method load table
         // hàm load dữ liệu của bàn ăn
-        public void loadTable()
+        public void loadTable(FlowLayoutPanel flp)
         {
             List<Table> tableList = TableDAO.Instance.LoadTableList();// lấy list table
 
@@ -50,7 +51,7 @@ namespace RoverCoffeManage2
                         break;
                 }
 
-                flpTable.Controls.Add(btn);// thêm button vào flow layout pannel (tự chia ô)
+                flp.Controls.Add(btn);// thêm button vào flow layout pannel (tự chia ô)
             }
         }
         #endregion
@@ -89,7 +90,7 @@ namespace RoverCoffeManage2
         }
         #endregion
         #region Method load food category
-        public void loadFoodCategory()
+        public void loadFoodCategory(FlowLayoutPanel flp)
         {
             List<FoodCategory> FoodCategoryList = FoodCategoryDAO.Instance.LoadFoodCategoryList(); // tạo danh sách category thông qua DAO
             foreach(FoodCategory item in FoodCategoryList )
@@ -100,7 +101,7 @@ namespace RoverCoffeManage2
                 btn.Size = new Size(98, 60); // kích thước button
                  btn.Click += new EventHandler(btnFoodCategory_Click); ; // hàm này dùng để khởi tạo event cho mỗi button
                  btn.Tag = item; // gắn đối tượng item cho mỗi btn , để dễ quản lý
-                flpCategory.Controls.Add(btn);// thêm button vào flow layout category
+                flp.Controls.Add(btn);// thêm button vào flow layout category
             }
         }
 
@@ -136,7 +137,7 @@ namespace RoverCoffeManage2
             else
                 TableDAO.Instance.updateStatus("Trống", table.ID); //Cập nhật lại trạng thái của bàn ăn
             flpTable.Controls.Clear();// xóa flow layout pannel bàn ăn
-            loadTable();// load danh sách bàn ăn thông qua method load table
+            loadTable(flpTable);// load danh sách bàn ăn thông qua method load table
         }
         // Sự kiện hiển thị món ăn ứng với category
         private void btnFoodCategory_Click(object sender, EventArgs e)
@@ -212,48 +213,108 @@ namespace RoverCoffeManage2
         private double singlePrice = 0; //khởi tạo giá trị đơn giá để lưu
         private void DTGV_bill_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
-            if (DTGV_bill.Rows[e.RowIndex].Cells[1].Value != null && DTGV_bill.Rows[e.RowIndex].Cells[3].Value != null)//nếu cộng số lượng và giảm giá = null thì không tính
+            if (DTGV_bill.Rows[e.RowIndex].Cells[1].Value != null && DTGV_bill.Rows[e.RowIndex].Cells[3].Value != null)//nếu  số lượng và giảm giá = null thì không tính
                 singlePrice = float.Parse(DTGV_bill.Rows[e.RowIndex].Cells[2].Value.ToString()) / float.Parse(DTGV_bill.Rows[e.RowIndex].Cells[1].Value.ToString());//gán giá trị của đơn giá
         }
         private void DTGV_bill_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            if (DTGV_bill.Rows[e.RowIndex].Cells[1].Value != null && DTGV_bill.Rows[e.RowIndex].Cells[3].Value != null)//nếu cộng số lượng và giảm giá = null thì không tính
+            if (DTGV_bill.Rows[e.RowIndex].Cells[1].Value != null && DTGV_bill.Rows[e.RowIndex].Cells[3].Value != null)//nếu số lượng và giảm giá = null thì không tính
                 if (e.ColumnIndex == 1 || e.ColumnIndex==3)//nếu thay đổi giá trị ở cột số lượng hoặc giảm giá
             { 
-                DTGV_bill.Rows[e.RowIndex].Cells[2].Value=singlePrice* double.Parse( DTGV_bill.Rows[e.RowIndex].Cells[1].Value.ToString());//gán giá trị [thành tiền]
-                DTGV_bill.Rows[e.RowIndex].Cells[5].Value = double.Parse(DTGV_bill.Rows[e.RowIndex].Cells[2].Value.ToString()) *(1- double.Parse(DTGV_bill.Rows[e.RowIndex].Cells[3].Value.ToString())/100); // giảm giá
-                loadPrice();// sau khi thay đổi giá trị thì load lại giá
-            }
+                    if(double.Parse(DTGV_bill.Rows[e.RowIndex].Cells[3].Value.ToString())>100)
+                    {
+                        MessageBox.Show("Bạn không thể giảm giá hơn 100%");
+                        DTGV_bill.Rows[e.RowIndex].Cells[3].Value = 0;
+                    }
+
+              else
+	                {
+                        DTGV_bill.Rows[e.RowIndex].Cells[2].Value = singlePrice * double.Parse(DTGV_bill.Rows[e.RowIndex].Cells[1].Value.ToString());//gán giá trị [thành tiền]
+                        DTGV_bill.Rows[e.RowIndex].Cells[5].Value = double.Parse(DTGV_bill.Rows[e.RowIndex].Cells[2].Value.ToString()) * (1 - double.Parse(DTGV_bill.Rows[e.RowIndex].Cells[3].Value.ToString()) / 100); // giảm giá
+                        loadPrice();// sau khi thay đổi giá trị thì load lại giá
+
+                    }
+                }
             
         }
         private void btn_printBill_Click(object sender, EventArgs e)
         {
-
+            // đưa bill và billinfo vào cơ sở dữ liệu
             if (txt_table.Text != "" && txt_MoneyOfCus.Text != "")
-            {
-              BillDAO.Instance.insertBill(int.Parse(txt_table.Text), int.Parse(txt_Discount.Text));
-                foreach (DataGridViewRow items in DTGV_bill.Rows)
                 {
-                    if (items.Cells[0].Value != null)
+                if (int.Parse(txt_MoneyOfCus.Text) >= int.Parse(txt_Pay.Text))
+                {
+                 BillDAO.Instance.insertBill(int.Parse(txt_table.Text), int.Parse(txt_Discount.Text));
+                    foreach (DataGridViewRow items in DTGV_bill.Rows)
                     {
-                        int idBill = (int)DataProvider.Instance.ExecuteScalar("proc_GetIdOfLastRowBill");
-                        string IDfood = (string)DataProvider.Instance.ExecuteScalar("proc_GetIdFood " + "N'" + items.Cells[0].Value + "'");
-                        int quantity = int.Parse(items.Cells[1].Value.ToString());
-                        int discount = int.Parse(items.Cells[3].Value.ToString());
-                    DataProvider.Instance.ExecuteNonQuery("proc_InsertBillInfo " +idBill + ",N'" + IDfood + "'," + quantity + "," + discount);
+                        if (items.Cells[0].Value != null)
+                        {
+                            int idBill =BillDAO.Instance.getIdOfLastRowBill();
+                            string IDfood = FoodDAO.Instance.getIdFood(items.Cells[0].Value.ToString());
+                            int quantity = int.Parse(items.Cells[1].Value.ToString());
+                            int discount = int.Parse(items.Cells[3].Value.ToString());
+                            string note = items.Cells[4].Value.ToString();
+
+
+                            BillInfoDAO.Instance.insertBillInfo(idBill, IDfood, quantity, discount, note);
+                        }
                     }
-                } 
-                btn_ClearBill_Click(sender, e);
-                txt_table.Text = "";
-                txt_Pay.Text = "";
-                txt_MoneyOfCus.Text = "";
-                txt_ExcessCash.Text = "";
-            }
+                    if (MessageBox.Show("Bạn có in hóa đơn ?", "Thông Báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                    {
+                        if(rbtn_normalBill.Checked==true)
+                            {
+                                fPrintReport formReport = new fPrintReport();
+                                formReport.ShowDialog(); 
+                            }
+                        else
+                        {
+                            fPrintBillDiscount formReport = new fPrintBillDiscount();
+                            formReport.ShowDialog();
+                        }
+                        btn_ClearBill_Click(sender, e);
+                        txt_table.Text = "";
+                        txt_Pay.Text = "";
+                        txt_MoneyOfCus.Text = "";
+                        txt_ExcessCash.Text = "";
+                    }
+                
+                }
+                else
+                   txt_MoneyOfCus_Leave(sender, e);
+                }
             else
             {
                 MessageBox.Show("Bạn phải nhập đầy đủ thông tin");
             }
+           
         }
+        private void btn_printListFood_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn in danh sách món ăn.Bạn phải thanh toán hóa đơn trước khi in danh sách ?", "Thông Báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+            {
+                if (rbtn_takeAway.Checked)
+                {
+                    fPrintListFoodTakeAway listfood = new fPrintListFoodTakeAway();
+                    listfood.ShowDialog();
+                }
+                else
+                {
+
+                    fPrintListFood listfood = new fPrintListFood();
+                    listfood.ShowDialog();
+
+                }
+            }
+           
+        }
+        private void btn_ClearBill_Click(object sender, EventArgs e)
+        {
+            DTGV_bill.DataSource = null;
+            DTGV_bill.Rows.Clear();
+            lb_price.Text = "0";
+            txt_Pay.Text = "0";
+        }
+        
         #endregion
         #region exception
         // xử lý exception => không cho nhập chữ
@@ -262,80 +323,72 @@ namespace RoverCoffeManage2
             if (char.IsLetter(e.KeyChar) || char.IsPunctuation(e.KeyChar) || char.IsSymbol(e.KeyChar)) // hàm này chỉ cho phép nhập số , không cho nhập chữ và dấu
                 e.Handled = true;
         }
+        private void KeyPress_numberAndLetter(object sender, KeyPressEventArgs e)
+        {
+                e.Handled = false;
+        }
         private void DTGV_bill_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
-            
-            e.Control.KeyPress += new KeyPressEventHandler(KeyPress_OnlyNumber);
-            if (DTGV_bill.CurrentCell.ColumnIndex == 1 && DTGV_bill.CurrentCell.ColumnIndex == 3) //Desired Column
-            {
-                TextBox tb = e.Control as TextBox;
-                if (tb != null)
-                {
-                    tb.KeyPress += new KeyPressEventHandler(KeyPress_OnlyNumber);
-                }
-            }
-        }
 
-       
+            if (DTGV_bill.CurrentCell.ColumnIndex == 1 || DTGV_bill.CurrentCell.ColumnIndex == 3)
+                e.Control.KeyPress += new KeyPressEventHandler(KeyPress_OnlyNumber);
+            else
+                e.Control.KeyPress += new KeyPressEventHandler(KeyPress_numberAndLetter);
+        }
+        private void txt_MoneyOfCus_Leave(object sender, EventArgs e)
+        {
+            if (txt_Pay.Text != "" && txt_MoneyOfCus.Text != "")
+                if (int.Parse(txt_MoneyOfCus.Text) < int.Parse(txt_Pay.Text))
+                {
+                    MessageBox.Show("Bạn không được nhập số tiền ít hơn so với giá");
+                    txt_MoneyOfCus.Text = "";
+                    txt_ExcessCash.Text = "0";
+                }
+        }
+        private void txt_Discount_OnValueChanged(object sender, EventArgs e)
+        {
+            if (txt_Discount.Text != "")
+                if (int.Parse(txt_Discount.Text.ToString()) > 100)
+                {
+                    MessageBox.Show("Bạn không được chiết khấu quá 100%");
+                    txt_Discount.Text = "0";
+                }
+        }
+        private void txt_Discount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            KeyPress_OnlyNumber(sender, e);
+        }
         #endregion
         #endregion
 
 
 
         #region ManagePage
-        private void bunifuImageButton1_Click_1(object sender, EventArgs e)
-        {
-            if (sideMenu.Width == 50)
-            {
-
-                sideMenu.Visible = false;
-                sideMenu.Width = 200;
-                sideA.MaxAnimationTime = 4;
-                sideA.ShowSync(sideMenu);
-                LogoA.ShowSync(logo);
-
-            }
-            else
-            {
-                LogoA.Hide(logo);
-                sideMenu.Visible = false;
-                sideMenu.Width = 50;
-                sideA.ShowSync(sideMenu);
-
-
-            }
-        }
-
-        private void btn_ClearBill_Click(object sender, EventArgs e)
-        {
-            DTGV_bill.DataSource = null;
-            DTGV_bill.Rows.Clear();
-            lb_price.Text = "0";
-            txt_Pay.Text = "0";
-        }
-
         private void btn_table_Click(object sender, EventArgs e)
         {
+            panelMain.Controls.Clear();
             OptionTable optiontable = new OptionTable();
 
             optiontable.Dock = DockStyle.Fill;
 
             panelMain.Controls.Add(optiontable);
+         
+            loadTable(optiontable.flpTable);
         }
+        private void btn_OptionFood_Click(object sender, EventArgs e)
+        {
+            panelMain.Controls.Clear();
+            OptionFood optionfood= new OptionFood();
 
+            optionfood.Dock = DockStyle.Fill;
+
+            panelMain.Controls.Add(optionfood);
+
+            loadFoodCategory(optionfood.flpCategory);
+        }
         #endregion
 
-        private void txt_MoneyOfCus_Leave(object sender, EventArgs e)
-        {
-            if(txt_Pay.Text != "")
-            if (int.Parse(txt_MoneyOfCus.Text) < int.Parse(txt_Pay.Text))
-            {
-                MessageBox.Show("Bạn không được nhập số tiền ít hơn so với giá");
-                txt_MoneyOfCus.Text = "";
-                txt_ExcessCash.Text = "0";
-            }
-         
-        }
+
         #region Statistics
         //Thống kê số lượng món ăn theo ngày bắt đầu và kết thúc
         private void btnSearch_Click(object sender, EventArgs e)
@@ -403,6 +456,8 @@ namespace RoverCoffeManage2
                 chartYeah.Series[0].Points.AddXY(value.Id, value.Total);
             }
         }
+
+       
     }
     #endregion
 }

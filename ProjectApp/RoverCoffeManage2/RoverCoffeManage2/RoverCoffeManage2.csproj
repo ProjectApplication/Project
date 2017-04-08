@@ -74,10 +74,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BillReport.cs">
+    <Compile Include="DAO\BillInfoDAO.cs" />
+    <Compile Include="FormOption\OptionFood.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormOption\OptionFood.Designer.cs">
+      <DependentUpon>OptionFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\billDiscountReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BillReport.rpt</DependentUpon>
+      <DependentUpon>billDiscountReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\billReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>billReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DAO\AccountDAO.cs" />
@@ -106,29 +119,66 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\fPrintBillDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\fPrintBillDiscount.Designer.cs">
+      <DependentUpon>fPrintBillDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\fPrintListFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\fPrintListFood.Designer.cs">
+      <DependentUpon>fPrintListFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\fPrintListFoodTakeAway.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\fPrintListFoodTakeAway.Designer.cs">
+      <DependentUpon>fPrintListFoodTakeAway.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\fPrintReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\fPrintReport.Designer.cs">
+      <DependentUpon>fPrintReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="fSubform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fSubform.Designer.cs">
       <DependentUpon>fSubform.cs</DependentUpon>
     </Compile>
-    <Compile Include="OptionTable.cs">
+    <Compile Include="Report\listFoodReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>listFoodReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\listFoodTakeAway.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>listFoodTakeAway.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormOption\OptionTable.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="OptionTable.Designer.cs">
+    <Compile Include="FormOption\OptionTable.Designer.cs">
       <DependentUpon>OptionTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="test.Designer.cs">
-      <DependentUpon>test.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="BillReport.rpt">
+    <EmbeddedResource Include="FormOption\OptionFood.resx">
+      <DependentUpon>OptionFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\billDiscountReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>BillReport.cs</LastGenOutput>
+      <LastGenOutput>billDiscountReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\billReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>billReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="fAdmin.resx">
       <DependentUpon>fAdmin.cs</DependentUpon>
@@ -136,10 +186,30 @@
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\fPrintBillDiscount.resx">
+      <DependentUpon>fPrintBillDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\fPrintListFood.resx">
+      <DependentUpon>fPrintListFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\fPrintListFoodTakeAway.resx">
+      <DependentUpon>fPrintListFoodTakeAway.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\fPrintReport.resx">
+      <DependentUpon>fPrintReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fSubform.resx">
       <DependentUpon>fSubform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OptionTable.resx">
+    <EmbeddedResource Include="Report\listFoodReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>listFoodReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\listFoodTakeAway.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>listFoodTakeAway.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOption\OptionTable.resx">
       <DependentUpon>OptionTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -152,9 +222,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="test.resx">
-      <DependentUpon>test.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

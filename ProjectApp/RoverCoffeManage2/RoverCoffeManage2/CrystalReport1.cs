@@ -16,14 +16,14 @@ namespace RoverCoffeManage2 {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class BillReport : ReportClass {
+    public class CrystalReport1 : ReportClass {
         
-        public BillReport() {
+        public CrystalReport1() {
         }
         
         public override string ResourceName {
             get {
-                return "BillReport.rpt";
+                return "CrystalReport1.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace RoverCoffeManage2 {
         
         public override string FullResourceName {
             get {
-                return "RoverCoffeManage2.BillReport.rpt";
+                return "RoverCoffeManage2.CrystalReport1.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace RoverCoffeManage2 {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedBillReport : Component, ICachedReport {
+    public class CachedCrystalReport1 : Component, ICachedReport {
         
-        public CachedBillReport() {
+        public CachedCrystalReport1() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace RoverCoffeManage2 {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            BillReport rpt = new BillReport();
+            CrystalReport1 rpt = new CrystalReport1();
             rpt.Site = this.Site;
             return rpt;
         }

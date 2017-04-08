@@ -1,25 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RoverCoffeManage2
+namespace RoverCoffeManage2.FormOption
 {
-    public partial class test : Form
+    public partial class OptionFood : UserControl
     {
-        public test()
+        public OptionFood()
         {
             InitializeComponent();
-        }
-
-        private void crystalReportViewer1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

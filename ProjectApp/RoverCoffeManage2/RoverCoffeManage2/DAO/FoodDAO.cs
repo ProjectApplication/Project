@@ -18,7 +18,7 @@ namespace RoverCoffeManage2.DAO
             {
                 if (instance == null)
                     instance = new FoodDAO();
-                    return FoodDAO.instance;
+                    return instance;
             }
             set
             {
@@ -55,6 +55,10 @@ namespace RoverCoffeManage2.DAO
         {
              DataTable data = DataProvider.Instance.ExecuteQuery("proc_ShowAllFood"); // show tất cả món ăn
             return data;
+        }
+        public string getIdFood(string nameOfFood)
+        {
+            return (string)DataProvider.Instance.ExecuteScalar("proc_GetIdFood " + "N'" +nameOfFood+ "'");
         }
     }
 

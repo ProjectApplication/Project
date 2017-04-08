@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            BunifuAnimatorNS.Animation animation9 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation8 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation7 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAdmin));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
@@ -61,13 +61,13 @@
             this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
             this.btn_ClearBill = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.materialRadioButton3 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton4 = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rbtn_discountBill = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rbtn_normalBill = new MaterialSkin.Controls.MaterialRadioButton();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btn_printListFood = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.materialRadioButton2 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialRadioButton1 = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rbtn_takeAway = new MaterialSkin.Controls.MaterialRadioButton();
+            this.rbtn_notTake = new MaterialSkin.Controls.MaterialRadioButton();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.btn_printBill = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
@@ -77,10 +77,8 @@
             this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
             this.txt_Pay = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_ExcessCash = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txt_MoneyOfCus = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
@@ -110,17 +108,8 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
             this.sideMenu = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btn_OptionFood = new System.Windows.Forms.Button();
             this.btn_table = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.logo = new MaterialSkin.Controls.MaterialLabel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.chartQuantityStatistics = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -131,28 +120,28 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.chartTotalStatistics = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dgvTotalStatistics = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnTotalSearch = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dtpTotalEnd = new Bunifu.Framework.UI.BunifuDatepicker();
             this.dtpTotalBegin = new Bunifu.Framework.UI.BunifuDatepicker();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.chartMonth = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.cbYearOfMonth = new System.Windows.Forms.ComboBox();
+            this.dgvMonth = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnMonthBillSearch = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.cbMonth = new System.Windows.Forms.ComboBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.chartYeah = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.dgvYear = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.btnYearSearch = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.cbYear = new System.Windows.Forms.ComboBox();
             this.MenuPanel = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.LogoA = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.sideA = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.cbMonth = new System.Windows.Forms.ComboBox();
-            this.btnMonthBillSearch = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.dgvMonth = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.cbYearOfMonth = new System.Windows.Forms.ComboBox();
-            this.chartMonth = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.cbYear = new System.Windows.Forms.ComboBox();
-            this.btnYearSearch = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.dgvYear = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.chartYeah = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.TabControl.SuspendLayout();
             this.tbHome.SuspendLayout();
@@ -168,8 +157,6 @@
             this.tabPage2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.sideMenu.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartQuantityStatistics)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuantityStatistics)).BeginInit();
@@ -177,11 +164,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartTotalStatistics)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTotalStatistics)).BeginInit();
             this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMonth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartMonth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvYear)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMonth)).BeginInit();
+            this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartYeah)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvYear)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -273,7 +260,7 @@
             this.bunifuCards2.color = System.Drawing.Color.Tomato;
             this.bunifuCards2.Controls.Add(this.btn_ClearBill);
             this.bunifuCards2.Controls.Add(this.bunifuGradientPanel2);
-            this.bunifuCards2.Controls.Add(this.bunifuThinButton22);
+            this.bunifuCards2.Controls.Add(this.btn_printListFood);
             this.bunifuCards2.Controls.Add(this.bunifuGradientPanel1);
             this.bunifuCards2.Controls.Add(this.btn_printBill);
             this.MenuPanel.SetDecoration(this.bunifuCards2, BunifuAnimatorNS.DecorationType.None);
@@ -321,8 +308,8 @@
             this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
             this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuGradientPanel2.Controls.Add(this.materialRadioButton3);
-            this.bunifuGradientPanel2.Controls.Add(this.materialRadioButton4);
+            this.bunifuGradientPanel2.Controls.Add(this.rbtn_discountBill);
+            this.bunifuGradientPanel2.Controls.Add(this.rbtn_normalBill);
             this.bunifuGradientPanel2.Controls.Add(this.materialLabel8);
             this.MenuPanel.SetDecoration(this.bunifuGradientPanel2, BunifuAnimatorNS.DecorationType.None);
             this.LogoA.SetDecoration(this.bunifuGradientPanel2, BunifuAnimatorNS.DecorationType.None);
@@ -337,45 +324,45 @@
             this.bunifuGradientPanel2.Size = new System.Drawing.Size(441, 59);
             this.bunifuGradientPanel2.TabIndex = 21;
             // 
-            // materialRadioButton3
+            // rbtn_discountBill
             // 
-            this.materialRadioButton3.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.materialRadioButton3, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialRadioButton3, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialRadioButton3, BunifuAnimatorNS.DecorationType.None);
-            this.materialRadioButton3.Depth = 0;
-            this.materialRadioButton3.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialRadioButton3.Location = new System.Drawing.Point(270, 31);
-            this.materialRadioButton3.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton3.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton3.Name = "materialRadioButton3";
-            this.materialRadioButton3.Ripple = true;
-            this.materialRadioButton3.Size = new System.Drawing.Size(152, 30);
-            this.materialRadioButton3.TabIndex = 21;
-            this.materialRadioButton3.Text = "Hóa Đơn Chiết Khấu";
-            this.materialRadioButton3.UseVisualStyleBackColor = true;
+            this.rbtn_discountBill.AutoSize = true;
+            this.MenuPanel.SetDecoration(this.rbtn_discountBill, BunifuAnimatorNS.DecorationType.None);
+            this.LogoA.SetDecoration(this.rbtn_discountBill, BunifuAnimatorNS.DecorationType.None);
+            this.sideA.SetDecoration(this.rbtn_discountBill, BunifuAnimatorNS.DecorationType.None);
+            this.rbtn_discountBill.Depth = 0;
+            this.rbtn_discountBill.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_discountBill.Location = new System.Drawing.Point(270, 31);
+            this.rbtn_discountBill.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtn_discountBill.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtn_discountBill.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtn_discountBill.Name = "rbtn_discountBill";
+            this.rbtn_discountBill.Ripple = true;
+            this.rbtn_discountBill.Size = new System.Drawing.Size(152, 30);
+            this.rbtn_discountBill.TabIndex = 21;
+            this.rbtn_discountBill.Text = "Hóa Đơn Chiết Khấu";
+            this.rbtn_discountBill.UseVisualStyleBackColor = true;
             // 
-            // materialRadioButton4
+            // rbtn_normalBill
             // 
-            this.materialRadioButton4.AutoSize = true;
-            this.materialRadioButton4.Checked = true;
-            this.MenuPanel.SetDecoration(this.materialRadioButton4, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialRadioButton4, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialRadioButton4, BunifuAnimatorNS.DecorationType.None);
-            this.materialRadioButton4.Depth = 0;
-            this.materialRadioButton4.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialRadioButton4.Location = new System.Drawing.Point(270, 1);
-            this.materialRadioButton4.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton4.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton4.Name = "materialRadioButton4";
-            this.materialRadioButton4.Ripple = true;
-            this.materialRadioButton4.Size = new System.Drawing.Size(164, 30);
-            this.materialRadioButton4.TabIndex = 20;
-            this.materialRadioButton4.TabStop = true;
-            this.materialRadioButton4.Text = "Hóa Đơn Bình Thường";
-            this.materialRadioButton4.UseVisualStyleBackColor = true;
+            this.rbtn_normalBill.AutoSize = true;
+            this.rbtn_normalBill.Checked = true;
+            this.MenuPanel.SetDecoration(this.rbtn_normalBill, BunifuAnimatorNS.DecorationType.None);
+            this.LogoA.SetDecoration(this.rbtn_normalBill, BunifuAnimatorNS.DecorationType.None);
+            this.sideA.SetDecoration(this.rbtn_normalBill, BunifuAnimatorNS.DecorationType.None);
+            this.rbtn_normalBill.Depth = 0;
+            this.rbtn_normalBill.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_normalBill.Location = new System.Drawing.Point(270, 1);
+            this.rbtn_normalBill.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtn_normalBill.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtn_normalBill.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtn_normalBill.Name = "rbtn_normalBill";
+            this.rbtn_normalBill.Ripple = true;
+            this.rbtn_normalBill.Size = new System.Drawing.Size(164, 30);
+            this.rbtn_normalBill.TabIndex = 20;
+            this.rbtn_normalBill.TabStop = true;
+            this.rbtn_normalBill.Text = "Hóa Đơn Bình Thường";
+            this.rbtn_normalBill.UseVisualStyleBackColor = true;
             // 
             // materialLabel8
             // 
@@ -393,41 +380,42 @@
             this.materialLabel8.TabIndex = 18;
             this.materialLabel8.Text = "Hình Thức Xuất Hóa Đơn:";
             // 
-            // bunifuThinButton22
+            // btn_printListFood
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "In Danh Sách";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MenuPanel.SetDecoration(this.bunifuThinButton22, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.bunifuThinButton22, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.bunifuThinButton22, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.Black;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Red;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.bunifuThinButton22.Location = new System.Drawing.Point(125, 172);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(104, 55);
-            this.bunifuThinButton22.TabIndex = 20;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_printListFood.ActiveBorderThickness = 1;
+            this.btn_printListFood.ActiveCornerRadius = 20;
+            this.btn_printListFood.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.btn_printListFood.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_printListFood.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_printListFood.BackColor = System.Drawing.Color.White;
+            this.btn_printListFood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_printListFood.BackgroundImage")));
+            this.btn_printListFood.ButtonText = "In Danh Sách Món";
+            this.btn_printListFood.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MenuPanel.SetDecoration(this.btn_printListFood, BunifuAnimatorNS.DecorationType.None);
+            this.sideA.SetDecoration(this.btn_printListFood, BunifuAnimatorNS.DecorationType.None);
+            this.LogoA.SetDecoration(this.btn_printListFood, BunifuAnimatorNS.DecorationType.None);
+            this.btn_printListFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_printListFood.ForeColor = System.Drawing.Color.Black;
+            this.btn_printListFood.IdleBorderThickness = 1;
+            this.btn_printListFood.IdleCornerRadius = 20;
+            this.btn_printListFood.IdleFillColor = System.Drawing.Color.White;
+            this.btn_printListFood.IdleForecolor = System.Drawing.Color.Red;
+            this.btn_printListFood.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.btn_printListFood.Location = new System.Drawing.Point(125, 172);
+            this.btn_printListFood.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_printListFood.Name = "btn_printListFood";
+            this.btn_printListFood.Size = new System.Drawing.Size(104, 55);
+            this.btn_printListFood.TabIndex = 20;
+            this.btn_printListFood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_printListFood.Click += new System.EventHandler(this.btn_printListFood_Click);
             // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuGradientPanel1.Controls.Add(this.materialRadioButton2);
-            this.bunifuGradientPanel1.Controls.Add(this.materialRadioButton1);
+            this.bunifuGradientPanel1.Controls.Add(this.rbtn_takeAway);
+            this.bunifuGradientPanel1.Controls.Add(this.rbtn_notTake);
             this.bunifuGradientPanel1.Controls.Add(this.materialLabel7);
             this.MenuPanel.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
             this.LogoA.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
@@ -442,45 +430,45 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(441, 71);
             this.bunifuGradientPanel1.TabIndex = 19;
             // 
-            // materialRadioButton2
+            // rbtn_takeAway
             // 
-            this.materialRadioButton2.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.materialRadioButton2, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialRadioButton2, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialRadioButton2, BunifuAnimatorNS.DecorationType.None);
-            this.materialRadioButton2.Depth = 0;
-            this.materialRadioButton2.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialRadioButton2.Location = new System.Drawing.Point(270, 38);
-            this.materialRadioButton2.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton2.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton2.Name = "materialRadioButton2";
-            this.materialRadioButton2.Ripple = true;
-            this.materialRadioButton2.Size = new System.Drawing.Size(83, 30);
-            this.materialRadioButton2.TabIndex = 21;
-            this.materialRadioButton2.Text = "Mang Về";
-            this.materialRadioButton2.UseVisualStyleBackColor = true;
+            this.rbtn_takeAway.AutoSize = true;
+            this.MenuPanel.SetDecoration(this.rbtn_takeAway, BunifuAnimatorNS.DecorationType.None);
+            this.LogoA.SetDecoration(this.rbtn_takeAway, BunifuAnimatorNS.DecorationType.None);
+            this.sideA.SetDecoration(this.rbtn_takeAway, BunifuAnimatorNS.DecorationType.None);
+            this.rbtn_takeAway.Depth = 0;
+            this.rbtn_takeAway.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_takeAway.Location = new System.Drawing.Point(270, 38);
+            this.rbtn_takeAway.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtn_takeAway.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtn_takeAway.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtn_takeAway.Name = "rbtn_takeAway";
+            this.rbtn_takeAway.Ripple = true;
+            this.rbtn_takeAway.Size = new System.Drawing.Size(83, 30);
+            this.rbtn_takeAway.TabIndex = 21;
+            this.rbtn_takeAway.Text = "Mang Về";
+            this.rbtn_takeAway.UseVisualStyleBackColor = true;
             // 
-            // materialRadioButton1
+            // rbtn_notTake
             // 
-            this.materialRadioButton1.AutoSize = true;
-            this.materialRadioButton1.Checked = true;
-            this.MenuPanel.SetDecoration(this.materialRadioButton1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialRadioButton1, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialRadioButton1, BunifuAnimatorNS.DecorationType.None);
-            this.materialRadioButton1.Depth = 0;
-            this.materialRadioButton1.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialRadioButton1.Location = new System.Drawing.Point(270, 8);
-            this.materialRadioButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialRadioButton1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialRadioButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRadioButton1.Name = "materialRadioButton1";
-            this.materialRadioButton1.Ripple = true;
-            this.materialRadioButton1.Size = new System.Drawing.Size(112, 30);
-            this.materialRadioButton1.TabIndex = 20;
-            this.materialRadioButton1.TabStop = true;
-            this.materialRadioButton1.Text = "Uống Tại Chỗ";
-            this.materialRadioButton1.UseVisualStyleBackColor = true;
+            this.rbtn_notTake.AutoSize = true;
+            this.rbtn_notTake.Checked = true;
+            this.MenuPanel.SetDecoration(this.rbtn_notTake, BunifuAnimatorNS.DecorationType.None);
+            this.LogoA.SetDecoration(this.rbtn_notTake, BunifuAnimatorNS.DecorationType.None);
+            this.sideA.SetDecoration(this.rbtn_notTake, BunifuAnimatorNS.DecorationType.None);
+            this.rbtn_notTake.Depth = 0;
+            this.rbtn_notTake.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_notTake.Location = new System.Drawing.Point(270, 8);
+            this.rbtn_notTake.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtn_notTake.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtn_notTake.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtn_notTake.Name = "rbtn_notTake";
+            this.rbtn_notTake.Ripple = true;
+            this.rbtn_notTake.Size = new System.Drawing.Size(112, 30);
+            this.rbtn_notTake.TabIndex = 20;
+            this.rbtn_notTake.TabStop = true;
+            this.rbtn_notTake.Text = "Uống Tại Chỗ";
+            this.rbtn_notTake.UseVisualStyleBackColor = true;
             // 
             // materialLabel7
             // 
@@ -539,10 +527,8 @@
             this.bunifuCards1.Controls.Add(this.materialLabel10);
             this.bunifuCards1.Controls.Add(this.materialLabel9);
             this.bunifuCards1.Controls.Add(this.txt_Pay);
-            this.bunifuCards1.Controls.Add(this.bunifuMaterialTextbox4);
             this.bunifuCards1.Controls.Add(this.txt_ExcessCash);
             this.bunifuCards1.Controls.Add(this.txt_MoneyOfCus);
-            this.bunifuCards1.Controls.Add(this.materialLabel6);
             this.bunifuCards1.Controls.Add(this.materialLabel5);
             this.bunifuCards1.Controls.Add(this.materialLabel4);
             this.bunifuCards1.Controls.Add(this.materialLabel3);
@@ -589,7 +575,7 @@
             this.lb_Table.Depth = 0;
             this.lb_Table.Font = new System.Drawing.Font("Roboto", 11F);
             this.lb_Table.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_Table.Location = new System.Drawing.Point(8, 32);
+            this.lb_Table.Location = new System.Drawing.Point(13, 32);
             this.lb_Table.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_Table.Name = "lb_Table";
             this.lb_Table.Size = new System.Drawing.Size(64, 19);
@@ -605,7 +591,7 @@
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel11.Location = new System.Drawing.Point(368, 154);
+            this.materialLabel11.Location = new System.Drawing.Point(368, 182);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(40, 19);
@@ -621,7 +607,7 @@
             this.materialLabel10.Depth = 0;
             this.materialLabel10.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel10.Location = new System.Drawing.Point(368, 109);
+            this.materialLabel10.Location = new System.Drawing.Point(368, 128);
             this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel10.Name = "materialLabel10";
             this.materialLabel10.Size = new System.Drawing.Size(40, 19);
@@ -637,7 +623,7 @@
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel9.Location = new System.Drawing.Point(368, 61);
+            this.materialLabel9.Location = new System.Drawing.Point(368, 71);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(40, 19);
@@ -660,34 +646,12 @@
             this.txt_Pay.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_Pay.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.txt_Pay.LineThickness = 3;
-            this.txt_Pay.Location = new System.Drawing.Point(264, 46);
+            this.txt_Pay.Location = new System.Drawing.Point(264, 59);
             this.txt_Pay.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Pay.Name = "txt_Pay";
             this.txt_Pay.Size = new System.Drawing.Size(144, 44);
             this.txt_Pay.TabIndex = 14;
             this.txt_Pay.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMaterialTextbox4
-            // 
-            this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.MenuPanel.SetDecoration(this.bunifuMaterialTextbox4, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.bunifuMaterialTextbox4, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.bunifuMaterialTextbox4, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuMaterialTextbox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox4.HintText = "";
-            this.bunifuMaterialTextbox4.isPassword = false;
-            this.bunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.bunifuMaterialTextbox4.LineThickness = 3;
-            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(264, 200);
-            this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
-            this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(144, 28);
-            this.bunifuMaterialTextbox4.TabIndex = 13;
-            this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txt_ExcessCash
             // 
@@ -705,7 +669,7 @@
             this.txt_ExcessCash.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_ExcessCash.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.txt_ExcessCash.LineThickness = 3;
-            this.txt_ExcessCash.Location = new System.Drawing.Point(264, 154);
+            this.txt_ExcessCash.Location = new System.Drawing.Point(264, 182);
             this.txt_ExcessCash.Margin = new System.Windows.Forms.Padding(4);
             this.txt_ExcessCash.Name = "txt_ExcessCash";
             this.txt_ExcessCash.Size = new System.Drawing.Size(144, 30);
@@ -727,7 +691,7 @@
             this.txt_MoneyOfCus.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_MoneyOfCus.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.txt_MoneyOfCus.LineThickness = 3;
-            this.txt_MoneyOfCus.Location = new System.Drawing.Point(264, 109);
+            this.txt_MoneyOfCus.Location = new System.Drawing.Point(264, 128);
             this.txt_MoneyOfCus.Margin = new System.Windows.Forms.Padding(4);
             this.txt_MoneyOfCus.Name = "txt_MoneyOfCus";
             this.txt_MoneyOfCus.Size = new System.Drawing.Size(144, 32);
@@ -735,22 +699,7 @@
             this.txt_MoneyOfCus.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_MoneyOfCus.OnValueChanged += new System.EventHandler(this.txt_MoneyOfCus_OnValueChanged);
             this.txt_MoneyOfCus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_OnlyNumber);
-            // 
-            // materialLabel6
-            // 
-            this.materialLabel6.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.materialLabel6, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialLabel6, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialLabel6, BunifuAnimatorNS.DecorationType.None);
-            this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(8, 212);
-            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(46, 19);
-            this.materialLabel6.TabIndex = 10;
-            this.materialLabel6.Text = "VAT :";
+            this.txt_MoneyOfCus.Leave += new System.EventHandler(this.txt_MoneyOfCus_Leave);
             // 
             // materialLabel5
             // 
@@ -761,7 +710,7 @@
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(8, 165);
+            this.materialLabel5.Location = new System.Drawing.Point(13, 193);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(84, 19);
@@ -777,7 +726,7 @@
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(8, 118);
+            this.materialLabel4.Location = new System.Drawing.Point(13, 141);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(89, 19);
@@ -793,7 +742,7 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(8, 71);
+            this.materialLabel3.Location = new System.Drawing.Point(13, 84);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(96, 19);
@@ -856,19 +805,19 @@
             // 
             // DTGV_bill
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DTGV_bill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DTGV_bill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
             this.DTGV_bill.BackgroundColor = System.Drawing.Color.White;
             this.DTGV_bill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DTGV_bill.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTGV_bill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTGV_bill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.DTGV_bill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DTGV_bill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cl_foodName,
@@ -921,12 +870,14 @@
             // cl_Disscount
             // 
             this.cl_Disscount.HeaderText = "Giảm Giá";
+            this.cl_Disscount.MaxInputLength = 3;
             this.cl_Disscount.Name = "cl_Disscount";
             this.cl_Disscount.Width = 85;
             // 
             // cl_Note
             // 
             this.cl_Note.HeaderText = "Ghi Chú";
+            this.cl_Note.MaxInputLength = 100;
             this.cl_Note.Name = "cl_Note";
             this.cl_Note.Width = 310;
             // 
@@ -986,6 +937,8 @@
             this.txt_Discount.TabIndex = 12;
             this.txt_Discount.Text = "0";
             this.txt_Discount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_Discount.OnValueChanged += new System.EventHandler(this.txt_Discount_OnValueChanged);
+            this.txt_Discount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Discount_KeyPress);
             // 
             // materialLabel1
             // 
@@ -1131,7 +1084,7 @@
             // 
             // panelMain
             // 
-            this.panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(46)))), ((int)(((byte)(58)))));
+            this.panelMain.BackColor = System.Drawing.Color.White;
             this.MenuPanel.SetDecoration(this.panelMain, BunifuAnimatorNS.DecorationType.None);
             this.LogoA.SetDecoration(this.panelMain, BunifuAnimatorNS.DecorationType.None);
             this.sideA.SetDecoration(this.panelMain, BunifuAnimatorNS.DecorationType.None);
@@ -1143,16 +1096,9 @@
             // 
             // sideMenu
             // 
-            this.sideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.sideMenu.Controls.Add(this.label7);
-            this.sideMenu.Controls.Add(this.label6);
-            this.sideMenu.Controls.Add(this.label5);
-            this.sideMenu.Controls.Add(this.button3);
-            this.sideMenu.Controls.Add(this.button2);
-            this.sideMenu.Controls.Add(this.button1);
-            this.sideMenu.Controls.Add(this.label3);
+            this.sideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.sideMenu.Controls.Add(this.btn_OptionFood);
             this.sideMenu.Controls.Add(this.btn_table);
-            this.sideMenu.Controls.Add(this.panel7);
             this.MenuPanel.SetDecoration(this.sideMenu, BunifuAnimatorNS.DecorationType.None);
             this.LogoA.SetDecoration(this.sideMenu, BunifuAnimatorNS.DecorationType.None);
             this.sideA.SetDecoration(this.sideMenu, BunifuAnimatorNS.DecorationType.None);
@@ -1162,112 +1108,29 @@
             this.sideMenu.Size = new System.Drawing.Size(200, 767);
             this.sideMenu.TabIndex = 0;
             // 
-            // label7
+            // btn_OptionFood
             // 
-            this.label7.AutoSize = true;
-            this.sideA.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label7.Location = new System.Drawing.Point(21, 262);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 17);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "label7";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.sideA.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label6.Location = new System.Drawing.Point(21, 322);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 17);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "label6";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.sideA.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label5.Location = new System.Drawing.Point(21, 382);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 17);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "label5";
-            // 
-            // button3
-            // 
-            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.sideA.SetDecoration(this.button3, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.button3, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.button3, BunifuAnimatorNS.DecorationType.None);
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(0, 240);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 60);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Tùy chỉnh bàn";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.sideA.SetDecoration(this.button2, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.button2, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.button2, BunifuAnimatorNS.DecorationType.None);
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(0, 360);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 60);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Tùy chỉnh bàn";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.sideA.SetDecoration(this.button1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.button1, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.button1, BunifuAnimatorNS.DecorationType.None);
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(0, 300);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 60);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Tùy chỉnh bàn";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.sideA.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label3.Location = new System.Drawing.Point(21, 203);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "label3";
+            this.btn_OptionFood.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_OptionFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.sideA.SetDecoration(this.btn_OptionFood, BunifuAnimatorNS.DecorationType.None);
+            this.LogoA.SetDecoration(this.btn_OptionFood, BunifuAnimatorNS.DecorationType.None);
+            this.MenuPanel.SetDecoration(this.btn_OptionFood, BunifuAnimatorNS.DecorationType.None);
+            this.btn_OptionFood.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.btn_OptionFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_OptionFood.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_OptionFood.Location = new System.Drawing.Point(0, 240);
+            this.btn_OptionFood.Name = "btn_OptionFood";
+            this.btn_OptionFood.Size = new System.Drawing.Size(200, 60);
+            this.btn_OptionFood.TabIndex = 10;
+            this.btn_OptionFood.Text = "Tùy Chỉnh Thức Uống";
+            this.btn_OptionFood.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_OptionFood.UseVisualStyleBackColor = false;
+            this.btn_OptionFood.Click += new System.EventHandler(this.btn_OptionFood_Click);
             // 
             // btn_table
             // 
             this.btn_table.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.sideA.SetDecoration(this.btn_table, BunifuAnimatorNS.DecorationType.None);
             this.LogoA.SetDecoration(this.btn_table, BunifuAnimatorNS.DecorationType.None);
             this.MenuPanel.SetDecoration(this.btn_table, BunifuAnimatorNS.DecorationType.None);
@@ -1279,56 +1142,9 @@
             this.btn_table.Size = new System.Drawing.Size(200, 60);
             this.btn_table.TabIndex = 6;
             this.btn_table.Text = "Tùy chỉnh bàn";
-            this.btn_table.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_table.UseVisualStyleBackColor = true;
+            this.btn_table.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_table.UseVisualStyleBackColor = false;
             this.btn_table.Click += new System.EventHandler(this.btn_table_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.logo);
-            this.panel7.Controls.Add(this.bunifuImageButton1);
-            this.MenuPanel.SetDecoration(this.panel7, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.panel7, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.panel7, BunifuAnimatorNS.DecorationType.None);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 63);
-            this.panel7.TabIndex = 5;
-            // 
-            // logo
-            // 
-            this.logo.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.logo, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.logo, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.logo, BunifuAnimatorNS.DecorationType.None);
-            this.logo.Depth = 0;
-            this.logo.Font = new System.Drawing.Font("Roboto", 11F);
-            this.logo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.logo.Location = new System.Drawing.Point(5, 22);
-            this.logo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(84, 19);
-            this.logo.TabIndex = 0;
-            this.logo.Text = "RoverCoffe";
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.MenuPanel.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bunifuImageButton1.Image = global::RoverCoffeManage2.Properties.Resources._3_gach;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(150, 0);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(50, 63);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 1;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click_1);
             // 
             // tabPage1
             // 
@@ -1363,19 +1179,19 @@
             // 
             // chartQuantityStatistics
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartQuantityStatistics.ChartAreas.Add(chartArea1);
+            chartArea9.Name = "ChartArea1";
+            this.chartQuantityStatistics.ChartAreas.Add(chartArea9);
             this.LogoA.SetDecoration(this.chartQuantityStatistics, BunifuAnimatorNS.DecorationType.None);
             this.MenuPanel.SetDecoration(this.chartQuantityStatistics, BunifuAnimatorNS.DecorationType.None);
             this.sideA.SetDecoration(this.chartQuantityStatistics, BunifuAnimatorNS.DecorationType.None);
-            legend1.Name = "Legend1";
-            this.chartQuantityStatistics.Legends.Add(legend1);
+            legend9.Name = "Legend1";
+            this.chartQuantityStatistics.Legends.Add(legend9);
             this.chartQuantityStatistics.Location = new System.Drawing.Point(550, 163);
             this.chartQuantityStatistics.Name = "chartQuantityStatistics";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Số lượng";
-            this.chartQuantityStatistics.Series.Add(series1);
+            series9.ChartArea = "ChartArea1";
+            series9.Legend = "Legend1";
+            series9.Name = "Số lượng";
+            this.chartQuantityStatistics.Series.Add(series9);
             this.chartQuantityStatistics.Size = new System.Drawing.Size(552, 476);
             this.chartQuantityStatistics.TabIndex = 4;
             this.chartQuantityStatistics.Text = "chart1";
@@ -1462,38 +1278,38 @@
             // 
             // chartTotalStatistics
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartTotalStatistics.ChartAreas.Add(chartArea2);
+            chartArea10.Name = "ChartArea1";
+            this.chartTotalStatistics.ChartAreas.Add(chartArea10);
             this.LogoA.SetDecoration(this.chartTotalStatistics, BunifuAnimatorNS.DecorationType.None);
             this.MenuPanel.SetDecoration(this.chartTotalStatistics, BunifuAnimatorNS.DecorationType.None);
             this.sideA.SetDecoration(this.chartTotalStatistics, BunifuAnimatorNS.DecorationType.None);
-            legend2.Name = "Legend1";
-            this.chartTotalStatistics.Legends.Add(legend2);
+            legend10.Name = "Legend1";
+            this.chartTotalStatistics.Legends.Add(legend10);
             this.chartTotalStatistics.Location = new System.Drawing.Point(600, 163);
             this.chartTotalStatistics.Name = "chartTotalStatistics";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Đồng";
-            this.chartTotalStatistics.Series.Add(series2);
+            series10.ChartArea = "ChartArea1";
+            series10.Legend = "Legend1";
+            series10.Name = "Đồng";
+            this.chartTotalStatistics.Series.Add(series10);
             this.chartTotalStatistics.Size = new System.Drawing.Size(498, 477);
             this.chartTotalStatistics.TabIndex = 4;
             this.chartTotalStatistics.Text = "chart1";
             // 
             // dgvTotalStatistics
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvTotalStatistics.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvTotalStatistics.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
             this.dgvTotalStatistics.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvTotalStatistics.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvTotalStatistics.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaShell;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTotalStatistics.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.SeaShell;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTotalStatistics.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dgvTotalStatistics.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTotalStatistics.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -1510,6 +1326,18 @@
             this.dgvTotalStatistics.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvTotalStatistics.Size = new System.Drawing.Size(401, 477);
             this.dgvTotalStatistics.TabIndex = 3;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Thành tiền";
+            this.Column2.Name = "Column2";
+            this.Column2.Visible = false;
             // 
             // btnTotalSearch
             // 
@@ -1580,93 +1408,99 @@
             this.tabPage5.Text = "KHÓA SỔ";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // tabPage6
+            // chartMonth
             // 
-            this.tabPage6.Controls.Add(this.chartYeah);
-            this.tabPage6.Controls.Add(this.dgvYear);
-            this.tabPage6.Controls.Add(this.btnYearSearch);
-            this.tabPage6.Controls.Add(this.cbYear);
-            this.sideA.SetDecoration(this.tabPage6, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.tabPage6, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.tabPage6, BunifuAnimatorNS.DecorationType.None);
-            this.tabPage6.Location = new System.Drawing.Point(4, 26);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1560, 773);
-            this.tabPage6.TabIndex = 6;
-            this.tabPage6.Text = "CÀI ĐẶT";
-            this.tabPage6.UseVisualStyleBackColor = true;
+            chartArea11.Name = "ChartArea1";
+            this.chartMonth.ChartAreas.Add(chartArea11);
+            this.LogoA.SetDecoration(this.chartMonth, BunifuAnimatorNS.DecorationType.None);
+            this.MenuPanel.SetDecoration(this.chartMonth, BunifuAnimatorNS.DecorationType.None);
+            this.sideA.SetDecoration(this.chartMonth, BunifuAnimatorNS.DecorationType.None);
+            legend11.Name = "Legend1";
+            this.chartMonth.Legends.Add(legend11);
+            this.chartMonth.Location = new System.Drawing.Point(426, 72);
+            this.chartMonth.Name = "chartMonth";
+            series11.ChartArea = "ChartArea1";
+            series11.Legend = "Legend1";
+            series11.Name = "Đồng";
+            this.chartMonth.Series.Add(series11);
+            this.chartMonth.Size = new System.Drawing.Size(441, 386);
+            this.chartMonth.TabIndex = 4;
+            this.chartMonth.Text = "chart1";
             // 
-            // MenuPanel
+            // cbYearOfMonth
             // 
-            this.MenuPanel.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
-            this.MenuPanel.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.MenuPanel.DefaultAnimation = animation3;
+            this.LogoA.SetDecoration(this.cbYearOfMonth, BunifuAnimatorNS.DecorationType.None);
+            this.MenuPanel.SetDecoration(this.cbYearOfMonth, BunifuAnimatorNS.DecorationType.None);
+            this.sideA.SetDecoration(this.cbYearOfMonth, BunifuAnimatorNS.DecorationType.None);
+            this.cbYearOfMonth.FormattingEnabled = true;
+            this.cbYearOfMonth.Items.AddRange(new object[] {
+            "2017",
+            "2018"});
+            this.cbYearOfMonth.Location = new System.Drawing.Point(148, 31);
+            this.cbYearOfMonth.Name = "cbYearOfMonth";
+            this.cbYearOfMonth.Size = new System.Drawing.Size(121, 25);
+            this.cbYearOfMonth.TabIndex = 3;
             // 
-            // LogoA
+            // dgvMonth
             // 
-            this.LogoA.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
-            this.LogoA.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.LogoA.DefaultAnimation = animation2;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvMonth.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            this.dgvMonth.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvMonth.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvMonth.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.SeaShell;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMonth.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
+            this.dgvMonth.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMonth.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column3,
+            this.Column4});
+            this.sideA.SetDecoration(this.dgvMonth, BunifuAnimatorNS.DecorationType.None);
+            this.LogoA.SetDecoration(this.dgvMonth, BunifuAnimatorNS.DecorationType.None);
+            this.MenuPanel.SetDecoration(this.dgvMonth, BunifuAnimatorNS.DecorationType.None);
+            this.dgvMonth.DoubleBuffered = true;
+            this.dgvMonth.EnableHeadersVisualStyles = false;
+            this.dgvMonth.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.dgvMonth.HeaderForeColor = System.Drawing.Color.SeaShell;
+            this.dgvMonth.Location = new System.Drawing.Point(12, 72);
+            this.dgvMonth.Name = "dgvMonth";
+            this.dgvMonth.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvMonth.Size = new System.Drawing.Size(367, 386);
+            this.dgvMonth.TabIndex = 2;
             // 
-            // sideA
+            // Column3
             // 
-            this.sideA.AnimationType = BunifuAnimatorNS.AnimationType.Leaf;
-            this.sideA.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 1F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.sideA.DefaultAnimation = animation1;
+            this.Column3.HeaderText = "Ngày";
+            this.Column3.Name = "Column3";
+            this.Column3.Visible = false;
             // 
-            // dataGridViewImageColumn1
+            // Column4
             // 
-            this.dataGridViewImageColumn1.HeaderText = "Xóa Món";
-            this.dataGridViewImageColumn1.Image = global::RoverCoffeManage2.Properties.Resources.del;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn1.Width = 70;
+            this.Column4.HeaderText = "Thành tiền";
+            this.Column4.Name = "Column4";
+            this.Column4.Visible = false;
+            // 
+            // btnMonthBillSearch
+            // 
+            this.MenuPanel.SetDecoration(this.btnMonthBillSearch, BunifuAnimatorNS.DecorationType.None);
+            this.LogoA.SetDecoration(this.btnMonthBillSearch, BunifuAnimatorNS.DecorationType.None);
+            this.sideA.SetDecoration(this.btnMonthBillSearch, BunifuAnimatorNS.DecorationType.None);
+            this.btnMonthBillSearch.Depth = 0;
+            this.btnMonthBillSearch.Icon = null;
+            this.btnMonthBillSearch.Location = new System.Drawing.Point(287, 31);
+            this.btnMonthBillSearch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnMonthBillSearch.Name = "btnMonthBillSearch";
+            this.btnMonthBillSearch.Primary = true;
+            this.btnMonthBillSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnMonthBillSearch.TabIndex = 1;
+            this.btnMonthBillSearch.Text = "Search";
+            this.btnMonthBillSearch.UseVisualStyleBackColor = true;
+            this.btnMonthBillSearch.Click += new System.EventHandler(this.btnMonthBillSearch_Click);
             // 
             // cbMonth
             // 
@@ -1692,102 +1526,70 @@
             this.cbMonth.Size = new System.Drawing.Size(121, 25);
             this.cbMonth.TabIndex = 0;
             // 
-            // btnMonthBillSearch
+            // tabPage6
             // 
-            this.MenuPanel.SetDecoration(this.btnMonthBillSearch, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btnMonthBillSearch, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.btnMonthBillSearch, BunifuAnimatorNS.DecorationType.None);
-            this.btnMonthBillSearch.Depth = 0;
-            this.btnMonthBillSearch.Icon = null;
-            this.btnMonthBillSearch.Location = new System.Drawing.Point(287, 31);
-            this.btnMonthBillSearch.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnMonthBillSearch.Name = "btnMonthBillSearch";
-            this.btnMonthBillSearch.Primary = true;
-            this.btnMonthBillSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnMonthBillSearch.TabIndex = 1;
-            this.btnMonthBillSearch.Text = "Search";
-            this.btnMonthBillSearch.UseVisualStyleBackColor = true;
-            this.btnMonthBillSearch.Click += new System.EventHandler(this.btnMonthBillSearch_Click);
+            this.tabPage6.Controls.Add(this.chartYeah);
+            this.tabPage6.Controls.Add(this.dgvYear);
+            this.tabPage6.Controls.Add(this.btnYearSearch);
+            this.tabPage6.Controls.Add(this.cbYear);
+            this.sideA.SetDecoration(this.tabPage6, BunifuAnimatorNS.DecorationType.None);
+            this.LogoA.SetDecoration(this.tabPage6, BunifuAnimatorNS.DecorationType.None);
+            this.MenuPanel.SetDecoration(this.tabPage6, BunifuAnimatorNS.DecorationType.None);
+            this.tabPage6.Location = new System.Drawing.Point(4, 26);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1560, 773);
+            this.tabPage6.TabIndex = 6;
+            this.tabPage6.Text = "CÀI ĐẶT";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // dgvMonth
+            // chartYeah
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvMonth.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvMonth.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvMonth.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvMonth.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaShell;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMonth.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvMonth.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMonth.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column3,
-            this.Column4});
-            this.sideA.SetDecoration(this.dgvMonth, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.dgvMonth, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.dgvMonth, BunifuAnimatorNS.DecorationType.None);
-            this.dgvMonth.DoubleBuffered = true;
-            this.dgvMonth.EnableHeadersVisualStyles = false;
-            this.dgvMonth.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.dgvMonth.HeaderForeColor = System.Drawing.Color.SeaShell;
-            this.dgvMonth.Location = new System.Drawing.Point(12, 72);
-            this.dgvMonth.Name = "dgvMonth";
-            this.dgvMonth.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvMonth.Size = new System.Drawing.Size(367, 386);
-            this.dgvMonth.TabIndex = 2;
+            chartArea12.Name = "ChartArea1";
+            this.chartYeah.ChartAreas.Add(chartArea12);
+            this.LogoA.SetDecoration(this.chartYeah, BunifuAnimatorNS.DecorationType.None);
+            this.MenuPanel.SetDecoration(this.chartYeah, BunifuAnimatorNS.DecorationType.None);
+            this.sideA.SetDecoration(this.chartYeah, BunifuAnimatorNS.DecorationType.None);
+            legend12.Name = "Legend1";
+            this.chartYeah.Legends.Add(legend12);
+            this.chartYeah.Location = new System.Drawing.Point(677, 65);
+            this.chartYeah.Name = "chartYeah";
+            series12.ChartArea = "ChartArea1";
+            series12.Legend = "Legend1";
+            series12.Name = "Đồng";
+            this.chartYeah.Series.Add(series12);
+            this.chartYeah.Size = new System.Drawing.Size(475, 529);
+            this.chartYeah.TabIndex = 3;
+            this.chartYeah.Text = "chart1";
             // 
-            // cbYearOfMonth
+            // dgvYear
             // 
-            this.LogoA.SetDecoration(this.cbYearOfMonth, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.cbYearOfMonth, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.cbYearOfMonth, BunifuAnimatorNS.DecorationType.None);
-            this.cbYearOfMonth.FormattingEnabled = true;
-            this.cbYearOfMonth.Items.AddRange(new object[] {
-            "2017",
-            "2018"});
-            this.cbYearOfMonth.Location = new System.Drawing.Point(148, 31);
-            this.cbYearOfMonth.Name = "cbYearOfMonth";
-            this.cbYearOfMonth.Size = new System.Drawing.Size(121, 25);
-            this.cbYearOfMonth.TabIndex = 3;
-            // 
-            // chartMonth
-            // 
-            chartArea3.Name = "ChartArea1";
-            this.chartMonth.ChartAreas.Add(chartArea3);
-            this.LogoA.SetDecoration(this.chartMonth, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.chartMonth, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.chartMonth, BunifuAnimatorNS.DecorationType.None);
-            legend3.Name = "Legend1";
-            this.chartMonth.Legends.Add(legend3);
-            this.chartMonth.Location = new System.Drawing.Point(426, 72);
-            this.chartMonth.Name = "chartMonth";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Đồng";
-            this.chartMonth.Series.Add(series3);
-            this.chartMonth.Size = new System.Drawing.Size(441, 386);
-            this.chartMonth.TabIndex = 4;
-            this.chartMonth.Text = "chart1";
-            // 
-            // cbYear
-            // 
-            this.LogoA.SetDecoration(this.cbYear, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.cbYear, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.cbYear, BunifuAnimatorNS.DecorationType.None);
-            this.cbYear.FormattingEnabled = true;
-            this.cbYear.Items.AddRange(new object[] {
-            "2016",
-            "2017",
-            "2018"});
-            this.cbYear.Location = new System.Drawing.Point(54, 24);
-            this.cbYear.Name = "cbYear";
-            this.cbYear.Size = new System.Drawing.Size(121, 25);
-            this.cbYear.TabIndex = 0;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvYear.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle23;
+            this.dgvYear.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvYear.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.SeaShell;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvYear.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            this.dgvYear.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.sideA.SetDecoration(this.dgvYear, BunifuAnimatorNS.DecorationType.None);
+            this.LogoA.SetDecoration(this.dgvYear, BunifuAnimatorNS.DecorationType.None);
+            this.MenuPanel.SetDecoration(this.dgvYear, BunifuAnimatorNS.DecorationType.None);
+            this.dgvYear.DoubleBuffered = true;
+            this.dgvYear.EnableHeadersVisualStyles = false;
+            this.dgvYear.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.dgvYear.HeaderForeColor = System.Drawing.Color.SeaShell;
+            this.dgvYear.Location = new System.Drawing.Point(12, 65);
+            this.dgvYear.Name = "dgvYear";
+            this.dgvYear.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvYear.Size = new System.Drawing.Size(518, 529);
+            this.dgvYear.TabIndex = 2;
             // 
             // btnYearSearch
             // 
@@ -1806,77 +1608,91 @@
             this.btnYearSearch.UseVisualStyleBackColor = true;
             this.btnYearSearch.Click += new System.EventHandler(this.btnYearSearch_Click);
             // 
-            // dgvYear
+            // cbYear
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvYear.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvYear.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvYear.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.SeaShell;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvYear.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvYear.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.sideA.SetDecoration(this.dgvYear, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.dgvYear, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.dgvYear, BunifuAnimatorNS.DecorationType.None);
-            this.dgvYear.DoubleBuffered = true;
-            this.dgvYear.EnableHeadersVisualStyles = false;
-            this.dgvYear.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.dgvYear.HeaderForeColor = System.Drawing.Color.SeaShell;
-            this.dgvYear.Location = new System.Drawing.Point(12, 65);
-            this.dgvYear.Name = "dgvYear";
-            this.dgvYear.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvYear.Size = new System.Drawing.Size(518, 529);
-            this.dgvYear.TabIndex = 2;
+            this.LogoA.SetDecoration(this.cbYear, BunifuAnimatorNS.DecorationType.None);
+            this.MenuPanel.SetDecoration(this.cbYear, BunifuAnimatorNS.DecorationType.None);
+            this.sideA.SetDecoration(this.cbYear, BunifuAnimatorNS.DecorationType.None);
+            this.cbYear.FormattingEnabled = true;
+            this.cbYear.Items.AddRange(new object[] {
+            "2016",
+            "2017",
+            "2018"});
+            this.cbYear.Location = new System.Drawing.Point(54, 24);
+            this.cbYear.Name = "cbYear";
+            this.cbYear.Size = new System.Drawing.Size(121, 25);
+            this.cbYear.TabIndex = 0;
             // 
-            // chartYeah
+            // MenuPanel
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartYeah.ChartAreas.Add(chartArea4);
-            this.LogoA.SetDecoration(this.chartYeah, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.chartYeah, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.chartYeah, BunifuAnimatorNS.DecorationType.None);
-            legend4.Name = "Legend1";
-            this.chartYeah.Legends.Add(legend4);
-            this.chartYeah.Location = new System.Drawing.Point(677, 65);
-            this.chartYeah.Name = "chartYeah";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Đồng";
-            this.chartYeah.Series.Add(series4);
-            this.chartYeah.Size = new System.Drawing.Size(475, 529);
-            this.chartYeah.TabIndex = 3;
-            this.chartYeah.Text = "chart1";
+            this.MenuPanel.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
+            this.MenuPanel.Cursor = null;
+            animation9.AnimateOnlyDifferences = true;
+            animation9.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.BlindCoeff")));
+            animation9.LeafCoeff = 0F;
+            animation9.MaxTime = 1F;
+            animation9.MinTime = 0F;
+            animation9.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicCoeff")));
+            animation9.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicShift")));
+            animation9.MosaicSize = 0;
+            animation9.Padding = new System.Windows.Forms.Padding(0);
+            animation9.RotateCoeff = 0F;
+            animation9.RotateLimit = 0F;
+            animation9.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.ScaleCoeff")));
+            animation9.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.SlideCoeff")));
+            animation9.TimeCoeff = 0F;
+            animation9.TransparencyCoeff = 0F;
+            this.MenuPanel.DefaultAnimation = animation9;
             // 
-            // Column1
+            // LogoA
             // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.Visible = false;
+            this.LogoA.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
+            this.LogoA.Cursor = null;
+            animation8.AnimateOnlyDifferences = true;
+            animation8.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.BlindCoeff")));
+            animation8.LeafCoeff = 0F;
+            animation8.MaxTime = 1F;
+            animation8.MinTime = 0F;
+            animation8.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicCoeff")));
+            animation8.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicShift")));
+            animation8.MosaicSize = 0;
+            animation8.Padding = new System.Windows.Forms.Padding(0);
+            animation8.RotateCoeff = 0F;
+            animation8.RotateLimit = 0F;
+            animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
+            animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
+            animation8.TimeCoeff = 0F;
+            animation8.TransparencyCoeff = 0F;
+            this.LogoA.DefaultAnimation = animation8;
             // 
-            // Column2
+            // sideA
             // 
-            this.Column2.HeaderText = "Thành tiền";
-            this.Column2.Name = "Column2";
-            this.Column2.Visible = false;
+            this.sideA.AnimationType = BunifuAnimatorNS.AnimationType.Leaf;
+            this.sideA.Cursor = null;
+            animation7.AnimateOnlyDifferences = true;
+            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
+            animation7.LeafCoeff = 1F;
+            animation7.MaxTime = 1F;
+            animation7.MinTime = 0F;
+            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
+            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
+            animation7.MosaicSize = 0;
+            animation7.Padding = new System.Windows.Forms.Padding(0);
+            animation7.RotateCoeff = 0F;
+            animation7.RotateLimit = 0F;
+            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
+            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
+            animation7.TimeCoeff = 0F;
+            animation7.TransparencyCoeff = 0F;
+            this.sideA.DefaultAnimation = animation7;
             // 
-            // Column3
+            // dataGridViewImageColumn1
             // 
-            this.Column3.HeaderText = "Ngày";
-            this.Column3.Name = "Column3";
-            this.Column3.Visible = false;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Thành tiền";
-            this.Column4.Name = "Column4";
-            this.Column4.Visible = false;
+            this.dataGridViewImageColumn1.HeaderText = "Xóa Món";
+            this.dataGridViewImageColumn1.Image = global::RoverCoffeManage2.Properties.Resources.del;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn1.Width = 70;
             // 
             // fAdmin
             // 
@@ -1918,10 +1734,6 @@
             this.tabPage2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.sideMenu.ResumeLayout(false);
-            this.sideMenu.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartQuantityStatistics)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuantityStatistics)).EndInit();
@@ -1929,11 +1741,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartTotalStatistics)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTotalStatistics)).EndInit();
             this.tabPage5.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMonth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartMonth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvYear)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMonth)).EndInit();
+            this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartYeah)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvYear)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1967,10 +1779,8 @@
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_Pay;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_ExcessCash;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_MoneyOfCus;
-        private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_Discount;
@@ -1978,45 +1788,29 @@
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_printBill;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton2;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton1;
+        private MaterialSkin.Controls.MaterialRadioButton rbtn_takeAway;
+        private MaterialSkin.Controls.MaterialRadioButton rbtn_notTake;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton3;
-        private MaterialSkin.Controls.MaterialRadioButton materialRadioButton4;
+        private MaterialSkin.Controls.MaterialRadioButton rbtn_discountBill;
+        private MaterialSkin.Controls.MaterialRadioButton rbtn_normalBill;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private Bunifu.Framework.UI.BunifuThinButton2 btn_printListFood;
         private Bunifu.Framework.UI.BunifuCustomDataGrid DTGV_bill;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel sideMenu;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private MaterialSkin.Controls.MaterialLabel logo;
-        private System.Windows.Forms.Panel panel7;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_ClearBill;
         private MaterialSkin.Controls.MaterialLabel materialLabel11;
         private MaterialSkin.Controls.MaterialLabel materialLabel10;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Button btn_table;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_OptionFood;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_table;
         private MaterialSkin.Controls.MaterialLabel lb_Table;
         private BunifuAnimatorNS.BunifuTransition sideA;
         private BunifuAnimatorNS.BunifuTransition LogoA;
         private BunifuAnimatorNS.BunifuTransition MenuPanel;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_foodName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_number;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_Disscount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_Note;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_pay;
-        private System.Windows.Forms.DataGridViewImageColumn cl_btnDelete;
         private System.Windows.Forms.DataGridView dgvQuantityStatistics;
         private MaterialSkin.Controls.MaterialRaisedButton btnQuantitySearch;
         private Bunifu.Framework.UI.BunifuDatepicker dtpQuantityEnd;
@@ -2040,5 +1834,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cl_foodName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cl_number;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cl_price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cl_Disscount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cl_Note;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cl_pay;
+        private System.Windows.Forms.DataGridViewImageColumn cl_btnDelete;
     }
 }

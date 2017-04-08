@@ -18,8 +18,6 @@ namespace RoverCoffeManage2.DAO
             private set { TableDAO.instance = value; }
         }
 
-        public static int TableWidth = 105;
-        public static int TableHeight = 105;
 
         private TableDAO() { }
 
@@ -37,9 +35,13 @@ namespace RoverCoffeManage2.DAO
 
             return tableList;
         }
-        public int updateStatus(string status ,int id)
+        public int updateStatus(string status, int id)
         {
-            return DataProvider.Instance.ExecuteNonQuery("proc_UpdateStatus  N'" + status+"',"+id); 
+            return DataProvider.Instance.ExecuteNonQuery("proc_UpdateStatus  N'" + status + "'," + id);
         }
+        public int settingTable(int quantity)
+        {
+            return DataProvider.Instance.ExecuteNonQuery("proc_SettingTable " + quantity);
+        } 
     }
 }

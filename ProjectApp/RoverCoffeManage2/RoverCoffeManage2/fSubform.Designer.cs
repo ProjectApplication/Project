@@ -67,7 +67,7 @@
             this.txt_Numberic.Depth = 0;
             this.txt_Numberic.Hint = "";
             resources.ApplyResources(this.txt_Numberic, "txt_Numberic");
-            this.txt_Numberic.MaxLength = 32767;
+            this.txt_Numberic.MaxLength = 3;
             this.txt_Numberic.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_Numberic.Name = "txt_Numberic";
             this.txt_Numberic.PasswordChar = '\0';
@@ -76,6 +76,7 @@
             this.txt_Numberic.SelectionStart = 0;
             this.txt_Numberic.TabStop = false;
             this.txt_Numberic.UseSystemPasswordChar = false;
+            this.txt_Numberic.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Numberic_KeyPress);
             // 
             // txt_DissCount
             // 
