@@ -26,39 +26,23 @@ namespace RoverCoffeManage2.DAO
             }
         }
 
-
-        public List<Food> listFood (string id)
+        // hàm này lấy danh sách món ăn của 1 danh mục 
+        public List<Food> listFood(string id)
         {
             List<Food> listFood = new List<Food>();
-            DataTable data = DataProvider.Instance.ExecuteQuery("proc_ShowFoodByFoodCategoryId " + id);
-            foreach(DataRow item in data.Rows)
+            DataTable data = DataProvider.Instance.ExecuteQuery("proc_ShowFoodByFoodCategoryId " + id);// lấy Datatable của tất cả món ăn
+            foreach (DataRow item in data.Rows)//mỗi item là 1 Food ở database
             {
                 Food food = new Food(item);
 
                 listFood.Add(food);
             }
-            return listFood;
+            return listFood;// trả lại danh sách thứ ăn dưới dạng List<Food>
         }
-        public List<Food> listFood()
-        {
-            List<Food> listFood = new List<Food>();
-            DataTable data = DataProvider.Instance.ExecuteQuery("proc_ShowAllFood"); // show tất cả món ăn
-            foreach (DataRow item in data.Rows)
-            {
-                Food food = new Food(item);
-
-                listFood.Add(food);
-            }
-            return listFood;
-        }
-        public DataTable tableFood()
-        {
-             DataTable data = DataProvider.Instance.ExecuteQuery("proc_ShowAllFood"); // show tất cả món ăn
-            return data;
-        }
+        //hàm này lấy id của món ăn ở bill vừa mới xuất
         public string getIdFood(string nameOfFood)
         {
-            return (string)DataProvider.Instance.ExecuteScalar("proc_GetIdFood " + "N'" +nameOfFood+ "'");
+            return (string)DataProvider.Instance.ExecuteScalar("proc_GetIdFood " + "N'" +nameOfFood+ "'");//hàm này trả lại id của món 
         }
     }
 

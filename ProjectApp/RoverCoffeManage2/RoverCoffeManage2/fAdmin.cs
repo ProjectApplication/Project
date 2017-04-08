@@ -30,15 +30,15 @@ namespace RoverCoffeManage2
             {
                 Button btn = new Button();// khởi tạo 1 button mới
                 btn.Text = item.Name + Environment.NewLine + item.Status; //set text cho button
-                btn.Cursor = System.Windows.Forms.Cursors.Hand; //khi chỉ vào button thì có hình bàn tay
+                btn.Cursor = Cursors.Hand; //khi chỉ vào button thì có hình bàn tay
                 btn.ForeColor = Color.White; // màu chữ
-                btn.Font = new System.Drawing.Font("UTM Penumbra", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));//set font , size,kiểu chữ
-                btn.FlatAppearance.BorderColor = System.Drawing.Color.White;// chỉnh màu viền
+                btn.Font = new Font("UTM Penumbra", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);//set font , size,kiểu chữ
+                btn.FlatAppearance.BorderColor = Color.White;// chỉnh màu viền
                 btn.FlatAppearance.BorderSize = 0; // size border
-                btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White; //set màu khi nhắn button
-                btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White; // set màu khi rê chuột qua button
-                btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat; // set style =flat
-                btn.Size = new System.Drawing.Size(110, 110); // kích thước button
+                btn.FlatAppearance.MouseDownBackColor = Color.White; //set màu khi nhắn button
+                btn.FlatAppearance.MouseOverBackColor = Color.White; // set màu khi rê chuột qua button
+                btn.FlatStyle = FlatStyle.Flat; // set style =flat
+                btn.Size = new Size(110, 110); // kích thước button
                 btn.Click += new EventHandler(btnTable_Click); ; // hàm này dùng để khởi tạo event cho mỗi button
                 btn.Tag = item; // gắn đối tượng item cho mỗi btn , để dễ quản lý
                 switch (item.Status)
@@ -59,7 +59,6 @@ namespace RoverCoffeManage2
         // hàm load bill 
         private void loadBillInfo(Food food, int number,  float discount = 0,string note = "Không có ghi chú")
         {
-            double totalPrice = 0;// tổng giá 
             // load dữ liệu food lên dtgv
             foreach (DataGridViewRow items in DTGV_bill.Rows) // cứ mỗi hàng trên datagridview
             {
@@ -68,7 +67,6 @@ namespace RoverCoffeManage2
                     number += (int)(items.Cells[1].Value); // Cộng dồn số lượng
                     DTGV_bill.Rows.Remove(items); // xóa hàng cũ
                 }
-               
             }
             DTGV_bill.Rows.Add(food.Name, number, food.Price*number, discount, note, food.Price * number - ((food.Price * number) * (double)discount /100 ));//thêm dữ liệu vào datagridview
                               //[tên món][số lượng]      [Giá]       [Giảm giá]                         [Thành tiền sau khi đã trừ đi % giảm giá]
@@ -115,10 +113,10 @@ namespace RoverCoffeManage2
             {
                 MaterialRaisedButton btn = new MaterialRaisedButton();//khởi tạo một reisedbutton
                 btn.Text = item.Name +Environment.NewLine+item.Price; // gán tên và giá cho button text
-                btn.Cursor = System.Windows.Forms.Cursors.Hand;// kkhi chỉ vào button có hình bàn tay
-                btn.Size = new System.Drawing.Size(95, 60); //chỉnh kích thước của button
-                 btn.Click += new EventHandler(btnFood_Click);//khởi tạo event khi nhấn chuột trái
-             btn.MouseDown += new MouseEventHandler(btnFood_MouseClick);
+                btn.Cursor = Cursors.Hand;// kkhi chỉ vào button có hình bàn tay
+                btn.Size = new Size(95, 60); //chỉnh kích thước của button
+                btn.Click += new EventHandler(btnFood_Click);//khởi tạo event khi nhấn chuột trái
+                btn.MouseDown += new MouseEventHandler(btnFood_MouseClick);//khởi tạo sự kiện khi nhắn vào món ăn
                 btn.Tag = item;// gắn tag cho button
                 flpFood.Controls.Add(btn);// thêm button vào flow layout category
             }
@@ -151,7 +149,7 @@ namespace RoverCoffeManage2
         private void btnFood_Click(object sender, EventArgs e)
         {
             Food food = (sender as Button).Tag as Food; // gán food cho button
-            loadBillInfo(food, 1);
+            loadBillInfo(food, 1); // load food lên datagridview ,mặc định số lượng =1
         }
         //tạo context menu khi nhắn chuột phải ở khung food
         private void btnFood_MouseClick(object sender, MouseEventArgs e)
@@ -162,10 +160,7 @@ namespace RoverCoffeManage2
             {
                 ContextMenu m = new ContextMenu(); //tạo context Menu
                 m.MenuItems.Add(addNote); //thêm item ghi chú vào
-                m.MenuItems.Add(new MenuItem("Copy"));
-                m.MenuItems.Add(new MenuItem("Paste"));
                 m.Show(flpFood, new Point(e.X, e.Y)); // hiện thị context menu ở vị trí của event
-
             }
             addNote.Click += new EventHandler(menuItemAddNote_Click); // khởi tạo sự kiện cho menu item ghi chú
         }
@@ -182,15 +177,17 @@ namespace RoverCoffeManage2
           // Thay đổi giá trị của text tiền thối cho khách
         private void txt_MoneyOfCus_OnValueChanged(object sender, EventArgs e)
         {
-                if (txt_MoneyOfCus.Text != "" && txt_Pay.Text != "") // nếu bắt đầu nhập thì thay đổi giá trị của text tiền thừa
+                if (txt_MoneyOfCus.Text != "" && txt_Pay.Text != "") // mục thanh toán và tiền khách đưa phải khác rỗng thì mới thực hiện thay đổi
                 {
-                if (int.Parse(txt_MoneyOfCus.Text) > 10000000)
+                if (int.Parse(txt_MoneyOfCus.Text) > 10000000)// nếu số tiền nhập vào quá lớn thì thông báo ko được nhập nữa , tránh phát sinh lỗi
                 { 
                     MessageBox.Show("Bạn không được nhập quá 10 triệu VND");
+                    // sau khi thông báo thì đưa số tiền lại 0
                     txt_MoneyOfCus.Text="";
                     txt_ExcessCash.Text = "0";
                 }
                 else
+                    // tiền thừa = tiền khách đưa - số tiền cần thanh toán
                 txt_ExcessCash.Text = long.Parse(txt_MoneyOfCus.Text) - long.Parse(txt_Pay.Text) + "";
                 
                 }
@@ -221,13 +218,13 @@ namespace RoverCoffeManage2
             if (DTGV_bill.Rows[e.RowIndex].Cells[1].Value != null && DTGV_bill.Rows[e.RowIndex].Cells[3].Value != null)//nếu số lượng và giảm giá = null thì không tính
                 if (e.ColumnIndex == 1 || e.ColumnIndex==3)//nếu thay đổi giá trị ở cột số lượng hoặc giảm giá
             { 
-                    if(double.Parse(DTGV_bill.Rows[e.RowIndex].Cells[3].Value.ToString())>100)
+                    if(double.Parse(DTGV_bill.Rows[e.RowIndex].Cells[3].Value.ToString())>100)// nếu ở cột giảm giá nhập quá 100%
                     {
                         MessageBox.Show("Bạn không thể giảm giá hơn 100%");
                         DTGV_bill.Rows[e.RowIndex].Cells[3].Value = 0;
                     }
 
-              else
+              else // thay đổi cột giảm giá
 	                {
                         DTGV_bill.Rows[e.RowIndex].Cells[2].Value = singlePrice * double.Parse(DTGV_bill.Rows[e.RowIndex].Cells[1].Value.ToString());//gán giá trị [thành tiền]
                         DTGV_bill.Rows[e.RowIndex].Cells[5].Value = double.Parse(DTGV_bill.Rows[e.RowIndex].Cells[2].Value.ToString()) * (1 - double.Parse(DTGV_bill.Rows[e.RowIndex].Cells[3].Value.ToString()) / 100); // giảm giá
@@ -240,38 +237,40 @@ namespace RoverCoffeManage2
         private void btn_printBill_Click(object sender, EventArgs e)
         {
             // đưa bill và billinfo vào cơ sở dữ liệu
-            if (txt_table.Text != "" && txt_MoneyOfCus.Text != "")
+            if (txt_table.Text != "" && txt_MoneyOfCus.Text != "")//Khi in bill thì cần phải nhập đầy đủ thông tin
                 {
-                if (int.Parse(txt_MoneyOfCus.Text) >= int.Parse(txt_Pay.Text))
+                if (int.Parse(txt_MoneyOfCus.Text) >= int.Parse(txt_Pay.Text)) // số tiền khách đưa phải lớn hơn số tiền cần thanh toán
                 {
-                 BillDAO.Instance.insertBill(int.Parse(txt_table.Text), int.Parse(txt_Discount.Text));
-                    foreach (DataGridViewRow items in DTGV_bill.Rows)
+                    if (MessageBox.Show("Bạn có in hóa đơn ?", "Thông Báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)//chắn chắn in hóa đơn ?
                     {
-                        if (items.Cells[0].Value != null)
+                    
+                        BillDAO.Instance.insertBill(int.Parse(txt_table.Text), int.Parse(txt_Discount.Text));// thêm bill thông qua lớp billDao
+                        foreach (DataGridViewRow items in DTGV_bill.Rows)
                         {
-                            int idBill =BillDAO.Instance.getIdOfLastRowBill();
-                            string IDfood = FoodDAO.Instance.getIdFood(items.Cells[0].Value.ToString());
-                            int quantity = int.Parse(items.Cells[1].Value.ToString());
-                            int discount = int.Parse(items.Cells[3].Value.ToString());
-                            string note = items.Cells[4].Value.ToString();
+                            if (items.Cells[0].Value != null)
+                            {
+                                int idBill = BillDAO.Instance.getIdOfLastRowBill();// lấy id của bill vừa mới thêm vào
+                                string IDfood = FoodDAO.Instance.getIdFood(items.Cells[0].Value.ToString()); //lấy tên món ăn từ datagridview rồi thông qua lớp foodDao để lấy id món ăn
+                                int quantity = int.Parse(items.Cells[1].Value.ToString());//lấy số lượng món ăn từ datagridview
+                                int discount = int.Parse(items.Cells[3].Value.ToString());//lấy số % giảm giá món ăn từ datagridview
+                                string note = items.Cells[4].Value.ToString();//lấy ghi chú của món ăn từ datagridview
 
 
-                            BillInfoDAO.Instance.insertBillInfo(idBill, IDfood, quantity, discount, note);
+                                BillInfoDAO.Instance.insertBillInfo(idBill, IDfood, quantity, discount, note);// thêm bill info vào database
+                            }
                         }
-                    }
-                    if (MessageBox.Show("Bạn có in hóa đơn ?", "Thông Báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
-                    {
-                        if(rbtn_normalBill.Checked==true)
+                        if (rbtn_normalBill.Checked==true)//nếu chọn bill bình thường
                             {
                                 fPrintReport formReport = new fPrintReport();
-                                formReport.ShowDialog(); 
+                                formReport.ShowDialog(); //xuất hóa đơn bình thường
                             }
-                        else
+                        else//nếu chọn hóa đơn chiết khấu
                         {
                             fPrintBillDiscount formReport = new fPrintBillDiscount();
-                            formReport.ShowDialog();
+                            formReport.ShowDialog();//xuất hóa đơn chiết khấu
                         }
-                        btn_ClearBill_Click(sender, e);
+                        btn_ClearBill_Click(sender, e);// sử dụng button clearbill để xóa toàn bộ thông tin trên datagridview
+                        //xóa các textbox liên quan
                         txt_table.Text = "";
                         txt_Pay.Text = "";
                         txt_MoneyOfCus.Text = "";
@@ -279,40 +278,40 @@ namespace RoverCoffeManage2
                     }
                 
                 }
-                else
-                   txt_MoneyOfCus_Leave(sender, e);
+                else //nếu số tiền khách đưa nhỏ hơn số tiền cần thanh toán
+                    txt_MoneyOfCus_Leave(sender, e); // gọi sự kiện kiểm tra khi thoát khỏi textbox tiền khách đưa
                 }
-            else
+            else //nếu nhập thiếu thông tin
             {
                 MessageBox.Show("Bạn phải nhập đầy đủ thông tin");
             }
            
         }
+        //hàm xử lý sự kiện khi nhắn vào nút in danh sách đồ uống
         private void btn_printListFood_Click(object sender, EventArgs e)
-        {
+        {   //hiện thông báo có chắc chắn muốn in danh sách đồ uống
             if (MessageBox.Show("Bạn có muốn in danh sách món ăn.Bạn phải thanh toán hóa đơn trước khi in danh sách ?", "Thông Báo", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
             {
-                if (rbtn_takeAway.Checked)
+                if (rbtn_takeAway.Checked)// nếu chọn danh sách đồ uống mang về
                 {
-                    fPrintListFoodTakeAway listfood = new fPrintListFoodTakeAway();
-                    listfood.ShowDialog();
+                    fPrintListFoodTakeAway listfood = new fPrintListFoodTakeAway();// tạo mới một danh sách món ăn mang về
+                    listfood.ShowDialog(); // in ra 
                 }
-                else
+                else// nếu chọn danh sách đồ uống tại chỗ
                 {
-
-                    fPrintListFood listfood = new fPrintListFood();
-                    listfood.ShowDialog();
-
+                    fPrintListFood listfood = new fPrintListFood();// tạo mới một danh sách món ăn tại chỗ
+                    listfood.ShowDialog();//in ra
                 }
             }
            
         }
+        //hàm xử lý sự kiện của nút xóa thông tin thức uống đang hiển thị
         private void btn_ClearBill_Click(object sender, EventArgs e)
         {
-            DTGV_bill.DataSource = null;
-            DTGV_bill.Rows.Clear();
-            lb_price.Text = "0";
-            txt_Pay.Text = "0";
+            DTGV_bill.DataSource = null; // gán datasource = rỗng
+            DTGV_bill.Rows.Clear();  // xóa toàn bộ các hàng của datagridview
+            lb_price.Text = "0";    // set label tổng tiền =0
+            txt_Pay.Text = "0"; // set textbox thanh toán =0
         }
         
         #endregion
@@ -323,37 +322,40 @@ namespace RoverCoffeManage2
             if (char.IsLetter(e.KeyChar) || char.IsPunctuation(e.KeyChar) || char.IsSymbol(e.KeyChar)) // hàm này chỉ cho phép nhập số , không cho nhập chữ và dấu
                 e.Handled = true;
         }
-        private void KeyPress_numberAndLetter(object sender, KeyPressEventArgs e)
+        private void KeyPress_numberAndLetter(object sender, KeyPressEventArgs e)// hàm này cho phép nhập tự do
         {
                 e.Handled = false;
         }
+        //xử lý sự kiện khi đang chỉnh sửa datagridview
         private void DTGV_bill_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
-
-            if (DTGV_bill.CurrentCell.ColumnIndex == 1 || DTGV_bill.CurrentCell.ColumnIndex == 3)
-                e.Control.KeyPress += new KeyPressEventHandler(KeyPress_OnlyNumber);
-            else
-                e.Control.KeyPress += new KeyPressEventHandler(KeyPress_numberAndLetter);
+            if (DTGV_bill.CurrentCell.ColumnIndex == 1 || DTGV_bill.CurrentCell.ColumnIndex == 3)// nếu cột hiện tại = 1 hoặc 3 (số lượng hoặc giảm giá)
+                e.Control.KeyPress += new KeyPressEventHandler(KeyPress_OnlyNumber);//chỉ được phép nhập chữ
+            else//ngược lại , nếu là cột ghi chú
+                e.Control.KeyPress += new KeyPressEventHandler(KeyPress_numberAndLetter);// được phép nhập tự do
         }
+        //xử lý sự kiện khi rời khỏi textbox tiền khách đưa
         private void txt_MoneyOfCus_Leave(object sender, EventArgs e)
         {
-            if (txt_Pay.Text != "" && txt_MoneyOfCus.Text != "")
-                if (int.Parse(txt_MoneyOfCus.Text) < int.Parse(txt_Pay.Text))
+            if (txt_Pay.Text != "" && txt_MoneyOfCus.Text != "") // nếu đầy đủ thông tin thì mới thực hiện
+                if (int.Parse(txt_MoneyOfCus.Text) < int.Parse(txt_Pay.Text))// nếu tiền khách đưa nhỏ hơn tiền cần thanh toán thì thông báo
                 {
                     MessageBox.Show("Bạn không được nhập số tiền ít hơn so với giá");
                     txt_MoneyOfCus.Text = "";
                     txt_ExcessCash.Text = "0";
                 }
         }
+        //xử lý sự kiện khi thay đổi giá trị ở mục chiết khấu
         private void txt_Discount_OnValueChanged(object sender, EventArgs e)
         {
-            if (txt_Discount.Text != "")
-                if (int.Parse(txt_Discount.Text.ToString()) > 100)
+            if (txt_Discount.Text != "") // nếu mục chiết khấu khác rỗng
+                if (int.Parse(txt_Discount.Text.ToString()) > 100) //nếu mục chiết khấu >100% thì thông báo không đúng
                 {
                     MessageBox.Show("Bạn không được chiết khấu quá 100%");
-                    txt_Discount.Text = "0";
+                    txt_Discount.Text = "0";// trả lại 0%
                 }
         }
+        // không được nhập chữ hoặc dấu vào textbox chiết khấu
         private void txt_Discount_KeyPress(object sender, KeyPressEventArgs e)
         {
             KeyPress_OnlyNumber(sender, e);

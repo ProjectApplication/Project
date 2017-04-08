@@ -23,11 +23,10 @@ namespace RoverCoffeManage2.DAO
                 instance = value;
             }
         }
-
+        //hàm này dùng để thêm billinfo vào trong database
         public void insertBillInfo(int idBill,string IDfood,int quantity,int discount,string note)
         {
             DataProvider.Instance.ExecuteNonQuery("proc_InsertBillInfo " + idBill + ",N'" + IDfood + "'," + quantity + "," + discount + ",N'" + note + "'");
-
         }
     }
 }
