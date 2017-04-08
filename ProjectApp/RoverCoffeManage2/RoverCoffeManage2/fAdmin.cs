@@ -459,7 +459,25 @@ namespace RoverCoffeManage2
             }
         }
 
-       
+        private void dtpQuantityEnd_onValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpQuantityBegin_onValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvQuantityStatistics_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void chartQuantityStatistics_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     #endregion
 }
