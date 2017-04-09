@@ -74,6 +74,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Report\billDiscountReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>billDiscountReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DAO\BillInfoDAO.cs" />
     <Compile Include="FormOption\OptionFood.cs">
       <SubType>UserControl</SubType>
@@ -81,11 +87,11 @@
     <Compile Include="FormOption\OptionFood.Designer.cs">
       <DependentUpon>OptionFood.cs</DependentUpon>
     </Compile>
-    <Compile Include="Report\billDiscountReport.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>billDiscountReport.rpt</DependentUpon>
-      <SubType>Component</SubType>
+    <Compile Include="FormOption\OptionFoodCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormOption\OptionFoodCategory.Designer.cs">
+      <DependentUpon>OptionFoodCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="Report\billReport.cs">
       <AutoGen>True</AutoGen>
@@ -169,36 +175,39 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControl1.cs">
+    <Compile Include="FormOption\StatisticsQuantity.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="FormOption\StatisticsQuantity.Designer.cs">
+      <DependentUpon>StatisticsQuantity.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl2.cs">
+    <Compile Include="FormOption\StatisticDate.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl2.Designer.cs">
-      <DependentUpon>UserControl2.cs</DependentUpon>
+    <Compile Include="FormOption\StatisticDate.Designer.cs">
+      <DependentUpon>StatisticDate.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl3.cs">
+    <Compile Include="FormOption\StatisticMonth.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl3.Designer.cs">
-      <DependentUpon>UserControl3.cs</DependentUpon>
+    <Compile Include="FormOption\StatisticMonth.Designer.cs">
+      <DependentUpon>StatisticMonth.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl4.cs">
+    <Compile Include="FormOption\StatisticYear.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl4.Designer.cs">
-      <DependentUpon>UserControl4.cs</DependentUpon>
+    <Compile Include="FormOption\StatisticYear.Designer.cs">
+      <DependentUpon>StatisticYear.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FormOption\OptionFood.resx">
-      <DependentUpon>OptionFood.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Report\billDiscountReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>billDiscountReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOption\OptionFood.resx">
+      <DependentUpon>OptionFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOption\OptionFoodCategory.resx">
+      <DependentUpon>OptionFoodCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\billReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -246,17 +255,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <EmbeddedResource Include="FormOption\StatisticsQuantity.resx">
+      <DependentUpon>StatisticsQuantity.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl2.resx">
-      <DependentUpon>UserControl2.cs</DependentUpon>
+    <EmbeddedResource Include="FormOption\StatisticDate.resx">
+      <DependentUpon>StatisticDate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl3.resx">
-      <DependentUpon>UserControl3.cs</DependentUpon>
+    <EmbeddedResource Include="FormOption\StatisticMonth.resx">
+      <DependentUpon>StatisticMonth.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl4.resx">
-      <DependentUpon>UserControl4.cs</DependentUpon>
+    <EmbeddedResource Include="FormOption\StatisticYear.resx">
+      <DependentUpon>StatisticYear.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

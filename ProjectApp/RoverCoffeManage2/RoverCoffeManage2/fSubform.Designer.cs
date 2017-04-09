@@ -83,7 +83,7 @@
             this.txt_DissCount.Depth = 0;
             this.txt_DissCount.Hint = "";
             resources.ApplyResources(this.txt_DissCount, "txt_DissCount");
-            this.txt_DissCount.MaxLength = 32767;
+            this.txt_DissCount.MaxLength = 3;
             this.txt_DissCount.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_DissCount.Name = "txt_DissCount";
             this.txt_DissCount.PasswordChar = '\0';
@@ -92,13 +92,15 @@
             this.txt_DissCount.SelectionStart = 0;
             this.txt_DissCount.TabStop = false;
             this.txt_DissCount.UseSystemPasswordChar = false;
+            this.txt_DissCount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Numberic_KeyPress);
+            this.txt_DissCount.Leave += new System.EventHandler(this.txt_DissCount_Leave);
             // 
             // txt_Note
             // 
             this.txt_Note.Depth = 0;
             this.txt_Note.Hint = "";
             resources.ApplyResources(this.txt_Note, "txt_Note");
-            this.txt_Note.MaxLength = 32767;
+            this.txt_Note.MaxLength = 100;
             this.txt_Note.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_Note.Name = "txt_Note";
             this.txt_Note.PasswordChar = '\0';

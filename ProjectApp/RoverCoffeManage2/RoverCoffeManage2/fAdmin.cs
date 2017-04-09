@@ -199,6 +199,7 @@ namespace RoverCoffeManage2
             fSubform subForm = new fSubform(); //tạo mới subform
             subForm.ShowDialog(); // hiện subform
             list = subForm.getListInfoFromSubForm(); //list[0]= số lượng , list[1] = giảm giá,list[2] =Ghi chú
+            if(list[0]!=null)// nếu số lượng món khác rỗng thì mới thêm vào datagridview
             loadBillInfo((sender as MenuItem).Tag as Food, int.Parse(list[0]), float.Parse(list[1]), list[2]);
             //load dữ liệu lên DTGV
             list.Clear(); // giải phóng list
@@ -331,6 +332,7 @@ namespace RoverCoffeManage2
                         txt_Pay.Text = "";
                         txt_MoneyOfCus.Text = "";
                         txt_ExcessCash.Text = "";
+                        txt_Discount.Text = "";
                     }
 
                 }
@@ -443,30 +445,76 @@ namespace RoverCoffeManage2
 
         private void btn_table_Click(object sender, EventArgs e)
         {
-            panelMain.Controls.Clear();
+            panelMainManager.Controls.Clear();
             OptionTable optiontable = new OptionTable();
 
             optiontable.Dock = DockStyle.Fill;
 
-            panelMain.Controls.Add(optiontable);
+            panelMainManager.Controls.Add(optiontable);
 
             loadTable(optiontable.flpTable);
         }
 
         private void btn_OptionFood_Click(object sender, EventArgs e)
         {
-            panelMain.Controls.Clear();
+            panelMainManager.Controls.Clear();
             OptionFood optionfood = new OptionFood();
 
             optionfood.Dock = DockStyle.Fill;
 
-            panelMain.Controls.Add(optionfood);
+            panelMainManager.Controls.Add(optionfood);
 
-            loadFoodCategory(optionfood.flpCategory);
+           
+        }
+        private void btn_OptionFoodCategory_Click(object sender, EventArgs e)
+        {
+            panelMainManager.Controls.Clear();
+            OptionFoodCategory optionfoodCategory = new OptionFoodCategory();
+
+            optionfoodCategory.Dock = DockStyle.Fill;
+
+            panelMainManager.Controls.Add(optionfoodCategory);
+
+            loadFoodCategory(optionfoodCategory.flpCategory);
+        }
+        #endregion
+
+
+        #region Statistic
+        private void btn_statisticsQuantity_Click(object sender, EventArgs e)
+        {
+            panelMainStatitis.Controls.Clear();
+            StatisticsQuantity staticquantity = new StatisticsQuantity();
+            staticquantity.Dock = DockStyle.Fill;
+            panelMainStatitis.Controls.Add(staticquantity);
+
         }
 
-        #endregion
+        private void btn_statisticDate_Click(object sender, EventArgs e)
+        {
+            panelMainStatitis.Controls.Clear();
+            StatisticDate statisticDate = new StatisticDate();
+            statisticDate.Dock = DockStyle.Fill;
+            panelMainStatitis.Controls.Add(statisticDate);
+        }
+
+        private void btn_statisticMonth_Click(object sender, EventArgs e)
+        {
+            panelMainStatitis.Controls.Clear();
+            StatisticMonth statisticMonth = new StatisticMonth();
+            statisticMonth.Dock = DockStyle.Fill;
+            panelMainStatitis.Controls.Add(statisticMonth);
+        }
+
+        private void btn_statisticYear_Click(object sender, EventArgs e)
+        {
+            panelMainStatitis.Controls.Clear();
+            StatisticYear statisticYear = new StatisticYear();
+            statisticYear.Dock = DockStyle.Fill;
+            panelMainStatitis.Controls.Add(statisticYear);
+        }
     }
+    #endregion
 }
 
 

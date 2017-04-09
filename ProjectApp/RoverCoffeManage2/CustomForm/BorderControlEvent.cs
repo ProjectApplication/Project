@@ -50,8 +50,8 @@ namespace CustomForm
 
         void NormnalBox_MouseClick(object sender, MouseEventArgs e)
         {
-            if (_frm.WindowState == FormWindowState.Maximized) _frm.WindowState = FormWindowState.Normal;
-            else _frm.WindowState = FormWindowState.Maximized;
+            //if (_frm.WindowState == FormWindowState.Maximized) _frm.WindowState = FormWindowState.Normal;
+            //else _frm.WindowState = FormWindowState.Maximized;
         }
 
         //TrackBar

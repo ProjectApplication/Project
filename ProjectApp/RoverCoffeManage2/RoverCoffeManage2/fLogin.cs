@@ -23,8 +23,8 @@ namespace RoverCoffeManage2
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            String username = cbUserName.Text;
-            String password = tbPassWord.Text;
+            string username = cbUserName.Text;
+            string password = tbPassWord.Text;
             if (Login(username, password))
             {
                     fAdmin fadmin = new fAdmin();
@@ -39,7 +39,7 @@ namespace RoverCoffeManage2
         private bool Login(String username, String password)
         {
             // hàm này để kiểm tra xem username và password có đúng hay k
-            return DAO.AccountDAO.Instance.Login(username, password);
+            return AccountDAO.Instance.Login(username, password);
         }
 
         private void fLogin_FormClosing(object sender, FormClosingEventArgs e)
@@ -51,8 +51,8 @@ namespace RoverCoffeManage2
 
         private void load_UserName()
         {
-           
-            DAO.AccountDAO.Instance.addUserName(cbUserName);
+
+            AccountDAO.Instance.addUserName(cbUserName);
         }
 
         private void btnExit_Click(object sender, EventArgs e)

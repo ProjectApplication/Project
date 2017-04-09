@@ -1,6 +1,6 @@
 ﻿namespace RoverCoffeManage2
 {
-    partial class UserControl1
+    partial class StatisticsQuantity
     {
         /// <summary> 
         /// Required designer variable.
@@ -37,8 +37,15 @@
             this.btnQuantitySearch = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dtpQuantityEnd = new Bunifu.Framework.UI.BunifuDatepicker();
             this.dtpQuantityBegin = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartQuantityStatistics)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuantityStatistics)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.bunifuCards1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewImageColumn1
@@ -51,37 +58,41 @@
             // 
             // chartQuantityStatistics
             // 
+            this.chartQuantityStatistics.BorderlineColor = System.Drawing.Color.Black;
+            this.chartQuantityStatistics.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             chartArea1.Name = "ChartArea1";
             this.chartQuantityStatistics.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartQuantityStatistics.Legends.Add(legend1);
-            this.chartQuantityStatistics.Location = new System.Drawing.Point(533, 152);
+            this.chartQuantityStatistics.Location = new System.Drawing.Point(437, 68);
             this.chartQuantityStatistics.Name = "chartQuantityStatistics";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Số lượng";
             this.chartQuantityStatistics.Series.Add(series1);
-            this.chartQuantityStatistics.Size = new System.Drawing.Size(552, 476);
+            this.chartQuantityStatistics.Size = new System.Drawing.Size(555, 508);
             this.chartQuantityStatistics.TabIndex = 9;
             this.chartQuantityStatistics.Text = "chart1";
             // 
             // dgvQuantityStatistics
             // 
+            this.dgvQuantityStatistics.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvQuantityStatistics.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvQuantityStatistics.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvQuantityStatistics.Location = new System.Drawing.Point(29, 152);
+            this.dgvQuantityStatistics.Location = new System.Drawing.Point(15, 102);
             this.dgvQuantityStatistics.Name = "dgvQuantityStatistics";
-            this.dgvQuantityStatistics.Size = new System.Drawing.Size(397, 476);
+            this.dgvQuantityStatistics.Size = new System.Drawing.Size(373, 332);
             this.dgvQuantityStatistics.TabIndex = 8;
             // 
             // btnQuantitySearch
             // 
             this.btnQuantitySearch.Depth = 0;
             this.btnQuantitySearch.Icon = null;
-            this.btnQuantitySearch.Location = new System.Drawing.Point(96, 106);
+            this.btnQuantitySearch.Location = new System.Drawing.Point(15, 440);
             this.btnQuantitySearch.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnQuantitySearch.Name = "btnQuantitySearch";
             this.btnQuantitySearch.Primary = true;
-            this.btnQuantitySearch.Size = new System.Drawing.Size(209, 23);
+            this.btnQuantitySearch.Size = new System.Drawing.Size(69, 37);
             this.btnQuantitySearch.TabIndex = 7;
             this.btnQuantitySearch.Text = "Search";
             this.btnQuantitySearch.UseVisualStyleBackColor = true;
@@ -89,45 +100,111 @@
             // 
             // dtpQuantityEnd
             // 
-            this.dtpQuantityEnd.BackColor = System.Drawing.Color.SeaGreen;
+            this.dtpQuantityEnd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.dtpQuantityEnd.BorderRadius = 0;
             this.dtpQuantityEnd.ForeColor = System.Drawing.Color.White;
             this.dtpQuantityEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpQuantityEnd.FormatCustom = null;
-            this.dtpQuantityEnd.Location = new System.Drawing.Point(65, 63);
+            this.dtpQuantityEnd.Location = new System.Drawing.Point(116, 59);
             this.dtpQuantityEnd.Margin = new System.Windows.Forms.Padding(4);
             this.dtpQuantityEnd.Name = "dtpQuantityEnd";
-            this.dtpQuantityEnd.Size = new System.Drawing.Size(303, 36);
+            this.dtpQuantityEnd.Size = new System.Drawing.Size(252, 36);
             this.dtpQuantityEnd.TabIndex = 6;
             this.dtpQuantityEnd.Value = new System.DateTime(2017, 4, 2, 11, 46, 32, 256);
             // 
             // dtpQuantityBegin
             // 
-            this.dtpQuantityBegin.BackColor = System.Drawing.Color.SeaGreen;
+            this.dtpQuantityBegin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.dtpQuantityBegin.BorderRadius = 0;
             this.dtpQuantityBegin.ForeColor = System.Drawing.Color.White;
             this.dtpQuantityBegin.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpQuantityBegin.FormatCustom = null;
-            this.dtpQuantityBegin.Location = new System.Drawing.Point(65, 19);
+            this.dtpQuantityBegin.Location = new System.Drawing.Point(116, 15);
             this.dtpQuantityBegin.Margin = new System.Windows.Forms.Padding(4);
             this.dtpQuantityBegin.Name = "dtpQuantityBegin";
-            this.dtpQuantityBegin.Size = new System.Drawing.Size(303, 36);
+            this.dtpQuantityBegin.Size = new System.Drawing.Size(252, 36);
             this.dtpQuantityBegin.TabIndex = 5;
             this.dtpQuantityBegin.Value = new System.DateTime(2017, 4, 2, 11, 46, 26, 983);
             // 
-            // UserControl1
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1500, 44);
+            this.panel1.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(323, 3);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label1.Size = new System.Drawing.Size(551, 40);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Thống Kê Theo Số Lượng Thức Uống";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuCards1
+            // 
+            this.bunifuCards1.BackColor = System.Drawing.Color.White;
+            this.bunifuCards1.BorderRadius = 5;
+            this.bunifuCards1.BottomSahddow = true;
+            this.bunifuCards1.color = System.Drawing.Color.Tomato;
+            this.bunifuCards1.Controls.Add(this.label3);
+            this.bunifuCards1.Controls.Add(this.label2);
+            this.bunifuCards1.Controls.Add(this.dgvQuantityStatistics);
+            this.bunifuCards1.Controls.Add(this.btnQuantitySearch);
+            this.bunifuCards1.Controls.Add(this.dtpQuantityBegin);
+            this.bunifuCards1.Controls.Add(this.dtpQuantityEnd);
+            this.bunifuCards1.LeftSahddow = false;
+            this.bunifuCards1.Location = new System.Drawing.Point(13, 68);
+            this.bunifuCards1.Name = "bunifuCards1";
+            this.bunifuCards1.RightSahddow = true;
+            this.bunifuCards1.ShadowDepth = 20;
+            this.bunifuCards1.Size = new System.Drawing.Size(418, 508);
+            this.bunifuCards1.TabIndex = 13;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(11, 59);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(101, 19);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Ngày kết thúc :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(11, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 19);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Ngày bắt đầu :";
+            // 
+            // StatisticsQuantity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Controls.Add(this.bunifuCards1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.chartQuantityStatistics);
-            this.Controls.Add(this.dgvQuantityStatistics);
-            this.Controls.Add(this.btnQuantitySearch);
-            this.Controls.Add(this.dtpQuantityEnd);
-            this.Controls.Add(this.dtpQuantityBegin);
-            this.Name = "UserControl1";
+            this.Name = "StatisticsQuantity";
             this.Size = new System.Drawing.Size(1500, 1000);
             ((System.ComponentModel.ISupportInitialize)(this.chartQuantityStatistics)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuantityStatistics)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.bunifuCards1.ResumeLayout(false);
+            this.bunifuCards1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -140,5 +217,10 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnQuantitySearch;
         private Bunifu.Framework.UI.BunifuDatepicker dtpQuantityEnd;
         private Bunifu.Framework.UI.BunifuDatepicker dtpQuantityBegin;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuCards bunifuCards1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

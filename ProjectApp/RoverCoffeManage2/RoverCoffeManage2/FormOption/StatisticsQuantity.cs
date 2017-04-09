@@ -12,9 +12,9 @@ using RoverCoffeManage2.DTO;
 
 namespace RoverCoffeManage2
 {
-    public partial class UserControl1 : UserControl
+    public partial class StatisticsQuantity : UserControl
     {
-        public UserControl1()
+        public StatisticsQuantity()
         {
             InitializeComponent();
         }

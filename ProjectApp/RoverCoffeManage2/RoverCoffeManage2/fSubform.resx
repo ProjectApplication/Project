@@ -130,7 +130,7 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txt_Numberic.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;txt_Numberic.Name" xml:space="preserve">
     <value>txt_Numberic</value>
@@ -151,7 +151,7 @@
     <value>303, 39</value>
   </data>
   <data name="txt_DissCount.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;txt_DissCount.Name" xml:space="preserve">
     <value>txt_DissCount</value>
@@ -172,7 +172,7 @@
     <value>303, 39</value>
   </data>
   <data name="txt_Note.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;txt_Note.Name" xml:space="preserve">
     <value>txt_Note</value>
@@ -196,7 +196,7 @@
     <value>75, 35</value>
   </data>
   <data name="btn_Cancel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="btn_Cancel.Text" xml:space="preserve">
     <value>Cancel</value>
@@ -220,7 +220,7 @@
     <value>75, 35</value>
   </data>
   <data name="btn_OK.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="btn_OK.Text" xml:space="preserve">
     <value>OK</value>
