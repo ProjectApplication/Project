@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAdmin));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.TabControl = new MaterialSkin.Controls.MaterialTabControl();
             this.tbHome = new System.Windows.Forms.TabPage();
@@ -65,13 +66,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.DTGV_bill = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.cl_foodName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_Disscount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_pay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_btnDelete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txt_Discount = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
@@ -119,7 +113,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.cl_foodName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl_Disscount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl_Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl_pay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl_btnDelete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             this.TabControl.SuspendLayout();
             this.tbHome.SuspendLayout();
@@ -175,6 +175,14 @@
             this.label1.Text = "GOGOGO TEAM";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.HeaderText = "Xóa Món";
+            this.dataGridViewImageColumn1.Image = global::RoverCoffeManage2.Properties.Resources.del;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewImageColumn1.Width = 70;
+            // 
             // materialTabSelector1
             // 
             this.materialTabSelector1.BaseTabControl = this.TabControl;
@@ -203,8 +211,6 @@
             // 
             // tbHome
             // 
-            this.tbHome.Controls.Add(this.bunifuCards2);
-            this.tbHome.Controls.Add(this.bunifuCards1);
             this.tbHome.Controls.Add(this.panel4);
             this.tbHome.Controls.Add(this.panel2);
             this.tbHome.Controls.Add(this.panel3);
@@ -225,15 +231,13 @@
             this.bunifuCards2.color = System.Drawing.Color.Tomato;
             this.bunifuCards2.Controls.Add(this.btn_ClearBill);
             this.bunifuCards2.Controls.Add(this.bunifuGradientPanel2);
-            this.bunifuCards2.Controls.Add(this.btn_printListFood);
             this.bunifuCards2.Controls.Add(this.bunifuGradientPanel1);
-            this.bunifuCards2.Controls.Add(this.btn_printBill);
             this.bunifuCards2.LeftSahddow = false;
-            this.bunifuCards2.Location = new System.Drawing.Point(1101, 514);
+            this.bunifuCards2.Location = new System.Drawing.Point(246, 49);
             this.bunifuCards2.Name = "bunifuCards2";
             this.bunifuCards2.RightSahddow = false;
             this.bunifuCards2.ShadowDepth = 20;
-            this.bunifuCards2.Size = new System.Drawing.Size(444, 238);
+            this.bunifuCards2.Size = new System.Drawing.Size(482, 193);
             this.bunifuCards2.TabIndex = 15;
             // 
             // btn_ClearBill
@@ -254,10 +258,10 @@
             this.btn_ClearBill.IdleFillColor = System.Drawing.Color.White;
             this.btn_ClearBill.IdleForecolor = System.Drawing.Color.Red;
             this.btn_ClearBill.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_ClearBill.Location = new System.Drawing.Point(239, 173);
+            this.btn_ClearBill.Location = new System.Drawing.Point(5, 115);
             this.btn_ClearBill.Margin = new System.Windows.Forms.Padding(5);
             this.btn_ClearBill.Name = "btn_ClearBill";
-            this.btn_ClearBill.Size = new System.Drawing.Size(104, 55);
+            this.btn_ClearBill.Size = new System.Drawing.Size(174, 35);
             this.btn_ClearBill.TabIndex = 4;
             this.btn_ClearBill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_ClearBill.Click += new System.EventHandler(this.btn_ClearBill_Click);
@@ -270,14 +274,16 @@
             this.bunifuGradientPanel2.Controls.Add(this.rbtn_discountBill);
             this.bunifuGradientPanel2.Controls.Add(this.rbtn_normalBill);
             this.bunifuGradientPanel2.Controls.Add(this.materialLabel8);
+            this.bunifuGradientPanel2.Controls.Add(this.btn_printListFood);
+            this.bunifuGradientPanel2.Controls.Add(this.btn_printBill);
             this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(0, 109);
+            this.bunifuGradientPanel2.Location = new System.Drawing.Point(3, 61);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(441, 59);
+            this.bunifuGradientPanel2.Size = new System.Drawing.Size(471, 113);
             this.bunifuGradientPanel2.TabIndex = 21;
             // 
             // rbtn_discountBill
@@ -285,7 +291,7 @@
             this.rbtn_discountBill.AutoSize = true;
             this.rbtn_discountBill.Depth = 0;
             this.rbtn_discountBill.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtn_discountBill.Location = new System.Drawing.Point(270, 31);
+            this.rbtn_discountBill.Location = new System.Drawing.Point(232, 20);
             this.rbtn_discountBill.Margin = new System.Windows.Forms.Padding(0);
             this.rbtn_discountBill.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rbtn_discountBill.MouseState = MaterialSkin.MouseState.HOVER;
@@ -303,7 +309,7 @@
             this.rbtn_normalBill.Checked = true;
             this.rbtn_normalBill.Depth = 0;
             this.rbtn_normalBill.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtn_normalBill.Location = new System.Drawing.Point(270, 1);
+            this.rbtn_normalBill.Location = new System.Drawing.Point(233, -3);
             this.rbtn_normalBill.Margin = new System.Windows.Forms.Padding(0);
             this.rbtn_normalBill.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rbtn_normalBill.MouseState = MaterialSkin.MouseState.HOVER;
@@ -322,7 +328,7 @@
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel8.Location = new System.Drawing.Point(3, 8);
+            this.materialLabel8.Location = new System.Drawing.Point(9, 4);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(179, 19);
@@ -347,10 +353,10 @@
             this.btn_printListFood.IdleFillColor = System.Drawing.Color.White;
             this.btn_printListFood.IdleForecolor = System.Drawing.Color.Red;
             this.btn_printListFood.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_printListFood.Location = new System.Drawing.Point(125, 172);
+            this.btn_printListFood.Location = new System.Drawing.Point(305, 55);
             this.btn_printListFood.Margin = new System.Windows.Forms.Padding(5);
             this.btn_printListFood.Name = "btn_printListFood";
-            this.btn_printListFood.Size = new System.Drawing.Size(104, 55);
+            this.btn_printListFood.Size = new System.Drawing.Size(143, 34);
             this.btn_printListFood.TabIndex = 3;
             this.btn_printListFood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_printListFood.Click += new System.EventHandler(this.btn_printListFood_Click);
@@ -361,16 +367,16 @@
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bunifuGradientPanel1.Controls.Add(this.rbtn_takeAway);
-            this.bunifuGradientPanel1.Controls.Add(this.rbtn_notTake);
             this.bunifuGradientPanel1.Controls.Add(this.materialLabel7);
+            this.bunifuGradientPanel1.Controls.Add(this.rbtn_notTake);
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 32);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(3, 3);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(441, 71);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(471, 58);
             this.bunifuGradientPanel1.TabIndex = 19;
             // 
             // rbtn_takeAway
@@ -378,7 +384,7 @@
             this.rbtn_takeAway.AutoSize = true;
             this.rbtn_takeAway.Depth = 0;
             this.rbtn_takeAway.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtn_takeAway.Location = new System.Drawing.Point(270, 38);
+            this.rbtn_takeAway.Location = new System.Drawing.Point(232, 28);
             this.rbtn_takeAway.Margin = new System.Windows.Forms.Padding(0);
             this.rbtn_takeAway.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rbtn_takeAway.MouseState = MaterialSkin.MouseState.HOVER;
@@ -395,7 +401,7 @@
             this.rbtn_notTake.Checked = true;
             this.rbtn_notTake.Depth = 0;
             this.rbtn_notTake.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtn_notTake.Location = new System.Drawing.Point(270, 8);
+            this.rbtn_notTake.Location = new System.Drawing.Point(232, 4);
             this.rbtn_notTake.Margin = new System.Windows.Forms.Padding(0);
             this.rbtn_notTake.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rbtn_notTake.MouseState = MaterialSkin.MouseState.HOVER;
@@ -413,7 +419,7 @@
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(3, 8);
+            this.materialLabel7.Location = new System.Drawing.Point(12, 6);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(111, 19);
@@ -438,10 +444,10 @@
             this.btn_printBill.IdleFillColor = System.Drawing.Color.White;
             this.btn_printBill.IdleForecolor = System.Drawing.Color.Red;
             this.btn_printBill.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_printBill.Location = new System.Drawing.Point(21, 173);
+            this.btn_printBill.Location = new System.Drawing.Point(177, 55);
             this.btn_printBill.Margin = new System.Windows.Forms.Padding(5);
             this.btn_printBill.Name = "btn_printBill";
-            this.btn_printBill.Size = new System.Drawing.Size(94, 55);
+            this.btn_printBill.Size = new System.Drawing.Size(118, 33);
             this.btn_printBill.TabIndex = 2;
             this.btn_printBill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_printBill.Click += new System.EventHandler(this.btn_printBill_Click);
@@ -464,11 +470,11 @@
             this.bunifuCards1.Controls.Add(this.materialLabel4);
             this.bunifuCards1.Controls.Add(this.materialLabel3);
             this.bunifuCards1.LeftSahddow = false;
-            this.bunifuCards1.Location = new System.Drawing.Point(663, 514);
+            this.bunifuCards1.Location = new System.Drawing.Point(3, 49);
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = false;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(432, 238);
+            this.bunifuCards1.Size = new System.Drawing.Size(244, 186);
             this.bunifuCards1.TabIndex = 14;
             // 
             // txt_table
@@ -484,10 +490,10 @@
             this.txt_table.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_table.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.txt_table.LineThickness = 3;
-            this.txt_table.Location = new System.Drawing.Point(264, 23);
+            this.txt_table.Location = new System.Drawing.Point(99, 10);
             this.txt_table.Margin = new System.Windows.Forms.Padding(4);
             this.txt_table.Name = "txt_table";
-            this.txt_table.Size = new System.Drawing.Size(144, 28);
+            this.txt_table.Size = new System.Drawing.Size(97, 28);
             this.txt_table.TabIndex = 19;
             this.txt_table.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -497,7 +503,7 @@
             this.lb_Table.Depth = 0;
             this.lb_Table.Font = new System.Drawing.Font("Roboto", 11F);
             this.lb_Table.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_Table.Location = new System.Drawing.Point(13, 32);
+            this.lb_Table.Location = new System.Drawing.Point(4, 19);
             this.lb_Table.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_Table.Name = "lb_Table";
             this.lb_Table.Size = new System.Drawing.Size(64, 19);
@@ -510,7 +516,7 @@
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel11.Location = new System.Drawing.Point(368, 182);
+            this.materialLabel11.Location = new System.Drawing.Point(203, 84);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(40, 19);
@@ -523,7 +529,7 @@
             this.materialLabel10.Depth = 0;
             this.materialLabel10.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel10.Location = new System.Drawing.Point(368, 128);
+            this.materialLabel10.Location = new System.Drawing.Point(202, 62);
             this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel10.Name = "materialLabel10";
             this.materialLabel10.Size = new System.Drawing.Size(40, 19);
@@ -536,7 +542,7 @@
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel9.Location = new System.Drawing.Point(368, 71);
+            this.materialLabel9.Location = new System.Drawing.Point(202, 41);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(40, 19);
@@ -556,10 +562,10 @@
             this.txt_Pay.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_Pay.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.txt_Pay.LineThickness = 3;
-            this.txt_Pay.Location = new System.Drawing.Point(264, 59);
+            this.txt_Pay.Location = new System.Drawing.Point(99, 41);
             this.txt_Pay.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Pay.Name = "txt_Pay";
-            this.txt_Pay.Size = new System.Drawing.Size(144, 44);
+            this.txt_Pay.Size = new System.Drawing.Size(97, 20);
             this.txt_Pay.TabIndex = 14;
             this.txt_Pay.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -576,10 +582,10 @@
             this.txt_ExcessCash.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_ExcessCash.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.txt_ExcessCash.LineThickness = 3;
-            this.txt_ExcessCash.Location = new System.Drawing.Point(264, 182);
+            this.txt_ExcessCash.Location = new System.Drawing.Point(99, 84);
             this.txt_ExcessCash.Margin = new System.Windows.Forms.Padding(4);
             this.txt_ExcessCash.Name = "txt_ExcessCash";
-            this.txt_ExcessCash.Size = new System.Drawing.Size(144, 30);
+            this.txt_ExcessCash.Size = new System.Drawing.Size(97, 20);
             this.txt_ExcessCash.TabIndex = 12;
             this.txt_ExcessCash.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -595,10 +601,10 @@
             this.txt_MoneyOfCus.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_MoneyOfCus.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.txt_MoneyOfCus.LineThickness = 3;
-            this.txt_MoneyOfCus.Location = new System.Drawing.Point(264, 128);
+            this.txt_MoneyOfCus.Location = new System.Drawing.Point(99, 62);
             this.txt_MoneyOfCus.Margin = new System.Windows.Forms.Padding(4);
             this.txt_MoneyOfCus.Name = "txt_MoneyOfCus";
-            this.txt_MoneyOfCus.Size = new System.Drawing.Size(144, 32);
+            this.txt_MoneyOfCus.Size = new System.Drawing.Size(97, 20);
             this.txt_MoneyOfCus.TabIndex = 1;
             this.txt_MoneyOfCus.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_MoneyOfCus.OnValueChanged += new System.EventHandler(this.txt_MoneyOfCus_OnValueChanged);
@@ -611,7 +617,7 @@
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(13, 193);
+            this.materialLabel5.Location = new System.Drawing.Point(3, 82);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(84, 19);
@@ -624,7 +630,7 @@
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(13, 141);
+            this.materialLabel4.Location = new System.Drawing.Point(4, 62);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(89, 19);
@@ -637,7 +643,7 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(13, 84);
+            this.materialLabel3.Location = new System.Drawing.Point(3, 42);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(96, 19);
@@ -649,17 +655,17 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.flpFood);
             this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Location = new System.Drawing.Point(348, 442);
+            this.panel4.Location = new System.Drawing.Point(264, 332);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(309, 320);
+            this.panel4.Size = new System.Drawing.Size(353, 313);
             this.panel4.TabIndex = 7;
             // 
             // flpFood
             // 
             this.flpFood.AutoScroll = true;
-            this.flpFood.Location = new System.Drawing.Point(2, 48);
+            this.flpFood.Location = new System.Drawing.Point(3, 48);
             this.flpFood.Name = "flpFood";
-            this.flpFood.Size = new System.Drawing.Size(314, 235);
+            this.flpFood.Size = new System.Drawing.Size(345, 260);
             this.flpFood.TabIndex = 5;
             // 
             // textBox2
@@ -671,7 +677,7 @@
             this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox2.Location = new System.Drawing.Point(0, 0);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(307, 30);
+            this.textBox2.Size = new System.Drawing.Size(351, 30);
             this.textBox2.TabIndex = 4;
             this.textBox2.Text = "Thức Uống";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -681,26 +687,26 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.DTGV_bill);
             this.panel2.Controls.Add(this.panel5);
-            this.panel2.Location = new System.Drawing.Point(660, 8);
+            this.panel2.Location = new System.Drawing.Point(623, 8);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(886, 500);
+            this.panel2.Size = new System.Drawing.Size(730, 637);
             this.panel2.TabIndex = 6;
             // 
             // DTGV_bill
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DTGV_bill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DTGV_bill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DTGV_bill.BackgroundColor = System.Drawing.Color.White;
             this.DTGV_bill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DTGV_bill.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTGV_bill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTGV_bill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DTGV_bill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DTGV_bill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cl_foodName,
@@ -715,82 +721,33 @@
             this.DTGV_bill.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.DTGV_bill.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.DTGV_bill.HeaderForeColor = System.Drawing.Color.White;
-            this.DTGV_bill.Location = new System.Drawing.Point(-41, 0);
+            this.DTGV_bill.Location = new System.Drawing.Point(0, -3);
             this.DTGV_bill.Name = "DTGV_bill";
             this.DTGV_bill.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DTGV_bill.Size = new System.Drawing.Size(925, 442);
+            this.DTGV_bill.Size = new System.Drawing.Size(728, 404);
             this.DTGV_bill.TabIndex = 8;
             this.DTGV_bill.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.DTGV_bill_CellBeginEdit);
             this.DTGV_bill.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGV_bill_CellContentClick);
             this.DTGV_bill.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGV_bill_CellEndEdit);
             this.DTGV_bill.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.DTGV_bill_EditingControlShowing);
             // 
-            // cl_foodName
-            // 
-            this.cl_foodName.HeaderText = "Tên Món";
-            this.cl_foodName.Name = "cl_foodName";
-            this.cl_foodName.ReadOnly = true;
-            this.cl_foodName.Width = 175;
-            // 
-            // cl_number
-            // 
-            this.cl_number.HeaderText = "SL";
-            this.cl_number.MaxInputLength = 3;
-            this.cl_number.Name = "cl_number";
-            this.cl_number.Width = 50;
-            // 
-            // cl_price
-            // 
-            this.cl_price.HeaderText = "Giá";
-            this.cl_price.MaxInputLength = 20;
-            this.cl_price.Name = "cl_price";
-            this.cl_price.ReadOnly = true;
-            this.cl_price.Width = 75;
-            // 
-            // cl_Disscount
-            // 
-            this.cl_Disscount.HeaderText = "Giảm Giá";
-            this.cl_Disscount.MaxInputLength = 3;
-            this.cl_Disscount.Name = "cl_Disscount";
-            this.cl_Disscount.Width = 85;
-            // 
-            // cl_Note
-            // 
-            this.cl_Note.HeaderText = "Ghi Chú";
-            this.cl_Note.MaxInputLength = 100;
-            this.cl_Note.Name = "cl_Note";
-            this.cl_Note.Width = 310;
-            // 
-            // cl_pay
-            // 
-            this.cl_pay.HeaderText = "Thành Tiền";
-            this.cl_pay.MaxInputLength = 10;
-            this.cl_pay.Name = "cl_pay";
-            this.cl_pay.ReadOnly = true;
-            this.cl_pay.Width = 120;
-            // 
-            // cl_btnDelete
-            // 
-            this.cl_btnDelete.HeaderText = "Xóa Món";
-            this.cl_btnDelete.Image = global::RoverCoffeManage2.Properties.Resources.del_21;
-            this.cl_btnDelete.Name = "cl_btnDelete";
-            this.cl_btnDelete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.cl_btnDelete.Width = 70;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.bunifuCards2);
             this.panel5.Controls.Add(this.txt_Discount);
+            this.panel5.Controls.Add(this.bunifuCards1);
             this.panel5.Controls.Add(this.materialLabel1);
             this.panel5.Controls.Add(this.materialLabel2);
             this.panel5.Controls.Add(this.lb_price);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 444);
+            this.panel5.Location = new System.Drawing.Point(0, 407);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(884, 54);
+            this.panel5.Size = new System.Drawing.Size(728, 228);
             this.panel5.TabIndex = 7;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // txt_Discount
             // 
@@ -805,7 +762,7 @@
             this.txt_Discount.LineIdleColor = System.Drawing.Color.Gray;
             this.txt_Discount.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txt_Discount.LineThickness = 3;
-            this.txt_Discount.Location = new System.Drawing.Point(689, 27);
+            this.txt_Discount.Location = new System.Drawing.Point(563, 26);
             this.txt_Discount.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Discount.Name = "txt_Discount";
             this.txt_Discount.Size = new System.Drawing.Size(54, 22);
@@ -821,7 +778,7 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(2, 27);
+            this.materialLabel1.Location = new System.Drawing.Point(-3, 26);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(89, 19);
@@ -834,7 +791,7 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(3, 0);
+            this.materialLabel2.Location = new System.Drawing.Point(-1, 2);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(84, 19);
@@ -847,7 +804,7 @@
             this.lb_price.Depth = 0;
             this.lb_price.Font = new System.Drawing.Font("Roboto", 11F);
             this.lb_price.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_price.Location = new System.Drawing.Point(685, 0);
+            this.lb_price.Location = new System.Drawing.Point(563, 2);
             this.lb_price.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_price.Name = "lb_price";
             this.lb_price.Size = new System.Drawing.Size(17, 19);
@@ -858,7 +815,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(750, 29);
+            this.label2.Location = new System.Drawing.Point(638, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(17, 17);
             this.label2.TabIndex = 6;
@@ -869,9 +826,9 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.flpCategory);
-            this.panel3.Location = new System.Drawing.Point(15, 442);
+            this.panel3.Location = new System.Drawing.Point(15, 331);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(328, 320);
+            this.panel3.Size = new System.Drawing.Size(247, 314);
             this.panel3.TabIndex = 4;
             // 
             // textBox1
@@ -883,7 +840,7 @@
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(326, 30);
+            this.textBox1.Size = new System.Drawing.Size(245, 30);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "Danh Mục ";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -893,7 +850,7 @@
             this.flpCategory.AutoScroll = true;
             this.flpCategory.Location = new System.Drawing.Point(11, 48);
             this.flpCategory.Name = "flpCategory";
-            this.flpCategory.Size = new System.Drawing.Size(336, 267);
+            this.flpCategory.Size = new System.Drawing.Size(231, 261);
             this.flpCategory.TabIndex = 2;
             // 
             // flpTable
@@ -903,7 +860,7 @@
             this.flpTable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flpTable.Location = new System.Drawing.Point(15, 8);
             this.flpTable.Name = "flpTable";
-            this.flpTable.Size = new System.Drawing.Size(642, 432);
+            this.flpTable.Size = new System.Drawing.Size(602, 321);
             this.flpTable.TabIndex = 0;
             // 
             // tabPage2
@@ -979,7 +936,7 @@
             this.pictureBox2.Image = global::RoverCoffeManage2.Properties.Resources.settings;
             this.pictureBox2.Location = new System.Drawing.Point(73, 70);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(518, 513);
+            this.pictureBox2.Size = new System.Drawing.Size(581, 531);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -1107,9 +1064,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::RoverCoffeManage2.Properties.Resources.analytics_1;
-            this.pictureBox3.Location = new System.Drawing.Point(45, 99);
+            this.pictureBox3.Location = new System.Drawing.Point(45, 104);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(539, 531);
+            this.pictureBox3.Size = new System.Drawing.Size(539, 526);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
@@ -1234,7 +1191,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(650, 273);
+            this.label11.Location = new System.Drawing.Point(475, 150);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(574, 155);
             this.label11.TabIndex = 4;
@@ -1245,7 +1202,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(853, 177);
+            this.label12.Location = new System.Drawing.Point(649, 93);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(207, 40);
             this.label12.TabIndex = 3;
@@ -1254,9 +1211,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::RoverCoffeManage2.Properties.Resources.curriculum;
-            this.pictureBox4.Location = new System.Drawing.Point(45, 99);
+            this.pictureBox4.Location = new System.Drawing.Point(0, 44);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(539, 531);
+            this.pictureBox4.Size = new System.Drawing.Size(444, 473);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
@@ -1310,19 +1267,19 @@
             this.bunifuCards3.Controls.Add(this.label4);
             this.bunifuCards3.Controls.Add(this.label3);
             this.bunifuCards3.LeftSahddow = false;
-            this.bunifuCards3.Location = new System.Drawing.Point(28, 29);
+            this.bunifuCards3.Location = new System.Drawing.Point(6, 29);
             this.bunifuCards3.Name = "bunifuCards3";
             this.bunifuCards3.RightSahddow = false;
             this.bunifuCards3.ShadowDepth = 20;
-            this.bunifuCards3.Size = new System.Drawing.Size(1497, 680);
+            this.bunifuCards3.Size = new System.Drawing.Size(1519, 680);
             this.bunifuCards3.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::RoverCoffeManage2.Properties.Resources._14657411_325419537816430_8166398440840516187_n;
-            this.pictureBox1.Location = new System.Drawing.Point(891, 72);
+            this.pictureBox1.Location = new System.Drawing.Point(791, 43);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(572, 539);
+            this.pictureBox1.Size = new System.Drawing.Size(567, 568);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -1330,7 +1287,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(25, 557);
+            this.label6.Location = new System.Drawing.Point(6, 565);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(587, 54);
             this.label6.TabIndex = 4;
@@ -1340,7 +1297,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(28, 239);
+            this.label5.Location = new System.Drawing.Point(5, 235);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(770, 165);
             this.label5.TabIndex = 3;
@@ -1350,7 +1307,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(28, 97);
+            this.label4.Location = new System.Drawing.Point(5, 110);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(780, 99);
             this.label4.TabIndex = 2;
@@ -1367,20 +1324,64 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "RoverCoffe Manager";
             // 
-            // dataGridViewImageColumn1
+            // cl_foodName
             // 
-            this.dataGridViewImageColumn1.HeaderText = "Xóa Món";
-            this.dataGridViewImageColumn1.Image = global::RoverCoffeManage2.Properties.Resources.del;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewImageColumn1.Width = 70;
+            this.cl_foodName.HeaderText = "Tên Món";
+            this.cl_foodName.Name = "cl_foodName";
+            this.cl_foodName.ReadOnly = true;
+            this.cl_foodName.Width = 160;
+            // 
+            // cl_number
+            // 
+            this.cl_number.HeaderText = "SL";
+            this.cl_number.MaxInputLength = 3;
+            this.cl_number.Name = "cl_number";
+            this.cl_number.Width = 50;
+            // 
+            // cl_price
+            // 
+            this.cl_price.HeaderText = "Giá";
+            this.cl_price.MaxInputLength = 20;
+            this.cl_price.Name = "cl_price";
+            this.cl_price.ReadOnly = true;
+            this.cl_price.Width = 80;
+            // 
+            // cl_Disscount
+            // 
+            this.cl_Disscount.HeaderText = "Giảm Giá";
+            this.cl_Disscount.MaxInputLength = 3;
+            this.cl_Disscount.Name = "cl_Disscount";
+            this.cl_Disscount.Width = 55;
+            // 
+            // cl_Note
+            // 
+            this.cl_Note.HeaderText = "Ghi Chú";
+            this.cl_Note.MaxInputLength = 100;
+            this.cl_Note.Name = "cl_Note";
+            this.cl_Note.Width = 172;
+            // 
+            // cl_pay
+            // 
+            this.cl_pay.HeaderText = "Thành Tiền";
+            this.cl_pay.MaxInputLength = 10;
+            this.cl_pay.Name = "cl_pay";
+            this.cl_pay.ReadOnly = true;
+            this.cl_pay.Width = 130;
+            // 
+            // cl_btnDelete
+            // 
+            this.cl_btnDelete.HeaderText = "Xóa Món";
+            this.cl_btnDelete.Image = global::RoverCoffeManage2.Properties.Resources.del_21;
+            this.cl_btnDelete.Name = "cl_btnDelete";
+            this.cl_btnDelete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.cl_btnDelete.Width = 39;
             // 
             // fAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1556, 900);
+            this.ClientSize = new System.Drawing.Size(1358, 768);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.TabControl);
@@ -1390,6 +1391,7 @@
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RoverCoffe And WorkSpace";
+            this.Load += new System.EventHandler(this.fAdmin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.TabControl.ResumeLayout(false);
@@ -1491,13 +1493,6 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_table;
         private MaterialSkin.Controls.MaterialLabel lb_Table;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_foodName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_number;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_Disscount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_Note;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cl_pay;
-        private System.Windows.Forms.DataGridViewImageColumn cl_btnDelete;
         private StatisticsQuantity userControl11;
         private StatisticDate userControl21;
         private StatisticMonth userControl31;
@@ -1531,5 +1526,12 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button btn_settingAccount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cl_foodName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cl_number;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cl_price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cl_Disscount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cl_Note;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cl_pay;
+        private System.Windows.Forms.DataGridViewImageColumn cl_btnDelete;
     }
 }

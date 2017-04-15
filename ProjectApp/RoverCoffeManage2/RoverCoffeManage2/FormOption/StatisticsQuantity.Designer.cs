@@ -41,9 +41,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.dgvQuantityStatistics = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dgvQuantityStatistics = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             ((System.ComponentModel.ISupportInitialize)(this.chartQuantityStatistics)).BeginInit();
             this.panel1.SuspendLayout();
             this.bunifuCards1.SuspendLayout();
@@ -66,13 +66,13 @@
             this.chartQuantityStatistics.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartQuantityStatistics.Legends.Add(legend1);
-            this.chartQuantityStatistics.Location = new System.Drawing.Point(437, 68);
+            this.chartQuantityStatistics.Location = new System.Drawing.Point(355, 68);
             this.chartQuantityStatistics.Name = "chartQuantityStatistics";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Số lượng";
             this.chartQuantityStatistics.Series.Add(series1);
-            this.chartQuantityStatistics.Size = new System.Drawing.Size(555, 508);
+            this.chartQuantityStatistics.Size = new System.Drawing.Size(412, 377);
             this.chartQuantityStatistics.TabIndex = 9;
             this.chartQuantityStatistics.Text = "chart1";
             // 
@@ -80,7 +80,7 @@
             // 
             this.btnQuantitySearch.Depth = 0;
             this.btnQuantitySearch.Icon = null;
-            this.btnQuantitySearch.Location = new System.Drawing.Point(15, 440);
+            this.btnQuantitySearch.Location = new System.Drawing.Point(3, 313);
             this.btnQuantitySearch.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnQuantitySearch.Name = "btnQuantitySearch";
             this.btnQuantitySearch.Primary = true;
@@ -97,10 +97,10 @@
             this.dtpQuantityEnd.ForeColor = System.Drawing.Color.White;
             this.dtpQuantityEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpQuantityEnd.FormatCustom = null;
-            this.dtpQuantityEnd.Location = new System.Drawing.Point(116, 59);
+            this.dtpQuantityEnd.Location = new System.Drawing.Point(116, 55);
             this.dtpQuantityEnd.Margin = new System.Windows.Forms.Padding(4);
             this.dtpQuantityEnd.Name = "dtpQuantityEnd";
-            this.dtpQuantityEnd.Size = new System.Drawing.Size(283, 36);
+            this.dtpQuantityEnd.Size = new System.Drawing.Size(137, 28);
             this.dtpQuantityEnd.TabIndex = 6;
             this.dtpQuantityEnd.Value = new System.DateTime(2017, 4, 2, 11, 46, 32, 256);
             // 
@@ -111,10 +111,10 @@
             this.dtpQuantityBegin.ForeColor = System.Drawing.Color.White;
             this.dtpQuantityBegin.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpQuantityBegin.FormatCustom = null;
-            this.dtpQuantityBegin.Location = new System.Drawing.Point(116, 15);
+            this.dtpQuantityBegin.Location = new System.Drawing.Point(116, 11);
             this.dtpQuantityBegin.Margin = new System.Windows.Forms.Padding(4);
             this.dtpQuantityBegin.Name = "dtpQuantityBegin";
-            this.dtpQuantityBegin.Size = new System.Drawing.Size(283, 36);
+            this.dtpQuantityBegin.Size = new System.Drawing.Size(137, 28);
             this.dtpQuantityBegin.TabIndex = 5;
             this.dtpQuantityBegin.Value = new System.DateTime(2017, 4, 2, 11, 46, 26, 983);
             // 
@@ -158,28 +158,8 @@
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(418, 508);
+            this.bunifuCards1.Size = new System.Drawing.Size(339, 377);
             this.bunifuCards1.TabIndex = 13;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(11, 59);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 19);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Ngày kết thúc :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 19);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Ngày bắt đầu :";
             // 
             // dgvQuantityStatistics
             // 
@@ -202,11 +182,31 @@
             this.dgvQuantityStatistics.EnableHeadersVisualStyles = false;
             this.dgvQuantityStatistics.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.dgvQuantityStatistics.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvQuantityStatistics.Location = new System.Drawing.Point(-161, 129);
+            this.dgvQuantityStatistics.Location = new System.Drawing.Point(3, 90);
             this.dgvQuantityStatistics.Name = "dgvQuantityStatistics";
             this.dgvQuantityStatistics.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvQuantityStatistics.Size = new System.Drawing.Size(558, 293);
+            this.dgvQuantityStatistics.Size = new System.Drawing.Size(333, 217);
             this.dgvQuantityStatistics.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(11, 59);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(101, 19);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Ngày kết thúc :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(11, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 19);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Ngày bắt đầu :";
             // 
             // StatisticsQuantity
             // 

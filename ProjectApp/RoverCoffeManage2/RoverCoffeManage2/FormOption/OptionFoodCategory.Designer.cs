@@ -72,7 +72,7 @@
             this.panel3.Controls.Add(this.flpCategory);
             this.panel3.Location = new System.Drawing.Point(13, 69);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(259, 474);
+            this.panel3.Size = new System.Drawing.Size(259, 384);
             this.panel3.TabIndex = 8;
             // 
             // textBox1
@@ -144,7 +144,7 @@
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(719, 473);
+            this.bunifuCards1.Size = new System.Drawing.Size(622, 429);
             this.bunifuCards1.TabIndex = 12;
             // 
             // materialTabSelector1
@@ -168,7 +168,7 @@
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(708, 382);
+            this.materialTabControl1.Size = new System.Drawing.Size(600, 326);
             this.materialTabControl1.TabIndex = 12;
             // 
             // tabPage1
@@ -183,7 +183,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(700, 356);
+            this.tabPage1.Size = new System.Drawing.Size(592, 300);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thêm Danh Mục";
             // 
@@ -191,7 +191,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(8, 252);
+            this.label5.Location = new System.Drawing.Point(8, 205);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(538, 19);
             this.label5.TabIndex = 22;
@@ -202,7 +202,7 @@
             // 
             this.txt_nameOfFoodCategory.Depth = 0;
             this.txt_nameOfFoodCategory.Hint = "Nhập tên danh mục ở đây";
-            this.txt_nameOfFoodCategory.Location = new System.Drawing.Point(10, 175);
+            this.txt_nameOfFoodCategory.Location = new System.Drawing.Point(10, 147);
             this.txt_nameOfFoodCategory.MaxLength = 50;
             this.txt_nameOfFoodCategory.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_nameOfFoodCategory.Name = "txt_nameOfFoodCategory";
@@ -219,7 +219,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 129);
+            this.label4.Location = new System.Drawing.Point(8, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(412, 23);
             this.label4.TabIndex = 20;
@@ -270,7 +270,7 @@
             this.btn_OKAdd.IdleFillColor = System.Drawing.Color.White;
             this.btn_OKAdd.IdleForecolor = System.Drawing.Color.Red;
             this.btn_OKAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_OKAdd.Location = new System.Drawing.Point(10, 293);
+            this.btn_OKAdd.Location = new System.Drawing.Point(8, 229);
             this.btn_OKAdd.Margin = new System.Windows.Forms.Padding(5);
             this.btn_OKAdd.Name = "btn_OKAdd";
             this.btn_OKAdd.Size = new System.Drawing.Size(94, 55);

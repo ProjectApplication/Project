@@ -117,20 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Phiên Bản :                                                          1.0
+
+Liên Hệ :                                                    0932549693 ( MR Ánh)
+                                                                   01665655647 (MR Linh)
+                                                                   0935696523 (MR Trí)</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_ClearBill.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGgAAAA3CAYAAADgxA+DAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIkSURBVHhe7dw9KIVRAMZxGY1Go9FoNNpksihlYTGZLCwy
-        SBjIYDAohluSwWBQBh8DixIlGSRRDMJwSzIc/Y973tzux8L1PsPzq7du18fw/jsfV+/RFEyaA4lzIHEO
-        JM6BxDmQuLqB3j8+w8bhZRiY2w7d44XQPrwcmntnfP3y4j5yP/umt8La3nl4Lb6X7nilmoF2T2/iLyIO
-        kQ4u7sLt01vpq/Yb3Efu5/bxdRha3In3mVDVVASiJj/UM7kRHl+KpXetkerd87JAfGPn6GrNmtZYzFpd
-        Y+tlM1VZICo6Tr6Y+lifkiwQ9Rhilr+Jtf0wu3kcX8dA7NZYqLzmaKAHS83V/fN3IKY1pjfTwQhiJMVA
-        7MfZ8pmOs5unOIpioI6RlTicTAfTXEvf/Heg1v6Fup9mLR/81SEG4oXpcSBxDiTOgcQ5kDgHEudA4hxI
-        nAOJcyBxDiTOgcQ5kDgHEudA4hxInAOJcyBxDiTOgcQ5kDgHEpcF4vkrnsMyLVkgnsv24Sw9WSBONXC6
-        wXTwpC9P/MZA6UFt05EONMRATG/U8jqkIx1oiIEwVTiKl+UvnaxHFojRw9G7k6uH0juWBw7RMZulwwxZ
-        ILAwpZNd9v+IwyDhnGpSFgiMICKlM5L2P1hvGDk/46AiEJju2NVRk92Ez642BtNYWm/YFFQ7o1U1UEJN
-        tnptg0vxQ5Ovv704OJf+k0stdQNZ/hxInAOJcyBxDiQthC84hMs+MKHBbQAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAK4AAAAjCAYAAAANIjHoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIMSURBVHhe7dstSJ1RHIDxYVw0Go2LRqNNliyDgUWLyWTR
+        MgxD3MKGwWAQNAgXMdxgGBh0BlcGQ0HEIGNMmEHUIIgYzniO97zscj+Su54Dzw8OyPUjPZz7v+c9vghS
+        gQxXRTJcFclwVSTDVZEMV0XqGu7d/UOofT0Obz/Uw8jsRhicXA59rxdcrv+y6IvOxt5vhbWdw3B9e9co
+        sVXHcL98P4t/iGiJd+/oV/h5cdP4rvT06IvO6genYeLzduyPgNtpCZfK+aXRd7Xw5+q28arUe91abAqX
+        HxyaXu1YufQcePcfnllvesdvCpe6jVY5YoRg/k2qcKmaLVnK1dzabljcPIhfx3A5PWAQdqZVzuiUUfbk
+        9+VjuIwHjAlS7thx2XljuJybcQQh5e7H2UXcdWO4r6ZW4vYr5Y5x4eXYx8dw+9986vqUQsoJT9liuHwh
+        lcJwVaQqXGYGZgepBFW4nOF6gUalqMLliRlPzqTccfrFKVgMNx3qSrlLD8tiuIwJVOycq9ylh2UxXMxv
+        7Mcl5Sr9Nw6qcNltuTb27eS88YqUDy6AMRWkB2VVuGDwTbdvpFwQLZsqd3KTpnDBjku86d6j9JyYZ9lp
+        /40WLeGCsYFTBirnU5z3dNVLjANpnuXDWLt7NG3DTaico4eB8aV46Oty9WJx6Sv9d3knXcOVcmW4KpLh
+        qkiGqyIZrgoUwl9yRLVZCCCYMQAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="bunifuGradientPanel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -142,17 +149,17 @@
   </data>
   <data name="btn_printListFood.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGgAAAA3CAYAAADgxA+DAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIkSURBVHhe7dw9KIVRAMZxGY1Go9FoNNpksihlYTGZLCwy
-        SBjIYDAohluSwWBQBh8DixIlGSRRDMJwSzIc/Y973tzux8L1PsPzq7du18fw/jsfV+/RFEyaA4lzIHEO
-        JM6BxDmQuLqB3j8+w8bhZRiY2w7d44XQPrwcmntnfP3y4j5yP/umt8La3nl4Lb6X7nilmoF2T2/iLyIO
-        kQ4u7sLt01vpq/Yb3Efu5/bxdRha3In3mVDVVASiJj/UM7kRHl+KpXetkerd87JAfGPn6GrNmtZYzFpd
-        Y+tlM1VZICo6Tr6Y+lifkiwQ9Rhilr+Jtf0wu3kcX8dA7NZYqLzmaKAHS83V/fN3IKY1pjfTwQhiJMVA
-        7MfZ8pmOs5unOIpioI6RlTicTAfTXEvf/Heg1v6Fup9mLR/81SEG4oXpcSBxDiTOgcQ5kDgHEudA4hxI
-        nAOJcyBxDiTOgcQ5kDgHEudA4hxInAOJcyBxDiTOgcQ5kDgHEpcF4vkrnsMyLVkgnsv24Sw9WSBONXC6
-        wXTwpC9P/MZA6UFt05EONMRATG/U8jqkIx1oiIEwVTiKl+UvnaxHFojRw9G7k6uH0juWBw7RMZulwwxZ
-        ILAwpZNd9v+IwyDhnGpSFgiMICKlM5L2P1hvGDk/46AiEJju2NVRk92Ez642BtNYWm/YFFQ7o1U1UEJN
-        tnptg0vxQ5Ovv704OJf+k0stdQNZ/hxInAOJcyBxDiQthC84hMs+MKHBbQAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAI8AAAAiCAYAAABm4YqjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH7SURBVHhe7dsvSANRAMdxMRqNRqPRaLSJaUUQLFpMJosW
+        MYioQTEYDMIMgyGGBYNg8E+YRRAFGYYhouCCqGEwxPDk+3bv2LndeXtx9/vAwZi6cl/ev5t9RsST4hFv
+        ike8KR7xpnjEm+IRb4nxNL5/TPHywUxvlsz4UsEMz+2Z/sl1XT18cY+517m1Y5M/uzOf9UZQQ7vYeE5v
+        qvaDCIeALu6fzVPtK/ip9CruMfe6VH40szsntgEi6qQtHkrjjyZWiubtox68K1mV1EMkHn5xdOEgtjTJ
+        LmaiscXDyOwTiYfCFI7EYTpjPeSE8VAWQ5NIkuX8udk4KtvXNh52VSyMtMaR/9AKS5vKy3szHqYqpiyR
+        NBh5GIFsPOzp2ZqJpHFbrdnRx8YzMr9vhyGRNJi6BnJbzXgGp7YTTxJF/uI02sbDC5FuhPEwBDEUiaQV
+        xsM2Xc+tpBthPBwOckgokgabKzZZNh63bxdJw50L2niYsihJ6x5Jw50L2niwWriyl0gS9+VAhPEw6vDE
+        9LryGrwjEsWzT2YodyYYxgMWQu6hl0grwmFw4WsZTiQeMPIQkHvsLsL6hhGnNRy0xQOmMHZflMbKWl/V
+        yB6mJre+YYHc6fFVx3gcSmNLNjSzaw+FdGXn4nmn++eHOInxiCRRPOJN8Yg3xSPeFI94MuYX8j4h+wpz
+        TZ0AAAAASUVORK5CYII=
 </value>
   </data>
   <data name="bunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -164,17 +171,16 @@
   </data>
   <data name="btn_printBill.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAF4AAAA3CAYAAACFKf38AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAImSURBVHhe7ds9KIVRHMdxGY1Go9FoNNpksihlYTGZLCwy
-        SBjIYDCoa7glGQwGZfAyXIsSJRkkUe4gDEoyHH3Pfc6Tp/vcm5d77n/5feopXS/D9zz+97l1TosTEwpv
-        ROGNKLwRhTei8Ebqhn//+HSbR5duaGHH9U4WXefoqmvtn9NV46IPnQZmt11h/9y9vL0nJavVDL93euP/
-        ENGJf3hx527Lr8l3JQ996LRTunYjy7u+HwuQpyo8q8Qv9U1vusfnt+RV+Yt6LTPh+cHu8fWaqyR/w/To
-        mdjITIxMeFZH0eNgBDH/gzQ8q8K/hMQzVThw81sl/7UPz9MLbwSa6XHRmVF+df9UCc94YcxIfNzx3Pk+
-        PM+dPAJJfGc3ZX/X+/BdY2v+9pf4GDdtA4uV8O2DS3U/ZUlj8SnXh+cLaR6FN6LwRhTeiMIbUXgjCm9E
-        4Y0ovBGFN6LwRhTeiMIbUXgjCm9E4Y0ovBGFN6LwRhTeiMIbUXgjaXj2ebDfQ5ojDc++SR06aJ40PLuE
-        2S0s8bFjj517PnzYSCnxhQ3CPjxjhlXQnI8vbBD24TFTPPaXxBNOUCINz93OUZGTq4fkFWkkDn0wVcLm
-        4DQ8GPzhxII0DtG5qTkHFWTCgzue+OGsjvwP85w7/Xt0VIUHY4enHFaJd2GdjfodxkmY57yZ5p09yA0f
-        sEo8+nQMr/iHfl0/uzjoEU7E11I3vMSj8EYU3ojCG1F4E859AT9GZqbWUE4wAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAHYAAAAhCAYAAAAMLF9eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHmSURBVGhD7ZotSENRGIbFaDQajUaj0SamFUGwaDGZLFrE
+        IKIGh8FgEGYYDDEsGASDP2EWQRRkGIaIgguihsEQw5Hn7J6Ll2233nsO7wMHxt1PuM/9fs53NmBEkEhs
+        oEhsoEhsoEhsoEhsoKSKbf/8msrVo5ndrprJlbIZXdg3g9ObWhkt7j8eChsnpnR+b75a7chUN33Fnt02
+        7A8hFbmXDy/mufkdvSuygPuPh2rtycwXT60fBPeiSyxPAV+aWquY989WdFXkkTRXCbF8cHzpsO9TIPIJ
+        2XVi+SiRURNisS+pfkKKpv46YrFYJ6SFv6yWLszWcc2+tmLpfinEqql+g0dKaf31oyOW9EsaFv5DxBK5
+        Viz7Ilpo4T93jaaNWit2bPHAhq/wH9LxUGGnI3Z4Zjd1iiH8gimVFYthTIswiMXSEWtcGA6xWPav7GOF
+        /9Ar0TNZsa5FFv7jtq5WLGkYy6qz/uO2rlYsrJev7RL+4s7OIRZLtDJEvqm/RVeETzAOJuu6bWssFii8
+        btYo/AGpBCUnPI6EWCBiketOCUS+oZ4Sqf+lQpdYIC3TJfMU0GXp1CdfkG5dPaVZ6jU17CnWwVNA6zwy
+        txf/oUor+8UI2P0XrR+pYoW/SGygSGygSGygSGyQGPMHucCAwq+zPdEAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="cl_foodName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -198,13 +204,6 @@
   <metadata name="cl_btnDelete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Phiên Bản :                                                          1.0
-
-Liên Hệ :                                                    0932549693 ( MR Ánh)
-                                                                   01665655647 (MR Linh)
-                                                                   0935696523 (MR Trí)</value>
-  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>

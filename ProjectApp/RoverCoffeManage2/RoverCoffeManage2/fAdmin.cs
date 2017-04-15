@@ -538,7 +538,15 @@ namespace RoverCoffeManage2
             pn_account.Controls.Add(accountList);
         }
 
-     
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void fAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     #endregion
 }

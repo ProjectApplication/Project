@@ -129,9 +129,9 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.dtgv_Account);
             this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Location = new System.Drawing.Point(13, 69);
+            this.panel3.Location = new System.Drawing.Point(13, 50);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(259, 474);
+            this.panel3.Size = new System.Drawing.Size(259, 450);
             this.panel3.TabIndex = 13;
             // 
             // dtgv_Account
@@ -156,10 +156,10 @@
             this.dtgv_Account.EnableHeadersVisualStyles = false;
             this.dtgv_Account.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.dtgv_Account.HeaderForeColor = System.Drawing.Color.White;
-            this.dtgv_Account.Location = new System.Drawing.Point(-31, 36);
+            this.dtgv_Account.Location = new System.Drawing.Point(-1, 31);
             this.dtgv_Account.Name = "dtgv_Account";
             this.dtgv_Account.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgv_Account.Size = new System.Drawing.Size(288, 437);
+            this.dtgv_Account.Size = new System.Drawing.Size(258, 414);
             this.dtgv_Account.TabIndex = 4;
             // 
             // textBox1
@@ -186,11 +186,11 @@
             this.bunifuCards1.Controls.Add(this.materialTabControl1);
             this.bunifuCards1.Controls.Add(this.label10);
             this.bunifuCards1.LeftSahddow = false;
-            this.bunifuCards1.Location = new System.Drawing.Point(277, 69);
+            this.bunifuCards1.Location = new System.Drawing.Point(278, 50);
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(719, 473);
+            this.bunifuCards1.Size = new System.Drawing.Size(616, 453);
             this.bunifuCards1.TabIndex = 14;
             // 
             // materialTabSelector1
@@ -214,7 +214,7 @@
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(708, 382);
+            this.materialTabControl1.Size = new System.Drawing.Size(604, 359);
             this.materialTabControl1.TabIndex = 12;
             // 
             // tabPage1
@@ -233,7 +233,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(700, 356);
+            this.tabPage1.Size = new System.Drawing.Size(596, 333);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thêm Tài Khoản";
             // 
@@ -375,10 +375,10 @@
             this.btn_OKAdd.IdleFillColor = System.Drawing.Color.White;
             this.btn_OKAdd.IdleForecolor = System.Drawing.Color.Red;
             this.btn_OKAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_OKAdd.Location = new System.Drawing.Point(10, 293);
+            this.btn_OKAdd.Location = new System.Drawing.Point(12, 271);
             this.btn_OKAdd.Margin = new System.Windows.Forms.Padding(5);
             this.btn_OKAdd.Name = "btn_OKAdd";
-            this.btn_OKAdd.Size = new System.Drawing.Size(94, 55);
+            this.btn_OKAdd.Size = new System.Drawing.Size(94, 36);
             this.btn_OKAdd.TabIndex = 5;
             this.btn_OKAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_OKAdd.Click += new System.EventHandler(this.btn_OKAdd_Click);

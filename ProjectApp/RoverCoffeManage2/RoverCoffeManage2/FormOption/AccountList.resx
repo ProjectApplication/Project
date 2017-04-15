@@ -120,17 +120,17 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_OKAdd.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAF4AAAA3CAYAAACFKf38AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAImSURBVHhe7ds9KIVRHMdxGY1Go9FoNNpksihlYTGZLCwy
-        SBjIYDCoa7glGQwGZfAyXIsSJRkkUe4gDEoyHH3Pfc6Tp/vcm5d77n/5feopXS/D9zz+97l1TosTEwpv
-        ROGNKLwRhTei8Ebqhn//+HSbR5duaGHH9U4WXefoqmvtn9NV46IPnQZmt11h/9y9vL0nJavVDL93euP/
-        ENGJf3hx527Lr8l3JQ996LRTunYjy7u+HwuQpyo8q8Qv9U1vusfnt+RV+Yt6LTPh+cHu8fWaqyR/w/To
-        mdjITIxMeFZH0eNgBDH/gzQ8q8K/hMQzVThw81sl/7UPz9MLbwSa6XHRmVF+df9UCc94YcxIfNzx3Pk+
-        PM+dPAJJfGc3ZX/X+/BdY2v+9pf4GDdtA4uV8O2DS3U/ZUlj8SnXh+cLaR6FN6LwRhTeiMIbUXgjCm9E
-        4Y0ovBGFN6LwRhTeiMIbUXgjCm9E4Y0ovBGFN6LwRhTeiMIbUXgjaXj2ebDfQ5ojDc++SR06aJ40PLuE
-        2S0s8bFjj517PnzYSCnxhQ3CPjxjhlXQnI8vbBD24TFTPPaXxBNOUCINz93OUZGTq4fkFWkkDn0wVcLm
-        4DQ8GPzhxII0DtG5qTkHFWTCgzue+OGsjvwP85w7/Xt0VIUHY4enHFaJd2GdjfodxkmY57yZ5p09yA0f
-        sEo8+nQMr/iHfl0/uzjoEU7E11I3vMSj8EYU3ojCG1F4E859AT9GZqbWUE4wAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAF4AAAAkCAYAAAAAa43JAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHvSURBVGhD7ZotSENRGIbFaDQajUaj0SamFUGwaDGZLFrE
+        IKIGxWAwCDMMhhgWDILBnzCLIAoyDENEwQVRw2CI4chzds/Fy+6Gzp2d8j5w4HL3E57v23vP/e56jAiC
+        xAdC4gMh8YGQ+EBIfCBaiq99fpn8+Z2ZXC+Y0YWcGZzZMb3jq1pNFn7wlFk5NNmTG/NerUUmG2kq/viq
+        bL8I6cg/u300D5WP6FWRBn7wVCjem+mtI+uPAqTRIJ4q8aGxpbx5eatGZ0U7tHKZEM8bh+f2mlZJtAfp
+        MTK/n0iMhHiqI+l+IILIf0csnqrwkxD+WMyemrWDoj224tm9cCFQpvsFz0R56em1Lp54IWaEf+h4Ot+K
+        Z9/JFkj457pcsV1vxQ/N7tr2F/4hbvoyG3Xx/RObLe+yRGfhLteK50B0D4kPhMQHIhZP2BP6ojvE4rl5
+        0uSxe8TiGRUwMhD+YdvO9t2Kd3dTwj9uSmDFEzNUQTnvHzclsOJhOXdhl/CHe4wKsXi6nXnxZek5OiM6
+        CZNfUsVNCGLxQPC7saXoHEinqXkY4kiIBzoe+W5gL/4HeU6n/5QODeKB2GGXQ5W4CusByd8gTlyeczFN
+        G0CmindQJbY+A1PbdtOv9bvFtNf9LaYZLcULf0h8ICQ+EBIfCIkPgjHfU/DrJg6z5Q4AAAAASUVORK5C
+        YII=
 </value>
   </data>
   <data name="btn_okFix.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -42,9 +42,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.label2 = new System.Windows.Forms.Label();
             this.lb_totalPrice = new MaterialSkin.Controls.MaterialFlatButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             ((System.ComponentModel.ISupportInitialize)(this.chartTotalStatistics)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTotalStatistics)).BeginInit();
             this.panel1.SuspendLayout();
@@ -59,13 +59,13 @@
             this.chartTotalStatistics.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartTotalStatistics.Legends.Add(legend1);
-            this.chartTotalStatistics.Location = new System.Drawing.Point(437, 68);
+            this.chartTotalStatistics.Location = new System.Drawing.Point(329, 68);
             this.chartTotalStatistics.Name = "chartTotalStatistics";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Đồng";
             this.chartTotalStatistics.Series.Add(series1);
-            this.chartTotalStatistics.Size = new System.Drawing.Size(555, 508);
+            this.chartTotalStatistics.Size = new System.Drawing.Size(388, 377);
             this.chartTotalStatistics.TabIndex = 9;
             this.chartTotalStatistics.Text = "chart1";
             // 
@@ -93,11 +93,11 @@
             this.dgvTotalStatistics.EnableHeadersVisualStyles = false;
             this.dgvTotalStatistics.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.dgvTotalStatistics.HeaderForeColor = System.Drawing.Color.SeaShell;
-            this.dgvTotalStatistics.Location = new System.Drawing.Point(-31, 74);
+            this.dgvTotalStatistics.Location = new System.Drawing.Point(0, 48);
             this.dgvTotalStatistics.Name = "dgvTotalStatistics";
             this.dgvTotalStatistics.ReadOnly = true;
             this.dgvTotalStatistics.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvTotalStatistics.Size = new System.Drawing.Size(428, 332);
+            this.dgvTotalStatistics.Size = new System.Drawing.Size(310, 246);
             this.dgvTotalStatistics.TabIndex = 8;
             // 
             // Column1
@@ -118,7 +118,7 @@
             // 
             this.btnTotalSearch.Depth = 0;
             this.btnTotalSearch.Icon = null;
-            this.btnTotalSearch.Location = new System.Drawing.Point(14, 447);
+            this.btnTotalSearch.Location = new System.Drawing.Point(3, 300);
             this.btnTotalSearch.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnTotalSearch.Name = "btnTotalSearch";
             this.btnTotalSearch.Primary = true;
@@ -135,10 +135,10 @@
             this.dtpTotalBegin.ForeColor = System.Drawing.Color.White;
             this.dtpTotalBegin.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpTotalBegin.FormatCustom = null;
-            this.dtpTotalBegin.Location = new System.Drawing.Point(123, 17);
+            this.dtpTotalBegin.Location = new System.Drawing.Point(97, 17);
             this.dtpTotalBegin.Margin = new System.Windows.Forms.Padding(4);
             this.dtpTotalBegin.Name = "dtpTotalBegin";
-            this.dtpTotalBegin.Size = new System.Drawing.Size(274, 24);
+            this.dtpTotalBegin.Size = new System.Drawing.Size(144, 24);
             this.dtpTotalBegin.TabIndex = 5;
             this.dtpTotalBegin.Value = new System.DateTime(2017, 4, 2, 12, 16, 30, 22);
             // 
@@ -182,31 +182,8 @@
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(418, 508);
+            this.bunifuCards1.Size = new System.Drawing.Size(310, 377);
             this.bunifuCards1.TabIndex = 13;
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(10, 17);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(87, 19);
-            this.materialLabel1.TabIndex = 9;
-            this.materialLabel1.Text = "Chọn ngày :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(164, 454);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 21);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Tổng Doanh Thu :";
             // 
             // lb_totalPrice
             // 
@@ -214,7 +191,7 @@
             this.lb_totalPrice.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.lb_totalPrice.Depth = 0;
             this.lb_totalPrice.Icon = null;
-            this.lb_totalPrice.Location = new System.Drawing.Point(319, 447);
+            this.lb_totalPrice.Location = new System.Drawing.Point(281, 307);
             this.lb_totalPrice.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.lb_totalPrice.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_totalPrice.Name = "lb_totalPrice";
@@ -223,6 +200,29 @@
             this.lb_totalPrice.TabIndex = 11;
             this.lb_totalPrice.Text = "0";
             this.lb_totalPrice.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(93, 314);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 21);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Tổng Doanh Thu :";
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(3, 17);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(87, 19);
+            this.materialLabel1.TabIndex = 9;
+            this.materialLabel1.Text = "Chọn ngày :";
             // 
             // StatisticDate
             // 

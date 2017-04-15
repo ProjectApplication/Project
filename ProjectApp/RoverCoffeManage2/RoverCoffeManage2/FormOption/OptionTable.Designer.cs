@@ -70,9 +70,9 @@
             this.flpTable.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flpTable.BackColor = System.Drawing.Color.White;
             this.flpTable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flpTable.Location = new System.Drawing.Point(17, 132);
+            this.flpTable.Location = new System.Drawing.Point(1, 50);
             this.flpTable.Name = "flpTable";
-            this.flpTable.Size = new System.Drawing.Size(488, 432);
+            this.flpTable.Size = new System.Drawing.Size(523, 414);
             this.flpTable.TabIndex = 1;
             // 
             // bunifuCards1
@@ -86,11 +86,11 @@
             this.bunifuCards1.Controls.Add(this.txt_quantity);
             this.bunifuCards1.Controls.Add(this.label2);
             this.bunifuCards1.LeftSahddow = false;
-            this.bunifuCards1.Location = new System.Drawing.Point(506, 132);
+            this.bunifuCards1.Location = new System.Drawing.Point(530, 50);
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(438, 432);
+            this.bunifuCards1.Size = new System.Drawing.Size(591, 414);
             this.bunifuCards1.TabIndex = 2;
             // 
             // label3
