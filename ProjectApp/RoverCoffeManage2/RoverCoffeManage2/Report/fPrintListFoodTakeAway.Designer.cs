@@ -31,7 +31,7 @@ namespace RoverCoffeManage2
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.listFoodTakeAway1 = new listFoodTakeAway();
+            this.listFoodTakeAway1 = new RoverCoffeManage2.Report.listFoodTakeAway();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -54,6 +54,7 @@ namespace RoverCoffeManage2
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "fPrintListFoodTakeAway";
             this.Text = "fPrintListFoodTakeAway";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

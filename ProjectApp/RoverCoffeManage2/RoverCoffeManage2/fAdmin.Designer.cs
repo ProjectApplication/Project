@@ -28,13 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAdmin));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAdmin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
@@ -89,23 +85,40 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panelMainManager = new System.Windows.Forms.Panel();
+            this.bunifuCards4 = new Bunifu.Framework.UI.BunifuCards();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.sideMenu = new System.Windows.Forms.Panel();
             this.btn_OptionFoodCategory = new System.Windows.Forms.Button();
             this.btn_OptionFood = new System.Windows.Forms.Button();
             this.btn_table = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panelMainStatitis = new System.Windows.Forms.Panel();
+            this.bunifuCards5 = new Bunifu.Framework.UI.BunifuCards();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btn_statisticYear = new System.Windows.Forms.Button();
             this.btn_statisticDate = new System.Windows.Forms.Button();
             this.btn_statisticMonth = new System.Windows.Forms.Button();
             this.btn_statisticsQuantity = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.pn_account = new System.Windows.Forms.Panel();
+            this.bunifuCards6 = new Bunifu.Framework.UI.BunifuCards();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.btn_settingAccount = new System.Windows.Forms.Button();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.MenuPanel = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.LogoA = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.sideA = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             this.TabControl.SuspendLayout();
@@ -121,18 +134,29 @@
             this.panel3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panelMainManager.SuspendLayout();
+            this.bunifuCards4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.sideMenu.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.panelMainStatitis.SuspendLayout();
+            this.bunifuCards5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel7.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.pn_account.SuspendLayout();
+            this.bunifuCards6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel8.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.bunifuCards3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.panel1.Controls.Add(this.label1);
-            this.MenuPanel.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.panel1.Location = new System.Drawing.Point(0, 860);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2000, 40);
@@ -142,9 +166,6 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.sideA.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(6, 9);
@@ -157,9 +178,6 @@
             // materialTabSelector1
             // 
             this.materialTabSelector1.BaseTabControl = this.TabControl;
-            this.LogoA.SetDecoration(this.materialTabSelector1, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.materialTabSelector1, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialTabSelector1, BunifuAnimatorNS.DecorationType.None);
             this.materialTabSelector1.Depth = 0;
             this.materialTabSelector1.Location = new System.Drawing.Point(0, 12);
             this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -174,11 +192,7 @@
             this.TabControl.Controls.Add(this.tabPage2);
             this.TabControl.Controls.Add(this.tabPage3);
             this.TabControl.Controls.Add(this.tabPage4);
-            this.TabControl.Controls.Add(this.tabPage5);
             this.TabControl.Controls.Add(this.tabPage6);
-            this.MenuPanel.SetDecoration(this.TabControl, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.TabControl, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.TabControl, BunifuAnimatorNS.DecorationType.None);
             this.TabControl.Depth = 0;
             this.TabControl.Location = new System.Drawing.Point(-3, 85);
             this.TabControl.MouseState = MaterialSkin.MouseState.HOVER;
@@ -195,9 +209,6 @@
             this.tbHome.Controls.Add(this.panel2);
             this.tbHome.Controls.Add(this.panel3);
             this.tbHome.Controls.Add(this.flpTable);
-            this.sideA.SetDecoration(this.tbHome, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.tbHome, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.tbHome, BunifuAnimatorNS.DecorationType.None);
             this.tbHome.Location = new System.Drawing.Point(4, 26);
             this.tbHome.Name = "tbHome";
             this.tbHome.Padding = new System.Windows.Forms.Padding(3);
@@ -217,9 +228,6 @@
             this.bunifuCards2.Controls.Add(this.btn_printListFood);
             this.bunifuCards2.Controls.Add(this.bunifuGradientPanel1);
             this.bunifuCards2.Controls.Add(this.btn_printBill);
-            this.MenuPanel.SetDecoration(this.bunifuCards2, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.bunifuCards2, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.bunifuCards2, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCards2.LeftSahddow = false;
             this.bunifuCards2.Location = new System.Drawing.Point(1101, 514);
             this.bunifuCards2.Name = "bunifuCards2";
@@ -237,11 +245,8 @@
             this.btn_ClearBill.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.btn_ClearBill.BackColor = System.Drawing.Color.White;
             this.btn_ClearBill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ClearBill.BackgroundImage")));
-            this.btn_ClearBill.ButtonText = "Xóa Danh Sách Món";
+            this.btn_ClearBill.ButtonText = "Xóa danh sách hiện tại";
             this.btn_ClearBill.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MenuPanel.SetDecoration(this.btn_ClearBill, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.btn_ClearBill, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btn_ClearBill, BunifuAnimatorNS.DecorationType.None);
             this.btn_ClearBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ClearBill.ForeColor = System.Drawing.Color.Black;
             this.btn_ClearBill.IdleBorderThickness = 1;
@@ -265,9 +270,6 @@
             this.bunifuGradientPanel2.Controls.Add(this.rbtn_discountBill);
             this.bunifuGradientPanel2.Controls.Add(this.rbtn_normalBill);
             this.bunifuGradientPanel2.Controls.Add(this.materialLabel8);
-            this.MenuPanel.SetDecoration(this.bunifuGradientPanel2, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.bunifuGradientPanel2, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.bunifuGradientPanel2, BunifuAnimatorNS.DecorationType.None);
             this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
@@ -281,9 +283,6 @@
             // rbtn_discountBill
             // 
             this.rbtn_discountBill.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.rbtn_discountBill, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.rbtn_discountBill, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.rbtn_discountBill, BunifuAnimatorNS.DecorationType.None);
             this.rbtn_discountBill.Depth = 0;
             this.rbtn_discountBill.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_discountBill.Location = new System.Drawing.Point(270, 31);
@@ -296,14 +295,12 @@
             this.rbtn_discountBill.TabIndex = 21;
             this.rbtn_discountBill.Text = "Hóa Đơn Chiết Khấu";
             this.rbtn_discountBill.UseVisualStyleBackColor = true;
+            this.rbtn_discountBill.CheckedChanged += new System.EventHandler(this.rbtn_discountBill_CheckedChanged);
             // 
             // rbtn_normalBill
             // 
             this.rbtn_normalBill.AutoSize = true;
             this.rbtn_normalBill.Checked = true;
-            this.MenuPanel.SetDecoration(this.rbtn_normalBill, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.rbtn_normalBill, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.rbtn_normalBill, BunifuAnimatorNS.DecorationType.None);
             this.rbtn_normalBill.Depth = 0;
             this.rbtn_normalBill.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_normalBill.Location = new System.Drawing.Point(270, 1);
@@ -317,13 +314,11 @@
             this.rbtn_normalBill.TabStop = true;
             this.rbtn_normalBill.Text = "Hóa Đơn Bình Thường";
             this.rbtn_normalBill.UseVisualStyleBackColor = true;
+            this.rbtn_normalBill.CheckedChanged += new System.EventHandler(this.rbtn_normalBill_CheckedChanged);
             // 
             // materialLabel8
             // 
             this.materialLabel8.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.materialLabel8, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialLabel8, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialLabel8, BunifuAnimatorNS.DecorationType.None);
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -345,9 +340,6 @@
             this.btn_printListFood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_printListFood.BackgroundImage")));
             this.btn_printListFood.ButtonText = "In Danh Sách Món";
             this.btn_printListFood.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MenuPanel.SetDecoration(this.btn_printListFood, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.btn_printListFood, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btn_printListFood, BunifuAnimatorNS.DecorationType.None);
             this.btn_printListFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_printListFood.ForeColor = System.Drawing.Color.Black;
             this.btn_printListFood.IdleBorderThickness = 1;
@@ -371,9 +363,6 @@
             this.bunifuGradientPanel1.Controls.Add(this.rbtn_takeAway);
             this.bunifuGradientPanel1.Controls.Add(this.rbtn_notTake);
             this.bunifuGradientPanel1.Controls.Add(this.materialLabel7);
-            this.MenuPanel.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
@@ -387,9 +376,6 @@
             // rbtn_takeAway
             // 
             this.rbtn_takeAway.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.rbtn_takeAway, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.rbtn_takeAway, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.rbtn_takeAway, BunifuAnimatorNS.DecorationType.None);
             this.rbtn_takeAway.Depth = 0;
             this.rbtn_takeAway.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_takeAway.Location = new System.Drawing.Point(270, 38);
@@ -407,9 +393,6 @@
             // 
             this.rbtn_notTake.AutoSize = true;
             this.rbtn_notTake.Checked = true;
-            this.MenuPanel.SetDecoration(this.rbtn_notTake, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.rbtn_notTake, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.rbtn_notTake, BunifuAnimatorNS.DecorationType.None);
             this.rbtn_notTake.Depth = 0;
             this.rbtn_notTake.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtn_notTake.Location = new System.Drawing.Point(270, 8);
@@ -427,9 +410,6 @@
             // materialLabel7
             // 
             this.materialLabel7.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.materialLabel7, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialLabel7, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialLabel7, BunifuAnimatorNS.DecorationType.None);
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -451,9 +431,6 @@
             this.btn_printBill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_printBill.BackgroundImage")));
             this.btn_printBill.ButtonText = "In Hóa Đơn";
             this.btn_printBill.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MenuPanel.SetDecoration(this.btn_printBill, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.btn_printBill, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btn_printBill, BunifuAnimatorNS.DecorationType.None);
             this.btn_printBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_printBill.ForeColor = System.Drawing.Color.Black;
             this.btn_printBill.IdleBorderThickness = 1;
@@ -486,9 +463,6 @@
             this.bunifuCards1.Controls.Add(this.materialLabel5);
             this.bunifuCards1.Controls.Add(this.materialLabel4);
             this.bunifuCards1.Controls.Add(this.materialLabel3);
-            this.MenuPanel.SetDecoration(this.bunifuCards1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.bunifuCards1, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.bunifuCards1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCards1.LeftSahddow = false;
             this.bunifuCards1.Location = new System.Drawing.Point(663, 514);
             this.bunifuCards1.Name = "bunifuCards1";
@@ -500,9 +474,6 @@
             // txt_table
             // 
             this.txt_table.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.MenuPanel.SetDecoration(this.txt_table, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.txt_table, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.txt_table, BunifuAnimatorNS.DecorationType.None);
             this.txt_table.Enabled = false;
             this.txt_table.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txt_table.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -523,9 +494,6 @@
             // lb_Table
             // 
             this.lb_Table.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.lb_Table, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.lb_Table, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.lb_Table, BunifuAnimatorNS.DecorationType.None);
             this.lb_Table.Depth = 0;
             this.lb_Table.Font = new System.Drawing.Font("Roboto", 11F);
             this.lb_Table.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -539,9 +507,6 @@
             // materialLabel11
             // 
             this.materialLabel11.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.materialLabel11, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialLabel11, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialLabel11, BunifuAnimatorNS.DecorationType.None);
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -555,9 +520,6 @@
             // materialLabel10
             // 
             this.materialLabel10.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.materialLabel10, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialLabel10, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialLabel10, BunifuAnimatorNS.DecorationType.None);
             this.materialLabel10.Depth = 0;
             this.materialLabel10.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -571,9 +533,6 @@
             // materialLabel9
             // 
             this.materialLabel9.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.materialLabel9, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialLabel9, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialLabel9, BunifuAnimatorNS.DecorationType.None);
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -587,9 +546,6 @@
             // txt_Pay
             // 
             this.txt_Pay.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.MenuPanel.SetDecoration(this.txt_Pay, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.txt_Pay, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.txt_Pay, BunifuAnimatorNS.DecorationType.None);
             this.txt_Pay.Enabled = false;
             this.txt_Pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txt_Pay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -610,9 +566,6 @@
             // txt_ExcessCash
             // 
             this.txt_ExcessCash.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.MenuPanel.SetDecoration(this.txt_ExcessCash, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.txt_ExcessCash, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.txt_ExcessCash, BunifuAnimatorNS.DecorationType.None);
             this.txt_ExcessCash.Enabled = false;
             this.txt_ExcessCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txt_ExcessCash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -633,9 +586,6 @@
             // txt_MoneyOfCus
             // 
             this.txt_MoneyOfCus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.MenuPanel.SetDecoration(this.txt_MoneyOfCus, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.txt_MoneyOfCus, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.txt_MoneyOfCus, BunifuAnimatorNS.DecorationType.None);
             this.txt_MoneyOfCus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txt_MoneyOfCus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_MoneyOfCus.HintForeColor = System.Drawing.Color.Empty;
@@ -658,9 +608,6 @@
             // materialLabel5
             // 
             this.materialLabel5.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.materialLabel5, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialLabel5, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialLabel5, BunifuAnimatorNS.DecorationType.None);
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -674,9 +621,6 @@
             // materialLabel4
             // 
             this.materialLabel4.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.materialLabel4, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialLabel4, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialLabel4, BunifuAnimatorNS.DecorationType.None);
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -690,9 +634,6 @@
             // materialLabel3
             // 
             this.materialLabel3.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.materialLabel3, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialLabel3, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialLabel3, BunifuAnimatorNS.DecorationType.None);
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -708,9 +649,6 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.flpFood);
             this.panel4.Controls.Add(this.textBox2);
-            this.MenuPanel.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
             this.panel4.Location = new System.Drawing.Point(348, 442);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(309, 320);
@@ -719,9 +657,6 @@
             // flpFood
             // 
             this.flpFood.AutoScroll = true;
-            this.sideA.SetDecoration(this.flpFood, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.flpFood, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.flpFood, BunifuAnimatorNS.DecorationType.None);
             this.flpFood.Location = new System.Drawing.Point(2, 48);
             this.flpFood.Name = "flpFood";
             this.flpFood.Size = new System.Drawing.Size(314, 235);
@@ -731,9 +666,6 @@
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sideA.SetDecoration(this.textBox2, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.textBox2, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.textBox2, BunifuAnimatorNS.DecorationType.None);
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
@@ -749,9 +681,6 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.DTGV_bill);
             this.panel2.Controls.Add(this.panel5);
-            this.MenuPanel.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.panel2.Location = new System.Drawing.Point(660, 8);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(886, 500);
@@ -781,9 +710,6 @@
             this.cl_Note,
             this.cl_pay,
             this.cl_btnDelete});
-            this.sideA.SetDecoration(this.DTGV_bill, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.DTGV_bill, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.DTGV_bill, BunifuAnimatorNS.DecorationType.None);
             this.DTGV_bill.DoubleBuffered = true;
             this.DTGV_bill.EnableHeadersVisualStyles = false;
             this.DTGV_bill.GridColor = System.Drawing.SystemColors.ActiveCaption;
@@ -860,9 +786,6 @@
             this.panel5.Controls.Add(this.materialLabel2);
             this.panel5.Controls.Add(this.lb_price);
             this.panel5.Controls.Add(this.label2);
-            this.MenuPanel.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 444);
             this.panel5.Name = "panel5";
@@ -872,9 +795,7 @@
             // txt_Discount
             // 
             this.txt_Discount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.MenuPanel.SetDecoration(this.txt_Discount, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.txt_Discount, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.txt_Discount, BunifuAnimatorNS.DecorationType.None);
+            this.txt_Discount.Enabled = false;
             this.txt_Discount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txt_Discount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_Discount.HintForeColor = System.Drawing.Color.Empty;
@@ -897,9 +818,6 @@
             // materialLabel1
             // 
             this.materialLabel1.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.materialLabel1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialLabel1, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialLabel1, BunifuAnimatorNS.DecorationType.None);
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -913,9 +831,6 @@
             // materialLabel2
             // 
             this.materialLabel2.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.materialLabel2, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.materialLabel2, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.materialLabel2, BunifuAnimatorNS.DecorationType.None);
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -929,9 +844,6 @@
             // lb_price
             // 
             this.lb_price.AutoSize = true;
-            this.MenuPanel.SetDecoration(this.lb_price, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.lb_price, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.lb_price, BunifuAnimatorNS.DecorationType.None);
             this.lb_price.Depth = 0;
             this.lb_price.Font = new System.Drawing.Font("Roboto", 11F);
             this.lb_price.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -945,9 +857,6 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.sideA.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(750, 29);
             this.label2.Name = "label2";
@@ -960,9 +869,6 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.flpCategory);
-            this.MenuPanel.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
             this.panel3.Location = new System.Drawing.Point(15, 442);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(328, 320);
@@ -972,9 +878,6 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sideA.SetDecoration(this.textBox1, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.textBox1, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.textBox1, BunifuAnimatorNS.DecorationType.None);
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
@@ -988,9 +891,6 @@
             // flpCategory
             // 
             this.flpCategory.AutoScroll = true;
-            this.sideA.SetDecoration(this.flpCategory, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.flpCategory, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.flpCategory, BunifuAnimatorNS.DecorationType.None);
             this.flpCategory.Location = new System.Drawing.Point(11, 48);
             this.flpCategory.Name = "flpCategory";
             this.flpCategory.Size = new System.Drawing.Size(336, 267);
@@ -1001,9 +901,6 @@
             this.flpTable.AutoScroll = true;
             this.flpTable.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flpTable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sideA.SetDecoration(this.flpTable, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.flpTable, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.flpTable, BunifuAnimatorNS.DecorationType.None);
             this.flpTable.Location = new System.Drawing.Point(15, 8);
             this.flpTable.Name = "flpTable";
             this.flpTable.Size = new System.Drawing.Size(642, 432);
@@ -1012,9 +909,6 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.panel6);
-            this.sideA.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -1027,9 +921,6 @@
             // 
             this.panel6.Controls.Add(this.panelMainManager);
             this.panel6.Controls.Add(this.sideMenu);
-            this.MenuPanel.SetDecoration(this.panel6, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.panel6, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.panel6, BunifuAnimatorNS.DecorationType.None);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(3, 3);
             this.panel6.Name = "panel6";
@@ -1039,14 +930,59 @@
             // panelMainManager
             // 
             this.panelMainManager.BackColor = System.Drawing.Color.White;
-            this.MenuPanel.SetDecoration(this.panelMainManager, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.panelMainManager, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.panelMainManager, BunifuAnimatorNS.DecorationType.None);
+            this.panelMainManager.Controls.Add(this.bunifuCards4);
             this.panelMainManager.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMainManager.Location = new System.Drawing.Point(194, 0);
             this.panelMainManager.Name = "panelMainManager";
             this.panelMainManager.Size = new System.Drawing.Size(1360, 767);
             this.panelMainManager.TabIndex = 1;
+            // 
+            // bunifuCards4
+            // 
+            this.bunifuCards4.BackColor = System.Drawing.Color.White;
+            this.bunifuCards4.BorderRadius = 6;
+            this.bunifuCards4.BottomSahddow = false;
+            this.bunifuCards4.color = System.Drawing.Color.Tomato;
+            this.bunifuCards4.Controls.Add(this.label8);
+            this.bunifuCards4.Controls.Add(this.label7);
+            this.bunifuCards4.Controls.Add(this.pictureBox2);
+            this.bunifuCards4.LeftSahddow = false;
+            this.bunifuCards4.Location = new System.Drawing.Point(12, 22);
+            this.bunifuCards4.Name = "bunifuCards4";
+            this.bunifuCards4.RightSahddow = false;
+            this.bunifuCards4.ShadowDepth = 20;
+            this.bunifuCards4.Size = new System.Drawing.Size(1334, 661);
+            this.bunifuCards4.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(680, 333);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(476, 62);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Bạn có thể tùy chỉnh số lượng bàn , \r\nthiết lập các danh mục và thức uống ở đây";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(815, 158);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(178, 40);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "QUẢN TRỊ";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::RoverCoffeManage2.Properties.Resources.settings;
+            this.pictureBox2.Location = new System.Drawing.Point(73, 70);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(518, 513);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // sideMenu
             // 
@@ -1054,9 +990,6 @@
             this.sideMenu.Controls.Add(this.btn_OptionFoodCategory);
             this.sideMenu.Controls.Add(this.btn_OptionFood);
             this.sideMenu.Controls.Add(this.btn_table);
-            this.MenuPanel.SetDecoration(this.sideMenu, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.sideMenu, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.sideMenu, BunifuAnimatorNS.DecorationType.None);
             this.sideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideMenu.Location = new System.Drawing.Point(0, 0);
             this.sideMenu.Name = "sideMenu";
@@ -1067,9 +1000,6 @@
             // 
             this.btn_OptionFoodCategory.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_OptionFoodCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.sideA.SetDecoration(this.btn_OptionFoodCategory, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btn_OptionFoodCategory, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.btn_OptionFoodCategory, BunifuAnimatorNS.DecorationType.None);
             this.btn_OptionFoodCategory.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.btn_OptionFoodCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_OptionFoodCategory.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -1086,9 +1016,6 @@
             // 
             this.btn_OptionFood.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_OptionFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.sideA.SetDecoration(this.btn_OptionFood, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btn_OptionFood, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.btn_OptionFood, BunifuAnimatorNS.DecorationType.None);
             this.btn_OptionFood.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.btn_OptionFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_OptionFood.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -1105,9 +1032,6 @@
             // 
             this.btn_table.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.sideA.SetDecoration(this.btn_table, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btn_table, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.btn_table, BunifuAnimatorNS.DecorationType.None);
             this.btn_table.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.btn_table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_table.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -1124,9 +1048,6 @@
             // 
             this.tabPage3.Controls.Add(this.panelMainStatitis);
             this.tabPage3.Controls.Add(this.panel7);
-            this.sideA.SetDecoration(this.tabPage3, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.tabPage3, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.tabPage3, BunifuAnimatorNS.DecorationType.None);
             this.tabPage3.Location = new System.Drawing.Point(4, 26);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -1138,14 +1059,60 @@
             // panelMainStatitis
             // 
             this.panelMainStatitis.BackColor = System.Drawing.Color.White;
-            this.MenuPanel.SetDecoration(this.panelMainStatitis, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.panelMainStatitis, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.panelMainStatitis, BunifuAnimatorNS.DecorationType.None);
+            this.panelMainStatitis.Controls.Add(this.bunifuCards5);
             this.panelMainStatitis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMainStatitis.Location = new System.Drawing.Point(197, 3);
             this.panelMainStatitis.Name = "panelMainStatitis";
             this.panelMainStatitis.Size = new System.Drawing.Size(1360, 767);
             this.panelMainStatitis.TabIndex = 2;
+            // 
+            // bunifuCards5
+            // 
+            this.bunifuCards5.BackColor = System.Drawing.Color.White;
+            this.bunifuCards5.BorderRadius = 5;
+            this.bunifuCards5.BottomSahddow = false;
+            this.bunifuCards5.color = System.Drawing.Color.Tomato;
+            this.bunifuCards5.Controls.Add(this.label10);
+            this.bunifuCards5.Controls.Add(this.label9);
+            this.bunifuCards5.Controls.Add(this.pictureBox3);
+            this.bunifuCards5.LeftSahddow = false;
+            this.bunifuCards5.Location = new System.Drawing.Point(21, 21);
+            this.bunifuCards5.Name = "bunifuCards5";
+            this.bunifuCards5.RightSahddow = false;
+            this.bunifuCards5.ShadowDepth = 20;
+            this.bunifuCards5.Size = new System.Drawing.Size(1310, 696);
+            this.bunifuCards5.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(590, 361);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(707, 62);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Bạn có thể theo dõi doanh thu của cửa hàng :\r\nThông qua doanh thu hằng ngày ,thán" +
+    "g ,năm hoặc dạng biểu đồ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(853, 177);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(193, 40);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "THỐNG KÊ";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::RoverCoffeManage2.Properties.Resources.analytics_1;
+            this.pictureBox3.Location = new System.Drawing.Point(45, 99);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(539, 531);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
             // 
             // panel7
             // 
@@ -1154,9 +1121,6 @@
             this.panel7.Controls.Add(this.btn_statisticDate);
             this.panel7.Controls.Add(this.btn_statisticMonth);
             this.panel7.Controls.Add(this.btn_statisticsQuantity);
-            this.MenuPanel.SetDecoration(this.panel7, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.panel7, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this.panel7, BunifuAnimatorNS.DecorationType.None);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(3, 3);
             this.panel7.Name = "panel7";
@@ -1167,9 +1131,6 @@
             // 
             this.btn_statisticYear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_statisticYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.sideA.SetDecoration(this.btn_statisticYear, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btn_statisticYear, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.btn_statisticYear, BunifuAnimatorNS.DecorationType.None);
             this.btn_statisticYear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.btn_statisticYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_statisticYear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -1186,9 +1147,6 @@
             // 
             this.btn_statisticDate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_statisticDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.sideA.SetDecoration(this.btn_statisticDate, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btn_statisticDate, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.btn_statisticDate, BunifuAnimatorNS.DecorationType.None);
             this.btn_statisticDate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.btn_statisticDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_statisticDate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -1205,9 +1163,6 @@
             // 
             this.btn_statisticMonth.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_statisticMonth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.sideA.SetDecoration(this.btn_statisticMonth, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btn_statisticMonth, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.btn_statisticMonth, BunifuAnimatorNS.DecorationType.None);
             this.btn_statisticMonth.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.btn_statisticMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_statisticMonth.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -1224,9 +1179,6 @@
             // 
             this.btn_statisticsQuantity.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_statisticsQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.sideA.SetDecoration(this.btn_statisticsQuantity, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.btn_statisticsQuantity, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.btn_statisticsQuantity, BunifuAnimatorNS.DecorationType.None);
             this.btn_statisticsQuantity.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
             this.btn_statisticsQuantity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_statisticsQuantity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -1241,105 +1193,179 @@
             // 
             // tabPage4
             // 
-            this.sideA.SetDecoration(this.tabPage4, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.tabPage4, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.tabPage4, BunifuAnimatorNS.DecorationType.None);
+            this.tabPage4.Controls.Add(this.pn_account);
+            this.tabPage4.Controls.Add(this.panel8);
             this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(1560, 773);
             this.tabPage4.TabIndex = 4;
-            this.tabPage4.Text = "XUẤT/NHẬP KHO";
+            this.tabPage4.Text = "tài khoản";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // tabPage5
+            // pn_account
             // 
-            this.sideA.SetDecoration(this.tabPage5, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.tabPage5, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.tabPage5, BunifuAnimatorNS.DecorationType.None);
-            this.tabPage5.Location = new System.Drawing.Point(4, 26);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1560, 773);
-            this.tabPage5.TabIndex = 5;
-            this.tabPage5.Text = "KHÓA SỔ";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.pn_account.BackColor = System.Drawing.Color.White;
+            this.pn_account.Controls.Add(this.bunifuCards6);
+            this.pn_account.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pn_account.Location = new System.Drawing.Point(197, 3);
+            this.pn_account.Name = "pn_account";
+            this.pn_account.Size = new System.Drawing.Size(1360, 767);
+            this.pn_account.TabIndex = 3;
+            // 
+            // bunifuCards6
+            // 
+            this.bunifuCards6.BackColor = System.Drawing.Color.White;
+            this.bunifuCards6.BorderRadius = 5;
+            this.bunifuCards6.BottomSahddow = false;
+            this.bunifuCards6.color = System.Drawing.Color.Tomato;
+            this.bunifuCards6.Controls.Add(this.label11);
+            this.bunifuCards6.Controls.Add(this.label12);
+            this.bunifuCards6.Controls.Add(this.pictureBox4);
+            this.bunifuCards6.LeftSahddow = false;
+            this.bunifuCards6.Location = new System.Drawing.Point(21, 21);
+            this.bunifuCards6.Name = "bunifuCards6";
+            this.bunifuCards6.RightSahddow = false;
+            this.bunifuCards6.ShadowDepth = 20;
+            this.bunifuCards6.Size = new System.Drawing.Size(1310, 696);
+            this.bunifuCards6.TabIndex = 0;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(650, 273);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(574, 155);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Bạn có thể quản lý tài khoản của phần mềm ở đây :\r\nXem danh sách\r\nThêm mới tài kh" +
+    "oản \r\nChỉnh sửa tài khoản\r\nXóa tài khoản";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(853, 177);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(207, 40);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "TÀI KHOẢN";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::RoverCoffeManage2.Properties.Resources.curriculum;
+            this.pictureBox4.Location = new System.Drawing.Point(45, 99);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(539, 531);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.panel8.Controls.Add(this.btn_settingAccount);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(3, 3);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(194, 767);
+            this.panel8.TabIndex = 2;
+            // 
+            // btn_settingAccount
+            // 
+            this.btn_settingAccount.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_settingAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.btn_settingAccount.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.btn_settingAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_settingAccount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_settingAccount.Location = new System.Drawing.Point(0, 294);
+            this.btn_settingAccount.Name = "btn_settingAccount";
+            this.btn_settingAccount.Size = new System.Drawing.Size(200, 89);
+            this.btn_settingAccount.TabIndex = 6;
+            this.btn_settingAccount.Text = "Thiết lập tài khoản";
+            this.btn_settingAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_settingAccount.UseVisualStyleBackColor = false;
+            this.btn_settingAccount.Click += new System.EventHandler(this.btn_settingAccount_Click);
             // 
             // tabPage6
             // 
-            this.sideA.SetDecoration(this.tabPage6, BunifuAnimatorNS.DecorationType.None);
-            this.LogoA.SetDecoration(this.tabPage6, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this.tabPage6, BunifuAnimatorNS.DecorationType.None);
+            this.tabPage6.Controls.Add(this.bunifuCards3);
             this.tabPage6.Location = new System.Drawing.Point(4, 26);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage6.Size = new System.Drawing.Size(1560, 773);
             this.tabPage6.TabIndex = 6;
-            this.tabPage6.Text = "CÀI ĐẶT";
+            this.tabPage6.Text = "Thông tin";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // MenuPanel
+            // bunifuCards3
             // 
-            this.MenuPanel.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
-            this.MenuPanel.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.MenuPanel.DefaultAnimation = animation3;
+            this.bunifuCards3.BackColor = System.Drawing.Color.White;
+            this.bunifuCards3.BorderRadius = 5;
+            this.bunifuCards3.BottomSahddow = false;
+            this.bunifuCards3.color = System.Drawing.Color.Tomato;
+            this.bunifuCards3.Controls.Add(this.pictureBox1);
+            this.bunifuCards3.Controls.Add(this.label6);
+            this.bunifuCards3.Controls.Add(this.label5);
+            this.bunifuCards3.Controls.Add(this.label4);
+            this.bunifuCards3.Controls.Add(this.label3);
+            this.bunifuCards3.LeftSahddow = false;
+            this.bunifuCards3.Location = new System.Drawing.Point(28, 29);
+            this.bunifuCards3.Name = "bunifuCards3";
+            this.bunifuCards3.RightSahddow = false;
+            this.bunifuCards3.ShadowDepth = 20;
+            this.bunifuCards3.Size = new System.Drawing.Size(1497, 680);
+            this.bunifuCards3.TabIndex = 1;
             // 
-            // LogoA
+            // pictureBox1
             // 
-            this.LogoA.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
-            this.LogoA.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.LogoA.DefaultAnimation = animation2;
+            this.pictureBox1.Image = global::RoverCoffeManage2.Properties.Resources._14657411_325419537816430_8166398440840516187_n;
+            this.pictureBox1.Location = new System.Drawing.Point(891, 72);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(572, 539);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
-            // sideA
+            // label6
             // 
-            this.sideA.AnimationType = BunifuAnimatorNS.AnimationType.Leaf;
-            this.sideA.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 1F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.sideA.DefaultAnimation = animation1;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(25, 557);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(587, 54);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "ĐỀ NGHỊ KHÔNG SAO CHÉP DƯỚI MỌI HÌNH THỨC .\r\nNOCOPYRIGHT - GOGOGO TEAM 2017";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(28, 239);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(770, 165);
+            this.label5.TabIndex = 3;
+            this.label5.Text = resources.GetString("label5.Text");
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(28, 97);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(780, 99);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Thông Tin Sản Phẩm :                             Phần Mềm Quản Lý Caffee\r\n\r\nNhóm " +
+    "Phát Triển Phần Mềm :                 Team GoGoGo";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(331, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(281, 36);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "RoverCoffe Manager";
             // 
             // dataGridViewImageColumn1
             // 
@@ -1358,9 +1384,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.TabControl);
-            this.LogoA.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
-            this.MenuPanel.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
-            this.sideA.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fAdmin";
@@ -1388,9 +1411,27 @@
             this.panel3.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.panelMainManager.ResumeLayout(false);
+            this.bunifuCards4.ResumeLayout(false);
+            this.bunifuCards4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.sideMenu.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            this.panelMainStatitis.ResumeLayout(false);
+            this.bunifuCards5.ResumeLayout(false);
+            this.bunifuCards5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel7.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.pn_account.ResumeLayout(false);
+            this.bunifuCards6.ResumeLayout(false);
+            this.bunifuCards6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.bunifuCards3.ResumeLayout(false);
+            this.bunifuCards3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1402,7 +1443,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
         private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
@@ -1450,9 +1490,6 @@
         private System.Windows.Forms.Button btn_OptionFood;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txt_table;
         private MaterialSkin.Controls.MaterialLabel lb_Table;
-        private BunifuAnimatorNS.BunifuTransition sideA;
-        private BunifuAnimatorNS.BunifuTransition LogoA;
-        private BunifuAnimatorNS.BunifuTransition MenuPanel;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_foodName;
         private System.Windows.Forms.DataGridViewTextBoxColumn cl_number;
@@ -1473,5 +1510,26 @@
         private System.Windows.Forms.Button btn_statisticsQuantity;
         private System.Windows.Forms.Panel panelMainStatitis;
         private System.Windows.Forms.Button btn_statisticYear;
+        private Bunifu.Framework.UI.BunifuCards bunifuCards3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private Bunifu.Framework.UI.BunifuCards bunifuCards4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private Bunifu.Framework.UI.BunifuCards bunifuCards5;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel pn_account;
+        private Bunifu.Framework.UI.BunifuCards bunifuCards6;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button btn_settingAccount;
     }
 }

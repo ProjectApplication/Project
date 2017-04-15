@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.chartYeah = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dgvYear = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.btnYearSearch = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -41,6 +41,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.lb_totalPriceYear = new MaterialSkin.Controls.MaterialFlatButton();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartYeah)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvYear)).BeginInit();
             this.panel1.SuspendLayout();
@@ -51,44 +53,45 @@
             // 
             this.chartYeah.BorderlineColor = System.Drawing.Color.Black;
             this.chartYeah.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea1.Name = "ChartArea1";
-            this.chartYeah.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartYeah.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartYeah.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartYeah.Legends.Add(legend2);
             this.chartYeah.Location = new System.Drawing.Point(437, 68);
             this.chartYeah.Name = "chartYeah";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Đồng";
-            this.chartYeah.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Đồng";
+            this.chartYeah.Series.Add(series2);
             this.chartYeah.Size = new System.Drawing.Size(555, 508);
             this.chartYeah.TabIndex = 7;
             this.chartYeah.Text = "chart1";
             // 
             // dgvYear
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvYear.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvYear.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvYear.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvYear.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvYear.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvYear.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaShell;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvYear.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaShell;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvYear.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvYear.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvYear.DoubleBuffered = true;
             this.dgvYear.EnableHeadersVisualStyles = false;
-            this.dgvYear.HeaderBgColor = System.Drawing.Color.SeaGreen;
+            this.dgvYear.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.dgvYear.HeaderForeColor = System.Drawing.Color.SeaShell;
-            this.dgvYear.Location = new System.Drawing.Point(18, 81);
+            this.dgvYear.Location = new System.Drawing.Point(-31, 81);
             this.dgvYear.Name = "dgvYear";
             this.dgvYear.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvYear.Size = new System.Drawing.Size(383, 332);
+            this.dgvYear.Size = new System.Drawing.Size(434, 332);
             this.dgvYear.TabIndex = 6;
             // 
             // btnYearSearch
@@ -107,6 +110,7 @@
             // 
             // cbYear
             // 
+            this.cbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbYear.FormattingEnabled = true;
             this.cbYear.Items.AddRange(new object[] {
             "2016",
@@ -159,6 +163,8 @@
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.Tomato;
+            this.bunifuCards1.Controls.Add(this.lb_totalPriceYear);
+            this.bunifuCards1.Controls.Add(this.label3);
             this.bunifuCards1.Controls.Add(this.materialLabel1);
             this.bunifuCards1.Controls.Add(this.btnYearSearch);
             this.bunifuCards1.Controls.Add(this.dgvYear);
@@ -170,6 +176,32 @@
             this.bunifuCards1.ShadowDepth = 20;
             this.bunifuCards1.Size = new System.Drawing.Size(418, 508);
             this.bunifuCards1.TabIndex = 12;
+            // 
+            // lb_totalPriceYear
+            // 
+            this.lb_totalPriceYear.AutoSize = true;
+            this.lb_totalPriceYear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.lb_totalPriceYear.Depth = 0;
+            this.lb_totalPriceYear.Icon = null;
+            this.lb_totalPriceYear.Location = new System.Drawing.Point(300, 448);
+            this.lb_totalPriceYear.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.lb_totalPriceYear.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lb_totalPriceYear.Name = "lb_totalPriceYear";
+            this.lb_totalPriceYear.Primary = false;
+            this.lb_totalPriceYear.Size = new System.Drawing.Size(29, 36);
+            this.lb_totalPriceYear.TabIndex = 13;
+            this.lb_totalPriceYear.Text = "0";
+            this.lb_totalPriceYear.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(156, 455);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(148, 21);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Tổng Doanh Thu :";
             // 
             // StatisticYear
             // 
@@ -201,5 +233,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
+        private MaterialSkin.Controls.MaterialFlatButton lb_totalPriceYear;
+        private System.Windows.Forms.Label label3;
     }
 }

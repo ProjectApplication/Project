@@ -74,6 +74,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormOption\AccountList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormOption\AccountList.Designer.cs">
+      <DependentUpon>AccountList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report\billDiscountReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -199,6 +205,9 @@
     <Compile Include="FormOption\StatisticYear.Designer.cs">
       <DependentUpon>StatisticYear.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormOption\AccountList.resx">
+      <DependentUpon>AccountList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\billDiscountReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>billDiscountReport.cs</LastGenOutput>
@@ -320,6 +329,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\3 gach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14657411_325419537816430_8166398440840516187_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analytics-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\curriculum.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

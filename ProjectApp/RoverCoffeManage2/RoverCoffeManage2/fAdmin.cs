@@ -375,9 +375,21 @@ namespace RoverCoffeManage2
             DTGV_bill.DataSource = null; // gán datasource = rỗng
             DTGV_bill.Rows.Clear(); // xóa toàn bộ các hàng của datagridview
             lb_price.Text = "0"; // set label tổng tiền =0
-            txt_Pay.Text = "0"; // set textbox thanh toán =0
-        }
+            txt_table.Text = "";
+            txt_Pay.Text = "";
+            txt_MoneyOfCus.Text = "";
+            txt_ExcessCash.Text = "";
+            txt_Discount.Text = "";
 
+        }
+        private void rbtn_discountBill_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_Discount.Enabled = true;
+        }
+        private void rbtn_normalBill_CheckedChanged(object sender, EventArgs e)
+        {
+            txt_Discount.Enabled = false;
+        }
         #endregion
 
         #region exception
@@ -422,11 +434,15 @@ namespace RoverCoffeManage2
         private void txt_Discount_OnValueChanged(object sender, EventArgs e)
         {
             if (txt_Discount.Text != "") // nếu mục chiết khấu khác rỗng
+            { 
                 if (int.Parse(txt_Discount.Text.ToString()) > 100) //nếu mục chiết khấu >100% thì thông báo không đúng
                 {
                     MessageBox.Show("Bạn không được chiết khấu quá 100%");
                     txt_Discount.Text = "0"; // trả lại 0%
                 }
+                else
+                    loadPrice();
+            }
         }
 
         // không được nhập chữ hoặc dấu vào textbox chiết khấu
@@ -513,6 +529,16 @@ namespace RoverCoffeManage2
             statisticYear.Dock = DockStyle.Fill;
             panelMainStatitis.Controls.Add(statisticYear);
         }
+
+        private void btn_settingAccount_Click(object sender, EventArgs e)
+        {
+            pn_account.Controls.Clear();
+            AccountList accountList = new AccountList();
+            accountList.Dock = DockStyle.Fill;
+            pn_account.Controls.Add(accountList);
+        }
+
+     
     }
     #endregion
 }

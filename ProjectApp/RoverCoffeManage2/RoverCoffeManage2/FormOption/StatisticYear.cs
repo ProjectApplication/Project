@@ -32,6 +32,14 @@ namespace RoverCoffeManage2
             {
                 chartYeah.Series[0].Points.AddXY(value.Id, value.Total);
             }
+            long totalPrice = 0;
+            foreach (DataGridViewRow item in dgvYear.Rows)
+            {
+                if (item.Cells[1].Value != null)
+                    totalPrice += long.Parse(item.Cells[1].Value.ToString());
+            }
+
+            lb_totalPriceYear.Text = totalPrice.ToString() + " VND";
         }
     }
 }

@@ -43,8 +43,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lb_totalPriceMonth = new MaterialSkin.Controls.MaterialFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.chartMonth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMonth)).BeginInit();
             this.panel1.SuspendLayout();
@@ -71,6 +73,7 @@
             // 
             // cbYearOfMonth
             // 
+            this.cbYearOfMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbYearOfMonth.FormattingEnabled = true;
             this.cbYearOfMonth.Items.AddRange(new object[] {
             "2017",
@@ -84,7 +87,8 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgvMonth.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvMonth.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvMonth.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMonth.BackgroundColor = System.Drawing.Color.White;
             this.dgvMonth.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMonth.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -103,10 +107,10 @@
             this.dgvMonth.EnableHeadersVisualStyles = false;
             this.dgvMonth.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.dgvMonth.HeaderForeColor = System.Drawing.Color.SeaShell;
-            this.dgvMonth.Location = new System.Drawing.Point(14, 100);
+            this.dgvMonth.Location = new System.Drawing.Point(-31, 100);
             this.dgvMonth.Name = "dgvMonth";
             this.dgvMonth.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvMonth.Size = new System.Drawing.Size(383, 332);
+            this.dgvMonth.Size = new System.Drawing.Size(432, 332);
             this.dgvMonth.TabIndex = 7;
             // 
             // Column3
@@ -137,6 +141,7 @@
             // 
             // cbMonth
             // 
+            this.cbMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMonth.FormattingEnabled = true;
             this.cbMonth.Items.AddRange(new object[] {
             "1",
@@ -185,6 +190,8 @@
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.Tomato;
+            this.bunifuCards1.Controls.Add(this.lb_totalPriceMonth);
+            this.bunifuCards1.Controls.Add(this.label2);
             this.bunifuCards1.Controls.Add(this.materialLabel2);
             this.bunifuCards1.Controls.Add(this.materialLabel1);
             this.bunifuCards1.Controls.Add(this.cbYearOfMonth);
@@ -199,6 +206,19 @@
             this.bunifuCards1.Size = new System.Drawing.Size(418, 508);
             this.bunifuCards1.TabIndex = 14;
             // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(10, 62);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(85, 19);
+            this.materialLabel2.TabIndex = 11;
+            this.materialLabel2.Text = "Chọn năm :";
+            // 
             // materialLabel1
             // 
             this.materialLabel1.AutoSize = true;
@@ -212,18 +232,31 @@
             this.materialLabel1.TabIndex = 10;
             this.materialLabel1.Text = "Chọn tháng :";
             // 
-            // materialLabel2
+            // label2
             // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(10, 62);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(85, 19);
-            this.materialLabel2.TabIndex = 11;
-            this.materialLabel2.Text = "Chọn năm :";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(175, 456);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 21);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Tổng Doanh Thu :";
+            // 
+            // lb_totalPriceMonth
+            // 
+            this.lb_totalPriceMonth.AutoSize = true;
+            this.lb_totalPriceMonth.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.lb_totalPriceMonth.Depth = 0;
+            this.lb_totalPriceMonth.Icon = null;
+            this.lb_totalPriceMonth.Location = new System.Drawing.Point(330, 449);
+            this.lb_totalPriceMonth.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.lb_totalPriceMonth.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lb_totalPriceMonth.Name = "lb_totalPriceMonth";
+            this.lb_totalPriceMonth.Primary = false;
+            this.lb_totalPriceMonth.Size = new System.Drawing.Size(29, 36);
+            this.lb_totalPriceMonth.TabIndex = 13;
+            this.lb_totalPriceMonth.Text = "0";
+            this.lb_totalPriceMonth.UseVisualStyleBackColor = true;
             // 
             // StatisticMonth
             // 
@@ -258,5 +291,7 @@
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private System.Windows.Forms.Label label2;
+        private MaterialSkin.Controls.MaterialFlatButton lb_totalPriceMonth;
     }
 }

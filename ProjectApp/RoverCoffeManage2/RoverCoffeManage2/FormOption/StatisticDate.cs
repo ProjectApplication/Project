@@ -25,15 +25,22 @@ namespace RoverCoffeManage2
             {
                 value.Points.Clear();
             }
-            DataTable dtTable = StatisticsBillDAO.Instance.getStatisticsBillOfDay(dtpTotalBegin.Value, dtpTotalEnd.Value);
+          
+           
+            DataTable dtTable = StatisticsBillDAO.Instance.getStatisticsBillOfDay(dtpTotalBegin.Value, dtpTotalBegin.Value.AddDays(1));
             dgvTotalStatistics.DataSource = dtTable;
             List<TotalOfBill> listStatisticses = StatisticsBillDAO.Instance.getList(dtTable);
 
             foreach (var value in listStatisticses)
             {
-                Console.WriteLine("Hello");
                 chartTotalStatistics.Series[0].Points.AddXY(value.Id, value.Total);
             }
+
+            long totalPrice = 0;
+            foreach(DataGridViewRow item in dgvTotalStatistics.Rows)
+                if (item.Cells[2].Value !=null)
+               totalPrice += long.Parse(item.Cells[4].Value.ToString());
+            lb_totalPrice.Text = totalPrice.ToString()+"  VND";            
         }
     }
 }

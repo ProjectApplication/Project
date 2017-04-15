@@ -63,6 +63,16 @@ namespace RoverCoffeManage2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _14657411_325419537816430_8166398440840516187_n {
+            get {
+                object obj = ResourceManager.GetObject("14657411_325419537816430_8166398440840516187_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _23 {
             get {
                 object obj = ResourceManager.GetObject("23", resourceCulture);
@@ -76,6 +86,26 @@ namespace RoverCoffeManage2.Properties {
         internal static System.Drawing.Bitmap _3_gach {
             get {
                 object obj = ResourceManager.GetObject("3 gach", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap analytics_1 {
+            get {
+                object obj = ResourceManager.GetObject("analytics-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap curriculum {
+            get {
+                object obj = ResourceManager.GetObject("curriculum", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +166,26 @@ namespace RoverCoffeManage2.Properties {
         internal static System.Drawing.Bitmap next {
             get {
                 object obj = ResourceManager.GetObject("next", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings {
+            get {
+                object obj = ResourceManager.GetObject("settings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap team_2 {
+            get {
+                object obj = ResourceManager.GetObject("team-2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

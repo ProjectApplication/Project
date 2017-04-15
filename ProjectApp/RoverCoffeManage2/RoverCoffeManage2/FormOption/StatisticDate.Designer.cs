@@ -38,13 +38,13 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnTotalSearch = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.dtpTotalEnd = new Bunifu.Framework.UI.BunifuDatepicker();
             this.dtpTotalBegin = new Bunifu.Framework.UI.BunifuDatepicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lb_totalPrice = new MaterialSkin.Controls.MaterialFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.chartTotalStatistics)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTotalStatistics)).BeginInit();
             this.panel1.SuspendLayout();
@@ -73,7 +73,8 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dgvTotalStatistics.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvTotalStatistics.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvTotalStatistics.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvTotalStatistics.BackgroundColor = System.Drawing.Color.White;
             this.dgvTotalStatistics.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvTotalStatistics.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -92,22 +93,25 @@
             this.dgvTotalStatistics.EnableHeadersVisualStyles = false;
             this.dgvTotalStatistics.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.dgvTotalStatistics.HeaderForeColor = System.Drawing.Color.SeaShell;
-            this.dgvTotalStatistics.Location = new System.Drawing.Point(14, 100);
+            this.dgvTotalStatistics.Location = new System.Drawing.Point(-31, 74);
             this.dgvTotalStatistics.Name = "dgvTotalStatistics";
+            this.dgvTotalStatistics.ReadOnly = true;
             this.dgvTotalStatistics.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvTotalStatistics.Size = new System.Drawing.Size(383, 332);
+            this.dgvTotalStatistics.Size = new System.Drawing.Size(428, 332);
             this.dgvTotalStatistics.TabIndex = 8;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "ID";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             this.Column1.Visible = false;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Thành tiền";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             this.Column2.Visible = false;
             // 
             // btnTotalSearch
@@ -124,20 +128,6 @@
             this.btnTotalSearch.UseVisualStyleBackColor = true;
             this.btnTotalSearch.Click += new System.EventHandler(this.btnTotalSearch_Click);
             // 
-            // dtpTotalEnd
-            // 
-            this.dtpTotalEnd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.dtpTotalEnd.BorderRadius = 0;
-            this.dtpTotalEnd.ForeColor = System.Drawing.Color.White;
-            this.dtpTotalEnd.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpTotalEnd.FormatCustom = null;
-            this.dtpTotalEnd.Location = new System.Drawing.Point(123, 44);
-            this.dtpTotalEnd.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpTotalEnd.Name = "dtpTotalEnd";
-            this.dtpTotalEnd.Size = new System.Drawing.Size(274, 28);
-            this.dtpTotalEnd.TabIndex = 6;
-            this.dtpTotalEnd.Value = new System.DateTime(2017, 4, 2, 12, 16, 41, 360);
-            // 
             // dtpTotalBegin
             // 
             this.dtpTotalBegin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
@@ -145,7 +135,7 @@
             this.dtpTotalBegin.ForeColor = System.Drawing.Color.White;
             this.dtpTotalBegin.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpTotalBegin.FormatCustom = null;
-            this.dtpTotalBegin.Location = new System.Drawing.Point(123, 12);
+            this.dtpTotalBegin.Location = new System.Drawing.Point(123, 17);
             this.dtpTotalBegin.Margin = new System.Windows.Forms.Padding(4);
             this.dtpTotalBegin.Name = "dtpTotalBegin";
             this.dtpTotalBegin.Size = new System.Drawing.Size(274, 24);
@@ -181,12 +171,12 @@
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.Tomato;
-            this.bunifuCards1.Controls.Add(this.materialLabel2);
+            this.bunifuCards1.Controls.Add(this.lb_totalPrice);
+            this.bunifuCards1.Controls.Add(this.label2);
             this.bunifuCards1.Controls.Add(this.materialLabel1);
             this.bunifuCards1.Controls.Add(this.dgvTotalStatistics);
             this.bunifuCards1.Controls.Add(this.btnTotalSearch);
             this.bunifuCards1.Controls.Add(this.dtpTotalBegin);
-            this.bunifuCards1.Controls.Add(this.dtpTotalEnd);
             this.bunifuCards1.LeftSahddow = false;
             this.bunifuCards1.Location = new System.Drawing.Point(13, 68);
             this.bunifuCards1.Name = "bunifuCards1";
@@ -204,22 +194,35 @@
             this.materialLabel1.Location = new System.Drawing.Point(10, 17);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(105, 19);
+            this.materialLabel1.Size = new System.Drawing.Size(87, 19);
             this.materialLabel1.TabIndex = 9;
-            this.materialLabel1.Text = "Ngày bắt đầu :";
+            this.materialLabel1.Text = "Chọn ngày :";
             // 
-            // materialLabel2
+            // label2
             // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(10, 53);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(109, 19);
-            this.materialLabel2.TabIndex = 10;
-            this.materialLabel2.Text = "Ngày kết thúc :";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(164, 454);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 21);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Tổng Doanh Thu :";
+            // 
+            // lb_totalPrice
+            // 
+            this.lb_totalPrice.AutoSize = true;
+            this.lb_totalPrice.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.lb_totalPrice.Depth = 0;
+            this.lb_totalPrice.Icon = null;
+            this.lb_totalPrice.Location = new System.Drawing.Point(319, 447);
+            this.lb_totalPrice.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.lb_totalPrice.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lb_totalPrice.Name = "lb_totalPrice";
+            this.lb_totalPrice.Primary = false;
+            this.lb_totalPrice.Size = new System.Drawing.Size(29, 36);
+            this.lb_totalPrice.TabIndex = 11;
+            this.lb_totalPrice.Text = "0";
+            this.lb_totalPrice.UseVisualStyleBackColor = true;
             // 
             // StatisticDate
             // 
@@ -248,12 +251,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private MaterialSkin.Controls.MaterialRaisedButton btnTotalSearch;
-        private Bunifu.Framework.UI.BunifuDatepicker dtpTotalEnd;
         private Bunifu.Framework.UI.BunifuDatepicker dtpTotalBegin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialFlatButton lb_totalPrice;
+        private System.Windows.Forms.Label label2;
     }
 }

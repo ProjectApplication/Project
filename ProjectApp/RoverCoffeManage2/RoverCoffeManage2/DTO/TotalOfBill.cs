@@ -15,7 +15,7 @@ namespace RoverCoffeManage2.DTO
    
         public TotalOfBill(DataRow data)
         {
-            this.id = data["ID"].ToString();
+            this.id = data[0].ToString();
             this.total = (double) data["Thành tiền"];
             try
             {

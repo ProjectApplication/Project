@@ -46,9 +46,25 @@ namespace RoverCoffeManage2.DAO
         {
             // Thay đổi giá trị của combo box username tại đây
             // hàm này lấy giá trị từng hàng của table 
-            foreach (DataRow row in DAO.DataProvider.Instance.ExecuteQuery("SELECT dbo.Account.UserName FROM dbo.Account").Rows)
+            foreach (DataRow row in DataProvider.Instance.ExecuteQuery("SELECT dbo.Account.UserName FROM dbo.Account").Rows)
                 //hàm này để add giá trị từng hàng của cột username 
                 a.Items.Add((string)row["UserName"]);
+        }
+        public DataTable getUserName()
+        {
+            return DataProvider.Instance.ExecuteQuery("SELECT dbo.Account.UserName FROM dbo.Account");
+        }
+        public int insertAccount(string userName ,string displayName, string passWord,int type)
+        {
+            return DataProvider.Instance.ExecuteNonQuery("proc_InsertAccount N'" + userName + "',N'" + displayName + "',N'" + passWord + "', " + type);
+        }
+        public int changePassWord(string userName, string newPass)
+        {
+            return DataProvider.Instance.ExecuteNonQuery("proc_ChangePassWord N'" + userName + "',N'" + newPass + "'");
+         }
+        public int deleteAccount(string userName)
+        {
+            return DataProvider.Instance.ExecuteNonQuery("pro_DeleteAccount N'" + userName + "'");
         }
     }
 }

@@ -31,12 +31,12 @@ namespace RoverCoffeManage2
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.billDiscountReport1 = new billDiscountReport();
+            this.billDiscountReport1 = new RoverCoffeManage2.Report.billDiscountReport();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
             // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.ActiveViewIndex = 0;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -54,6 +54,7 @@ namespace RoverCoffeManage2
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "fPrintBillDiscount";
             this.Text = "fPrintBillDiscount";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
