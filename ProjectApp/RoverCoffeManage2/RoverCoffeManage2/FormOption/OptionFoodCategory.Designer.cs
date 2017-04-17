@@ -72,7 +72,7 @@
             this.panel3.Controls.Add(this.flpCategory);
             this.panel3.Location = new System.Drawing.Point(13, 69);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(259, 384);
+            this.panel3.Size = new System.Drawing.Size(217, 394);
             this.panel3.TabIndex = 8;
             // 
             // textBox1
@@ -84,7 +84,7 @@
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(257, 30);
+            this.textBox1.Size = new System.Drawing.Size(215, 30);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "Danh Mục ";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -92,9 +92,9 @@
             // flpCategory
             // 
             this.flpCategory.AutoScroll = true;
-            this.flpCategory.Location = new System.Drawing.Point(11, 48);
+            this.flpCategory.Location = new System.Drawing.Point(5, 48);
             this.flpCategory.Name = "flpCategory";
-            this.flpCategory.Size = new System.Drawing.Size(258, 336);
+            this.flpCategory.Size = new System.Drawing.Size(201, 327);
             this.flpCategory.TabIndex = 2;
             // 
             // panel1
@@ -140,11 +140,11 @@
             this.bunifuCards1.Controls.Add(this.materialTabControl1);
             this.bunifuCards1.Controls.Add(this.label2);
             this.bunifuCards1.LeftSahddow = false;
-            this.bunifuCards1.Location = new System.Drawing.Point(277, 69);
+            this.bunifuCards1.Location = new System.Drawing.Point(233, 69);
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(622, 429);
+            this.bunifuCards1.Size = new System.Drawing.Size(622, 394);
             this.bunifuCards1.TabIndex = 12;
             // 
             // materialTabSelector1
@@ -168,7 +168,7 @@
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(600, 326);
+            this.materialTabControl1.Size = new System.Drawing.Size(600, 294);
             this.materialTabControl1.TabIndex = 12;
             // 
             // tabPage1
@@ -183,7 +183,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(592, 300);
+            this.tabPage1.Size = new System.Drawing.Size(592, 268);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thêm Danh Mục";
             // 
@@ -191,7 +191,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(8, 205);
+            this.label5.Location = new System.Drawing.Point(8, 172);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(538, 19);
             this.label5.TabIndex = 22;
@@ -202,7 +202,7 @@
             // 
             this.txt_nameOfFoodCategory.Depth = 0;
             this.txt_nameOfFoodCategory.Hint = "Nhập tên danh mục ở đây";
-            this.txt_nameOfFoodCategory.Location = new System.Drawing.Point(10, 147);
+            this.txt_nameOfFoodCategory.Location = new System.Drawing.Point(10, 120);
             this.txt_nameOfFoodCategory.MaxLength = 50;
             this.txt_nameOfFoodCategory.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_nameOfFoodCategory.Name = "txt_nameOfFoodCategory";
@@ -218,10 +218,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(8, 107);
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(8, 93);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(412, 23);
+            this.label4.Size = new System.Drawing.Size(374, 21);
             this.label4.TabIndex = 20;
             this.label4.Text = "Nhập tên của danh mục mà bạn muốn thêm vào :";
             // 
@@ -229,7 +229,7 @@
             // 
             this.txt_id.Depth = 0;
             this.txt_id.Hint = "Nhập ID ở đây";
-            this.txt_id.Location = new System.Drawing.Point(10, 53);
+            this.txt_id.Location = new System.Drawing.Point(10, 43);
             this.txt_id.MaxLength = 3;
             this.txt_id.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_id.Name = "txt_id";
@@ -245,10 +245,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(6, 16);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(408, 23);
+            this.label3.Size = new System.Drawing.Size(371, 21);
             this.label3.TabIndex = 18;
             this.label3.Text = "Nhập ID của danh mục mà bạn muốn thêm vào :";
             // 
@@ -270,7 +270,7 @@
             this.btn_OKAdd.IdleFillColor = System.Drawing.Color.White;
             this.btn_OKAdd.IdleForecolor = System.Drawing.Color.Red;
             this.btn_OKAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_OKAdd.Location = new System.Drawing.Point(8, 229);
+            this.btn_OKAdd.Location = new System.Drawing.Point(8, 204);
             this.btn_OKAdd.Margin = new System.Windows.Forms.Padding(5);
             this.btn_OKAdd.Name = "btn_OKAdd";
             this.btn_OKAdd.Size = new System.Drawing.Size(94, 55);
@@ -289,7 +289,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(700, 356);
+            this.tabPage2.Size = new System.Drawing.Size(592, 268);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Sửa Danh Mục";
             // 
@@ -297,7 +297,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 123);
+            this.label7.Location = new System.Drawing.Point(6, 99);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(240, 23);
             this.label7.TabIndex = 23;
@@ -307,7 +307,7 @@
             // 
             this.txtName.Depth = 0;
             this.txtName.Hint = "Nhập lại tên danh mục ở đây";
-            this.txtName.Location = new System.Drawing.Point(10, 178);
+            this.txtName.Location = new System.Drawing.Point(6, 147);
             this.txtName.MaxLength = 50;
             this.txtName.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtName.Name = "txtName";
@@ -357,7 +357,7 @@
             this.btn_okFix.IdleFillColor = System.Drawing.Color.White;
             this.btn_okFix.IdleForecolor = System.Drawing.Color.Red;
             this.btn_okFix.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_okFix.Location = new System.Drawing.Point(10, 279);
+            this.btn_okFix.Location = new System.Drawing.Point(10, 205);
             this.btn_okFix.Margin = new System.Windows.Forms.Padding(5);
             this.btn_okFix.Name = "btn_okFix";
             this.btn_okFix.Size = new System.Drawing.Size(94, 55);
@@ -374,7 +374,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(700, 356);
+            this.tabPage3.Size = new System.Drawing.Size(592, 268);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Xóa Danh Mục";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -427,7 +427,7 @@
             this.btn_OkDelete.IdleFillColor = System.Drawing.Color.White;
             this.btn_OkDelete.IdleForecolor = System.Drawing.Color.Red;
             this.btn_OkDelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_OkDelete.Location = new System.Drawing.Point(10, 250);
+            this.btn_OkDelete.Location = new System.Drawing.Point(10, 208);
             this.btn_OkDelete.Margin = new System.Windows.Forms.Padding(5);
             this.btn_OkDelete.Name = "btn_OkDelete";
             this.btn_OkDelete.Size = new System.Drawing.Size(94, 55);

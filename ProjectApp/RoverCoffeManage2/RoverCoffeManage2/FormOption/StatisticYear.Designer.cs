@@ -88,21 +88,21 @@
             this.dgvYear.EnableHeadersVisualStyles = false;
             this.dgvYear.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.dgvYear.HeaderForeColor = System.Drawing.Color.SeaShell;
-            this.dgvYear.Location = new System.Drawing.Point(3, 59);
+            this.dgvYear.Location = new System.Drawing.Point(-24, 59);
             this.dgvYear.Name = "dgvYear";
             this.dgvYear.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvYear.Size = new System.Drawing.Size(322, 246);
+            this.dgvYear.Size = new System.Drawing.Size(352, 246);
             this.dgvYear.TabIndex = 6;
             // 
             // btnYearSearch
             // 
             this.btnYearSearch.Depth = 0;
             this.btnYearSearch.Icon = null;
-            this.btnYearSearch.Location = new System.Drawing.Point(3, 311);
+            this.btnYearSearch.Location = new System.Drawing.Point(0, 320);
             this.btnYearSearch.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnYearSearch.Name = "btnYearSearch";
             this.btnYearSearch.Primary = true;
-            this.btnYearSearch.Size = new System.Drawing.Size(79, 45);
+            this.btnYearSearch.Size = new System.Drawing.Size(79, 36);
             this.btnYearSearch.TabIndex = 5;
             this.btnYearSearch.Text = "Search";
             this.btnYearSearch.UseVisualStyleBackColor = true;
@@ -183,7 +183,7 @@
             this.lb_totalPriceYear.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.lb_totalPriceYear.Depth = 0;
             this.lb_totalPriceYear.Icon = null;
-            this.lb_totalPriceYear.Location = new System.Drawing.Point(296, 320);
+            this.lb_totalPriceYear.Location = new System.Drawing.Point(229, 328);
             this.lb_totalPriceYear.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.lb_totalPriceYear.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_totalPriceYear.Name = "lb_totalPriceYear";
@@ -197,7 +197,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(102, 335);
+            this.label3.Location = new System.Drawing.Point(88, 335);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 21);
             this.label3.TabIndex = 12;

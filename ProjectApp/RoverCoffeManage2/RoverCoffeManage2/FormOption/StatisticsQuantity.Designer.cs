@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.chartQuantityStatistics = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnQuantitySearch = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -62,16 +62,16 @@
             // 
             this.chartQuantityStatistics.BorderlineColor = System.Drawing.Color.Black;
             this.chartQuantityStatistics.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea1.Name = "ChartArea1";
-            this.chartQuantityStatistics.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartQuantityStatistics.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartQuantityStatistics.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartQuantityStatistics.Legends.Add(legend2);
             this.chartQuantityStatistics.Location = new System.Drawing.Point(355, 68);
             this.chartQuantityStatistics.Name = "chartQuantityStatistics";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Số lượng";
-            this.chartQuantityStatistics.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Số lượng";
+            this.chartQuantityStatistics.Series.Add(series2);
             this.chartQuantityStatistics.Size = new System.Drawing.Size(412, 377);
             this.chartQuantityStatistics.TabIndex = 9;
             this.chartQuantityStatistics.Text = "chart1";
@@ -100,7 +100,7 @@
             this.dtpQuantityEnd.Location = new System.Drawing.Point(116, 55);
             this.dtpQuantityEnd.Margin = new System.Windows.Forms.Padding(4);
             this.dtpQuantityEnd.Name = "dtpQuantityEnd";
-            this.dtpQuantityEnd.Size = new System.Drawing.Size(137, 28);
+            this.dtpQuantityEnd.Size = new System.Drawing.Size(205, 28);
             this.dtpQuantityEnd.TabIndex = 6;
             this.dtpQuantityEnd.Value = new System.DateTime(2017, 4, 2, 11, 46, 32, 256);
             // 
@@ -114,7 +114,7 @@
             this.dtpQuantityBegin.Location = new System.Drawing.Point(116, 11);
             this.dtpQuantityBegin.Margin = new System.Windows.Forms.Padding(4);
             this.dtpQuantityBegin.Name = "dtpQuantityBegin";
-            this.dtpQuantityBegin.Size = new System.Drawing.Size(137, 28);
+            this.dtpQuantityBegin.Size = new System.Drawing.Size(205, 28);
             this.dtpQuantityBegin.TabIndex = 5;
             this.dtpQuantityBegin.Value = new System.DateTime(2017, 4, 2, 11, 46, 26, 983);
             // 
@@ -133,7 +133,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(323, 3);
+            this.label1.Location = new System.Drawing.Point(266, 3);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(551, 40);
@@ -163,29 +163,29 @@
             // 
             // dgvQuantityStatistics
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvQuantityStatistics.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvQuantityStatistics.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvQuantityStatistics.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvQuantityStatistics.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvQuantityStatistics.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvQuantityStatistics.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvQuantityStatistics.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvQuantityStatistics.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvQuantityStatistics.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvQuantityStatistics.DoubleBuffered = true;
             this.dgvQuantityStatistics.EnableHeadersVisualStyles = false;
             this.dgvQuantityStatistics.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.dgvQuantityStatistics.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvQuantityStatistics.Location = new System.Drawing.Point(3, 90);
+            this.dgvQuantityStatistics.Location = new System.Drawing.Point(-139, 90);
             this.dgvQuantityStatistics.Name = "dgvQuantityStatistics";
             this.dgvQuantityStatistics.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvQuantityStatistics.Size = new System.Drawing.Size(333, 217);
+            this.dgvQuantityStatistics.Size = new System.Drawing.Size(466, 217);
             this.dgvQuantityStatistics.TabIndex = 11;
             // 
             // label3

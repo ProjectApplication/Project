@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.chartMonth = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.cbYearOfMonth = new System.Windows.Forms.ComboBox();
             this.dgvMonth = new Bunifu.Framework.UI.BunifuCustomDataGrid();
@@ -57,16 +57,16 @@
             // 
             this.chartMonth.BorderlineColor = System.Drawing.Color.Black;
             this.chartMonth.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea1.Name = "ChartArea1";
-            this.chartMonth.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartMonth.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartMonth.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartMonth.Legends.Add(legend2);
             this.chartMonth.Location = new System.Drawing.Point(367, 68);
             this.chartMonth.Name = "chartMonth";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Đồng";
-            this.chartMonth.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Đồng";
+            this.chartMonth.Series.Add(series2);
             this.chartMonth.Size = new System.Drawing.Size(412, 377);
             this.chartMonth.TabIndex = 9;
             this.chartMonth.Text = "chart1";
@@ -85,20 +85,20 @@
             // 
             // dgvMonth
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvMonth.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgvMonth.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMonth.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMonth.BackgroundColor = System.Drawing.Color.White;
             this.dgvMonth.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMonth.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaShell;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMonth.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaShell;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMonth.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvMonth.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMonth.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column3,
@@ -107,10 +107,10 @@
             this.dgvMonth.EnableHeadersVisualStyles = false;
             this.dgvMonth.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.dgvMonth.HeaderForeColor = System.Drawing.Color.SeaShell;
-            this.dgvMonth.Location = new System.Drawing.Point(3, 73);
+            this.dgvMonth.Location = new System.Drawing.Point(-30, 73);
             this.dgvMonth.Name = "dgvMonth";
             this.dgvMonth.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvMonth.Size = new System.Drawing.Size(321, 246);
+            this.dgvMonth.Size = new System.Drawing.Size(354, 246);
             this.dgvMonth.TabIndex = 7;
             // 
             // Column3
@@ -129,7 +129,7 @@
             // 
             this.btnMonthBillSearch.Depth = 0;
             this.btnMonthBillSearch.Icon = null;
-            this.btnMonthBillSearch.Location = new System.Drawing.Point(3, 325);
+            this.btnMonthBillSearch.Location = new System.Drawing.Point(3, 335);
             this.btnMonthBillSearch.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnMonthBillSearch.Name = "btnMonthBillSearch";
             this.btnMonthBillSearch.Primary = true;
@@ -212,7 +212,7 @@
             this.lb_totalPriceMonth.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.lb_totalPriceMonth.Depth = 0;
             this.lb_totalPriceMonth.Icon = null;
-            this.lb_totalPriceMonth.Location = new System.Drawing.Point(295, 325);
+            this.lb_totalPriceMonth.Location = new System.Drawing.Point(230, 341);
             this.lb_totalPriceMonth.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.lb_totalPriceMonth.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_totalPriceMonth.Name = "lb_totalPriceMonth";
@@ -226,7 +226,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(75, 340);
+            this.label2.Location = new System.Drawing.Point(75, 350);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 21);
             this.label2.TabIndex = 12;

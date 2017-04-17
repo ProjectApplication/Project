@@ -56,7 +56,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(365, 0);
+            this.label1.Location = new System.Drawing.Point(358, 0);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(356, 40);
@@ -72,7 +72,7 @@
             this.flpTable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flpTable.Location = new System.Drawing.Point(1, 50);
             this.flpTable.Name = "flpTable";
-            this.flpTable.Size = new System.Drawing.Size(523, 414);
+            this.flpTable.Size = new System.Drawing.Size(404, 414);
             this.flpTable.TabIndex = 1;
             // 
             // bunifuCards1
@@ -86,11 +86,11 @@
             this.bunifuCards1.Controls.Add(this.txt_quantity);
             this.bunifuCards1.Controls.Add(this.label2);
             this.bunifuCards1.LeftSahddow = false;
-            this.bunifuCards1.Location = new System.Drawing.Point(530, 50);
+            this.bunifuCards1.Location = new System.Drawing.Point(410, 50);
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(591, 414);
+            this.bunifuCards1.Size = new System.Drawing.Size(437, 414);
             this.bunifuCards1.TabIndex = 2;
             // 
             // label3

@@ -112,7 +112,7 @@
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(613, 429);
+            this.bunifuCards1.Size = new System.Drawing.Size(460, 408);
             this.bunifuCards1.TabIndex = 13;
             // 
             // materialTabSelector1
@@ -136,7 +136,7 @@
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(597, 338);
+            this.materialTabControl1.Size = new System.Drawing.Size(445, 338);
             this.materialTabControl1.TabIndex = 12;
             // 
             // tabPage1
@@ -155,7 +155,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(589, 312);
+            this.tabPage1.Size = new System.Drawing.Size(524, 312);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thêm Món";
             // 
@@ -163,7 +163,7 @@
             // 
             this.txt_price.Depth = 0;
             this.txt_price.Hint = "Nhập giá tiền";
-            this.txt_price.Location = new System.Drawing.Point(8, 197);
+            this.txt_price.Location = new System.Drawing.Point(8, 169);
             this.txt_price.MaxLength = 6;
             this.txt_price.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_price.Name = "txt_price";
@@ -171,7 +171,7 @@
             this.txt_price.SelectedText = "";
             this.txt_price.SelectionLength = 0;
             this.txt_price.SelectionStart = 0;
-            this.txt_price.Size = new System.Drawing.Size(263, 39);
+            this.txt_price.Size = new System.Drawing.Size(188, 39);
             this.txt_price.TabIndex = 4;
             this.txt_price.TabStop = false;
             this.txt_price.UseSystemPasswordChar = false;
@@ -180,10 +180,10 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(6, 153);
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(6, 143);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(131, 23);
+            this.label11.Size = new System.Drawing.Size(96, 19);
             this.label11.TabIndex = 26;
             this.label11.Text = "Nhập giá tiền :";
             // 
@@ -191,7 +191,7 @@
             // 
             this.txt_nameOfFood.Depth = 0;
             this.txt_nameOfFood.Hint = "Nhập tên món";
-            this.txt_nameOfFood.Location = new System.Drawing.Point(290, 108);
+            this.txt_nameOfFood.Location = new System.Drawing.Point(238, 92);
             this.txt_nameOfFood.MaxLength = 50;
             this.txt_nameOfFood.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_nameOfFood.Name = "txt_nameOfFood";
@@ -199,7 +199,7 @@
             this.txt_nameOfFood.SelectedText = "";
             this.txt_nameOfFood.SelectionLength = 0;
             this.txt_nameOfFood.SelectionStart = 0;
-            this.txt_nameOfFood.Size = new System.Drawing.Size(263, 39);
+            this.txt_nameOfFood.Size = new System.Drawing.Size(188, 39);
             this.txt_nameOfFood.TabIndex = 3;
             this.txt_nameOfFood.TabStop = false;
             this.txt_nameOfFood.UseSystemPasswordChar = false;
@@ -207,10 +207,10 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 70);
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(3, 70);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(137, 23);
+            this.label10.Size = new System.Drawing.Size(102, 19);
             this.label10.TabIndex = 24;
             this.label10.Text = "Nhập mã món :";
             // 
@@ -218,7 +218,7 @@
             // 
             this.cb_foodCategory3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_foodCategory3.FormattingEnabled = true;
-            this.cb_foodCategory3.Location = new System.Drawing.Point(3, 38);
+            this.cb_foodCategory3.Location = new System.Drawing.Point(3, 34);
             this.cb_foodCategory3.Name = "cb_foodCategory3";
             this.cb_foodCategory3.Size = new System.Drawing.Size(217, 21);
             this.cb_foodCategory3.TabIndex = 1;
@@ -227,17 +227,17 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 239);
+            this.label5.Location = new System.Drawing.Point(6, 211);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(516, 19);
+            this.label5.Size = new System.Drawing.Size(266, 38);
             this.label5.TabIndex = 22;
-            this.label5.Text = "Lưu ý : mã món ăn mà bạn muốn thêm vào không được trùng với mã của món ăn cũ ";
+            this.label5.Text = "Lưu ý : mã món ăn mà bạn muốn thêm vào\r\n không được trùng với mã của món ăn cũ ";
             // 
             // txt_idOfFood
             // 
             this.txt_idOfFood.Depth = 0;
             this.txt_idOfFood.Hint = "Nhập mã món ";
-            this.txt_idOfFood.Location = new System.Drawing.Point(10, 108);
+            this.txt_idOfFood.Location = new System.Drawing.Point(6, 92);
             this.txt_idOfFood.MaxLength = 3;
             this.txt_idOfFood.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_idOfFood.Name = "txt_idOfFood";
@@ -245,7 +245,7 @@
             this.txt_idOfFood.SelectedText = "";
             this.txt_idOfFood.SelectionLength = 0;
             this.txt_idOfFood.SelectionStart = 0;
-            this.txt_idOfFood.Size = new System.Drawing.Size(263, 39);
+            this.txt_idOfFood.Size = new System.Drawing.Size(190, 39);
             this.txt_idOfFood.TabIndex = 2;
             this.txt_idOfFood.TabStop = false;
             this.txt_idOfFood.UseSystemPasswordChar = false;
@@ -253,20 +253,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(286, 70);
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(234, 70);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 23);
+            this.label4.Size = new System.Drawing.Size(102, 19);
             this.label4.TabIndex = 20;
             this.label4.Text = "Nhập tên món :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(4, 12);
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(4, 7);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(183, 23);
+            this.label3.Size = new System.Drawing.Size(136, 19);
             this.label3.TabIndex = 18;
             this.label3.Text = "Lựa chọn danh mục :";
             // 
@@ -288,7 +288,7 @@
             this.btn_OKAdd.IdleFillColor = System.Drawing.Color.White;
             this.btn_OKAdd.IdleForecolor = System.Drawing.Color.Red;
             this.btn_OKAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_OKAdd.Location = new System.Drawing.Point(239, 263);
+            this.btn_OKAdd.Location = new System.Drawing.Point(5, 247);
             this.btn_OKAdd.Margin = new System.Windows.Forms.Padding(5);
             this.btn_OKAdd.Name = "btn_OKAdd";
             this.btn_OKAdd.Size = new System.Drawing.Size(94, 43);
@@ -311,7 +311,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(616, 389);
+            this.tabPage2.Size = new System.Drawing.Size(437, 312);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Sửa Món";
             // 
@@ -319,7 +319,7 @@
             // 
             this.txt_newPrice.Depth = 0;
             this.txt_newPrice.Hint = "Nhập lại giá mới";
-            this.txt_newPrice.Location = new System.Drawing.Point(298, 178);
+            this.txt_newPrice.Location = new System.Drawing.Point(258, 178);
             this.txt_newPrice.MaxLength = 6;
             this.txt_newPrice.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_newPrice.Name = "txt_newPrice";
@@ -327,7 +327,7 @@
             this.txt_newPrice.SelectedText = "";
             this.txt_newPrice.SelectionLength = 0;
             this.txt_newPrice.SelectionStart = 0;
-            this.txt_newPrice.Size = new System.Drawing.Size(215, 39);
+            this.txt_newPrice.Size = new System.Drawing.Size(156, 39);
             this.txt_newPrice.TabIndex = 9;
             this.txt_newPrice.TabStop = false;
             this.txt_newPrice.UseSystemPasswordChar = false;
@@ -336,10 +336,10 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(294, 135);
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(254, 135);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(159, 23);
+            this.label13.Size = new System.Drawing.Size(114, 19);
             this.label13.TabIndex = 26;
             this.label13.Text = "Nhập lại giá mới :";
             // 
@@ -349,26 +349,26 @@
             this.cb_nameOfFood.FormattingEnabled = true;
             this.cb_nameOfFood.Location = new System.Drawing.Point(10, 99);
             this.cb_nameOfFood.Name = "cb_nameOfFood";
-            this.cb_nameOfFood.Size = new System.Drawing.Size(193, 21);
+            this.cb_nameOfFood.Size = new System.Drawing.Size(155, 21);
             this.cb_nameOfFood.TabIndex = 7;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(6, 67);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(108, 23);
+            this.label12.Size = new System.Drawing.Size(79, 19);
             this.label12.TabIndex = 24;
             this.label12.Text = "Chọn món :";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(6, 135);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(159, 23);
+            this.label7.Size = new System.Drawing.Size(115, 19);
             this.label7.TabIndex = 23;
             this.label7.Text = "Nhập lại tên mới :";
             // 
@@ -376,7 +376,7 @@
             // 
             this.txtName.Depth = 0;
             this.txtName.Hint = "Nhập lại tên mới";
-            this.txtName.Location = new System.Drawing.Point(10, 178);
+            this.txtName.Location = new System.Drawing.Point(6, 178);
             this.txtName.MaxLength = 50;
             this.txtName.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtName.Name = "txtName";
@@ -384,7 +384,7 @@
             this.txtName.SelectedText = "";
             this.txtName.SelectionLength = 0;
             this.txtName.SelectionStart = 0;
-            this.txtName.Size = new System.Drawing.Size(215, 39);
+            this.txtName.Size = new System.Drawing.Size(159, 39);
             this.txtName.TabIndex = 8;
             this.txtName.TabStop = false;
             this.txtName.UseSystemPasswordChar = false;
@@ -395,17 +395,17 @@
             this.cb_foodCategory.FormattingEnabled = true;
             this.cb_foodCategory.Location = new System.Drawing.Point(10, 29);
             this.cb_foodCategory.Name = "cb_foodCategory";
-            this.cb_foodCategory.Size = new System.Drawing.Size(193, 21);
+            this.cb_foodCategory.Size = new System.Drawing.Size(155, 21);
             this.cb_foodCategory.TabIndex = 6;
             this.cb_foodCategory.Leave += new System.EventHandler(this.cb_foodCategory_Leave);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 3);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 23);
+            this.label6.Size = new System.Drawing.Size(111, 19);
             this.label6.TabIndex = 20;
             this.label6.Text = "Chọn danh mục :";
             // 
@@ -427,7 +427,7 @@
             this.btn_okFix.IdleFillColor = System.Drawing.Color.White;
             this.btn_okFix.IdleForecolor = System.Drawing.Color.Red;
             this.btn_okFix.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_okFix.Location = new System.Drawing.Point(10, 279);
+            this.btn_okFix.Location = new System.Drawing.Point(8, 225);
             this.btn_okFix.Margin = new System.Windows.Forms.Padding(5);
             this.btn_okFix.Name = "btn_okFix";
             this.btn_okFix.Size = new System.Drawing.Size(94, 55);
@@ -446,7 +446,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(616, 389);
+            this.tabPage3.Size = new System.Drawing.Size(437, 312);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Xóa Món";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -455,18 +455,18 @@
             // 
             this.cb_nameOfFood2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_nameOfFood2.FormattingEnabled = true;
-            this.cb_nameOfFood2.Location = new System.Drawing.Point(6, 130);
+            this.cb_nameOfFood2.Location = new System.Drawing.Point(6, 83);
             this.cb_nameOfFood2.Name = "cb_nameOfFood2";
-            this.cb_nameOfFood2.Size = new System.Drawing.Size(227, 21);
+            this.cb_nameOfFood2.Size = new System.Drawing.Size(169, 21);
             this.cb_nameOfFood2.TabIndex = 12;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(6, 86);
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(6, 58);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(230, 23);
+            this.label14.Size = new System.Drawing.Size(168, 19);
             this.label14.TabIndex = 24;
             this.label14.Text = "Chọn món bạn muốn xóa :";
             // 
@@ -474,7 +474,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(6, 184);
+            this.label9.Location = new System.Drawing.Point(2, 134);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(487, 38);
             this.label9.TabIndex = 23;
@@ -485,19 +485,19 @@
             // 
             this.cb_foodCategory2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_foodCategory2.FormattingEnabled = true;
-            this.cb_foodCategory2.Location = new System.Drawing.Point(6, 40);
+            this.cb_foodCategory2.Location = new System.Drawing.Point(6, 25);
             this.cb_foodCategory2.Name = "cb_foodCategory2";
-            this.cb_foodCategory2.Size = new System.Drawing.Size(227, 21);
+            this.cb_foodCategory2.Size = new System.Drawing.Size(169, 21);
             this.cb_foodCategory2.TabIndex = 11;
             this.cb_foodCategory2.Leave += new System.EventHandler(this.cb_foodCategory2_Leave);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(6, 3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 23);
+            this.label8.Size = new System.Drawing.Size(111, 19);
             this.label8.TabIndex = 21;
             this.label8.Text = "Chọn danh mục :";
             // 
@@ -519,7 +519,7 @@
             this.btn_OkDelete.IdleFillColor = System.Drawing.Color.White;
             this.btn_OkDelete.IdleForecolor = System.Drawing.Color.Red;
             this.btn_OkDelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_OkDelete.Location = new System.Drawing.Point(10, 250);
+            this.btn_OkDelete.Location = new System.Drawing.Point(8, 219);
             this.btn_OkDelete.Margin = new System.Windows.Forms.Padding(5);
             this.btn_OkDelete.Name = "btn_OkDelete";
             this.btn_OkDelete.Size = new System.Drawing.Size(94, 55);
@@ -544,7 +544,7 @@
             this.panel4.Controls.Add(this.textBox2);
             this.panel4.Location = new System.Drawing.Point(15, 67);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(339, 430);
+            this.panel4.Size = new System.Drawing.Size(339, 409);
             this.panel4.TabIndex = 14;
             // 
             // flpFood
@@ -552,7 +552,7 @@
             this.flpFood.AutoScroll = true;
             this.flpFood.Location = new System.Drawing.Point(2, 48);
             this.flpFood.Name = "flpFood";
-            this.flpFood.Size = new System.Drawing.Size(332, 371);
+            this.flpFood.Size = new System.Drawing.Size(332, 339);
             this.flpFood.TabIndex = 5;
             // 
             // textBox2

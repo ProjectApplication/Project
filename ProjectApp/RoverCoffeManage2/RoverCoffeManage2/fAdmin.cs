@@ -36,14 +36,14 @@ namespace RoverCoffeManage2
                 btn.Text = item.Name + Environment.NewLine + item.Status; //set text cho button
                 btn.Cursor = Cursors.Hand; //khi chỉ vào button thì có hình bàn tay
                 btn.ForeColor = Color.White; // màu chữ
-                btn.Font = new Font("UTM Penumbra", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+                btn.Font = new Font("UTM Penumbra", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
                 //set font , size,kiểu chữ
                 btn.FlatAppearance.BorderColor = Color.White; // chỉnh màu viền
                 btn.FlatAppearance.BorderSize = 0; // size border
                 btn.FlatAppearance.MouseDownBackColor = Color.White; //set màu khi nhắn button
                 btn.FlatAppearance.MouseOverBackColor = Color.White; // set màu khi rê chuột qua button
                 btn.FlatStyle = FlatStyle.Flat; // set style =flat
-                btn.Size = new Size(110, 110); // kích thước button
+                btn.Size = new Size(100, 100); // kích thước button
                 btn.Click += new EventHandler(btnTable_Click);
                 ; // hàm này dùng để khởi tạo event cho mỗi button
                 btn.Tag = item; // gắn đối tượng item cho mỗi btn , để dễ quản lý
@@ -114,7 +114,7 @@ namespace RoverCoffeManage2
                 MaterialRaisedButton btn = new MaterialRaisedButton(); // khởi tạo một raisedButton
                 btn.Text = item.Name; // set tên của button
                 btn.Cursor = Cursors.Hand; // khi chỉ vào button có hình bàn tay
-                btn.Size = new Size(98, 60); // kích thước button
+                btn.Size = new Size(80, 50); // kích thước button
                 btn.Click += new EventHandler(btnFoodCategory_Click);
                 ; // hàm này dùng để khởi tạo event cho mỗi button
                 btn.Tag = item; // gắn đối tượng item cho mỗi btn , để dễ quản lý

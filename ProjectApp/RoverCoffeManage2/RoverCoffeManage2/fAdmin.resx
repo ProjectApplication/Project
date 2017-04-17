@@ -117,29 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Phiên Bản :                                                          1.0
-
-Liên Hệ :                                                    0932549693 ( MR Ánh)
-                                                                   01665655647 (MR Linh)
-                                                                   0935696523 (MR Trí)</value>
-  </data>
+  <metadata name="cl_foodName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cl_number.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cl_price.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cl_Disscount.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cl_Note.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cl_pay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cl_btnDelete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_ClearBill.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAK4AAAAjCAYAAAANIjHoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIMSURBVHhe7dstSJ1RHIDxYVw0Go2LRqNNliyDgUWLyWTR
-        MgxD3MKGwWAQNAgXMdxgGBh0BlcGQ0HEIGNMmEHUIIgYzniO97zscj+Su54Dzw8OyPUjPZz7v+c9vghS
-        gQxXRTJcFclwVSTDVZEMV0XqGu7d/UOofT0Obz/Uw8jsRhicXA59rxdcrv+y6IvOxt5vhbWdw3B9e9co
-        sVXHcL98P4t/iGiJd+/oV/h5cdP4rvT06IvO6genYeLzduyPgNtpCZfK+aXRd7Xw5+q28arUe91abAqX
-        HxyaXu1YufQcePcfnllvesdvCpe6jVY5YoRg/k2qcKmaLVnK1dzabljcPIhfx3A5PWAQdqZVzuiUUfbk
-        9+VjuIwHjAlS7thx2XljuJybcQQh5e7H2UXcdWO4r6ZW4vYr5Y5x4eXYx8dw+9986vqUQsoJT9liuHwh
-        lcJwVaQqXGYGZgepBFW4nOF6gUalqMLliRlPzqTccfrFKVgMNx3qSrlLD8tiuIwJVOycq9ylh2UxXMxv
-        7Mcl5Sr9Nw6qcNltuTb27eS88YqUDy6AMRWkB2VVuGDwTbdvpFwQLZsqd3KTpnDBjku86d6j9JyYZ9lp
-        /40WLeGCsYFTBirnU5z3dNVLjANpnuXDWLt7NG3DTaico4eB8aV46Oty9WJx6Sv9d3knXcOVcmW4KpLh
-        qkiGqyIZrgoUwl9yRLVZCCCYMQAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="bunifuGradientPanel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -162,6 +161,35 @@ Liên Hệ :                                                    0932549693 ( MR 
         TZ0AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="btn_ClearBill.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAK4AAAAjCAYAAAANIjHoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIMSURBVHhe7dstSJ1RHIDxYVw0Go2LRqNNliyDgUWLyWTR
+        MgxD3MKGwWAQNAgXMdxgGBh0BlcGQ0HEIGNMmEHUIIgYzniO97zscj+Su54Dzw8OyPUjPZz7v+c9vghS
+        gQxXRTJcFclwVSTDVZEMV0XqGu7d/UOofT0Obz/Uw8jsRhicXA59rxdcrv+y6IvOxt5vhbWdw3B9e9co
+        sVXHcL98P4t/iGiJd+/oV/h5cdP4rvT06IvO6genYeLzduyPgNtpCZfK+aXRd7Xw5+q28arUe91abAqX
+        HxyaXu1YufQcePcfnllvesdvCpe6jVY5YoRg/k2qcKmaLVnK1dzabljcPIhfx3A5PWAQdqZVzuiUUfbk
+        9+VjuIwHjAlS7thx2XljuJybcQQh5e7H2UXcdWO4r6ZW4vYr5Y5x4eXYx8dw+9986vqUQsoJT9liuHwh
+        lcJwVaQqXGYGZgepBFW4nOF6gUalqMLliRlPzqTccfrFKVgMNx3qSrlLD8tiuIwJVOycq9ylh2UxXMxv
+        7Mcl5Sr9Nw6qcNltuTb27eS88YqUDy6AMRWkB2VVuGDwTbdvpFwQLZsqd3KTpnDBjku86d6j9JyYZ9lp
+        /40WLeGCsYFTBirnU5z3dNVLjANpnuXDWLt7NG3DTaico4eB8aV46Oty9WJx6Sv9d3knXcOVcmW4KpLh
+        qkiGqyIZrgoUwl9yRLVZCCCYMQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btn_printBill.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGwAAAAhCAYAAAA8oE5/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHlSURBVGhD7ZovSANRHMfFaDQajUaj0SamFUGwaDGZLFrE
+        IKIGxWAwCDMMhhgWDILBP2EWQRRkGIaIgguihsEQw5PP273DY9uleXsPvh94MO5uC+/D78/77fqMCAoJ
+        CwwJCwwJCwwJCwwJC4xUYY3vH1O8fDDTmyUzvlQww3N7pn9yXavLi31lf3NrxyZ/dmc+643IQCsdhZ3e
+        VO0PIQtpF/fP5qn2Fd0V3YR9ZX9L5Uczu3Ni9x1x7WgRhl2+NLFSNG8f9eiqyJI0BwlhPDi6cNDRrsgW
+        stzY4mEisyWEYVWy/IJUSX1zxMKwSQgK/1jOn5uNo7L9bIXRDVLoVLP8BD+UqsrLe1MYaZB0KPyFCCPS
+        rDD6f1pK4S+31ZqNMitsZH7fhpvwF9LiQG6rKWxwajv1dC38gKmIFYY5DAq/iYXRIWrs5D+xMM5fnMOE
+        v9Bj0GtYYa5lFP7ijl5WGOkQe6pj/uKOXlYYrBau7BL+4f6ThFgY0cWQ8bryGl0RPsC4kOznjl2xMKCw
+        uZmV6D3IIoiY2DsSwoAIQ5qbDoveQL0isv7KghZhQHqka8Qu3Ymm+NlA2nP1iiaj3fSprTAHdmklh2Z2
+        4xdGtP5vMSJ079B0IlWY8A8JCwwJCwwJCwwJCwpjfgHBDYjn5zVzHAAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="bunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -169,41 +197,13 @@ Liên Hệ :                                                    0932549693 ( MR 
         RU5ErkJggg==
 </value>
   </data>
-  <data name="btn_printBill.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHYAAAAhCAYAAAAMLF9eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHmSURBVGhD7ZotSENRGIbFaDQajUaj0SamFUGwaDGZLFrE
-        IKIGh8FgEGYYDDEsGASDP2EWQRRkGIaIgguihsEQw5Hn7J6Ll2233nsO7wMHxt1PuM/9fs53NmBEkEhs
-        oEhsoEhsoEhsoEhsoKSKbf/8msrVo5ndrprJlbIZXdg3g9ObWhkt7j8eChsnpnR+b75a7chUN33Fnt02
-        7A8hFbmXDy/mufkdvSuygPuPh2rtycwXT60fBPeiSyxPAV+aWquY989WdFXkkTRXCbF8cHzpsO9TIPIJ
-        2XVi+SiRURNisS+pfkKKpv46YrFYJ6SFv6yWLszWcc2+tmLpfinEqql+g0dKaf31oyOW9EsaFv5DxBK5
-        Viz7Ilpo4T93jaaNWit2bPHAhq/wH9LxUGGnI3Z4Zjd1iiH8gimVFYthTIswiMXSEWtcGA6xWPav7GOF
-        /9Ar0TNZsa5FFv7jtq5WLGkYy6qz/uO2rlYsrJev7RL+4s7OIRZLtDJEvqm/RVeETzAOJuu6bWssFii8
-        btYo/AGpBCUnPI6EWCBiketOCUS+oZ4Sqf+lQpdYIC3TJfMU0GXp1CdfkG5dPaVZ6jU17CnWwVNA6zwy
-        txf/oUor+8UI2P0XrR+pYoW/SGygSGygSGygSGyQGPMHucCAwq+zPdEAAAAASUVORK5CYII=
-</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Phiên Bản :                                                          1.0
+
+Liên Hệ :                                                    0932549693 ( MR Ánh)
+                                                                   01665655647 (MR Linh)
+                                                                   0935696523 (MR Trí)</value>
   </data>
-  <metadata name="cl_foodName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="cl_number.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="cl_price.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="cl_Disscount.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="cl_Note.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="cl_pay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="cl_btnDelete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>

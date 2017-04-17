@@ -93,11 +93,11 @@
             this.dgvTotalStatistics.EnableHeadersVisualStyles = false;
             this.dgvTotalStatistics.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.dgvTotalStatistics.HeaderForeColor = System.Drawing.Color.SeaShell;
-            this.dgvTotalStatistics.Location = new System.Drawing.Point(0, 48);
+            this.dgvTotalStatistics.Location = new System.Drawing.Point(-32, 48);
             this.dgvTotalStatistics.Name = "dgvTotalStatistics";
             this.dgvTotalStatistics.ReadOnly = true;
             this.dgvTotalStatistics.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvTotalStatistics.Size = new System.Drawing.Size(310, 246);
+            this.dgvTotalStatistics.Size = new System.Drawing.Size(351, 246);
             this.dgvTotalStatistics.TabIndex = 8;
             // 
             // Column1
@@ -118,7 +118,7 @@
             // 
             this.btnTotalSearch.Depth = 0;
             this.btnTotalSearch.Icon = null;
-            this.btnTotalSearch.Location = new System.Drawing.Point(3, 300);
+            this.btnTotalSearch.Location = new System.Drawing.Point(3, 333);
             this.btnTotalSearch.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnTotalSearch.Name = "btnTotalSearch";
             this.btnTotalSearch.Primary = true;
@@ -138,7 +138,7 @@
             this.dtpTotalBegin.Location = new System.Drawing.Point(97, 17);
             this.dtpTotalBegin.Margin = new System.Windows.Forms.Padding(4);
             this.dtpTotalBegin.Name = "dtpTotalBegin";
-            this.dtpTotalBegin.Size = new System.Drawing.Size(144, 24);
+            this.dtpTotalBegin.Size = new System.Drawing.Size(197, 24);
             this.dtpTotalBegin.TabIndex = 5;
             this.dtpTotalBegin.Value = new System.DateTime(2017, 4, 2, 12, 16, 30, 22);
             // 
@@ -191,7 +191,7 @@
             this.lb_totalPrice.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.lb_totalPrice.Depth = 0;
             this.lb_totalPrice.Icon = null;
-            this.lb_totalPrice.Location = new System.Drawing.Point(281, 307);
+            this.lb_totalPrice.Location = new System.Drawing.Point(224, 333);
             this.lb_totalPrice.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.lb_totalPrice.MouseState = MaterialSkin.MouseState.HOVER;
             this.lb_totalPrice.Name = "lb_totalPrice";
@@ -205,7 +205,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(93, 314);
+            this.label2.Location = new System.Drawing.Point(82, 340);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 21);
             this.label2.TabIndex = 10;

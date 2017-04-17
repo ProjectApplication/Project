@@ -156,10 +156,10 @@
             this.dtgv_Account.EnableHeadersVisualStyles = false;
             this.dtgv_Account.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.dtgv_Account.HeaderForeColor = System.Drawing.Color.White;
-            this.dtgv_Account.Location = new System.Drawing.Point(-1, 31);
+            this.dtgv_Account.Location = new System.Drawing.Point(-30, 31);
             this.dtgv_Account.Name = "dtgv_Account";
             this.dtgv_Account.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dtgv_Account.Size = new System.Drawing.Size(258, 414);
+            this.dtgv_Account.Size = new System.Drawing.Size(287, 414);
             this.dtgv_Account.TabIndex = 4;
             // 
             // textBox1
@@ -254,7 +254,7 @@
             this.cb_typeAccount.Items.AddRange(new object[] {
             "Admin",
             "Staff"});
-            this.cb_typeAccount.Location = new System.Drawing.Point(281, 243);
+            this.cb_typeAccount.Location = new System.Drawing.Point(213, 243);
             this.cb_typeAccount.Name = "cb_typeAccount";
             this.cb_typeAccount.Size = new System.Drawing.Size(197, 21);
             this.cb_typeAccount.TabIndex = 4;
@@ -263,7 +263,7 @@
             // 
             this.txt_passWord2.Depth = 0;
             this.txt_passWord2.Hint = "Mật khẩu";
-            this.txt_passWord2.Location = new System.Drawing.Point(281, 166);
+            this.txt_passWord2.Location = new System.Drawing.Point(213, 166);
             this.txt_passWord2.MaxLength = 50;
             this.txt_passWord2.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_passWord2.Name = "txt_passWord2";
@@ -298,7 +298,7 @@
             this.txt_displayName.SelectedText = "";
             this.txt_displayName.SelectionLength = 0;
             this.txt_displayName.SelectionStart = 0;
-            this.txt_displayName.Size = new System.Drawing.Size(310, 39);
+            this.txt_displayName.Size = new System.Drawing.Size(263, 39);
             this.txt_displayName.TabIndex = 1;
             this.txt_displayName.TabStop = false;
             this.txt_displayName.UseSystemPasswordChar = false;
@@ -307,7 +307,7 @@
             // 
             this.txt_passWord1.Depth = 0;
             this.txt_passWord1.Hint = "Mật khẩu";
-            this.txt_passWord1.Location = new System.Drawing.Point(281, 105);
+            this.txt_passWord1.Location = new System.Drawing.Point(213, 105);
             this.txt_passWord1.MaxLength = 50;
             this.txt_passWord1.MouseState = MaterialSkin.MouseState.HOVER;
             this.txt_passWord1.Name = "txt_passWord1";
@@ -396,7 +396,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(700, 356);
+            this.tabPage2.Size = new System.Drawing.Size(596, 333);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Đổi mặt khẩu";
             // 
@@ -508,7 +508,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(700, 356);
+            this.tabPage3.Size = new System.Drawing.Size(596, 333);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Xóa tài khoản";
             this.tabPage3.UseVisualStyleBackColor = true;

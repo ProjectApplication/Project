@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAdmin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,18 +37,32 @@
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.TabControl = new MaterialSkin.Controls.MaterialTabControl();
             this.tbHome = new System.Windows.Forms.TabPage();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.flpFood = new System.Windows.Forms.FlowLayoutPanel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.DTGV_bill = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.cl_foodName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl_Disscount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl_Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl_pay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl_btnDelete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
-            this.btn_ClearBill = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.rbtn_discountBill = new MaterialSkin.Controls.MaterialRadioButton();
             this.rbtn_normalBill = new MaterialSkin.Controls.MaterialRadioButton();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.btn_printListFood = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btn_ClearBill = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btn_printBill = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.rbtn_takeAway = new MaterialSkin.Controls.MaterialRadioButton();
-            this.rbtn_notTake = new MaterialSkin.Controls.MaterialRadioButton();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
-            this.btn_printBill = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.rbtn_notTake = new MaterialSkin.Controls.MaterialRadioButton();
+            this.txt_Discount = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.txt_table = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.lb_Table = new MaterialSkin.Controls.MaterialLabel();
@@ -61,13 +75,6 @@
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.flpFood = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.DTGV_bill = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.txt_Discount = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.lb_price = new MaterialSkin.Controls.MaterialLabel();
@@ -113,24 +120,17 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cl_foodName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_Disscount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_Note = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_pay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl_btnDelete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             this.TabControl.SuspendLayout();
             this.tbHome.SuspendLayout();
-            this.bunifuCards2.SuspendLayout();
-            this.bunifuGradientPanel2.SuspendLayout();
-            this.bunifuGradientPanel1.SuspendLayout();
-            this.bunifuCards1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DTGV_bill)).BeginInit();
             this.panel5.SuspendLayout();
+            this.bunifuCards2.SuspendLayout();
+            this.bunifuGradientPanel2.SuspendLayout();
+            this.bunifuGradientPanel1.SuspendLayout();
+            this.bunifuCards1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -157,7 +157,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 860);
+            this.panel1.Location = new System.Drawing.Point(0, 644);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2000, 40);
             this.panel1.TabIndex = 0;
@@ -212,6 +212,7 @@
             // tbHome
             // 
             this.tbHome.Controls.Add(this.panel4);
+            this.tbHome.Controls.Add(this.panel1);
             this.tbHome.Controls.Add(this.panel2);
             this.tbHome.Controls.Add(this.panel3);
             this.tbHome.Controls.Add(this.flpTable);
@@ -223,48 +224,172 @@
             this.tbHome.Text = "Home";
             this.tbHome.UseVisualStyleBackColor = true;
             // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.flpFood);
+            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Location = new System.Drawing.Point(298, 332);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(319, 305);
+            this.panel4.TabIndex = 7;
+            // 
+            // flpFood
+            // 
+            this.flpFood.AutoScroll = true;
+            this.flpFood.Location = new System.Drawing.Point(3, 48);
+            this.flpFood.Name = "flpFood";
+            this.flpFood.Size = new System.Drawing.Size(345, 247);
+            this.flpFood.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox2.Location = new System.Drawing.Point(0, 0);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(317, 30);
+            this.textBox2.TabIndex = 4;
+            this.textBox2.Text = "Thức Uống";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.DTGV_bill);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Location = new System.Drawing.Point(622, 8);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(731, 630);
+            this.panel2.TabIndex = 6;
+            // 
+            // DTGV_bill
+            // 
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DTGV_bill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.DTGV_bill.BackgroundColor = System.Drawing.Color.White;
+            this.DTGV_bill.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DTGV_bill.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DTGV_bill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.DTGV_bill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DTGV_bill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cl_foodName,
+            this.cl_number,
+            this.cl_price,
+            this.cl_Disscount,
+            this.cl_Note,
+            this.cl_pay,
+            this.cl_btnDelete});
+            this.DTGV_bill.DoubleBuffered = true;
+            this.DTGV_bill.EnableHeadersVisualStyles = false;
+            this.DTGV_bill.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.DTGV_bill.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.DTGV_bill.HeaderForeColor = System.Drawing.Color.White;
+            this.DTGV_bill.Location = new System.Drawing.Point(-39, -3);
+            this.DTGV_bill.Name = "DTGV_bill";
+            this.DTGV_bill.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DTGV_bill.Size = new System.Drawing.Size(767, 386);
+            this.DTGV_bill.TabIndex = 8;
+            this.DTGV_bill.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.DTGV_bill_CellBeginEdit);
+            this.DTGV_bill.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGV_bill_CellContentClick);
+            this.DTGV_bill.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGV_bill_CellEndEdit);
+            this.DTGV_bill.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.DTGV_bill_EditingControlShowing);
+            // 
+            // cl_foodName
+            // 
+            this.cl_foodName.HeaderText = "Tên Món";
+            this.cl_foodName.Name = "cl_foodName";
+            this.cl_foodName.ReadOnly = true;
+            this.cl_foodName.Width = 140;
+            // 
+            // cl_number
+            // 
+            this.cl_number.HeaderText = "SL";
+            this.cl_number.MaxInputLength = 3;
+            this.cl_number.Name = "cl_number";
+            this.cl_number.Width = 50;
+            // 
+            // cl_price
+            // 
+            this.cl_price.HeaderText = "Giá";
+            this.cl_price.MaxInputLength = 20;
+            this.cl_price.Name = "cl_price";
+            this.cl_price.ReadOnly = true;
+            this.cl_price.Width = 80;
+            // 
+            // cl_Disscount
+            // 
+            this.cl_Disscount.HeaderText = "Giảm Giá";
+            this.cl_Disscount.MaxInputLength = 3;
+            this.cl_Disscount.Name = "cl_Disscount";
+            this.cl_Disscount.Width = 90;
+            // 
+            // cl_Note
+            // 
+            this.cl_Note.HeaderText = "Ghi Chú";
+            this.cl_Note.MaxInputLength = 100;
+            this.cl_Note.Name = "cl_Note";
+            this.cl_Note.Width = 172;
+            // 
+            // cl_pay
+            // 
+            this.cl_pay.HeaderText = "Thành Tiền";
+            this.cl_pay.MaxInputLength = 10;
+            this.cl_pay.Name = "cl_pay";
+            this.cl_pay.ReadOnly = true;
+            this.cl_pay.Width = 130;
+            // 
+            // cl_btnDelete
+            // 
+            this.cl_btnDelete.HeaderText = "Xóa Món";
+            this.cl_btnDelete.Image = global::RoverCoffeManage2.Properties.Resources.del_21;
+            this.cl_btnDelete.Name = "cl_btnDelete";
+            this.cl_btnDelete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.cl_btnDelete.Width = 75;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.bunifuCards2);
+            this.panel5.Controls.Add(this.txt_Discount);
+            this.panel5.Controls.Add(this.bunifuCards1);
+            this.panel5.Controls.Add(this.materialLabel1);
+            this.panel5.Controls.Add(this.materialLabel2);
+            this.panel5.Controls.Add(this.lb_price);
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 389);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(729, 239);
+            this.panel5.TabIndex = 7;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
             // bunifuCards2
             // 
             this.bunifuCards2.BackColor = System.Drawing.Color.White;
             this.bunifuCards2.BorderRadius = 5;
             this.bunifuCards2.BottomSahddow = false;
             this.bunifuCards2.color = System.Drawing.Color.Tomato;
-            this.bunifuCards2.Controls.Add(this.btn_ClearBill);
             this.bunifuCards2.Controls.Add(this.bunifuGradientPanel2);
             this.bunifuCards2.Controls.Add(this.bunifuGradientPanel1);
             this.bunifuCards2.LeftSahddow = false;
-            this.bunifuCards2.Location = new System.Drawing.Point(246, 49);
+            this.bunifuCards2.Location = new System.Drawing.Point(270, 49);
             this.bunifuCards2.Name = "bunifuCards2";
             this.bunifuCards2.RightSahddow = false;
             this.bunifuCards2.ShadowDepth = 20;
-            this.bunifuCards2.Size = new System.Drawing.Size(482, 193);
+            this.bunifuCards2.Size = new System.Drawing.Size(458, 193);
             this.bunifuCards2.TabIndex = 15;
-            // 
-            // btn_ClearBill
-            // 
-            this.btn_ClearBill.ActiveBorderThickness = 1;
-            this.btn_ClearBill.ActiveCornerRadius = 20;
-            this.btn_ClearBill.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_ClearBill.ActiveForecolor = System.Drawing.Color.White;
-            this.btn_ClearBill.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btn_ClearBill.BackColor = System.Drawing.Color.White;
-            this.btn_ClearBill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ClearBill.BackgroundImage")));
-            this.btn_ClearBill.ButtonText = "Xóa danh sách hiện tại";
-            this.btn_ClearBill.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ClearBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ClearBill.ForeColor = System.Drawing.Color.Black;
-            this.btn_ClearBill.IdleBorderThickness = 1;
-            this.btn_ClearBill.IdleCornerRadius = 20;
-            this.btn_ClearBill.IdleFillColor = System.Drawing.Color.White;
-            this.btn_ClearBill.IdleForecolor = System.Drawing.Color.Red;
-            this.btn_ClearBill.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_ClearBill.Location = new System.Drawing.Point(5, 115);
-            this.btn_ClearBill.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_ClearBill.Name = "btn_ClearBill";
-            this.btn_ClearBill.Size = new System.Drawing.Size(174, 35);
-            this.btn_ClearBill.TabIndex = 4;
-            this.btn_ClearBill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_ClearBill.Click += new System.EventHandler(this.btn_ClearBill_Click);
             // 
             // bunifuGradientPanel2
             // 
@@ -275,15 +400,16 @@
             this.bunifuGradientPanel2.Controls.Add(this.rbtn_normalBill);
             this.bunifuGradientPanel2.Controls.Add(this.materialLabel8);
             this.bunifuGradientPanel2.Controls.Add(this.btn_printListFood);
+            this.bunifuGradientPanel2.Controls.Add(this.btn_ClearBill);
             this.bunifuGradientPanel2.Controls.Add(this.btn_printBill);
             this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(3, 61);
+            this.bunifuGradientPanel2.Location = new System.Drawing.Point(0, 65);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(471, 113);
+            this.bunifuGradientPanel2.Size = new System.Drawing.Size(474, 128);
             this.bunifuGradientPanel2.TabIndex = 21;
             // 
             // rbtn_discountBill
@@ -291,7 +417,7 @@
             this.rbtn_discountBill.AutoSize = true;
             this.rbtn_discountBill.Depth = 0;
             this.rbtn_discountBill.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtn_discountBill.Location = new System.Drawing.Point(232, 20);
+            this.rbtn_discountBill.Location = new System.Drawing.Point(233, 41);
             this.rbtn_discountBill.Margin = new System.Windows.Forms.Padding(0);
             this.rbtn_discountBill.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rbtn_discountBill.MouseState = MaterialSkin.MouseState.HOVER;
@@ -309,7 +435,7 @@
             this.rbtn_normalBill.Checked = true;
             this.rbtn_normalBill.Depth = 0;
             this.rbtn_normalBill.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtn_normalBill.Location = new System.Drawing.Point(233, -3);
+            this.rbtn_normalBill.Location = new System.Drawing.Point(233, 9);
             this.rbtn_normalBill.Margin = new System.Windows.Forms.Padding(0);
             this.rbtn_normalBill.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rbtn_normalBill.MouseState = MaterialSkin.MouseState.HOVER;
@@ -328,7 +454,7 @@
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel8.Location = new System.Drawing.Point(9, 4);
+            this.materialLabel8.Location = new System.Drawing.Point(12, 14);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(179, 19);
@@ -353,7 +479,7 @@
             this.btn_printListFood.IdleFillColor = System.Drawing.Color.White;
             this.btn_printListFood.IdleForecolor = System.Drawing.Color.Red;
             this.btn_printListFood.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_printListFood.Location = new System.Drawing.Point(305, 55);
+            this.btn_printListFood.Location = new System.Drawing.Point(119, 80);
             this.btn_printListFood.Margin = new System.Windows.Forms.Padding(5);
             this.btn_printListFood.Name = "btn_printListFood";
             this.btn_printListFood.Size = new System.Drawing.Size(143, 34);
@@ -361,70 +487,31 @@
             this.btn_printListFood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_printListFood.Click += new System.EventHandler(this.btn_printListFood_Click);
             // 
-            // bunifuGradientPanel1
+            // btn_ClearBill
             // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuGradientPanel1.Controls.Add(this.rbtn_takeAway);
-            this.bunifuGradientPanel1.Controls.Add(this.materialLabel7);
-            this.bunifuGradientPanel1.Controls.Add(this.rbtn_notTake);
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(3, 3);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(471, 58);
-            this.bunifuGradientPanel1.TabIndex = 19;
-            // 
-            // rbtn_takeAway
-            // 
-            this.rbtn_takeAway.AutoSize = true;
-            this.rbtn_takeAway.Depth = 0;
-            this.rbtn_takeAway.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtn_takeAway.Location = new System.Drawing.Point(232, 28);
-            this.rbtn_takeAway.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtn_takeAway.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtn_takeAway.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtn_takeAway.Name = "rbtn_takeAway";
-            this.rbtn_takeAway.Ripple = true;
-            this.rbtn_takeAway.Size = new System.Drawing.Size(83, 30);
-            this.rbtn_takeAway.TabIndex = 21;
-            this.rbtn_takeAway.Text = "Mang Về";
-            this.rbtn_takeAway.UseVisualStyleBackColor = true;
-            // 
-            // rbtn_notTake
-            // 
-            this.rbtn_notTake.AutoSize = true;
-            this.rbtn_notTake.Checked = true;
-            this.rbtn_notTake.Depth = 0;
-            this.rbtn_notTake.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtn_notTake.Location = new System.Drawing.Point(232, 4);
-            this.rbtn_notTake.Margin = new System.Windows.Forms.Padding(0);
-            this.rbtn_notTake.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.rbtn_notTake.MouseState = MaterialSkin.MouseState.HOVER;
-            this.rbtn_notTake.Name = "rbtn_notTake";
-            this.rbtn_notTake.Ripple = true;
-            this.rbtn_notTake.Size = new System.Drawing.Size(112, 30);
-            this.rbtn_notTake.TabIndex = 20;
-            this.rbtn_notTake.TabStop = true;
-            this.rbtn_notTake.Text = "Uống Tại Chỗ";
-            this.rbtn_notTake.UseVisualStyleBackColor = true;
-            // 
-            // materialLabel7
-            // 
-            this.materialLabel7.AutoSize = true;
-            this.materialLabel7.Depth = 0;
-            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(12, 6);
-            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(111, 19);
-            this.materialLabel7.TabIndex = 18;
-            this.materialLabel7.Text = "Hình Thức Bán:";
+            this.btn_ClearBill.ActiveBorderThickness = 1;
+            this.btn_ClearBill.ActiveCornerRadius = 20;
+            this.btn_ClearBill.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.btn_ClearBill.ActiveForecolor = System.Drawing.Color.White;
+            this.btn_ClearBill.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btn_ClearBill.BackColor = System.Drawing.Color.White;
+            this.btn_ClearBill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ClearBill.BackgroundImage")));
+            this.btn_ClearBill.ButtonText = "Xóa danh sách hiện tại";
+            this.btn_ClearBill.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ClearBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ClearBill.ForeColor = System.Drawing.Color.Black;
+            this.btn_ClearBill.IdleBorderThickness = 1;
+            this.btn_ClearBill.IdleCornerRadius = 20;
+            this.btn_ClearBill.IdleFillColor = System.Drawing.Color.White;
+            this.btn_ClearBill.IdleForecolor = System.Drawing.Color.Red;
+            this.btn_ClearBill.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.btn_ClearBill.Location = new System.Drawing.Point(272, 78);
+            this.btn_ClearBill.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_ClearBill.Name = "btn_ClearBill";
+            this.btn_ClearBill.Size = new System.Drawing.Size(174, 35);
+            this.btn_ClearBill.TabIndex = 4;
+            this.btn_ClearBill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_ClearBill.Click += new System.EventHandler(this.btn_ClearBill_Click);
             // 
             // btn_printBill
             // 
@@ -444,310 +531,78 @@
             this.btn_printBill.IdleFillColor = System.Drawing.Color.White;
             this.btn_printBill.IdleForecolor = System.Drawing.Color.Red;
             this.btn_printBill.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.btn_printBill.Location = new System.Drawing.Point(177, 55);
+            this.btn_printBill.Location = new System.Drawing.Point(1, 80);
             this.btn_printBill.Margin = new System.Windows.Forms.Padding(5);
             this.btn_printBill.Name = "btn_printBill";
-            this.btn_printBill.Size = new System.Drawing.Size(118, 33);
+            this.btn_printBill.Size = new System.Drawing.Size(108, 33);
             this.btn_printBill.TabIndex = 2;
             this.btn_printBill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_printBill.Click += new System.EventHandler(this.btn_printBill_Click);
             // 
-            // bunifuCards1
+            // bunifuGradientPanel1
             // 
-            this.bunifuCards1.BackColor = System.Drawing.Color.White;
-            this.bunifuCards1.BorderRadius = 5;
-            this.bunifuCards1.BottomSahddow = false;
-            this.bunifuCards1.color = System.Drawing.Color.Tomato;
-            this.bunifuCards1.Controls.Add(this.txt_table);
-            this.bunifuCards1.Controls.Add(this.lb_Table);
-            this.bunifuCards1.Controls.Add(this.materialLabel11);
-            this.bunifuCards1.Controls.Add(this.materialLabel10);
-            this.bunifuCards1.Controls.Add(this.materialLabel9);
-            this.bunifuCards1.Controls.Add(this.txt_Pay);
-            this.bunifuCards1.Controls.Add(this.txt_ExcessCash);
-            this.bunifuCards1.Controls.Add(this.txt_MoneyOfCus);
-            this.bunifuCards1.Controls.Add(this.materialLabel5);
-            this.bunifuCards1.Controls.Add(this.materialLabel4);
-            this.bunifuCards1.Controls.Add(this.materialLabel3);
-            this.bunifuCards1.LeftSahddow = false;
-            this.bunifuCards1.Location = new System.Drawing.Point(3, 49);
-            this.bunifuCards1.Name = "bunifuCards1";
-            this.bunifuCards1.RightSahddow = false;
-            this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(244, 186);
-            this.bunifuCards1.TabIndex = 14;
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bunifuGradientPanel1.Controls.Add(this.rbtn_takeAway);
+            this.bunifuGradientPanel1.Controls.Add(this.materialLabel7);
+            this.bunifuGradientPanel1.Controls.Add(this.rbtn_notTake);
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 3);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(474, 79);
+            this.bunifuGradientPanel1.TabIndex = 19;
             // 
-            // txt_table
+            // rbtn_takeAway
             // 
-            this.txt_table.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_table.Enabled = false;
-            this.txt_table.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txt_table.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_table.HintForeColor = System.Drawing.Color.Empty;
-            this.txt_table.HintText = "";
-            this.txt_table.isPassword = false;
-            this.txt_table.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.txt_table.LineIdleColor = System.Drawing.Color.Gray;
-            this.txt_table.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.txt_table.LineThickness = 3;
-            this.txt_table.Location = new System.Drawing.Point(99, 10);
-            this.txt_table.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_table.Name = "txt_table";
-            this.txt_table.Size = new System.Drawing.Size(97, 28);
-            this.txt_table.TabIndex = 19;
-            this.txt_table.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.rbtn_takeAway.AutoSize = true;
+            this.rbtn_takeAway.Depth = 0;
+            this.rbtn_takeAway.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_takeAway.Location = new System.Drawing.Point(232, 28);
+            this.rbtn_takeAway.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtn_takeAway.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtn_takeAway.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtn_takeAway.Name = "rbtn_takeAway";
+            this.rbtn_takeAway.Ripple = true;
+            this.rbtn_takeAway.Size = new System.Drawing.Size(83, 30);
+            this.rbtn_takeAway.TabIndex = 21;
+            this.rbtn_takeAway.Text = "Mang Về";
+            this.rbtn_takeAway.UseVisualStyleBackColor = true;
             // 
-            // lb_Table
+            // materialLabel7
             // 
-            this.lb_Table.AutoSize = true;
-            this.lb_Table.Depth = 0;
-            this.lb_Table.Font = new System.Drawing.Font("Roboto", 11F);
-            this.lb_Table.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lb_Table.Location = new System.Drawing.Point(4, 19);
-            this.lb_Table.MouseState = MaterialSkin.MouseState.HOVER;
-            this.lb_Table.Name = "lb_Table";
-            this.lb_Table.Size = new System.Drawing.Size(64, 19);
-            this.lb_Table.TabIndex = 18;
-            this.lb_Table.Text = "Số Bàn :";
+            this.materialLabel7.AutoSize = true;
+            this.materialLabel7.Depth = 0;
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel7.Location = new System.Drawing.Point(12, 6);
+            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel7.Name = "materialLabel7";
+            this.materialLabel7.Size = new System.Drawing.Size(111, 19);
+            this.materialLabel7.TabIndex = 18;
+            this.materialLabel7.Text = "Hình Thức Bán:";
             // 
-            // materialLabel11
+            // rbtn_notTake
             // 
-            this.materialLabel11.AutoSize = true;
-            this.materialLabel11.Depth = 0;
-            this.materialLabel11.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel11.Location = new System.Drawing.Point(203, 84);
-            this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel11.Name = "materialLabel11";
-            this.materialLabel11.Size = new System.Drawing.Size(40, 19);
-            this.materialLabel11.TabIndex = 17;
-            this.materialLabel11.Text = "VND";
-            // 
-            // materialLabel10
-            // 
-            this.materialLabel10.AutoSize = true;
-            this.materialLabel10.Depth = 0;
-            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel10.Location = new System.Drawing.Point(202, 62);
-            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel10.Name = "materialLabel10";
-            this.materialLabel10.Size = new System.Drawing.Size(40, 19);
-            this.materialLabel10.TabIndex = 16;
-            this.materialLabel10.Text = "VND";
-            // 
-            // materialLabel9
-            // 
-            this.materialLabel9.AutoSize = true;
-            this.materialLabel9.Depth = 0;
-            this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel9.Location = new System.Drawing.Point(202, 41);
-            this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel9.Name = "materialLabel9";
-            this.materialLabel9.Size = new System.Drawing.Size(40, 19);
-            this.materialLabel9.TabIndex = 15;
-            this.materialLabel9.Text = "VND";
-            // 
-            // txt_Pay
-            // 
-            this.txt_Pay.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Pay.Enabled = false;
-            this.txt_Pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txt_Pay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_Pay.HintForeColor = System.Drawing.Color.Empty;
-            this.txt_Pay.HintText = "";
-            this.txt_Pay.isPassword = false;
-            this.txt_Pay.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.txt_Pay.LineIdleColor = System.Drawing.Color.Gray;
-            this.txt_Pay.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.txt_Pay.LineThickness = 3;
-            this.txt_Pay.Location = new System.Drawing.Point(99, 41);
-            this.txt_Pay.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_Pay.Name = "txt_Pay";
-            this.txt_Pay.Size = new System.Drawing.Size(97, 20);
-            this.txt_Pay.TabIndex = 14;
-            this.txt_Pay.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txt_ExcessCash
-            // 
-            this.txt_ExcessCash.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_ExcessCash.Enabled = false;
-            this.txt_ExcessCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txt_ExcessCash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_ExcessCash.HintForeColor = System.Drawing.Color.Empty;
-            this.txt_ExcessCash.HintText = "";
-            this.txt_ExcessCash.isPassword = false;
-            this.txt_ExcessCash.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.txt_ExcessCash.LineIdleColor = System.Drawing.Color.Gray;
-            this.txt_ExcessCash.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.txt_ExcessCash.LineThickness = 3;
-            this.txt_ExcessCash.Location = new System.Drawing.Point(99, 84);
-            this.txt_ExcessCash.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_ExcessCash.Name = "txt_ExcessCash";
-            this.txt_ExcessCash.Size = new System.Drawing.Size(97, 20);
-            this.txt_ExcessCash.TabIndex = 12;
-            this.txt_ExcessCash.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txt_MoneyOfCus
-            // 
-            this.txt_MoneyOfCus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_MoneyOfCus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.txt_MoneyOfCus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txt_MoneyOfCus.HintForeColor = System.Drawing.Color.Empty;
-            this.txt_MoneyOfCus.HintText = "";
-            this.txt_MoneyOfCus.isPassword = false;
-            this.txt_MoneyOfCus.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.txt_MoneyOfCus.LineIdleColor = System.Drawing.Color.Gray;
-            this.txt_MoneyOfCus.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
-            this.txt_MoneyOfCus.LineThickness = 3;
-            this.txt_MoneyOfCus.Location = new System.Drawing.Point(99, 62);
-            this.txt_MoneyOfCus.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_MoneyOfCus.Name = "txt_MoneyOfCus";
-            this.txt_MoneyOfCus.Size = new System.Drawing.Size(97, 20);
-            this.txt_MoneyOfCus.TabIndex = 1;
-            this.txt_MoneyOfCus.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_MoneyOfCus.OnValueChanged += new System.EventHandler(this.txt_MoneyOfCus_OnValueChanged);
-            this.txt_MoneyOfCus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_OnlyNumber);
-            this.txt_MoneyOfCus.Leave += new System.EventHandler(this.txt_MoneyOfCus_Leave);
-            // 
-            // materialLabel5
-            // 
-            this.materialLabel5.AutoSize = true;
-            this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(3, 82);
-            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(84, 19);
-            this.materialLabel5.TabIndex = 9;
-            this.materialLabel5.Text = "Tiền Thừa :";
-            // 
-            // materialLabel4
-            // 
-            this.materialLabel4.AutoSize = true;
-            this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(4, 62);
-            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(89, 19);
-            this.materialLabel4.TabIndex = 8;
-            this.materialLabel4.Text = "Khách Đưa :";
-            // 
-            // materialLabel3
-            // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(3, 42);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(96, 19);
-            this.materialLabel3.TabIndex = 4;
-            this.materialLabel3.Text = "Thanh Toán :";
-            // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.flpFood);
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Location = new System.Drawing.Point(264, 332);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(353, 313);
-            this.panel4.TabIndex = 7;
-            // 
-            // flpFood
-            // 
-            this.flpFood.AutoScroll = true;
-            this.flpFood.Location = new System.Drawing.Point(3, 48);
-            this.flpFood.Name = "flpFood";
-            this.flpFood.Size = new System.Drawing.Size(345, 260);
-            this.flpFood.TabIndex = 5;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(0, 0);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(351, 30);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.Text = "Thức Uống";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.DTGV_bill);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Location = new System.Drawing.Point(623, 8);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(730, 637);
-            this.panel2.TabIndex = 6;
-            // 
-            // DTGV_bill
-            // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DTGV_bill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.DTGV_bill.BackgroundColor = System.Drawing.Color.White;
-            this.DTGV_bill.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DTGV_bill.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DTGV_bill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.DTGV_bill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DTGV_bill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cl_foodName,
-            this.cl_number,
-            this.cl_price,
-            this.cl_Disscount,
-            this.cl_Note,
-            this.cl_pay,
-            this.cl_btnDelete});
-            this.DTGV_bill.DoubleBuffered = true;
-            this.DTGV_bill.EnableHeadersVisualStyles = false;
-            this.DTGV_bill.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.DTGV_bill.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.DTGV_bill.HeaderForeColor = System.Drawing.Color.White;
-            this.DTGV_bill.Location = new System.Drawing.Point(0, -3);
-            this.DTGV_bill.Name = "DTGV_bill";
-            this.DTGV_bill.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DTGV_bill.Size = new System.Drawing.Size(728, 404);
-            this.DTGV_bill.TabIndex = 8;
-            this.DTGV_bill.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.DTGV_bill_CellBeginEdit);
-            this.DTGV_bill.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGV_bill_CellContentClick);
-            this.DTGV_bill.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DTGV_bill_CellEndEdit);
-            this.DTGV_bill.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.DTGV_bill_EditingControlShowing);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.bunifuCards2);
-            this.panel5.Controls.Add(this.txt_Discount);
-            this.panel5.Controls.Add(this.bunifuCards1);
-            this.panel5.Controls.Add(this.materialLabel1);
-            this.panel5.Controls.Add(this.materialLabel2);
-            this.panel5.Controls.Add(this.lb_price);
-            this.panel5.Controls.Add(this.label2);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 407);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(728, 228);
-            this.panel5.TabIndex = 7;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            this.rbtn_notTake.AutoSize = true;
+            this.rbtn_notTake.Checked = true;
+            this.rbtn_notTake.Depth = 0;
+            this.rbtn_notTake.Font = new System.Drawing.Font("UTM Penumbra", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_notTake.Location = new System.Drawing.Point(232, 4);
+            this.rbtn_notTake.Margin = new System.Windows.Forms.Padding(0);
+            this.rbtn_notTake.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.rbtn_notTake.MouseState = MaterialSkin.MouseState.HOVER;
+            this.rbtn_notTake.Name = "rbtn_notTake";
+            this.rbtn_notTake.Ripple = true;
+            this.rbtn_notTake.Size = new System.Drawing.Size(112, 30);
+            this.rbtn_notTake.TabIndex = 20;
+            this.rbtn_notTake.TabStop = true;
+            this.rbtn_notTake.Text = "Uống Tại Chỗ";
+            this.rbtn_notTake.UseVisualStyleBackColor = true;
             // 
             // txt_Discount
             // 
@@ -771,6 +626,204 @@
             this.txt_Discount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txt_Discount.OnValueChanged += new System.EventHandler(this.txt_Discount_OnValueChanged);
             this.txt_Discount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Discount_KeyPress);
+            // 
+            // bunifuCards1
+            // 
+            this.bunifuCards1.BackColor = System.Drawing.Color.White;
+            this.bunifuCards1.BorderRadius = 5;
+            this.bunifuCards1.BottomSahddow = false;
+            this.bunifuCards1.color = System.Drawing.Color.Tomato;
+            this.bunifuCards1.Controls.Add(this.txt_table);
+            this.bunifuCards1.Controls.Add(this.lb_Table);
+            this.bunifuCards1.Controls.Add(this.materialLabel11);
+            this.bunifuCards1.Controls.Add(this.materialLabel10);
+            this.bunifuCards1.Controls.Add(this.materialLabel9);
+            this.bunifuCards1.Controls.Add(this.txt_Pay);
+            this.bunifuCards1.Controls.Add(this.txt_ExcessCash);
+            this.bunifuCards1.Controls.Add(this.txt_MoneyOfCus);
+            this.bunifuCards1.Controls.Add(this.materialLabel5);
+            this.bunifuCards1.Controls.Add(this.materialLabel4);
+            this.bunifuCards1.Controls.Add(this.materialLabel3);
+            this.bunifuCards1.LeftSahddow = false;
+            this.bunifuCards1.Location = new System.Drawing.Point(3, 49);
+            this.bunifuCards1.Name = "bunifuCards1";
+            this.bunifuCards1.RightSahddow = false;
+            this.bunifuCards1.ShadowDepth = 20;
+            this.bunifuCards1.Size = new System.Drawing.Size(261, 186);
+            this.bunifuCards1.TabIndex = 14;
+            // 
+            // txt_table
+            // 
+            this.txt_table.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_table.Enabled = false;
+            this.txt_table.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txt_table.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_table.HintForeColor = System.Drawing.Color.Empty;
+            this.txt_table.HintText = "";
+            this.txt_table.isPassword = false;
+            this.txt_table.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.txt_table.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_table.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.txt_table.LineThickness = 3;
+            this.txt_table.Location = new System.Drawing.Point(99, 23);
+            this.txt_table.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_table.Name = "txt_table";
+            this.txt_table.Size = new System.Drawing.Size(97, 28);
+            this.txt_table.TabIndex = 19;
+            this.txt_table.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // lb_Table
+            // 
+            this.lb_Table.AutoSize = true;
+            this.lb_Table.Depth = 0;
+            this.lb_Table.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lb_Table.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lb_Table.Location = new System.Drawing.Point(4, 32);
+            this.lb_Table.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lb_Table.Name = "lb_Table";
+            this.lb_Table.Size = new System.Drawing.Size(64, 19);
+            this.lb_Table.TabIndex = 18;
+            this.lb_Table.Text = "Số Bàn :";
+            // 
+            // materialLabel11
+            // 
+            this.materialLabel11.AutoSize = true;
+            this.materialLabel11.Depth = 0;
+            this.materialLabel11.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel11.Location = new System.Drawing.Point(204, 143);
+            this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel11.Name = "materialLabel11";
+            this.materialLabel11.Size = new System.Drawing.Size(40, 19);
+            this.materialLabel11.TabIndex = 17;
+            this.materialLabel11.Text = "VND";
+            // 
+            // materialLabel10
+            // 
+            this.materialLabel10.AutoSize = true;
+            this.materialLabel10.Depth = 0;
+            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel10.Location = new System.Drawing.Point(202, 107);
+            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel10.Name = "materialLabel10";
+            this.materialLabel10.Size = new System.Drawing.Size(40, 19);
+            this.materialLabel10.TabIndex = 16;
+            this.materialLabel10.Text = "VND";
+            // 
+            // materialLabel9
+            // 
+            this.materialLabel9.AutoSize = true;
+            this.materialLabel9.Depth = 0;
+            this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel9.Location = new System.Drawing.Point(200, 65);
+            this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel9.Name = "materialLabel9";
+            this.materialLabel9.Size = new System.Drawing.Size(40, 19);
+            this.materialLabel9.TabIndex = 15;
+            this.materialLabel9.Text = "VND";
+            // 
+            // txt_Pay
+            // 
+            this.txt_Pay.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Pay.Enabled = false;
+            this.txt_Pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txt_Pay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_Pay.HintForeColor = System.Drawing.Color.Empty;
+            this.txt_Pay.HintText = "";
+            this.txt_Pay.isPassword = false;
+            this.txt_Pay.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.txt_Pay.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_Pay.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.txt_Pay.LineThickness = 3;
+            this.txt_Pay.Location = new System.Drawing.Point(99, 62);
+            this.txt_Pay.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_Pay.Name = "txt_Pay";
+            this.txt_Pay.Size = new System.Drawing.Size(97, 20);
+            this.txt_Pay.TabIndex = 14;
+            this.txt_Pay.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_ExcessCash
+            // 
+            this.txt_ExcessCash.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_ExcessCash.Enabled = false;
+            this.txt_ExcessCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txt_ExcessCash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_ExcessCash.HintForeColor = System.Drawing.Color.Empty;
+            this.txt_ExcessCash.HintText = "";
+            this.txt_ExcessCash.isPassword = false;
+            this.txt_ExcessCash.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.txt_ExcessCash.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_ExcessCash.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.txt_ExcessCash.LineThickness = 3;
+            this.txt_ExcessCash.Location = new System.Drawing.Point(100, 141);
+            this.txt_ExcessCash.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_ExcessCash.Name = "txt_ExcessCash";
+            this.txt_ExcessCash.Size = new System.Drawing.Size(97, 20);
+            this.txt_ExcessCash.TabIndex = 12;
+            this.txt_ExcessCash.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txt_MoneyOfCus
+            // 
+            this.txt_MoneyOfCus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_MoneyOfCus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.txt_MoneyOfCus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_MoneyOfCus.HintForeColor = System.Drawing.Color.Empty;
+            this.txt_MoneyOfCus.HintText = "";
+            this.txt_MoneyOfCus.isPassword = false;
+            this.txt_MoneyOfCus.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.txt_MoneyOfCus.LineIdleColor = System.Drawing.Color.Gray;
+            this.txt_MoneyOfCus.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(75)))), ((int)(((byte)(134)))));
+            this.txt_MoneyOfCus.LineThickness = 3;
+            this.txt_MoneyOfCus.Location = new System.Drawing.Point(100, 106);
+            this.txt_MoneyOfCus.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_MoneyOfCus.Name = "txt_MoneyOfCus";
+            this.txt_MoneyOfCus.Size = new System.Drawing.Size(97, 20);
+            this.txt_MoneyOfCus.TabIndex = 1;
+            this.txt_MoneyOfCus.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_MoneyOfCus.OnValueChanged += new System.EventHandler(this.txt_MoneyOfCus_OnValueChanged);
+            this.txt_MoneyOfCus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_OnlyNumber);
+            this.txt_MoneyOfCus.Leave += new System.EventHandler(this.txt_MoneyOfCus_Leave);
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel5.Location = new System.Drawing.Point(4, 142);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(84, 19);
+            this.materialLabel5.TabIndex = 9;
+            this.materialLabel5.Text = "Tiền Thừa :";
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel4.Location = new System.Drawing.Point(4, 107);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(89, 19);
+            this.materialLabel4.TabIndex = 8;
+            this.materialLabel4.Text = "Khách Đưa :";
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel3.Location = new System.Drawing.Point(4, 65);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(96, 19);
+            this.materialLabel3.TabIndex = 4;
+            this.materialLabel3.Text = "Thanh Toán :";
             // 
             // materialLabel1
             // 
@@ -828,7 +881,7 @@
             this.panel3.Controls.Add(this.flpCategory);
             this.panel3.Location = new System.Drawing.Point(15, 331);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(247, 314);
+            this.panel3.Size = new System.Drawing.Size(281, 306);
             this.panel3.TabIndex = 4;
             // 
             // textBox1
@@ -840,7 +893,7 @@
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox1.Location = new System.Drawing.Point(0, 0);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(245, 30);
+            this.textBox1.Size = new System.Drawing.Size(279, 30);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "Danh Mục ";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -850,7 +903,7 @@
             this.flpCategory.AutoScroll = true;
             this.flpCategory.Location = new System.Drawing.Point(11, 48);
             this.flpCategory.Name = "flpCategory";
-            this.flpCategory.Size = new System.Drawing.Size(231, 261);
+            this.flpCategory.Size = new System.Drawing.Size(269, 261);
             this.flpCategory.TabIndex = 2;
             // 
             // flpTable
@@ -915,7 +968,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(680, 333);
+            this.label8.Location = new System.Drawing.Point(543, 333);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(476, 62);
             this.label8.TabIndex = 3;
@@ -925,7 +978,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(815, 158);
+            this.label7.Location = new System.Drawing.Point(686, 247);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(178, 40);
             this.label7.TabIndex = 2;
@@ -934,9 +987,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::RoverCoffeManage2.Properties.Resources.settings;
-            this.pictureBox2.Location = new System.Drawing.Point(73, 70);
+            this.pictureBox2.Location = new System.Drawing.Point(9, 70);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(581, 531);
+            this.pictureBox2.Size = new System.Drawing.Size(528, 534);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -1043,10 +1096,10 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(590, 361);
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(561, 321);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(707, 62);
+            this.label10.Size = new System.Drawing.Size(528, 46);
             this.label10.TabIndex = 4;
             this.label10.Text = "Bạn có thể theo dõi doanh thu của cửa hàng :\r\nThông qua doanh thu hằng ngày ,thán" +
     "g ,năm hoặc dạng biểu đồ";
@@ -1054,17 +1107,17 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(853, 177);
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(776, 248);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(193, 40);
+            this.label9.Size = new System.Drawing.Size(159, 33);
             this.label9.TabIndex = 3;
             this.label9.Text = "THỐNG KÊ";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::RoverCoffeManage2.Properties.Resources.analytics_1;
-            this.pictureBox3.Location = new System.Drawing.Point(45, 104);
+            this.pictureBox3.Location = new System.Drawing.Point(16, 61);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(539, 526);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -1190,10 +1243,10 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(475, 150);
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(563, 222);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(574, 155);
+            this.label11.Size = new System.Drawing.Size(390, 105);
             this.label11.TabIndex = 4;
             this.label11.Text = "Bạn có thể quản lý tài khoản của phần mềm ở đây :\r\nXem danh sách\r\nThêm mới tài kh" +
     "oản \r\nChỉnh sửa tài khoản\r\nXóa tài khoản";
@@ -1201,19 +1254,19 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(649, 93);
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(686, 154);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(207, 40);
+            this.label12.Size = new System.Drawing.Size(171, 33);
             this.label12.TabIndex = 3;
             this.label12.Text = "TÀI KHOẢN";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::RoverCoffeManage2.Properties.Resources.curriculum;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 44);
+            this.pictureBox4.Location = new System.Drawing.Point(3, 31);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(444, 473);
+            this.pictureBox4.Size = new System.Drawing.Size(543, 523);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
@@ -1324,65 +1377,12 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "RoverCoffe Manager";
             // 
-            // cl_foodName
-            // 
-            this.cl_foodName.HeaderText = "Tên Món";
-            this.cl_foodName.Name = "cl_foodName";
-            this.cl_foodName.ReadOnly = true;
-            this.cl_foodName.Width = 160;
-            // 
-            // cl_number
-            // 
-            this.cl_number.HeaderText = "SL";
-            this.cl_number.MaxInputLength = 3;
-            this.cl_number.Name = "cl_number";
-            this.cl_number.Width = 50;
-            // 
-            // cl_price
-            // 
-            this.cl_price.HeaderText = "Giá";
-            this.cl_price.MaxInputLength = 20;
-            this.cl_price.Name = "cl_price";
-            this.cl_price.ReadOnly = true;
-            this.cl_price.Width = 80;
-            // 
-            // cl_Disscount
-            // 
-            this.cl_Disscount.HeaderText = "Giảm Giá";
-            this.cl_Disscount.MaxInputLength = 3;
-            this.cl_Disscount.Name = "cl_Disscount";
-            this.cl_Disscount.Width = 55;
-            // 
-            // cl_Note
-            // 
-            this.cl_Note.HeaderText = "Ghi Chú";
-            this.cl_Note.MaxInputLength = 100;
-            this.cl_Note.Name = "cl_Note";
-            this.cl_Note.Width = 172;
-            // 
-            // cl_pay
-            // 
-            this.cl_pay.HeaderText = "Thành Tiền";
-            this.cl_pay.MaxInputLength = 10;
-            this.cl_pay.Name = "cl_pay";
-            this.cl_pay.ReadOnly = true;
-            this.cl_pay.Width = 130;
-            // 
-            // cl_btnDelete
-            // 
-            this.cl_btnDelete.HeaderText = "Xóa Món";
-            this.cl_btnDelete.Image = global::RoverCoffeManage2.Properties.Resources.del_21;
-            this.cl_btnDelete.Name = "cl_btnDelete";
-            this.cl_btnDelete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.cl_btnDelete.Width = 39;
-            // 
             // fAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1358, 768);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1358, 780);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.TabControl);
             this.Font = new System.Drawing.Font("UTM Penumbra", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1396,6 +1396,12 @@
             this.panel1.PerformLayout();
             this.TabControl.ResumeLayout(false);
             this.tbHome.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DTGV_bill)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.bunifuCards2.ResumeLayout(false);
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel2.PerformLayout();
@@ -1403,12 +1409,6 @@
             this.bunifuGradientPanel1.PerformLayout();
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DTGV_bill)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.tabPage2.ResumeLayout(false);
